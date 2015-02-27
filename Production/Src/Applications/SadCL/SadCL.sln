@@ -5,7 +5,11 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SadCL", "SadCL\SadCL.csproj", "{2ED7E4F6-2CF8-4F36-91DC-EFF52C596473}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAD.core", "SAD.core\SAD.core.csproj", "{A69EB6D6-6DD7-430F-A071-4BCB11E38438}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAD.Core", "SAD.core\SAD.Core.csproj", "{A69EB6D6-6DD7-430F-A071-4BCB11E38438}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{952DDEB9-954B-4FFB-9FC2-F1B03F8D0661}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{11255AE4-4FBE-4D1D-866E-2A04607F9AAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +28,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ED7E4F6-2CF8-4F36-91DC-EFF52C596473} = {952DDEB9-954B-4FFB-9FC2-F1B03F8D0661}
+		{A69EB6D6-6DD7-430F-A071-4BCB11E38438} = {11255AE4-4FBE-4D1D-866E-2A04607F9AAB}
 	EndGlobalSection
 EndGlobal

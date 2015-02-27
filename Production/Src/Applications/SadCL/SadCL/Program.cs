@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SAD.core;
+using SAD.Core.IO;
 
 namespace SadCL
 {
@@ -11,8 +11,9 @@ namespace SadCL
     {
         static void Main(string[] args)
         {
-            Var launcher = new SAD.core.Devices.MissleLauncher();
-            Namespace SAD.core.Devices.MissileLauncher();
+            
+
+
         }
     }
 }
