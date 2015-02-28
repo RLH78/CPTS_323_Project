@@ -4,15 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SAD.core.Devices;
+using SAD.Core.Data;
 
 namespace SAD.Core.Algorithms
 {
     public class CommandLine
     {
         IMissileLauncher myLauncher;
-        public CommandLine(IMissileLauncher Launcher)
+        Target[] targets;
+        public CommandLine(IMissileLauncher Launcher, Target[] targetz)
         {
             myLauncher = Launcher;
+            targets = targetz;
         }
 
         public void runCommandPrompt()
@@ -20,6 +23,10 @@ namespace SAD.Core.Algorithms
             string command = "start"; // string that holds the user's command
             int exit = 0; // exit flag
             char[] delimiters = { ' ' };
+            string[] words;
+            double phi = 0;
+            double theta = 0;
+            int i = 0; //iterator
             while (exit == 0)
             {
                 Console.WriteLine("\nList of Commands: ");
@@ -38,27 +45,32 @@ namespace SAD.Core.Algorithms
                 command = Console.ReadLine();
 
                int caseNum = determineCaseNumber(command); // determine which case to switch to
-
+               
                 switch (caseNum)
                 {
                     case 1: // Fire
                         myLauncher.Fire();          
                         break;
                     case 2: // Move <phi, theta>
-                        string[] words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
-                      //  Console.WriteLine("Printing Stuff");
-                      //  Console.WriteLine(words[0]); Console.WriteLine(words[1]);//, words[2]);
-                        double phi = Convert.ToDouble(words[1]);
-                        double theta = Convert.ToDouble(words[2]);
+                        words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+                        phi = Convert.ToDouble(words[1]);
+                        theta = Convert.ToDouble(words[2]);
                         myLauncher.Move(phi, theta);
-                        //printTargetData(targets, targetCount, command);
                         break;
-                    case 3: // convert <file name>
-                        //string path = determinePath(command);
-                        //  convertToPig(path);
+                    case 3: // Moveby <phi, theta>
+                        words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+                        phi = Convert.ToDouble(words[1]);
+                        theta = Convert.ToDouble(words[2]);
+                        myLauncher.MoveBy(phi, theta);
                         break;
-                    case 4: // isfriend <file name>
+                    case 4: // Friends
                         //    areYouMyFriend(targets, targetCount, command);
+                        //for(i=0; i < )
+
+
+
+
+
                         break;
                     case 5: //exit
                         exit = 1;

@@ -21,6 +21,7 @@ namespace SAD.Core.Data
             this.spawnRate = -99;
             this.swapSides = true;
         }
+        public int targetCount { get; set; }
         public string name { get; set; }
         public double xCoord { get; set; }
         public double yCoord { get; set; }

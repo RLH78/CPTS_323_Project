@@ -7,6 +7,7 @@ using SAD.Core;
 using SAD.core.Factories;
 using SAD.core.Devices;
 using SAD.Core.Algorithms;
+using SAD.Core.Data;
 
 namespace SadCL
 {
@@ -14,6 +15,7 @@ namespace SadCL
     {
         static void Main(string[] args)
         {
+            Target[] targets;
             MissileLauncherFactory factory = new MissileLauncherFactory();
             IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC); 
             // can be set to mock instead of dreamC
@@ -33,7 +35,7 @@ namespace SadCL
 
             //test reading a INI file
             //
-            myReader.readFile("C:\\Users\\Rebecca\\Source\\targets.ini");
+            targets = myReader.readFile("C:\\Users\\Rebecca\\Source\\targets.ini");
 
             //test reading a mock file
             FileReader myReader2 = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.mock);
@@ -45,7 +47,7 @@ namespace SadCL
             myLauncher.Move(10, 4);
             //myLauncher.Fire();
 
-            CommandLine mine = new CommandLine(myLauncher);
+            CommandLine mine = new CommandLine(myLauncher, targets);
 
             mine.runCommandPrompt();
             Console.ReadLine();

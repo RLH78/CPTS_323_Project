@@ -17,7 +17,7 @@ namespace SAD.core.Factories
             get;
             set;
         }
-        public abstract void readFile(string pathName);
+        public abstract Target[] readFile(string pathName);
     }
 
     public sealed class INIFileReader : FileReader
@@ -28,7 +28,8 @@ namespace SAD.core.Factories
         }
         //implementation goes here
 
-        public override void readFile(string pathName)
+        public Target[] targets;
+        public override Target[] readFile(string pathName)
         {
             string line; // the full string that is read in
             int targetCount = 0; // counter for index of Target
@@ -36,9 +37,8 @@ namespace SAD.core.Factories
             char[] delimiters = { '=', '#' };
            
             bool commentLine = false; // checks if the line is comment line
-
             
-            Target[] targets = TargetManager.getInstance(); //getting an array of targets
+            targets = TargetManager.getInstance(); //getting an array of targets
 
             try
             {
@@ -51,7 +51,7 @@ namespace SAD.core.Factories
             {
                 Console.WriteLine(ex.Message);
                 Console.ReadLine();
-                return;
+                return targets;
             }
             
             using (TextReader reader = File.OpenText(pathName))
@@ -92,7 +92,8 @@ namespace SAD.core.Factories
 
             //Console.WriteLine(targets[1].name); //test print to see if it loaded correctly
 
-            Console.WriteLine("\nTarget File Loaded");
+            Console.WriteLine("\nTarget File Loaded");            
+            return targets;
         }
         private Target[] TargetClassSetUp(string[] data, Target[] target, int counter)
         {
@@ -100,7 +101,7 @@ namespace SAD.core.Factories
             {
                 if (data.ElementAt(0).ToUpper() == "NAME")
                 {
-                    target[counter].name = data.ElementAt(1);
+                    target[counter].name = data.ElementAt(1);                    
                 }
                 else if (data.ElementAt(0).ToUpper() == "X")
                 {
@@ -144,6 +145,7 @@ namespace SAD.core.Factories
             {
                 Console.WriteLine("WARNING: Some of the data in the target file is not the correct type.\nPlease exit and fix your target file data.");
             }
+            
             return target;
         }
     }
@@ -154,9 +156,11 @@ namespace SAD.core.Factories
         {
             readerName = "Mock";
         }
-        public override void readFile(string pathName)
+        public override Target[] readFile(string pathName)
         {
             Console.WriteLine("Fake File Reader");
+            Target[] fake = TargetManager.getInstance();
+            return fake;
         }
     }
 
