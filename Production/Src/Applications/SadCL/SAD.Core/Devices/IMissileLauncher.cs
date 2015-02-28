@@ -41,6 +41,38 @@ namespace SAD.core.Devices
             MissileLauncher test = new MissileLauncher();
             test.command_Fire();
         }
+
+        public void Move(double phi, double theta)
+        {
+            int degrees = 0;
+            if (phi < 0)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(phi * 20);
+                test.command_Left(degrees);
+            }
+
+            else if (phi > 0)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(phi * 20);
+                test.command_Right(degrees);
+            }
+
+            if (theta < 0)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(phi * 20);
+                test.command_Down(degrees);
+            }
+
+            else if (theta > 0)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(phi * 20);
+                test.command_Up(degrees);
+            }
+        }
         public void Move(double phi, double theta) { ;}
         public void MoveBy(double phi, double theta) { ;}
         public void Reload() { ;}
