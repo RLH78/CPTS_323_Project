@@ -37,11 +37,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="USBLib">
+      <HintPath>..\..\..\Library\USBLib.DLL</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\Positioning.cs" />
     <Compile Include="Data\Target.cs" />
-    <Compile Include="Devices\MissileLauncher.cs" />
+    <Compile Include="Data\TargetManager.cs" />
+    <Compile Include="Devices\IMissileLauncher.cs" />
     <Compile Include="Factories\FileReaderFactory.cs" />
     <Compile Include="Factories\MissileLauncherFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

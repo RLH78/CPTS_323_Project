@@ -3,32 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SAD.core.Devices;
 
 //Factory that creates Missile Launchers
 namespace SAD.core.Factories
 {
-    public abstract class MissileLauncher
+  /*  public abstract class MissileLauncher
     {
         public string launcherName
         {
             get;
             set;
         }
-    }
+    }*/
 
-    public sealed class DreamCheeky: MissileLauncher 
+    public sealed class DreamCheeky: IMissileLauncher 
     {
         public DreamCheeky()
         {
-            launcherName = "KillShotLauncher!";
+            //launcherName = "KillShotLauncher!";
         }
     }
 
-    public sealed class Mock : MissileLauncher
+    public sealed class Mock : IMissileLauncher
     {
         public Mock()
         {
-            launcherName = "Boring-Mock-Launcher";
+            //launcherName = "Boring-Mock-Launcher";
         }
     }
 
@@ -37,9 +38,9 @@ namespace SAD.core.Factories
     /// </summary>
     public class MissileLauncherFactory
     {
-        public MissileLauncher createMissileLauncher(launcherType myLauncherType)
+        public IMissileLauncher createMissileLauncher(launcherType myLauncherType)
         {
-            MissileLauncher myLauncher = null;
+            IMissileLauncher myLauncher = null;
 
             switch (myLauncherType)
             {
