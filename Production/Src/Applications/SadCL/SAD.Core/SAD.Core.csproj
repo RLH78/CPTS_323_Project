@@ -42,7 +42,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algorithms\Positioning.cs" />
+    <Compile Include="Algorithms\CommandLine.cs" />
     <Compile Include="Data\Target.cs" />
     <Compile Include="Data\TargetManager.cs" />
     <Compile Include="Devices\IMissileLauncher.cs" />

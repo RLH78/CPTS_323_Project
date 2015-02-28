@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using SAD.Core;
 using SAD.core.Factories;
 using SAD.core.Devices;
+using SAD.Core.Algorithms;
 
 namespace SadCL
 {
@@ -40,7 +41,12 @@ namespace SadCL
             Console.WriteLine("Ready to Fire Ze Missiles, Captain!!!!!!!");
 
             Console.WriteLine("firing????");
-            myLauncher.Fire();
+            myLauncher.Move(10, 4);
+            //myLauncher.Fire();
+
+            CommandLine mine = new CommandLine(myLauncher);
+
+            mine.runCommandPrompt();
             Console.ReadLine();
         }
     }

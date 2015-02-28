@@ -41,7 +41,12 @@ namespace SAD.core.Devices
             MissileLauncher test = new MissileLauncher();
             test.command_Fire();
         }
-        public void Move(double phi, double theta) { ;}
+        public void Move(double phi, double theta)
+        {
+            MissileLauncher test = new MissileLauncher();
+            test.command_Right(12);
+            
+        }
         public void MoveBy(double phi, double theta) { ;}
         public void Reload() { ;}
         public void Kill(string targetName) { ;}
