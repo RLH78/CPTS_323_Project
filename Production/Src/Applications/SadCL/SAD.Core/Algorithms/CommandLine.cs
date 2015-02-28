@@ -19,6 +19,7 @@ namespace SAD.Core.Algorithms
         {
             string command = "start"; // string that holds the user's command
             int exit = 0; // exit flag
+            char[] delimiters = { ' ' };
             while (exit == 0)
             {
                 Console.WriteLine("\nList of Commands: ");
@@ -44,7 +45,12 @@ namespace SAD.Core.Algorithms
                         myLauncher.Fire();          
                         break;
                     case 2: // Move <phi, theta>
-                        myLauncher.Move(4, 3);
+                        string[] words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+                      //  Console.WriteLine("Printing Stuff");
+                      //  Console.WriteLine(words[0]); Console.WriteLine(words[1]);//, words[2]);
+                        double phi = Convert.ToDouble(words[1]);
+                        double theta = Convert.ToDouble(words[2]);
+                        myLauncher.Move(phi, theta);
                         //printTargetData(targets, targetCount, command);
                         break;
                     case 3: // convert <file name>
