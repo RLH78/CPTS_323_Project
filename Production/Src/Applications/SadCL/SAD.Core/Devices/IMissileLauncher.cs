@@ -72,8 +72,7 @@ namespace SAD.core.Devices
                 degrees = Convert.ToInt32(phi * 20);
                 test.command_Up(degrees);
             }
-        }
-        public void Move(double phi, double theta) { ;}
+        }        
         public void MoveBy(double phi, double theta) { ;}
         public void Reload() { ;}
         public void Kill(string targetName) { ;}
