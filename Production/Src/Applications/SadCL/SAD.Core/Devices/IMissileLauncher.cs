@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BuildDefender;
 
 namespace SAD.core.Devices
 {
@@ -35,7 +36,11 @@ namespace SAD.core.Devices
 
         }
         public string launcherName;
-        public void Fire() { ;}
+        public void Fire() 
+        {
+            MissileLauncher test = new MissileLauncher();
+            test.command_Fire();
+        }
         public void Move(double phi, double theta) { ;}
         public void MoveBy(double phi, double theta) { ;}
         public void Reload() { ;}

@@ -38,6 +38,9 @@ namespace SadCL
             myReader2.readFile("apath");
 
             Console.WriteLine("Ready to Fire Ze Missiles, Captain!!!!!!!");
+
+            Console.WriteLine("firing????");
+            myLauncher.Fire();
             Console.ReadLine();
         }
     }
