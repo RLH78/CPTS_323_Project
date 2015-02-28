@@ -101,7 +101,8 @@ namespace SAD.core.Factories
             {
                 if (data.ElementAt(0).ToUpper() == "NAME")
                 {
-                    target[counter].name = data.ElementAt(1);                    
+                    target[counter].name = data.ElementAt(1);
+                    target[0].targetCount = counter + 1;
                 }
                 else if (data.ElementAt(0).ToUpper() == "X")
                 {
@@ -145,6 +146,8 @@ namespace SAD.core.Factories
             {
                 Console.WriteLine("WARNING: Some of the data in the target file is not the correct type.\nPlease exit and fix your target file data.");
             }
+
+            
             
             return target;
         }

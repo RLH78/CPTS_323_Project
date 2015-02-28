@@ -12,8 +12,6 @@ namespace SAD.core.Data
     {
         private static Target[] targetInstance;
 
-        public int targetCount;
-
         public static Target[] getInstance()
         {
             if (targetInstance == null)

@@ -65,12 +65,17 @@ namespace SAD.Core.Algorithms
                         break;
                     case 4: // Friends
                         //    areYouMyFriend(targets, targetCount, command);
-                        //for(i=0; i < )
-
-
-
-
-
+                        for (i = 0; i < targets[0].targetCount; i++)
+                        {
+                            if(targets[i].friend == true)
+                            {
+                                Console.WriteLine("Target: {0}", targets[i].name);
+                                Console.WriteLine("Friend: DO NOT KILL!");
+                                Console.WriteLine("Position: x={0}, y={0}, z={0}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
+                                Console.WriteLine("Points: {0}", targets[i].points);
+                                Console.WriteLine("Status: {0}", targets[i].status);
+                            }
+                        }
                         break;
                     case 5: //exit
                         exit = 1;
@@ -100,11 +105,11 @@ namespace SAD.Core.Algorithms
             {
                 num = 2;
             }
-            else if (userCommand.Length >= 7 && userCommand.Substring(0, 7) == "CONVERT")
+            else if (userCommand.Length >= 6 && userCommand.Substring(0, 6) == "MOVEBY")
             {
                 num = 3;
             }
-            else if (userCommand.Length >= 8 && userCommand.Substring(0, 8) == "ISFRIEND")
+            else if (userCommand.Length >= 8 && userCommand.Substring(0, 8) == "FRIENDS")
             {
                 num = 4;
             }

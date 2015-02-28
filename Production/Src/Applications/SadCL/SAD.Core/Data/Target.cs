@@ -20,8 +20,10 @@ namespace SAD.Core.Data
             this.flashRate = -99;
             this.spawnRate = -99;
             this.swapSides = true;
+            this.status = "Not dead . . . yet";
         }
         public int targetCount { get; set; }
+        public string status { get; set; }
         public string name { get; set; }
         public double xCoord { get; set; }
         public double yCoord { get; set; }
