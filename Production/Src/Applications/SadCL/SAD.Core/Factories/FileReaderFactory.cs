@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAD.Core.Data
+namespace SAD.core.Factories
 {
-    class Target
+    class FileReaderFactory
     {
-        //Target();
-
     }
 }
