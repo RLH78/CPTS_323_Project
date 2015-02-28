@@ -15,9 +15,14 @@ namespace SadCL
             MissileLauncherFactory factory = new MissileLauncherFactory();
             MissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC); 
             // can be set to mock instead of dreamC
+
+            FileReaderFactory readerFactory = new FileReaderFactory();
+            FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);
             
             Console.WriteLine(myLauncher.launcherName); // test print
+            Console.WriteLine(myReader.readerName);
             Console.ReadLine();
+
 
         }
     }
