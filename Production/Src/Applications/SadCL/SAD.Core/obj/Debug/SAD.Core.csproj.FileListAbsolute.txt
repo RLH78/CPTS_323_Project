@@ -1,5 +1,5 @@
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SAD.core\bin\Debug\SAD.core.dll
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SAD.core\bin\Debug\SAD.core.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SAD.core\bin\Debug\USBLib.DLL
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SAD.core\obj\Debug\SAD.core.dll
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SAD.core\obj\Debug\SAD.core.pdb
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SAD.core\obj\Debug\SAD.Core.csprojResolveAssemblyReference.cache

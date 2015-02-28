@@ -12,19 +12,67 @@ namespace SAD.core.Devices
     /// </summary>
     public interface IMissileLauncher
     {
-        public string launcherName;
+        
         void Fire();
-        void Move();
-        void MoveBy();
+        void Move(double phi, double theta);
+        void MoveBy(double phi, double theta);
         void Reload();
-        void Kill();
+        void Kill(string targetName);
         void Status();
+        void getName();
      }
 
-    public class MissileLauncherAdapter : IMissileLauncher
+    /// <summary>
+    /// Adapter class for DreamCheeky Missile Launcher
+    /// Implementation of DreamCheeky goes here
+    /// Use adaptee found in MissileLauncher.cs
+    /// </summary>
+    public sealed class DreamCheeky : IMissileLauncher
     {
-        
+        public DreamCheeky()
+        {
+            launcherName = "KillShotLauncher!";
+
+        }
+        public string launcherName;
+        public void Fire() { ;}
+        public void Move(double phi, double theta) { ;}
+        public void MoveBy(double phi, double theta) { ;}
+        public void Reload() { ;}
+        public void Kill(string targetName) { ;}
+        public void Status() { ;}
+        public void getName()
+        {
+            Console.WriteLine(launcherName);
+        }
     }
+
+    /// <summary>
+    /// Adapter Class for Mock Launcher
+    /// Implement test functions
+    /// </summary>
+    public sealed class Mock : IMissileLauncher
+    {
+        public Mock()
+        {
+            launcherName = "Boring-Mock-Launcher";
+        }
+        public string launcherName;
+        public void Fire()
+        {
+            ;
+        }
+        public void Move(double phi, double theta) { ;}
+        public void MoveBy(double phi, double theta) { ;}
+        public void Reload() { ;}
+        public void Kill(string targetName) { ;}
+        public void Status() { ;}
+        public void getName()
+        {
+            Console.WriteLine(launcherName);
+        }
+    }
+
 
 
 

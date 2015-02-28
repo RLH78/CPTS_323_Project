@@ -46,6 +46,7 @@
     <Compile Include="Data\Target.cs" />
     <Compile Include="Data\TargetManager.cs" />
     <Compile Include="Devices\IMissileLauncher.cs" />
+    <Compile Include="Devices\MissileLauncher.cs" />
     <Compile Include="Factories\FileReaderFactory.cs" />
     <Compile Include="Factories\MissileLauncherFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

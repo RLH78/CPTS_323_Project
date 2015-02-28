@@ -20,8 +20,12 @@ namespace SadCL
             FileReaderFactory readerFactory = new FileReaderFactory();
             FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);
             
-          //  Console.WriteLine(myLauncher.launcherName); // test print
+            myLauncher.getName(); // test print
             Console.WriteLine(myReader.readerName);
+
+            IMissileLauncher myMockLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.mock);
+            myMockLauncher.getName();
+
             Console.ReadLine();
 
 

@@ -8,30 +8,7 @@ using SAD.core.Devices;
 //Factory that creates Missile Launchers
 namespace SAD.core.Factories
 {
-  /*  public abstract class MissileLauncher
-    {
-        public string launcherName
-        {
-            get;
-            set;
-        }
-    }*/
 
-    public sealed class DreamCheeky: IMissileLauncher 
-    {
-        public DreamCheeky()
-        {
-            //launcherName = "KillShotLauncher!";
-        }
-    }
-
-    public sealed class Mock : IMissileLauncher
-    {
-        public Mock()
-        {
-            //launcherName = "Boring-Mock-Launcher";
-        }
-    }
 
     /// <summary>
     /// concrete factory for missile launchers
