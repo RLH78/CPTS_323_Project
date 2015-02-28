@@ -18,7 +18,9 @@ namespace SAD.core.Devices
         void Move(double phi, double theta);
         void MoveBy(double phi, double theta);
         void Reload();
-        void Kill(string targetName);
+        void Kill(double phi, double theta);
+
+        void Reset();
         void Status();
         void getName();
      }
@@ -126,8 +128,10 @@ namespace SAD.core.Devices
             }
         }
         public void Reload() { ;}
-        public void Kill(string targetName) { ;}
+        public void Kill(double phi, double theta) { ;}
         public void Status() { ;}
+
+        public void Reset() { ;}
         public void getName()
         {
             Console.WriteLine(launcherName);
@@ -152,8 +156,9 @@ namespace SAD.core.Devices
         public void Move(double phi, double theta) { ;}
         public void MoveBy(double phi, double theta) { ;}
         public void Reload() { ;}
-        public void Kill(string targetName) { ;}
+        public void Kill(double phi, double theta) { ;}
         public void Status() { ;}
+        public void Reset() { ;}
         public void getName()
         {
             Console.WriteLine(launcherName);

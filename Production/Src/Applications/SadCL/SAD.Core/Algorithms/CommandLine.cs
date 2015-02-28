@@ -69,17 +69,18 @@ namespace SAD.Core.Algorithms
                         {
                             if(targets[i].friend == true)
                             {
-                                Console.WriteLine("Target: {0}", targets[i].name);
+                                Console.WriteLine("\nTarget: {0}", targets[i].name);
                                 Console.WriteLine("Friend: DO NOT KILL!");
                                 Console.WriteLine("Position: x={0}, y={0}, z={0}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
                                 Console.WriteLine("Points: {0}", targets[i].points);
-                                Console.WriteLine("Status: {0}", targets[i].status);
+                                Console.WriteLine("Status: {0}\n", targets[i].status);
                             }
                         }
                         break;
-                    case 5: //exit
+                    case 5: // scoundrels
                         exit = 1;
                         break;
+                    // pass coordinates
                     default:
                         Console.WriteLine("Make sure to enter a correct command");
                         break;
@@ -109,7 +110,7 @@ namespace SAD.Core.Algorithms
             {
                 num = 3;
             }
-            else if (userCommand.Length >= 8 && userCommand.Substring(0, 8) == "FRIENDS")
+            else if (userCommand.Length == 7 && userCommand.Substring(0, 7) == "FRIENDS")
             {
                 num = 4;
             }
