@@ -33,7 +33,7 @@ namespace SadCL
 
             //test reading a INI file
             //
-            myReader.readFile("C:\\Users\\Rebecca\\Source\\targets.ini");
+            //myReader.readFile("C:\\Users\\Rebecca\\Source\\targets.ini");
 
             //test reading a mock file
             FileReader myReader2 = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.mock);

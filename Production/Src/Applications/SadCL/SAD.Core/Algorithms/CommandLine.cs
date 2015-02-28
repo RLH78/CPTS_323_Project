@@ -44,12 +44,12 @@ namespace SAD.Core.Algorithms
                     case 1: // Fire
                         myLauncher.Fire();          
                         break;
-                    case 2: // Move <phi, theta>
+                    case 2: //Move <phi, theta>
                         string[] words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
                       //  Console.WriteLine("Printing Stuff");
                       //  Console.WriteLine(words[0]); Console.WriteLine(words[1]);//, words[2]);
                         double phi = Convert.ToDouble(words[1]);
-                        double theta = Convert.ToDouble(words[2]);
+                        double theta = Convert.ToDouble(words[2]);                       
                         myLauncher.Move(phi, theta);
                         //printTargetData(targets, targetCount, command);
                         break;

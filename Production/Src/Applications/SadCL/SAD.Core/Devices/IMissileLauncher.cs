@@ -45,64 +45,88 @@ namespace SAD.core.Devices
         public void Move(double phi, double theta)
         {
             int degrees = 0;
-            if (phi < 0)
+            int degrees2 = 0;
+            
+            if (phi < 0 && theta < 0)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 20);
+                degrees = Convert.ToInt32(Math.Abs(phi));
+                degrees2 = Convert.ToInt32(Math.Abs(theta));                
                 test.command_Left(degrees);
+                test.command_Down(degrees2);
             }
 
-            else if (phi > 0)
+            else if (phi < 0 && theta > 0)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 20);
+                degrees = Convert.ToInt32(Math.Abs(phi));
+                degrees2 = Convert.ToInt32(Math.Abs(theta));                
+                test.command_Left(degrees);
+                test.command_Up(degrees2);
+            }
+
+            else if (phi > 0 && theta < 0)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(Math.Abs(phi));
+                degrees2 = Convert.ToInt32(Math.Abs(theta));                
                 test.command_Right(degrees);
+                test.command_Down(degrees2);
             }
-
-            if (theta < 0)
+            
+            else if (phi > 0 && theta > 0)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 20);
-                test.command_Down(degrees);
-            }
-
-            else if (theta > 0)
-            {
-                MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 20);
-                test.command_Up(degrees);
+                degrees = Convert.ToInt32(Math.Abs(phi));
+                degrees2 = Convert.ToInt32(Math.Abs(theta));                
+                test.command_Right(degrees);
+                test.command_Up(degrees2);
             }
         }
 
         public void MoveBy(double phi, double theta)
         {
             int degrees = 0;
-            if (phi < 0)
+            int degrees2 = 0;
+
+            if (phi < 0 && theta < 0)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 20);
+                degrees = Convert.ToInt32(phi);
+                degrees2 = Convert.ToInt32(theta);
+
                 test.command_Left(degrees);
+                test.command_Down(degrees2);
             }
 
-            else if (phi > 0)
+            else if (phi < 0 && theta > 0)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 20);
+                degrees = Convert.ToInt32(phi);
+                degrees2 = Convert.ToInt32(theta);
+                
+                test.command_Left(degrees);
+                test.command_Up(degrees2);
+            }
+
+            else if (phi > 0 && theta < 0)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(phi);
+                degrees2 = Convert.ToInt32(theta);
+
                 test.command_Right(degrees);
+                test.command_Down(degrees2);
             }
 
-            if (theta < 0)
+            else if (phi > 0 && theta > 0)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 20);
-                test.command_Down(degrees);
-            }
+                degrees = Convert.ToInt32(phi);
+                degrees2 = Convert.ToInt32(theta);
 
-            else if (theta > 0)
-            {
-                MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 20);
-                test.command_Up(degrees);
+                test.command_Right(degrees);
+                test.command_Up(degrees2);
             }
         }
         public void Reload() { ;}
