@@ -32,6 +32,7 @@ namespace SadCL
             Console.WriteLine(myReader.readerName);
 
             //test reading a INI file
+            //
             myReader.readFile("C:\\Users\\Rebecca\\Source\\targets.ini");
 
             //test reading a mock file

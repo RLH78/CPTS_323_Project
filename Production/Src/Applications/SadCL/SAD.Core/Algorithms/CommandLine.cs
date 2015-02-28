@@ -43,7 +43,8 @@ namespace SAD.Core.Algorithms
                     case 1: // Fire
                         myLauncher.Fire();          
                         break;
-                    case 2: // print <target name>
+                    case 2: // Move <phi, theta>
+                        myLauncher.Move(4, 3);
                         //printTargetData(targets, targetCount, command);
                         break;
                     case 3: // convert <file name>
@@ -77,7 +78,7 @@ namespace SAD.Core.Algorithms
             {
                 num = 1;
             }
-            else if (userCommand.Length > 5 && userCommand.Substring(0, 5) == "PRINT")
+            else if (userCommand.Length > 4 && userCommand.Substring(0, 4) == "MOVE")
             {
                 num = 2;
             }
