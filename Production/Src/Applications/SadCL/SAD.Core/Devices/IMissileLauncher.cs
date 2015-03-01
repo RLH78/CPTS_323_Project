@@ -51,7 +51,7 @@ namespace SAD.core.Devices
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
-                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));                
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));              
                 test.command_Left(degrees);
                 test.command_Down(degrees2);
             }
