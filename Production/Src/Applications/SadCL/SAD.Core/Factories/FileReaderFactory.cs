@@ -99,8 +99,7 @@ namespace SAD.core.Factories
             {
                 if (data.ElementAt(0).ToUpper() == "NAME")
                 {
-                    target[counter].name = data.ElementAt(1);
-                    target[0].targetCount = counter + 1;
+                    target[counter].name = data.ElementAt(1);                    
                 }
                 else if (data.ElementAt(0).ToUpper() == "X")
                 {
@@ -117,6 +116,15 @@ namespace SAD.core.Factories
                 else if (data.ElementAt(0).ToUpper() == "FRIEND")
                 {
                     target[counter].friend = Convert.ToBoolean(data.ElementAt(1));
+                    if(target[counter].friend == true)
+                    {
+                        TargetManager.RemainingFriendTargets = TargetManager.RemainingFriendTargets + 1;
+                    }
+                    else
+                    {
+                        TargetManager.RemainingEnemyTargets = TargetManager.RemainingEnemyTargets + 1;
+                    }
+                    TargetManager.TotalTargets = TargetManager.TotalTargets + 1;
                 }
                 else if (data.ElementAt(0).ToUpper() == "POINTS")
                 {

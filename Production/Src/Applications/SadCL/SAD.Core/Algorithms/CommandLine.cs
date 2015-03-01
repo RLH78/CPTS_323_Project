@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SAD.core.Devices;
 using SAD.Core.Data;
+using SAD.core.Data;
 using SAD.core.Factories;
 
 namespace SAD.Core.Algorithms
@@ -78,7 +79,7 @@ namespace SAD.Core.Algorithms
                     case 4: // Friends
                         try
                         {
-                            for (i = 0; i < targets[0].targetCount; i++)
+                            for (i = 0; i < TargetManager.TotalTargets; i++)
                             {
                                 if (targets[i].friend == true)
                                 {
@@ -102,7 +103,7 @@ namespace SAD.Core.Algorithms
                     case 5: // Scoundrels
                         try
                         {
-                            for (i = 0; i < targets[0].targetCount; i++)
+                            for (i = 0; i < TargetManager.TotalTargets; i++)
                             {
                                 if (targets[i].friend == false)
                                 {
@@ -134,7 +135,7 @@ namespace SAD.Core.Algorithms
                         //Finding a Target that matches user's entry 
                         try
                         {
-                            for (i = 0; i < targets[0].targetCount; i++)
+                            for (i = 0; i < TargetManager.TotalTargets; i++)
                             {
                                 if (targets[i].name.ToUpper() == words[1].ToUpper())
                                 {
@@ -157,6 +158,8 @@ namespace SAD.Core.Algorithms
                             {
                                 myLauncher.Kill(targets[tempCounter].xCoord, targets[tempCounter].zCoord);
                                 targets[tempCounter].alive = false;
+
+                                TargetManager.RemainingEnemyTargets = TargetManager.RemainingEnemyTargets - 1;                                                                
                             }
                             else
                             {
@@ -186,7 +189,8 @@ namespace SAD.Core.Algorithms
                             targets = myReader.readFile(words[1]);
                         }
                         catch { Console.WriteLine("Did you enter that correctly?"); }
-                      // targets = myReader.readFile("C:\\Users\\Rebecca\\Source\\targets.ini"); //Un-comment this if you don't want to copy/paste the path
+                       //Un-comment this if you don't want to copy/paste the path
+                       // targets = myReader.readFile("C:\\Users\\Rebecca\\Source\\targets.ini"); 
                         break;
                     case 11: // exit
                         exit = 1;

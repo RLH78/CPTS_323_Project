@@ -22,7 +22,7 @@ namespace SAD.Core.Data
             this.swapSides = true;
             this.alive = true;           
         }
-        public int targetCount { get; set; }
+       // public int targetCount { get; set; }
         public bool alive { get; set; }
         public string name { get; set; }
         public double xCoord { get; set; }
