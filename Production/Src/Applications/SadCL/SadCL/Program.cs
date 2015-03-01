@@ -20,18 +20,18 @@ namespace SadCL
             IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC); 
             // can be set to mock instead of dreamC
             
-            myLauncher.getName(); // test print         
+          //  myLauncher.getName(); // test print         
 
             //making a mock launcher
             IMissileLauncher myMockLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.mock);
-            myMockLauncher.getName();
+        //    myMockLauncher.getName();
 
             //NOTE TO SELF: reader stuff needs to go in the LOAD command when command prompt is built
             //making a file reader
             FileReaderFactory readerFactory = new FileReaderFactory();
             FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);
 
-            Console.WriteLine(myReader.readerName);
+           // Console.WriteLine(myReader.readerName);
 
             //test reading a INI file
             //
@@ -43,14 +43,9 @@ namespace SadCL
 
             Console.WriteLine("Ready to Fire Ze Missiles, Captain!!!!!!!");
 
-            Console.WriteLine("firing????");
-            myLauncher.Move(10, 4);
-            //myLauncher.Fire();
-
             CommandLine mine = new CommandLine(myLauncher, targets);
 
-            mine.runCommandPrompt();
-            Console.ReadLine();
+            mine.runCommandPrompt();           
         }
     }
 

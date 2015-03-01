@@ -22,6 +22,8 @@ namespace SAD.Core.Algorithms
         {
             string command = "start"; // string that holds the user's command
             int exit = 0; // exit flag
+            int tempCounter = 0; // counter used in Kill target
+            bool foundName = false; // used in Kill target case
             char[] delimiters = { ' ' };
             string[] words;
             double phi = 0;
@@ -29,16 +31,18 @@ namespace SAD.Core.Algorithms
             int i = 0; //iterator
             while (exit == 0)
             {
-                Console.WriteLine("\nList of Commands: ");
-                Console.WriteLine("1. Fire");
-                Console.WriteLine("2. Move <phi, theta>");
-                Console.WriteLine("3. Moveby <phi, theta>");
-                Console.WriteLine("4. Friends");
-                Console.WriteLine("5. Scoundrels");
-                Console.WriteLine("6. Kill <targetName>");
-                Console.WriteLine("7. Status");
-                Console.WriteLine("8. Reload");
-                Console.WriteLine("9. Exit");
+                Console.WriteLine("\nChoose a Command: ");
+                Console.WriteLine("1.  Fire");
+                Console.WriteLine("2.  Move <phi, theta>");
+                Console.WriteLine("3.  Moveby <phi, theta>");
+                Console.WriteLine("4.  Friends");
+                Console.WriteLine("5.  Scoundrels");
+                Console.WriteLine("6.  Kill <targetName>");
+                Console.WriteLine("7.  Status");
+                Console.WriteLine("8.  Reload");
+                Console.WriteLine("9.  Reset");
+                Console.WriteLine("10. Load <filepath>");
+                Console.WriteLine("11. Exit");
                 Console.WriteLine("Please type in one of the commands");
                 Console.WriteLine("Example --> Command: Kill targetOne");
                 Console.Write("Command: ");
@@ -53,34 +57,112 @@ namespace SAD.Core.Algorithms
                         break;
                     case 2: // Move <phi, theta>
                         words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
-                        phi = Convert.ToDouble(words[1]);
-                        theta = Convert.ToDouble(words[2]);
-                        myLauncher.Move(phi, theta);
+                        try
+                        {
+                            phi = Convert.ToDouble(words[1]);
+                            theta = Convert.ToDouble(words[2]);
+                            myLauncher.Move(phi, theta);
+                        }
+                        catch { Console.WriteLine("Make sure to enter the correct number/type of entries"); }
                         break;
                     case 3: // Moveby <phi, theta>
                         words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
-                        phi = Convert.ToDouble(words[1]);
-                        theta = Convert.ToDouble(words[2]);
-                        myLauncher.MoveBy(phi, theta);
+                        try
+                        {
+                            phi = Convert.ToDouble(words[1]);
+                            theta = Convert.ToDouble(words[2]);
+                            myLauncher.MoveBy(phi, theta);
+                        }
+                        catch { Console.WriteLine("Make sure to enter the correct number/type of entries"); }
                         break;
                     case 4: // Friends
-                        //    areYouMyFriend(targets, targetCount, command);
                         for (i = 0; i < targets[0].targetCount; i++)
                         {
                             if(targets[i].friend == true)
                             {
                                 Console.WriteLine("\nTarget: {0}", targets[i].name);
-                                Console.WriteLine("Friend: DO NOT KILL!");
-                                Console.WriteLine("Position: x={0}, y={0}, z={0}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
+                                Console.WriteLine("Friend: YES! DO NOT KILL!");
+                                Console.WriteLine("Position: x={0}, y={1}, z={2}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
                                 Console.WriteLine("Points: {0}", targets[i].points);
-                                Console.WriteLine("Status: {0}\n", targets[i].status);
+                                if(targets[i].alive == true)
+                                {
+                                    Console.WriteLine("Status: Not dead . . . yet");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Status: He's dead, Jim");
+                                }
+                                
                             }
                         }
                         break;
-                    case 5: // scoundrels
+                    case 5: // Scoundrels
+                        for (i = 0; i < targets[0].targetCount; i++)
+                        {
+                            if (targets[i].friend == false)
+                            {
+                                Console.WriteLine("\nTarget: {0}", targets[i].name);
+                                Console.WriteLine("Friend: ENEMY! DESTROY! DESTROY!");
+                                Console.WriteLine("Position: x={0}, y={1}, z={2}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
+                                Console.WriteLine("Points: {0}", targets[i].points);
+                                if (targets[i].alive == true)
+                                {
+                                    Console.WriteLine("Status: Not dead . . . yet");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Status: He's dead, Jim");
+                                }
+                            }
+                        }
+                        break;
+                    case 6: // Kill <targetName>
+                        words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+                        tempCounter = 0; // resetting these values
+                        foundName = false;
+
+                        //Finding a Target that matches user's entry 
+                        try
+                        {
+                            for (i = 0; i < targets[0].targetCount; i++)
+                            {
+                                if (targets[i].name.ToUpper() == words[1].ToUpper())
+                                {
+                                    tempCounter = i;
+                                    foundName = true;
+                                }
+                            }                            
+                        }
+                        catch { Console.WriteLine("Don't forget to include a name after 'Kill'"); }
+                       
+                        //Finding if target is friend, enemy, or nonexistent
+                        if(targets[tempCounter].friend == true && foundName == true)
+                        {
+                            Console.WriteLine("What are you doing? Don't shoot our friends!");
+                        }
+                        //Section that kills targets
+                        else if(targets[tempCounter].friend == false && foundName == true)
+                        {
+                            myLauncher.Kill(targets[tempCounter].xCoord, targets[tempCounter].zCoord);
+                            targets[tempCounter].alive = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("That target doesn't exist");
+                        }
+                        break;
+                    case 7: // status
+                        myLauncher.Status();
+                        Console.WriteLine("Status"); // delete this later
+                        break;
+                    case 8: // reload
+                        myLauncher.Reload();
+                        Console.WriteLine("Reload"); // delete this later
+                        break;
+                    case 11: // exit
                         exit = 1;
                         break;
-                    // pass coordinates
+                    // pass coordinates to kill
                     default:
                         Console.WriteLine("Make sure to enter a correct command");
                         break;
@@ -114,9 +196,25 @@ namespace SAD.Core.Algorithms
             {
                 num = 4;
             }
-            else if (userCommand.Length == 4 && userCommand.Substring(0, 4) == "EXIT")
+            else if (userCommand.Length == 10 && userCommand.Substring(0, 10) == "SCOUNDRELS")
             {
                 num = 5;
+            }
+            else if (userCommand.Length >= 4 && userCommand.Substring(0, 4) == "KILL")
+            {
+                num = 6;
+            }
+            else if (userCommand.Length == 6 && userCommand.Substring(0, 6) == "STATUS")
+            {
+                num = 7;
+            }
+            else if (userCommand.Length == 6 && userCommand.Substring(0, 6) == "RELOAD")
+            {
+                num = 8;
+            }
+            else if (userCommand.Length == 4 && userCommand.Substring(0, 4) == "EXIT")
+            {
+                num = 11;
             }
             else
             {

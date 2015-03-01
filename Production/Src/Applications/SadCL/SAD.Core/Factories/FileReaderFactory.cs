@@ -26,8 +26,7 @@ namespace SAD.core.Factories
         {
             readerName = "INI File Reader";
         }
-        //implementation goes here
-
+       
         public Target[] targets;
         public override Target[] readFile(string pathName)
         {
@@ -161,7 +160,6 @@ namespace SAD.core.Factories
         }
         public override Target[] readFile(string pathName)
         {
-            Console.WriteLine("Fake File Reader");
             Target[] fake = TargetManager.getInstance();
             return fake;
         }
