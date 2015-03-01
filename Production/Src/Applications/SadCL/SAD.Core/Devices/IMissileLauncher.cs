@@ -127,11 +127,17 @@ namespace SAD.core.Devices
                 test.command_Up(degrees2);
             }
         }
+
+        public void Reset() 
+        {
+            MissileLauncher test = new MissileLauncher();
+            test.command_reset();
+        }
         public void Reload() { ;}
         public void Kill(double phi, double theta) { ;}
         public void Status() { ;}
 
-        public void Reset() { ;}
+        
         public void getName()
         {
             Console.WriteLine(launcherName);
