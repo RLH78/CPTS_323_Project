@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SAD.core.Devices;
 using SAD.Core.Data;
+using SAD.core.Factories;
 
 namespace SAD.Core.Algorithms
 {
@@ -12,10 +13,9 @@ namespace SAD.Core.Algorithms
     {
         IMissileLauncher myLauncher;
         Target[] targets;
-        public CommandLine(IMissileLauncher Launcher, Target[] targetz)
+        public CommandLine(IMissileLauncher Launcher)
         {
-            myLauncher = Launcher;
-            targets = targetz;
+            myLauncher = Launcher;            
         }
 
         public void runCommandPrompt()
@@ -76,44 +76,54 @@ namespace SAD.Core.Algorithms
                         catch { Console.WriteLine("Make sure to enter the correct number/type of entries"); }
                         break;
                     case 4: // Friends
-                        for (i = 0; i < targets[0].targetCount; i++)
+                        try
                         {
-                            if(targets[i].friend == true)
+                            for (i = 0; i < targets[0].targetCount; i++)
                             {
-                                Console.WriteLine("\nTarget: {0}", targets[i].name);
-                                Console.WriteLine("Friend: YES! DO NOT KILL!");
-                                Console.WriteLine("Position: x={0}, y={1}, z={2}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
-                                Console.WriteLine("Points: {0}", targets[i].points);
-                                if(targets[i].alive == true)
+                                if (targets[i].friend == true)
                                 {
-                                    Console.WriteLine("Status: Not dead . . . yet");
+                                    Console.WriteLine("\nTarget: {0}", targets[i].name);
+                                    Console.WriteLine("Friend: YES! DO NOT KILL!");
+                                    Console.WriteLine("Position: x={0}, y={1}, z={2}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
+                                    Console.WriteLine("Points: {0}", targets[i].points);
+                                    if (targets[i].alive == true)
+                                    {
+                                        Console.WriteLine("Status: Not dead . . . yet");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Status: He's dead, Jim");
+                                    }
                                 }
-                                else
-                                {
-                                    Console.WriteLine("Status: He's dead, Jim");
-                                }
-                                
                             }
                         }
+                        catch { Console.WriteLine("Make sure a file is loaded"); }
                         break;
                     case 5: // Scoundrels
-                        for (i = 0; i < targets[0].targetCount; i++)
+                        try
                         {
-                            if (targets[i].friend == false)
+                            for (i = 0; i < targets[0].targetCount; i++)
                             {
-                                Console.WriteLine("\nTarget: {0}", targets[i].name);
-                                Console.WriteLine("Friend: ENEMY! DESTROY! DESTROY!");
-                                Console.WriteLine("Position: x={0}, y={1}, z={2}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
-                                Console.WriteLine("Points: {0}", targets[i].points);
-                                if (targets[i].alive == true)
+                                if (targets[i].friend == false)
                                 {
-                                    Console.WriteLine("Status: Not dead . . . yet");
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Status: He's dead, Jim");
+                                    Console.WriteLine("\nTarget: {0}", targets[i].name);
+                                    Console.WriteLine("Friend: ENEMY! DESTROY! DESTROY!");
+                                    Console.WriteLine("Position: x={0}, y={1}, z={2}", targets[i].xCoord, targets[i].yCoord, targets[i].zCoord);
+                                    Console.WriteLine("Points: {0}", targets[i].points);
+                                    if (targets[i].alive == true)
+                                    {
+                                        Console.WriteLine("Status: Not dead . . . yet");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Status: He's dead, Jim");
+                                    }
                                 }
                             }
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Make sure a file is loaded");
                         }
                         break;
                     case 6: // Kill <targetName>
@@ -132,24 +142,28 @@ namespace SAD.Core.Algorithms
                                     foundName = true;
                                 }
                             }                            
-                        }
+                        }                         
                         catch { Console.WriteLine("Don't forget to include a name after 'Kill'"); }
-                       
-                        //Finding if target is friend, enemy, or nonexistent
-                        if(targets[tempCounter].friend == true && foundName == true)
+
+                        try
                         {
-                            Console.WriteLine("What are you doing? Don't shoot our friends!");
+                            //Finding if target is friend, enemy, or nonexistent
+                            if (targets[tempCounter].friend == true && foundName == true)
+                            {
+                                Console.WriteLine("What are you doing? Don't shoot our friends!");
+                            }
+                            //Section that kills targets
+                            else if (targets[tempCounter].friend == false && foundName == true)
+                            {
+                                myLauncher.Kill(targets[tempCounter].xCoord, targets[tempCounter].zCoord);
+                                targets[tempCounter].alive = false;
+                            }
+                            else
+                            {
+                                Console.WriteLine("That target doesn't exist");
+                            }
                         }
-                        //Section that kills targets
-                        else if(targets[tempCounter].friend == false && foundName == true)
-                        {
-                            myLauncher.Kill(targets[tempCounter].xCoord, targets[tempCounter].zCoord);
-                            targets[tempCounter].alive = false;
-                        }
-                        else
-                        {
-                            Console.WriteLine("That target doesn't exist");
-                        }
+                        catch { Console.WriteLine("Make sure a file is loaded");}
                         break;
                     case 7: // status
                         myLauncher.Status();
@@ -159,10 +173,24 @@ namespace SAD.Core.Algorithms
                         myLauncher.Reload();
                         Console.WriteLine("Reload"); // delete this later
                         break;
+                    case 9: // reset
+                        myLauncher.Reset();
+                        Console.WriteLine("Reset"); // delete this later
+                        break;
+                    case 10: // load
+                        FileReaderFactory readerFactory = new FileReaderFactory();
+                        FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);
+                        words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+                        try
+                        {
+                            targets = myReader.readFile(words[1]);
+                        }
+                        catch { Console.WriteLine("Did you enter that correctly?"); }
+                      // targets = myReader.readFile("C:\\Users\\Rebecca\\Source\\targets.ini"); //Un-comment this if you don't want to copy/paste the path
+                        break;
                     case 11: // exit
                         exit = 1;
                         break;
-                    // pass coordinates to kill
                     default:
                         Console.WriteLine("Make sure to enter a correct command");
                         break;
@@ -212,6 +240,14 @@ namespace SAD.Core.Algorithms
             {
                 num = 8;
             }
+            else if (userCommand.Length == 5 && userCommand.Substring(0, 5) == "RESET")
+            {
+                num = 9;
+            }
+            else if (userCommand.Length >= 4 && userCommand.Substring(0, 4) == "LOAD")
+            {
+                num = 10;
+            }           
             else if (userCommand.Length == 4 && userCommand.Substring(0, 4) == "EXIT")
             {
                 num = 11;

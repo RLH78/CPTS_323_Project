@@ -48,8 +48,7 @@ namespace SAD.core.Factories
             
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                Console.ReadLine();
+                Console.WriteLine(ex.Message);                
                 return targets;
             }
             
@@ -91,7 +90,7 @@ namespace SAD.core.Factories
 
             //Console.WriteLine(targets[1].name); //test print to see if it loaded correctly
 
-            Console.WriteLine("\nTarget File Loaded");            
+            Console.WriteLine("\nNew Targets Acquired!");            
             return targets;
         }
         private Target[] TargetClassSetUp(string[] data, Target[] target, int counter)
@@ -144,9 +143,7 @@ namespace SAD.core.Factories
             catch
             {
                 Console.WriteLine("WARNING: Some of the data in the target file is not the correct type.\nPlease exit and fix your target file data.");
-            }
-
-            
+            }           
             
             return target;
         }
