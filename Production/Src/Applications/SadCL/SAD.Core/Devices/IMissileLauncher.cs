@@ -207,7 +207,7 @@ namespace SAD.core.Devices
             else
             {
                 Console.WriteLine("Invalid Parameters: phi = -90 to 90 and theta = -10 to 60");
-            }
+            }            
         }
         public void Status() 
         {
