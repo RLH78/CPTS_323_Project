@@ -160,7 +160,7 @@ namespace SAD.core.Devices
             int degrees = 0;
             int degrees2 = 0;
 
-            if (phi <= 0 && phi >= -90 && theta <= 0 && theta >= -10)
+            if (phi <= 0 && theta <= 0)
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
@@ -171,7 +171,7 @@ namespace SAD.core.Devices
                 test.command_Fire();
             }
 
-            else if (phi <= 0 && phi <= -90 && theta >= 0 && theta <= 60)
+            else if (phi <= 0 && theta >= 0)
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
@@ -182,7 +182,7 @@ namespace SAD.core.Devices
                 test.command_Fire();
             }
 
-            else if (phi >= 0 && phi <= 90 && theta <= 0 && theta >= -10)
+            else if (phi >= 0 && theta <= 0)
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
@@ -193,7 +193,7 @@ namespace SAD.core.Devices
                 test.command_Fire();
             }
 
-            else if (phi >= 0 && phi <= 90 && theta >= 0 && theta <= 60)
+            else if (phi >= 0 && theta >= 0)
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
