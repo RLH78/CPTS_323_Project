@@ -30,6 +30,8 @@ namespace SAD.Core.Algorithms
             double phi = 0;
             double theta = 0;
             int i = 0; //iterator
+            int missileNum = 4;
+
             while (exit == 0)
             {
                 Console.WriteLine("\nChoose a Command: ");
@@ -54,7 +56,15 @@ namespace SAD.Core.Algorithms
                 switch (caseNum)
                 {
                     case 1: // Fire
-                        myLauncher.Fire();          
+                        if(missileNum > 0)
+                        {
+                            myLauncher.Fire();
+                        }
+                        else if(missileNum < 1)
+                        {
+                            Console.WriteLine("I just can't do it captain I don't have the fire power!");
+                        }                        
+                        missileNum = missileNum - 1;
                         break;
                     case 2: // Move <phi, theta>
                         words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
@@ -66,13 +76,14 @@ namespace SAD.Core.Algorithms
                         }
                         catch { Console.WriteLine("Make sure to enter the correct number/type of entries"); }
                         break;
-                    case 3: // Moveby <phi, theta>
-                        words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+                    case 3: // Moveby <phi, theta>                        
+                        words = command.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);                        
                         try
-                        {
+                        {                            
                             phi = Convert.ToDouble(words[1]);
                             theta = Convert.ToDouble(words[2]);
                             myLauncher.MoveBy(phi, theta);
+                            
                         }
                         catch { Console.WriteLine("Make sure to enter the correct number/type of entries"); }
                         break;
@@ -170,11 +181,12 @@ namespace SAD.Core.Algorithms
                         break;
                     case 7: // status
                         myLauncher.Status();
-                        Console.WriteLine("Status"); // delete this later
+                        Console.WriteLine("{0} of 4 missiles remaining", missileNum); // delete this later
                         break;
                     case 8: // reload
+                        missileNum = 4;
                         myLauncher.Reload();
-                        Console.WriteLine("Reload"); // delete this later
+                        Console.WriteLine("{0}", missileNum); // delete this later
                         break;
                     case 9: // reset
                         myLauncher.Reset();
