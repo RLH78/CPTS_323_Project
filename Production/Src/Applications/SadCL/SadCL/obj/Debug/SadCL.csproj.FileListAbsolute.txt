@@ -17,3 +17,6 @@ C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\Sa
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SadCL\bin\Debug\USBLib.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SadCL\bin\Debug\SAD.core.pdb
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\SadCL\SadCL\obj\Debug\SadCL.csprojResolveAssemblyReference.cache
+C:\Users\Rebecca\Documents\CPTS_323_Project\Production\Src\Applications\SadCL\SadCL\bin\Debug\SadCL.exe.config
+C:\Users\Rebecca\Documents\CPTS_323_Project\Production\Src\Applications\SadCL\SadCL\obj\Debug\SadCL.exe
+C:\Users\Rebecca\Documents\CPTS_323_Project\Production\Src\Applications\SadCL\SadCL\obj\Debug\SadCL.pdb

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8bff382c-0384-46a0-a998-ca0eb51f8e04"
+  name="core"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a4097d3a-c018-4227-bd76-c7ecf5ef73eb"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSAD.core"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2a768048-0fd2-4ccd-8d60-efe1eedb48ff"
+        LastKnownName="Devices"
+        LastKnownLocation="Package4_2004.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="db35b8ea-aac1-422a-85fb-2a0f7b01a33a"
+        LastKnownName="Data"
+        LastKnownLocation="Package_2006.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="00a0c7b3-d604-433c-802d-cb296c6e07e5"
+        LastKnownName="Factories"
+        LastKnownLocation="Package_2008.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
