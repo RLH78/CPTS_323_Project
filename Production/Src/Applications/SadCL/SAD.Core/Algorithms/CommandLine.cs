@@ -181,16 +181,14 @@ namespace SAD.Core.Algorithms
                         break;
                     case 7: // status
                         myLauncher.Status();
-                        Console.WriteLine("{0} of 4 missiles remaining", missileNum); // delete this later
+                        Console.WriteLine("{0} of 4 missiles remaining", missileNum); 
                         break;
                     case 8: // reload
                         missileNum = 4;
-                        myLauncher.Reload();
-                        Console.WriteLine("{0}", missileNum); // delete this later
+                        myLauncher.Reload();                        
                         break;
                     case 9: // reset
-                        myLauncher.Reset();
-                        Console.WriteLine("Reset"); // delete this later
+                        myLauncher.Reset();                        
                         break;
                     case 10: // load
                         FileReaderFactory readerFactory = new FileReaderFactory();
