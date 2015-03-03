@@ -49,40 +49,49 @@ namespace SAD.core.Devices
             int degrees = 0;
             int degrees2 = 0;
             
-            if (phi < 0 && theta < 0)
+            if (phi <= 0 && phi >= - 90 && theta <= 0 && theta >= -10)
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
-                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));              
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
+                test.command_reset();
                 test.command_Left(degrees);
                 test.command_Down(degrees2);
             }
 
-            else if (phi < 0 && theta > 0)
+            else if (phi <= 0  && phi <= -90 && theta >= 0 && theta <= 60)
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
-                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));                
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
+                test.command_reset();
                 test.command_Left(degrees);
                 test.command_Up(degrees2);
             }
 
-            else if (phi > 0 && theta < 0)
+            else if (phi >= 0  && phi <= 90 && theta <= 0 && theta >= -10)
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
-                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));                
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
+                test.command_reset();
                 test.command_Right(degrees);
                 test.command_Down(degrees2);
             }
             
-            else if (phi > 0 && theta > 0)
+            else if (phi >= 0 && phi <= 90 && theta >= 0 && theta <= 60)
             {
                 MissileLauncher test = new MissileLauncher();
                 degrees = Convert.ToInt32(Math.Abs(phi * 22));
-                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));                
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
+                test.command_reset();
                 test.command_Right(degrees);
                 test.command_Up(degrees2);
+            }
+
+            else
+            {
+                Console.WriteLine("Invalid Parameters: phi = -90 to 90 and theta = -10 to 60");
             }
         }
 
@@ -91,41 +100,48 @@ namespace SAD.core.Devices
             int degrees = 0;
             int degrees2 = 0;
 
-            if (phi < 0 && theta < 0)
+            if (phi <= 0 && phi >= -90 && theta <= 0 && theta >= -10)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 22);
-                degrees2 = Convert.ToInt32(theta * 22);
+                degrees = Convert.ToInt32(Math.Abs(phi * 22));
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
                 test.command_Left(degrees);
                 test.command_Down(degrees2);
             }
 
-            else if (phi < 0 && theta > 0)
+            else if (phi <= 0 && phi <= -90 && theta >= 0 && theta <= 60)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 22);
-                degrees2 = Convert.ToInt32(theta * 22);                
+                degrees = Convert.ToInt32(Math.Abs(phi * 22));
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
                 test.command_Left(degrees);
                 test.command_Up(degrees2);
             }
 
-            else if (phi > 0 && theta < 0)
+            else if (phi >= 0 && phi <= 90 && theta <= 0 && theta >= -10)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 22);
-                degrees2 = Convert.ToInt32(theta * 22);
+                degrees = Convert.ToInt32(Math.Abs(phi * 22));
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));                
                 test.command_Right(degrees);
                 test.command_Down(degrees2);
             }
 
-            else if (phi > 0 && theta > 0)
+            else if (phi >= 0 && phi <= 90 && theta >= 0 && theta <= 60)
             {
                 MissileLauncher test = new MissileLauncher();
-                degrees = Convert.ToInt32(phi * 22);
-                degrees2 = Convert.ToInt32(theta * 22);
+                degrees = Convert.ToInt32(Math.Abs(phi * 22));
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));               
                 test.command_Right(degrees);
                 test.command_Up(degrees2);
             }
+
+            else
+            {
+                Console.WriteLine("Invalid Parameters: phi = -90 to 90 and theta = -10 to 60");
+            }
+
+            
         }
 
         public void Reset() 
@@ -133,14 +149,77 @@ namespace SAD.core.Devices
             MissileLauncher test = new MissileLauncher();
             test.command_reset();
         }
-        public void Reload() { ;}
-        public void Kill(double phi, double theta) { ;}
-        public void Status() { ;}
+        public void Reload(/*int missileCount*/)
+        {
+            //int missileAmt = 4;
+           // MissileLauncher test = new MissileLauncher();
+           // missileCount = missileAmt;
+        }
+        public void Kill(double phi, double theta) 
+        {
+            int degrees = 0;
+            int degrees2 = 0;
+
+            if (phi <= 0 && phi >= -90 && theta <= 0 && theta >= -10)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(Math.Abs(phi * 22));
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
+                test.command_reset();
+                test.command_Left(degrees);
+                test.command_Down(degrees2);
+                test.command_Fire();
+            }
+
+            else if (phi <= 0 && phi <= -90 && theta >= 0 && theta <= 60)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(Math.Abs(phi * 22));
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
+                test.command_reset();
+                test.command_Left(degrees);
+                test.command_Up(degrees2);
+                test.command_Fire();
+            }
+
+            else if (phi >= 0 && phi <= 90 && theta <= 0 && theta >= -10)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(Math.Abs(phi * 22));
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
+                test.command_reset();
+                test.command_Right(degrees);
+                test.command_Down(degrees2);
+                test.command_Fire();
+            }
+
+            else if (phi >= 0 && phi <= 90 && theta >= 0 && theta <= 60)
+            {
+                MissileLauncher test = new MissileLauncher();
+                degrees = Convert.ToInt32(Math.Abs(phi * 22));
+                degrees2 = Convert.ToInt32(Math.Abs(theta * 22));
+                test.command_reset();
+                test.command_Right(degrees);
+                test.command_Up(degrees2);
+                test.command_Fire();
+            }
+
+            else
+            {
+                Console.WriteLine("Invalid Parameters: phi = -90 to 90 and theta = -10 to 60");
+            }
+        }
+        public void Status() 
+        {
+            MissileLauncher test = new MissileLauncher();
+            Console.WriteLine("{0}", launcherName);
+        }
 
         
         public void getName()
         {
-            Console.WriteLine(launcherName);
+            
+            Console.WriteLine("{0} what", launcherName);
         }
     }
 
