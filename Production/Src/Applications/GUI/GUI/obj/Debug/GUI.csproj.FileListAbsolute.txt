@@ -14,3 +14,4 @@ C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\G
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.exe
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache

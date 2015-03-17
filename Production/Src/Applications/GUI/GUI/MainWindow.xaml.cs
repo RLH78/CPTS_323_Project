@@ -36,7 +36,7 @@ namespace GUI
         private void Dream_Cheeky_Checked(object sender, RoutedEventArgs e)
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
-            IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC); 
+            IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC);
         }
         
 
