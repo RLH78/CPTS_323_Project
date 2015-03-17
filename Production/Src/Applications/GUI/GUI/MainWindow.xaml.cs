@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SAD.core.Factories;
+using SAD.core.Devices;
 
 namespace GUI
 {
@@ -27,12 +29,14 @@ namespace GUI
 
         private void Mock_Launcher_Checked(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Hello");
+            MissileLauncherFactory factory = new MissileLauncherFactory();
+            IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.mock); 
         }
 
         private void Dream_Cheeky_Checked(object sender, RoutedEventArgs e)
         {
-
+            MissileLauncherFactory factory = new MissileLauncherFactory();
+            IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC); 
         }
         
 
