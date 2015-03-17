@@ -39,6 +39,38 @@ namespace GUI {
     /// </summary>
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 6 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button Load_File;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 7 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button Get_Targets;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 8 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.RadioButton Mock_Launcher;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 9 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.RadioButton Dream_Cheeky;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -67,6 +99,27 @@ namespace GUI {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.Load_File = ((System.Windows.Controls.Button)(target));
+            return;
+            case 2:
+            this.Get_Targets = ((System.Windows.Controls.Button)(target));
+            return;
+            case 3:
+            this.Mock_Launcher = ((System.Windows.Controls.RadioButton)(target));
+            
+            #line 8 "..\..\MainWindow.xaml"
+            this.Mock_Launcher.Checked += new System.Windows.RoutedEventHandler(this.Mock_Launcher_Checked);
+            
+            #line default
+            #line hidden
+            return;
+            case 4:
+            this.Dream_Cheeky = ((System.Windows.Controls.RadioButton)(target));
+            return;
+            }
             this._contentLoaded = true;
         }
     }
