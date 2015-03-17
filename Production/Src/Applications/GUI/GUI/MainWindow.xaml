@@ -6,7 +6,7 @@
         <Button x:Name="Load_File" Content="Load File" HorizontalAlignment="Left" Height="43" Margin="170,186,0,0" VerticalAlignment="Top" Width="159"/>
         <Button x:Name="Get_Targets" Content="Get Targets" HorizontalAlignment="Left" Height="43" Margin="170,250,0,0" VerticalAlignment="Top" Width="159"/>
         <RadioButton x:Name="Mock_Launcher" Content="Mock" HorizontalAlignment="Left" Height="21" Margin="170,100,0,0" VerticalAlignment="Top" Width="157" FontSize="18" FlowDirection="RightToLeft" Checked="Mock_Launcher_Checked"/>
-        <RadioButton x:Name="Dream_Cheeky" Content="Dream Cheeky" HorizontalAlignment="Left" Height="28" Margin="170,137,0,0" VerticalAlignment="Top" Width="156" FontSize="18" FlowDirection="RightToLeft"/>
+        <RadioButton x:Name="Dream_Cheeky" Content="Dream Cheeky" HorizontalAlignment="Left" Height="28" Margin="170,137,0,0" VerticalAlignment="Top" Width="156" FontSize="18" FlowDirection="RightToLeft" Checked="Dream_Cheeky_Checked"/>
 
     </Grid>
 </Window>

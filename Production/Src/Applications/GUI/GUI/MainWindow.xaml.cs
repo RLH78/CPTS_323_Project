@@ -24,5 +24,17 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void Mock_Launcher_Checked(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Hello");
+        }
+
+        private void Dream_Cheeky_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+        
+
     }
 }
