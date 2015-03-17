@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{8E63BE6F-C594-4D0B-9D65-96EF4CB30C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAD.Core", "..\..\..\..\..\..\..\Documents\CPTS_323_Project\Production\Src\Applications\SadCL\SAD.Core\SAD.Core.csproj", "{A69EB6D6-6DD7-430F-A071-4BCB11E38438}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E63BE6F-C594-4D0B-9D65-96EF4CB30C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E63BE6F-C594-4D0B-9D65-96EF4CB30C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E63BE6F-C594-4D0B-9D65-96EF4CB30C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E63BE6F-C594-4D0B-9D65-96EF4CB30C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69EB6D6-6DD7-430F-A071-4BCB11E38438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69EB6D6-6DD7-430F-A071-4BCB11E38438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69EB6D6-6DD7-430F-A071-4BCB11E38438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69EB6D6-6DD7-430F-A071-4BCB11E38438}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+c:\users\rebecca\documents\visual studio 2013\Projects\GUI\GUI\bin\Debug\GUI.exe.config
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\GUI.exe.config
