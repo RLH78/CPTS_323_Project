@@ -38,7 +38,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="USBLib">
-      <HintPath>..\GUI\bin\Debug\USBLib.dll</HintPath>
+      <HintPath>..\..\..\Library\USBLib.DLL</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

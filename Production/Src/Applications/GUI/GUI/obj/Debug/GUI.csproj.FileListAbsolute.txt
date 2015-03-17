@@ -2,9 +2,6 @@ c:\users\rebecca\documents\visual studio 2013\Projects\GUI\GUI\bin\Debug\GUI.exe
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\GUI.exe.config
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.exe
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.pdb
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\GUI.exe.config
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\GUI.exe
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\GUI.pdb
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\MainWindow.baml
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\MainWindow.g.cs
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\App.g.cs
@@ -12,6 +9,12 @@ C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\G
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.g.resources
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.Properties.Resources.resources
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\GUI.exe.config
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\GUI.exe
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\GUI.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\SAD.Core.dll
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\USBLib.DLL
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\Debug\SAD.Core.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.exe
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.pdb
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache

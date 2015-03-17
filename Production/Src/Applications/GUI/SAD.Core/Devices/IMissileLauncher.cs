@@ -35,14 +35,14 @@ namespace SAD.core.Devices
         public DreamCheeky()
         {
             launcherName = "KillShotLauncher!";
-            test = new MissileLauncher();
+            
             statusPhi = 0;
             statusTheta = 0;
 
         }
         public string launcherName;
 
-        public MissileLauncher test;
+        
 
         public int statusPhi;
 
@@ -50,6 +50,7 @@ namespace SAD.core.Devices
 
         public void Fire()
         {
+           MissileLauncher test = new MissileLauncher();
            test.command_Fire();            
         }
 
@@ -57,6 +58,7 @@ namespace SAD.core.Devices
         {
             int degrees = 0;
             int degrees2 = 0;
+            MissileLauncher test = new MissileLauncher();
 
             if (phi <= 0 && phi >= -90 && theta <= 0 && theta >= -10)
             {
@@ -104,6 +106,7 @@ namespace SAD.core.Devices
         {
             int degrees = 0;
             int degrees2 = 0;
+            MissileLauncher test = new MissileLauncher();
 
             if (phi <= 0 && phi >= -90 && theta <= 0 && theta >= -10)
             {
@@ -147,6 +150,7 @@ namespace SAD.core.Devices
 
         public void Reset()
         {
+            MissileLauncher test = new MissileLauncher();
             test.command_reset();
         }
         public void Reload(/*int missileCount*/)
@@ -159,6 +163,7 @@ namespace SAD.core.Devices
         {
             int degrees = 0;
             int degrees2 = 0;
+            MissileLauncher test = new MissileLauncher();
 
             if (phi <= 0 && theta <= 0)
             {
