@@ -37,13 +37,21 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="USBLib">
+      <HintPath>..\GUI\bin\Debug\USBLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\CommandLine.cs" />
+    <Compile Include="Data\Target.cs" />
+    <Compile Include="Data\TargetManager.cs" />
+    <Compile Include="Devices\IMissileLauncher.cs" />
+    <Compile Include="Devices\MissileLauncher.cs" />
+    <Compile Include="Factories\FileReaderFactory.cs" />
+    <Compile Include="Factories\MissileLauncherFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
