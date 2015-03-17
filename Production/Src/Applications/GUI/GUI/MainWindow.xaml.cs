@@ -30,13 +30,26 @@ namespace GUI
         private void Mock_Launcher_Checked(object sender, RoutedEventArgs e)
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
-            IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.mock); 
+            IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.mock);
+            if (Mock_Launcher.IsChecked == true)
+            {
+                MessageBox.Show("Mock Launcher created");
+            }
         }
 
         private void Dream_Cheeky_Checked(object sender, RoutedEventArgs e)
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
             IMissileLauncher myLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC);
+            if (Dream_Cheeky.IsChecked == true)
+            {
+                MessageBox.Show("Dream Cheeky created");
+            }
+        }
+
+        private void Get_Targets_Click(object sender, RoutedEventArgs e)
+        {
+
         }
         
 
