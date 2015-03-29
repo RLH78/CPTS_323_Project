@@ -13,5 +13,12 @@ namespace GUI
     /// </summary>
     public partial class App : Application
     {
+        void App_Startup(object sender, StartupEventArgs e)
+        {
+            LauncherSelect myWindow = new LauncherSelect();
+            myWindow.Top = 100;
+            myWindow.Left = 400;
+            myWindow.Show();
+        }
     }
 }
