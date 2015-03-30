@@ -72,6 +72,7 @@
     <Compile Include="LauncherSelect.xaml.cs">
       <DependentUpon>LauncherSelect.xaml</DependentUpon>
     </Compile>
+    <Compile Include="launcherViewModel.cs" />
     <Compile Include="mainViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

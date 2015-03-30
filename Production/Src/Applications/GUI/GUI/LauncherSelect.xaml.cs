@@ -53,7 +53,7 @@ namespace GUI
             aLauncher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC);
             if (Dream_Cheeky.IsChecked == true)
             {
-                MessageBox.Show("Dream Cheeky created");
+                MessageBox.Show("DreamCheeky created");
                 launcherType = setToDC;
                 MainWindow win2 = new MainWindow();
                 win2.Show();
