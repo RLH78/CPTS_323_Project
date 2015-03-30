@@ -72,12 +72,14 @@
     <Compile Include="LauncherSelect.xaml.cs">
       <DependentUpon>LauncherSelect.xaml</DependentUpon>
     </Compile>
+    <Compile Include="mainViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

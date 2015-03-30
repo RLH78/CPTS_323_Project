@@ -28,11 +28,5 @@ namespace GUI
 
 
 
-        private void Get_Targets_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        
-
     }
 }

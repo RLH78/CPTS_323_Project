@@ -1,12 +1,11 @@
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.dll
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\SAD.Core.dll
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\SAD.Core.pdb
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\USBLib.DLL
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.pdb
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\SAD.Core.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\SAD.Core.pdb
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\USBLib.DLL
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.csprojResolveAssemblyReference.cache
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.pdb
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.csprojResolveAssemblyReference.cache
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\SAD.Core.dll
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\SAD.Core.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\USBLib.DLL
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.dll
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.pdb
