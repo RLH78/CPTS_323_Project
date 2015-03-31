@@ -20,6 +20,7 @@ namespace GUI
         myCommand createDC;
         myCommand createMock;
         myCommand fire;
+        myCommand reload;
 
         public IMissileLauncher launcher_view_Launcher { get; private set; }
 
@@ -63,6 +64,17 @@ namespace GUI
             }
         }
 
+        public ICommand _Reload_Missiles
+        {
+            get
+            {
+                if (reload == null)
+                {
+                    reload = new myCommand(param => reloadLauncher());
+                }
+                return reload;
+            }
+        }
         
        /// <summary>
         /// Implementation Functions
@@ -102,7 +114,12 @@ namespace GUI
             win.Close();
             win2.Show();
         }
-     
+        
+        public void reloadLauncher()
+        {
+            missileCount = 4;
+            OnPropertyChanged("missileCount");
+        }
     }
 
 

@@ -11,6 +11,15 @@ namespace GUI
     /// </summary>
     class targetViewModel
     {
-        //
+        public targetViewModel()
+        {
+
+        }
+
+
+
+
+
+
     }
 }
