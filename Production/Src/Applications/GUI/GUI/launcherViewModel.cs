@@ -21,6 +21,11 @@ namespace GUI
         myCommand createMock;
         myCommand fire;
         myCommand reload;
+        myCommand moveUp;
+        myCommand moveDown; 
+        myCommand moveLeft; 
+        myCommand moveRight;
+
 
         public IMissileLauncher launcher_view_Launcher { get; private set; }
 
@@ -73,6 +78,51 @@ namespace GUI
                 return reload;
             }
         }
+
+        public ICommand _Move_Up
+        {
+            get
+            {
+                if (moveUp == null)
+                {
+                    moveUp = new myCommand(param => moveLauncherUp());
+                }
+                return moveUp;
+            }
+        }
+        public ICommand _Move_Down
+        {
+            get
+            {
+                if (moveDown == null)
+                {
+                    moveDown = new myCommand(param => moveLauncherDown());
+                }
+                return moveDown;
+            }
+        }
+        public ICommand _Move_Left
+        {
+            get
+            {
+                if (moveLeft == null)
+                {
+                    moveLeft = new myCommand(param => moveLauncherLeft());
+                }
+                return moveLeft;
+            }
+        }
+        public ICommand _Move_Right
+        {
+            get
+            {
+                if (moveRight == null)
+                {
+                    moveRight = new myCommand(param => moveLauncherRight());
+                }
+                return moveRight;
+            }
+        }
         
        /// <summary>
         /// Implementation Functions
@@ -81,7 +131,7 @@ namespace GUI
         {
             if (missileCount > 0)
             {
-              //  launcher_view_Launcher.Fire();
+              launcher_view_Launcher.Fire();
                 
                 missileCount = missileCount - 1;
                 OnPropertyChanged("missileCount");
@@ -117,6 +167,22 @@ namespace GUI
             missileCount = 4;
           //  launcher_view_Launcher.Reload();
             OnPropertyChanged("missileCount");
+        }
+        public void moveLauncherUp()
+        {
+            launcher_view_Launcher.MoveUp();
+        }
+        public void moveLauncherDown()
+        {
+            launcher_view_Launcher.MoveDown();
+        }
+        public void moveLauncherLeft()
+        {
+            launcher_view_Launcher.MoveLeft();
+        }
+        public void moveLauncherRight()
+        {
+            launcher_view_Launcher.MoveRight();
         }
     }
 
