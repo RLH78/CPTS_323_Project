@@ -25,7 +25,34 @@
         <TextBox x:Name="Timer" HorizontalAlignment="Left" Height="20" Margin="189,2,0,0" TextWrapping="Wrap" Text="Timer" VerticalAlignment="Top" Width="124" Grid.Column="1"/>
         <TextBox x:Name="Position" HorizontalAlignment="Left" Height="21" Margin="381,4,0,0" TextWrapping="Wrap" Text="Position (phi, theta)" VerticalAlignment="Top" Width="117" Grid.Column="1" Grid.Row="2"/>
         <TextBox x:Name="Score" HorizontalAlignment="Left" Height="21" Margin="2,4,0,0" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="117" Grid.Row="2" Grid.Column="1"/>
-        <TextBox x:Name="Missiles" HorizontalAlignment="Left" Height="21" Margin="191,4,0,0" TextWrapping="Wrap" Text="Missiles Left:" VerticalAlignment="Top" Width="117" Grid.Row="2" Grid.Column="1"/>
+
+        <TextBox 
+            x:Name="Missiles" 
+            HorizontalAlignment="Left" 
+            Height="21" 
+            Margin="191,4,0,0" 
+            TextWrapping="Wrap" 
+            Text="Missiles Left: " 
+            IsReadOnly="True"
+            VerticalAlignment="Top" 
+            Width="117" 
+            Grid.Row="2" 
+            Grid.Column="1"/>
+        <TextBox 
+            x:Name="MissilesDisplay" 
+            DataContext="{StaticResource ResourceKey=launcherModel}" 
+            HorizontalAlignment="Left"
+            Height="18"
+            Margin="269,5,0,0" 
+            TextWrapping="Wrap" 
+            IsReadOnly="True"
+            Text="{Binding missileCount}"             
+            BorderThickness=".01"
+            VerticalAlignment="Top" 
+            Width="39" 
+            Grid.Row="2" 
+            Grid.Column="1" 
+            RenderTransformOrigin="2.784,-1.619"/>
         <TextBox x:Name="Game" HorizontalAlignment="Left" Height="20" Margin="189,25,0,0" TextWrapping="Wrap" Text="Game: " VerticalAlignment="Top" Width="124" Grid.Column="1"/>
         <Button Content="Fire" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Fire_Missile}" HorizontalAlignment="Left" Height="20" Margin="244,59,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
         <Button Content="Right" HorizontalAlignment="Left" Height="20" Margin="269,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
@@ -33,10 +60,12 @@
         <Button Content="Up" HorizontalAlignment="Left" Height="20" Margin="244,34,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
         <Button Content="Down" HorizontalAlignment="Left" Height="20" Margin="244,84,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
         <MediaElement Source="none" HorizontalAlignment="Left" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1" LoadedBehavior="Play"/>
+
         <ComboBox DataContext="{StaticResource ResourceKey=MainModel}"  Background="AliceBlue" Text="Load" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Width="130">
             <ComboBoxItem Content="                   File" Background="AliceBlue"  ></ComboBoxItem>
             <ComboBoxItem Content="                   Server" Background="AliceBlue"></ComboBoxItem>
         </ComboBox>
+
         <Label Content="Load from:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="77" FontWeight="Bold"/>
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load from Server" Command="{Binding _Show_Server_Message}" Grid.Column="2" HorizontalAlignment="Left" Margin="33,13,0,0" VerticalAlignment="Top" Width="99"/>
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load INI FIle" Command="{Binding _load_INI_File}" Grid.Column="1" HorizontalAlignment="Left" Margin="430,14,0,0" VerticalAlignment="Top" Width="98" Grid.ColumnSpan="2"/>

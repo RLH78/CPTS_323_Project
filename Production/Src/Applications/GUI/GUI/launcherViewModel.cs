@@ -23,7 +23,7 @@ namespace GUI
 
         public IMissileLauncher launcher_view_Launcher { get; private set; }
 
-        private int missileCount { get; set; }
+        public int missileCount { get; set; }
 
         /// <summary>
         /// ICommands
@@ -63,7 +63,7 @@ namespace GUI
             }
         }
 
-
+        
        /// <summary>
         /// Implementation Functions
         /// </summary>
@@ -71,8 +71,10 @@ namespace GUI
         {
             if (missileCount > 0)
             {
-                launcher_view_Launcher.Fire();
+              //  launcher_view_Launcher.Fire();
+                
                 missileCount = missileCount - 1;
+                OnPropertyChanged("missileCount");
             }
             else if (missileCount < 1)
             {

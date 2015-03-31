@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GUI
 {
+    /// <summary>
+    /// Clear, Friend, Foe
+    /// </summary>
     class targetViewModel
     {
         //
