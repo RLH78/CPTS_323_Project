@@ -17,9 +17,9 @@ namespace GUI
             missileCount = 4;
         }
 
-        myDCCreator createDC;
-        myMockCreator createMock;
-        myFire fire;
+        myCommand createDC;
+        myCommand createMock;
+        myCommand fire;
 
         public IMissileLauncher launcher_view_Launcher { get; private set; }
 
@@ -34,7 +34,7 @@ namespace GUI
             {
                 if (createDC == null)
                 {
-                    createDC = new myDCCreator(param => DreamCheekyCreate());
+                    createDC = new myCommand(param => DreamCheekyCreate());
                 }
                 return createDC;
             }
@@ -45,7 +45,7 @@ namespace GUI
             {
                 if (createMock == null)
                 {
-                    createMock = new myMockCreator(param => MockCreate());
+                    createMock = new myCommand(param => MockCreate());
                 }
                 return createMock;
             }
@@ -57,7 +57,7 @@ namespace GUI
             {
                 if (fire == null)
                 {
-                    fire = new myFire(param => fireZeMissile());
+                    fire = new myCommand(param => fireZeMissile());
                 }
                 return fire;
             }
@@ -105,114 +105,6 @@ namespace GUI
      
     }
 
-    public class myDCCreator : ICommand
-    {
-        readonly Action<object> _ActionToExecute;
-        readonly Predicate<object> _ActionCanExecute;
-        public myDCCreator(Action<object> inActionToExecute)
-            : this(inActionToExecute, null)
-        {
-            // m_model = model;
-        }
 
-        public myDCCreator(Action<object> inActionToExecute, Predicate<object> inActionCanExecute)
-        {
-            if (inActionToExecute == null)
-                throw new ArgumentNullException("execute");
-
-            _ActionToExecute = inActionToExecute;
-            _ActionCanExecute = inActionCanExecute;
-        }
-
-        public bool CanExecute(object parameter)
-        {
-            // throw new NotImplementedException();
-            return _ActionCanExecute == null ? true : _ActionCanExecute(parameter);
-        }
-
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
-
-        public void Execute(object parameter)
-        {
-            // throw new NotImplementedException();
-            _ActionToExecute(parameter);
-        }
-    }
-
-    public class myMockCreator : ICommand
-    {
-        readonly Action<object> _ActionToExecute;
-        readonly Predicate<object> _ActionCanExecute;
-        public myMockCreator(Action<object> inActionToExecute)
-            : this(inActionToExecute, null)
-        {
-            // m_model = model;
-        }
-
-        public myMockCreator(Action<object> inActionToExecute, Predicate<object> inActionCanExecute)
-        {
-            if (inActionToExecute == null)
-                throw new ArgumentNullException("execute");
-
-            _ActionToExecute = inActionToExecute;
-            _ActionCanExecute = inActionCanExecute;
-        }
-
-        public bool CanExecute(object parameter)
-        {
-            return _ActionCanExecute == null ? true : _ActionCanExecute(parameter);
-        }
-
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
-
-        public void Execute(object parameter)
-        {
-            _ActionToExecute(parameter);
-        }
-    }
-
-    public class myFire : ICommand
-    {
-        readonly Action<object> _ActionToExecute;
-        readonly Predicate<object> _ActionCanExecute;
-        public myFire(Action<object> inActionToExecute)
-            : this(inActionToExecute, null)
-        {
-            // m_model = model;
-        }
-
-        public myFire(Action<object> inActionToExecute, Predicate<object> inActionCanExecute)
-        {
-            if (inActionToExecute == null)
-                throw new ArgumentNullException("execute");
-
-            _ActionToExecute = inActionToExecute;
-            _ActionCanExecute = inActionCanExecute;
-        }
-
-        public bool CanExecute(object parameter)
-        {
-            return _ActionCanExecute == null ? true : _ActionCanExecute(parameter);
-        }
-
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
-
-        public void Execute(object parameter)
-        {
-            _ActionToExecute(parameter);
-        }
-    }
    
 }

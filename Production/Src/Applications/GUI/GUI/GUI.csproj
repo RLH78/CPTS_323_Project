@@ -60,6 +60,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="myCommand.cs" />
     <Compile Include="targetViewModel.cs" />
     <Page Include="LauncherSelect.xaml">
       <SubType>Designer</SubType>

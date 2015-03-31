@@ -25,11 +25,10 @@ namespace GUI
         }
         private IMissileLauncher myLauncher;
         Target[] targets;
-
         string LoadServerMessage = "This option is unavailable at this time";
 
-        myServerMessage showServerMessage;
-        myINIFileLoader fileLoader;
+        myCommand showServerMessage;
+        myCommand fileLoader;
 
         public ICommand _Show_Server_Message
         {
@@ -37,7 +36,7 @@ namespace GUI
             {
                 if (showServerMessage == null)
                 {
-                    showServerMessage = new myServerMessage(param => MessageBox.Show(_Load_Server_Message));
+                    showServerMessage = new myCommand(param => MessageBox.Show(_Load_Server_Message));
                 }
                 return showServerMessage;
             }
@@ -49,7 +48,7 @@ namespace GUI
             {
                 if (fileLoader == null)
                 {
-                    fileLoader = new myINIFileLoader(param => loadINIFile());
+                    fileLoader = new myCommand(param => loadINIFile());
                 }
                 return fileLoader;
             }
@@ -101,77 +100,5 @@ namespace GUI
 
     }
 
-    public class myServerMessage : ICommand
-    {
-        readonly Action<object> _ActionToExecute;
-        readonly Predicate<object> _ActionCanExecute;
-        public myServerMessage(Action<object> inActionToExecute) 
-            : this(inActionToExecute, null)
-        {
-           // m_model = model;
-        }
 
-        public myServerMessage(Action<object> inActionToExecute, Predicate<object> inActionCanExecute)
-        {
-            if (inActionToExecute == null)
-                throw new ArgumentNullException("execute");
-
-            _ActionToExecute = inActionToExecute;
-            _ActionCanExecute = inActionCanExecute;
-        }
-
-        public bool CanExecute(object parameter)
-        {
-           // throw new NotImplementedException();
-            return _ActionCanExecute == null ? true : _ActionCanExecute(parameter);
-        }
-
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
-
-        public void Execute(object parameter)
-        {
-           // throw new NotImplementedException();
-            _ActionToExecute(parameter);
-        }
-    }
-
-    public class myINIFileLoader : ICommand
-    {
-        readonly Action<object> _ActionToExecute;
-        readonly Predicate<object> _ActionCanExecute;
-        public myINIFileLoader(Action<object> inActionToExecute)
-            : this(inActionToExecute, null)
-        {
-            // m_model = model;
-        }
-
-        public myINIFileLoader(Action<object> inActionToExecute, Predicate<object> inActionCanExecute)
-        {
-            if (inActionToExecute == null)
-                throw new ArgumentNullException("execute");
-
-            _ActionToExecute = inActionToExecute;
-            _ActionCanExecute = inActionCanExecute;
-        }
-
-        public bool CanExecute(object parameter)
-        {
-            return _ActionCanExecute == null ? true : _ActionCanExecute(parameter);
-        }
-
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
-
-        public void Execute(object parameter)
-        {
-            _ActionToExecute(parameter);
-        }
-    }
 }
