@@ -14,13 +14,16 @@ namespace GUI
     {
         public launcherViewModel()
         {
-            //
+            missileCount = 4;
         }
 
         myDCCreator createDC;
         myMockCreator createMock;
+        myFire fire;
 
         public IMissileLauncher launcher_view_Launcher { get; private set; }
+
+        private int missileCount { get; set; }
 
         /// <summary>
         /// ICommands
@@ -48,11 +51,35 @@ namespace GUI
             }
         }
 
-       
-        
-        /// <summary>
+        public ICommand _Fire_Missile
+        {
+            get
+            {
+                if (fire == null)
+                {
+                    fire = new myFire(param => fireZeMissile());
+                }
+                return fire;
+            }
+        }
+
+
+       /// <summary>
         /// Implementation Functions
         /// </summary>
+        public void fireZeMissile()
+        {
+            if (missileCount > 0)
+            {
+                launcher_view_Launcher.Fire();
+                missileCount = missileCount - 1;
+            }
+            else if (missileCount < 1)
+            {
+                MessageBox.Show("I just can't do it captain! I don't have the fire power!");
+            }
+            
+        }
         public void DreamCheekyCreate()
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
@@ -150,6 +177,40 @@ namespace GUI
         }
     }
 
- 
+    public class myFire : ICommand
+    {
+        readonly Action<object> _ActionToExecute;
+        readonly Predicate<object> _ActionCanExecute;
+        public myFire(Action<object> inActionToExecute)
+            : this(inActionToExecute, null)
+        {
+            // m_model = model;
+        }
+
+        public myFire(Action<object> inActionToExecute, Predicate<object> inActionCanExecute)
+        {
+            if (inActionToExecute == null)
+                throw new ArgumentNullException("execute");
+
+            _ActionToExecute = inActionToExecute;
+            _ActionCanExecute = inActionCanExecute;
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            return _ActionCanExecute == null ? true : _ActionCanExecute(parameter);
+        }
+
+        public event EventHandler CanExecuteChanged
+        {
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
+        }
+
+        public void Execute(object parameter)
+        {
+            _ActionToExecute(parameter);
+        }
+    }
    
 }

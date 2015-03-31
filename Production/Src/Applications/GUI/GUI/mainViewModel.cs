@@ -68,7 +68,7 @@ namespace GUI
             FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);            
             try
             {                
-                targets = myReader.readFile(openFileDialog.FileName);
+                targets = myReader.readFile(openFileDialog.FileName);                
             }
             catch { MessageBox.Show("Error Loading File"); }
             if (worked == true)

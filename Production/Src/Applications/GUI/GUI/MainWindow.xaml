@@ -8,6 +8,7 @@
 
     <Window.Resources>
         <gui:mainViewModel x:Key="MainModel" />
+        <gui:launcherViewModel x:Key="launcherModel" />
         <VisualBrush x:Key="myBrush">
             <VisualBrush.Visual>
                 <Grid>
@@ -26,7 +27,7 @@
         <TextBox x:Name="Score" HorizontalAlignment="Left" Height="21" Margin="2,4,0,0" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="117" Grid.Row="2" Grid.Column="1"/>
         <TextBox x:Name="Missiles" HorizontalAlignment="Left" Height="21" Margin="191,4,0,0" TextWrapping="Wrap" Text="Missiles Left:" VerticalAlignment="Top" Width="117" Grid.Row="2" Grid.Column="1"/>
         <TextBox x:Name="Game" HorizontalAlignment="Left" Height="20" Margin="189,25,0,0" TextWrapping="Wrap" Text="Game: " VerticalAlignment="Top" Width="124" Grid.Column="1"/>
-        <Button Content="Fire" HorizontalAlignment="Left" Height="20" Margin="244,59,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
+        <Button Content="Fire" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Fire_Missile}" HorizontalAlignment="Left" Height="20" Margin="244,59,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
         <Button Content="Right" HorizontalAlignment="Left" Height="20" Margin="269,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
         <Button Content="Left" HorizontalAlignment="Left" Height="20" Margin="219,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
         <Button Content="Up" HorizontalAlignment="Left" Height="20" Margin="244,34,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
