@@ -51,7 +51,6 @@ namespace GUI
                 return createMock;
             }
         }
-
         public ICommand _Fire_Missile
         {
             get
@@ -63,7 +62,6 @@ namespace GUI
                 return fire;
             }
         }
-
         public ICommand _Reload_Missiles
         {
             get
@@ -114,10 +112,10 @@ namespace GUI
             win.Close();
             win2.Show();
         }
-        
         public void reloadLauncher()
         {
             missileCount = 4;
+          //  launcher_view_Launcher.Reload();
             OnPropertyChanged("missileCount");
         }
     }
