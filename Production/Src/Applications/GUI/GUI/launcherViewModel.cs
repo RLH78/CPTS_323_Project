@@ -19,8 +19,12 @@ namespace GUI
 
         myDCCreator createDC;
         myMockCreator createMock;
+
         public IMissileLauncher launcher_view_Launcher { get; private set; }
 
+        /// <summary>
+        /// ICommands
+        /// </summary>
         public ICommand _create_DC_Command
         {
             get
@@ -43,17 +47,22 @@ namespace GUI
                 return createMock;
             }
         }
+
+       
+        
+        /// <summary>
+        /// Implementation Functions
+        /// </summary>
         public void DreamCheekyCreate()
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
             launcher_view_Launcher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC);
-            MessageBox.Show("DreamCheeky created YAY");
+            MessageBox.Show("DreamCheeky created");
             MainWindow win2 = new MainWindow();            
             Window win = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.Name == "LauncherSelectName");
             win.Close();  
             win2.Show(); 
         }  
-
         public void MockCreate()
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
@@ -64,6 +73,7 @@ namespace GUI
             win.Close();
             win2.Show();
         }
+     
     }
 
     public class myDCCreator : ICommand
@@ -104,7 +114,6 @@ namespace GUI
         }
     }
 
-
     public class myMockCreator : ICommand
     {
         readonly Action<object> _ActionToExecute;
@@ -140,5 +149,7 @@ namespace GUI
             _ActionToExecute(parameter);
         }
     }
+
+ 
    
 }

@@ -38,7 +38,7 @@
         </ComboBox>
         <Label Content="Load from:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="77" FontWeight="Bold"/>
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load from Server" Command="{Binding _Show_Server_Message}" Grid.Column="2" HorizontalAlignment="Left" Margin="33,13,0,0" VerticalAlignment="Top" Width="99"/>
-        <Button Content="Load INI FIle" Grid.Column="1" HorizontalAlignment="Left" Margin="430,14,0,0" VerticalAlignment="Top" Width="98" Grid.ColumnSpan="2"/>
+        <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load INI FIle" Command="{Binding _load_INI_File}" Grid.Column="1" HorizontalAlignment="Left" Margin="430,14,0,0" VerticalAlignment="Top" Width="98" Grid.ColumnSpan="2"/>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
