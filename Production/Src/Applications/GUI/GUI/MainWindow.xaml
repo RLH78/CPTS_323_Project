@@ -9,6 +9,7 @@
     <Window.Resources>
         <gui:mainViewModel x:Key="MainModel" />
         <gui:launcherViewModel x:Key="launcherModel" />
+        <!--gui:targetViewModel x:Key="targetModel" /-->
 
         <VisualBrush x:Key="myBrush">
             <VisualBrush.Visual>
@@ -23,7 +24,7 @@
 
         <TextBox HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="Foe" TextAlignment="Center" VerticalAlignment="Top" Width="140" Grid.Column="2" Grid.Row="1"/>
         <ListBox
-            ItemsSource="{Binding Targets}" 
+            ItemsSource="{Binding targets}"            
             SelectedItem=""
             Grid.Row="1"
             Grid.Column="2" Margin="0,23,0,0"
@@ -31,10 +32,17 @@
         </ListBox>
         <TextBox HorizontalAlignment="Right" Height="18" TextWrapping="Wrap" Text="Friend" TextAlignment="Center" VerticalAlignment="Top" Width="150" Grid.Row="1" />
         <ListBox
-            ItemsSource="{Binding Targets}" 
-            SelectedItem=""
+            ItemsSource="{Binding Targets}"       
+            
             Grid.Row="1" Margin="0,23,0,0"
             >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
         <TextBox x:Name="Timer" HorizontalAlignment="Left" Height="20" Margin="189,2,0,0" TextWrapping="Wrap" Text="Timer" VerticalAlignment="Top" Width="124" Grid.Column="1"/>
         <TextBox x:Name="Position"

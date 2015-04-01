@@ -10,7 +10,6 @@ using System.Windows.Input;
 using SAD.core.Devices;
 using System.Windows;
 using SAD.core.Factories;
-using System.Windows.Input;
 using SAD.Core.Data;
 
 namespace GUI
@@ -23,8 +22,8 @@ namespace GUI
            // LauncherSelect launcher = new LauncherSelect();
            // myLauncher = launcher.aLauncher;
         }
-        
-        Target[] targets;
+
+        public Target[] targets { get; set; }
         string LoadServerMessage = "This option is unavailable at this time";
 
         myCommand showServerMessage;

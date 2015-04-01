@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 // stores information about target
 namespace SAD.Core.Data
 {
-    public class Target
+    public class Target 
     {
         public Target()
         {

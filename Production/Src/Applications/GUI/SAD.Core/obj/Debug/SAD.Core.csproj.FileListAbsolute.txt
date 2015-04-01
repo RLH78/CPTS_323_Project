@@ -43,6 +43,5 @@ C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\GalaSoft.MvvmLight.Platform.xml
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.csprojResolveAssemblyReference.cache
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.pdb
