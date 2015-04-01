@@ -24,6 +24,11 @@ C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\S
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\SAD.Core.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\SAD.Core.pdb
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Controls.dll
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.dll
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Imaging.dll
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Math.dll
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Video.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Emgu.CV.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Emgu.CV.GPU.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Emgu.CV.ML.dll
@@ -35,6 +40,11 @@ C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\System.Windows.Interactivity.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\USBLib.DLL
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.xml
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Controls.xml
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Imaging.xml
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Math.xml
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Video.xml
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\GalaSoft.MvvmLight.pdb
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\GalaSoft.MvvmLight.xml
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
@@ -43,5 +53,6 @@ C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\GalaSoft.MvvmLight.Platform.xml
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.csprojResolveAssemblyReference.cache
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\Debug\SAD.Core.pdb

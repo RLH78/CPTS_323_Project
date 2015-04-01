@@ -79,7 +79,13 @@
             Grid.Column="1" 
             RenderTransformOrigin="2.784,-1.619"/>
 
-        <TextBox x:Name="Game" HorizontalAlignment="Left" Height="20" Margin="189,25,0,0" TextWrapping="Wrap" Text="Game: " VerticalAlignment="Top" Width="124" Grid.Column="1"/>
+        <TextBox x:Name="Game" 
+                 HorizontalAlignment="Left" 
+                 Height="20" Margin="189,25,0,0" 
+                 TextWrapping="Wrap" Text="Game: " 
+                 VerticalAlignment="Top" 
+                 Width="124" 
+                 Grid.Column="1"/>
         <Button Content="Fire" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Fire_Missile}" HorizontalAlignment="Left" Height="20" Margin="232,60,0,0" VerticalAlignment="Top" Width="41" Grid.Column="1" Grid.Row="2" FontWeight="Bold" Background="#FFE81A1A"/>
         <Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="278,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/>
         <Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="207,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>

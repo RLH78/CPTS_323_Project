@@ -96,7 +96,7 @@ namespace GUI
             }
         }
 
-        private void TakePicture()
+        public void TakePicture()
         {
             if (m_capture == null)
                 m_capture = new Capture(0);
@@ -104,7 +104,7 @@ namespace GUI
             // take a picture
 
             var image = m_capture.QueryFrame();
-            //image.Save(@"c:\data\test.png");
+            image.Save(@"C:\Users\test.png");
 
             var wpfImage = ConvertImageToBitmap(image);
             CameraImage = wpfImage;
