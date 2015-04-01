@@ -10,7 +10,13 @@ using System.Windows.Input;
 using SAD.core.Devices;
 using System.Windows;
 using SAD.core.Factories;
+using Emgu.CV;
+using Emgu.CV.CvEnum;
+using Emgu.CV.Structure;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using SAD.Core.Data;
+using System.Runtime.InteropServices;
 
 namespace GUI
 {  
@@ -19,15 +25,18 @@ namespace GUI
     {
         public mainViewModel()
         {
-           // LauncherSelect launcher = new LauncherSelect();
-           // myLauncher = launcher.aLauncher;
+            
         }
 
         public Target[] targets { get; set; }
         string LoadServerMessage = "This option is unavailable at this time";
 
+        private BitmapSource m_cameraImage;
+        private Capture m_capture;
+
         myCommand showServerMessage;
         myCommand fileLoader;
+        myCommand TakePictureCommand;
 
         public ICommand _Show_Server_Message
         {
@@ -52,11 +61,23 @@ namespace GUI
                 return fileLoader;
             }
         }
-
+        public ICommand Take_Picture
+        {
+            get
+            {
+                if (TakePictureCommand == null)
+                {
+                    TakePictureCommand = new myCommand(param => TakePicture());
+                }
+                return TakePictureCommand;
+            }
+        }
         public string _Load_Server_Message
         {
             get { return LoadServerMessage; }
         }
+
+
         public void loadINIFile()
         {
             var openFileDialog = new Ookii.Dialogs.Wpf.VistaOpenFileDialog();
@@ -74,15 +95,66 @@ namespace GUI
                 MessageBox.Show("Successfully loaded: " + openFileDialog.FileName);
             }
         }
+
+        private void TakePicture()
+        {
+            if (m_capture == null)
+                m_capture = new Capture(0);
+
+            // take a picture
+
+            var image = m_capture.QueryFrame();
+            //image.Save(@"c:\data\test.png");
+
+            var wpfImage = ConvertImageToBitmap(image);
+            CameraImage = wpfImage;
+        }
+
+        [DllImport("gdi32")]
+        private static extern int DeleteObject(IntPtr ptr);
+        private static BitmapSource ConvertImageToBitmap(IImage image)
+        {
+            if (image != null)
+            {
+                using (var source = image.Bitmap)
+                {
+                    var hbitmap = source.GetHbitmap();
+                    try
+                    {
+                        var bitmap = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(hbitmap, IntPtr.Zero,
+                                                     Int32Rect.Empty,
+                                                     BitmapSizeOptions.FromEmptyOptions());
+                        DeleteObject(hbitmap);
+                        bitmap.Freeze();
+                        return bitmap;
+                    }
+                    catch
+                    {
+                        image = null;
+                    }
+                }
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public BitmapSource CameraImage
+        {
+            get { return m_cameraImage; }
+            set
+            {
+                if (Equals(value, m_cameraImage))
+                {
+                    return;
+                }
+                m_cameraImage = value;
+                OnPropertyChanged("m_cameraImage");
+                OnPropertyChanged("CameraImage");
+            }
+        }
     }
-
-    
-  
-
-
-
-
-
 
     public abstract class ViewModelBase : INotifyPropertyChanged
     {

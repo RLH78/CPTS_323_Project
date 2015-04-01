@@ -85,7 +85,12 @@
         <Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="207,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="244,34,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <Button Content="D" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,84,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
-        <MediaElement Source="none" HorizontalAlignment="Left" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1" LoadedBehavior="Play"/>
+        <Grid HorizontalAlignment="Left" DataContext="{StaticResource ResourceKey=MainModel}" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1">
+            <Border BorderThickness="1" BorderBrush="Gray" Margin="10">
+                <Image Source="{Binding CameraImage}"/>
+            </Border>
+
+        </Grid>
 
 
         <!--Button Content="Clear Targets" DataContext="{StaticResource ResourceKey=TargetModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="27,13,0,0" VerticalAlignment="Top" Width="98"/-->
@@ -127,10 +132,11 @@
                  Height="23" Margin="24,14,0,0" TextWrapping="Wrap" IsReadOnly="True"
                  Background="#FFB8B8B8"
                  BorderBrush="Black"
-                 Text="{Binding Name}"
-                 
+                 Text="{Binding Name}"                 
                  DataContext="{StaticResource ResourceKey=launcherModel}"
                  VerticalAlignment="Top" Width="96" FontSize="14" FontFamily="Segoe UI Semilight"/>
+        <Button Content="Take Image"   DataContext="{StaticResource ResourceKey=MainModel}"    
+                    Command="{Binding Take_Picture}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
