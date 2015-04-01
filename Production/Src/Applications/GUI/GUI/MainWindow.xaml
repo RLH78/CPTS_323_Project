@@ -35,7 +35,7 @@
             SelectedItem=""
             Grid.Row="1" Margin="0,23,0,0"
             >
-         </ListBox>
+        </ListBox>
         <TextBox x:Name="Timer" HorizontalAlignment="Left" Height="20" Margin="189,2,0,0" TextWrapping="Wrap" Text="Timer" VerticalAlignment="Top" Width="124" Grid.Column="1"/>
         <TextBox x:Name="Position"
                  HorizontalAlignment="Left" Height="21" Margin="363,4,0,0" TextWrapping="Wrap" 
@@ -72,11 +72,11 @@
             RenderTransformOrigin="2.784,-1.619"/>
 
         <TextBox x:Name="Game" HorizontalAlignment="Left" Height="20" Margin="189,25,0,0" TextWrapping="Wrap" Text="Game: " VerticalAlignment="Top" Width="124" Grid.Column="1"/>
-        <Button Content="Fire" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Fire_Missile}" HorizontalAlignment="Left" Height="20" Margin="244,59,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
-        <Button Content="Right" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="20" Margin="276,60,204,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
-        <Button Content="Left" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="219,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
-        <Button Content="Up" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="244,34,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
-        <Button Content="Down" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,84,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
+        <Button Content="Fire" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Fire_Missile}" HorizontalAlignment="Left" Height="20" Margin="232,60,0,0" VerticalAlignment="Top" Width="41" Grid.Column="1" Grid.Row="2" FontWeight="Bold" Background="#FFE81A1A"/>
+        <Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="278,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/>
+        <Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="207,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
+        <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="244,34,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
+        <Button Content="D" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,84,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <MediaElement Source="none" HorizontalAlignment="Left" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1" LoadedBehavior="Play"/>
 
 
@@ -123,7 +123,7 @@
                  
                  DataContext="{StaticResource ResourceKey=launcherModel}"
                  VerticalAlignment="Top" Width="96" FontSize="14" FontFamily="Segoe UI Semilight"/>
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="500"/>
