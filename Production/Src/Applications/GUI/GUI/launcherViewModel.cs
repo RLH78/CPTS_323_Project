@@ -15,7 +15,14 @@ namespace GUI
         public launcherViewModel()
         {
             missileCount = 4;
+            l_phi = 0;
+            l_theta = 0;
+            position_incrementer = 5;
         }
+
+        public int l_phi {get; set;}
+        public int l_theta { get; set; }
+        public int position_incrementer { get; set; }
 
         myCommand createDC;
         myCommand createMock;
@@ -173,18 +180,26 @@ namespace GUI
         public void moveLauncherUp()
         {
             launcher_view_Launcher.MoveUp();
+            l_theta = l_theta + position_incrementer;
+            OnPropertyChanged("l_theta");
         }
         public void moveLauncherDown()
         {
             launcher_view_Launcher.MoveDown();
+            l_theta = l_theta - position_incrementer;
+            OnPropertyChanged("l_theta");
         }
         public void moveLauncherLeft()
         {
             launcher_view_Launcher.MoveLeft();
+            l_phi = l_phi - position_incrementer;
+            OnPropertyChanged("l_phi");
         }
         public void moveLauncherRight()
         {
             launcher_view_Launcher.MoveRight();
+            l_phi = l_phi + position_incrementer;
+            OnPropertyChanged("l_phi");
         }
     }
 
