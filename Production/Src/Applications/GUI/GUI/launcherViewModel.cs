@@ -238,7 +238,11 @@ namespace GUI
         }
         public void resetLauncher()
         {
-            launcher_view_Launcher.Reset();            
+            launcher_view_Launcher.Reset();
+            l_theta = 0;
+            OnPropertyChanged("l_theta");
+            l_phi = 0;
+            OnPropertyChanged("l_phi");
         }
         public void moveLauncherUp()
         {
