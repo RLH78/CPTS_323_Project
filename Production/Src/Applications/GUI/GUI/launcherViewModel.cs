@@ -60,7 +60,8 @@ namespace GUI
         myCommand moveDown; 
         myCommand moveLeft; 
         myCommand moveRight;
-        myCommand okay;      
+        myCommand okay;
+        myCommand reset;
 
         /// <summary>
         /// ICommands
@@ -107,6 +108,17 @@ namespace GUI
                     reload = new myCommand(param => reloadLauncher());
                 }
                 return reload;
+            }
+        }
+        public ICommand _Reset_Launcher
+        {
+            get
+            {
+                if (reset == null)
+                {
+                    reset = new myCommand(param => resetLauncher());
+                }
+                return reset;
             }
         }
         public ICommand _Move_Up
@@ -223,6 +235,10 @@ namespace GUI
             missileCount = 4;
           //  launcher_view_Launcher.Reload();
             OnPropertyChanged("missileCount");
+        }
+        public void resetLauncher()
+        {
+            launcher_view_Launcher.Reset();            
         }
         public void moveLauncherUp()
         {
