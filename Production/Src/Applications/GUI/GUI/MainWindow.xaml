@@ -23,7 +23,10 @@
         <TextBox HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="Foe" TextAlignment="Center" VerticalAlignment="Top" Width="140" Grid.Column="2" Grid.Row="1"/>
         <TextBox HorizontalAlignment="Right" Height="18" TextWrapping="Wrap" Text="Friend" TextAlignment="Center" VerticalAlignment="Top" Width="150" Grid.Row="1" />
         <TextBox x:Name="Timer" HorizontalAlignment="Left" Height="20" Margin="189,2,0,0" TextWrapping="Wrap" Text="Timer" VerticalAlignment="Top" Width="124" Grid.Column="1"/>
-        <TextBox x:Name="Position" HorizontalAlignment="Left" Height="21" Margin="381,4,0,0" TextWrapping="Wrap" Text="Position (phi, theta)" VerticalAlignment="Top" Width="117" Grid.Column="1" Grid.Row="2"/>
+        <TextBox x:Name="Position"
+                 HorizontalAlignment="Left" Height="21" Margin="363,4,0,0" TextWrapping="Wrap" 
+                 Text="Position (          ,          )" VerticalAlignment="Top" 
+                 Width="135" Grid.Column="1" Grid.Row="2"/>
         <TextBox x:Name="Score" HorizontalAlignment="Left" Height="21" Margin="2,4,0,0" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="117" Grid.Row="2" Grid.Column="1"/>
 
         <TextBox 
@@ -53,6 +56,7 @@
             Grid.Row="2" 
             Grid.Column="1" 
             RenderTransformOrigin="2.784,-1.619"/>
+
         <TextBox x:Name="Game" HorizontalAlignment="Left" Height="20" Margin="189,25,0,0" TextWrapping="Wrap" Text="Game: " VerticalAlignment="Top" Width="124" Grid.Column="1"/>
         <Button Content="Fire" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Fire_Missile}" HorizontalAlignment="Left" Height="20" Margin="244,59,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
         <Button Content="Right" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="20" Margin="276,60,204,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
@@ -74,6 +78,20 @@
                 Grid.Row="2"                 
                 VerticalAlignment="Top" 
                 Width="75"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" 
+                 DataContext="{StaticResource ResourceKey=launcherModel}" 
+                 BorderThickness=".01"
+                 Text="{Binding l_phi}"  
+                 IsReadOnly="True"
+                 Height="14" Margin="420,6,0,0" Grid.Row="2" TextWrapping="Wrap"  
+                 VerticalAlignment="Top" Width="29" FontSize="11"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" 
+                 DataContext="{StaticResource ResourceKey=launcherModel}" 
+                 BorderThickness=".01"
+                 IsReadOnly="True"
+                 Height="18" Margin="454,6,0,0" Grid.Row="2" TextWrapping="Wrap" 
+                 Text="{Binding l_theta}"  
+                 VerticalAlignment="Top" Width="31" FontSize="11" RenderTransformOrigin="-1.15,2.167"/>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
