@@ -61,12 +61,8 @@
         <Button Content="Down" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,84,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2"/>
         <MediaElement Source="none" HorizontalAlignment="Left" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1" LoadedBehavior="Play"/>
 
-        <ComboBox DataContext="{StaticResource ResourceKey=MainModel}"  Background="AliceBlue" Text="Load" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Width="130">
-            <ComboBoxItem Content="                   File" Background="AliceBlue"  ></ComboBoxItem>
-            <ComboBoxItem Content="                   Server" Background="AliceBlue"></ComboBoxItem>
-        </ComboBox>
 
-        <Label Content="Load from:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="77" FontWeight="Bold"/>
+        <!--Button Content="Clear Targets" DataContext="{StaticResource ResourceKey=TargetModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="27,13,0,0" VerticalAlignment="Top" Width="98"/-->
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load from Server" Command="{Binding _Show_Server_Message}" Grid.Column="2" HorizontalAlignment="Left" Margin="33,13,0,0" VerticalAlignment="Top" Width="99"/>
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load INI FIle" Command="{Binding _load_INI_File}" Grid.Column="1" HorizontalAlignment="Left" Margin="430,14,0,0" VerticalAlignment="Top" Width="98" Grid.ColumnSpan="2"/>
         <Button Content="Reload" 
