@@ -128,7 +128,7 @@
                  DataContext="{StaticResource ResourceKey=launcherModel}"
                  VerticalAlignment="Top" Width="96" FontSize="14" FontFamily="Segoe UI Semilight"/>
         <Button Content="Take Image"   DataContext="{StaticResource ResourceKey=MainModel}"    
-                    Command="{Binding TakePictureCommand}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+                    Command="{Binding Take_Picture}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>

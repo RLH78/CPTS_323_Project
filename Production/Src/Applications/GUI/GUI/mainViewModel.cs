@@ -25,7 +25,7 @@ namespace GUI
     {
         public mainViewModel()
         {
-           
+            
         }
 
         public Target[] targets { get; set; }
@@ -36,6 +36,7 @@ namespace GUI
 
         myCommand showServerMessage;
         myCommand fileLoader;
+        myCommand TakePictureCommand;
 
         public ICommand _Show_Server_Message
         {
@@ -60,11 +61,23 @@ namespace GUI
                 return fileLoader;
             }
         }
-
+        public ICommand Take_Picture
+        {
+            get
+            {
+                if (TakePictureCommand == null)
+                {
+                    TakePictureCommand = new myCommand(param => TakePicture());
+                }
+                return TakePictureCommand;
+            }
+        }
         public string _Load_Server_Message
         {
             get { return LoadServerMessage; }
         }
+
+
         public void loadINIFile()
         {
             var openFileDialog = new Ookii.Dialogs.Wpf.VistaOpenFileDialog();
@@ -138,6 +151,7 @@ namespace GUI
                 }
                 m_cameraImage = value;
                 OnPropertyChanged("m_cameraImage");
+                OnPropertyChanged("CameraImage");
             }
         }
     }
