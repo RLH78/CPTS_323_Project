@@ -61,22 +61,22 @@ namespace SAD.core.Devices
         public void MoveUp()
         {
             MissileLauncher test = new MissileLauncher();
-            test.command_Up(110);
+            test.command_Up(45);
         }
         public void MoveDown()
         {
             MissileLauncher test = new MissileLauncher();
-            test.command_Down(110);
+            test.command_Down(45);
         }
         public void MoveLeft()
         {
             MissileLauncher test = new MissileLauncher();
-            test.command_Left(110);
+            test.command_Left(45);
         }
         public void MoveRight()
         {
             MissileLauncher test = new MissileLauncher();
-            test.command_Right(110);
+            test.command_Right(45);
         }
 
         public void Move(double phi, double theta)
