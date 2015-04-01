@@ -3,17 +3,31 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:gui="clr-namespace:GUI"
         Title="LauncherSelect" Height="300" Width="300" Name="LauncherSelectName">
-    
+
     <Window.Resources>
-        <gui:launcherViewModel x:Key="launchModel" />
-    </Window.Resources>      
+        <gui:launcherViewModel x:Key="launcherModel" />
+    </Window.Resources>
 
 
-        <Grid Background="DarkTurquoise">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="Aqua"/>
+                <GradientStop Color="#FF01FFE8" Offset="0.127"/>
+                <GradientStop Color="#FF35B5FF" Offset="0.868"/>
+                
+                
+            </LinearGradientBrush>
+        </Grid.Background>
 
-        <RadioButton DataContext="{StaticResource ResourceKey=launchModel}" Command="{Binding _create_Mock_Command}" x:Name="Mock_Launcher" Content="Mock" HorizontalAlignment="Left" Height="21" Margin="76,99,0,0" VerticalAlignment="Top" Width="157" FontSize="18" FlowDirection="RightToLeft" />
-        <RadioButton DataContext="{StaticResource ResourceKey=launchModel}" Command="{Binding _create_DC_Command}" x:Name="Dream_Cheeky" Content="DreamCheeky" HorizontalAlignment="Left" Height="28" Margin="77,155,0,0" VerticalAlignment="Top" Width="156" FontSize="18" FlowDirection="RightToLeft" />
-        <Label Content="Select a launcher type:" HorizontalAlignment="Center" Height="39" Margin="28,30,28,0" VerticalAlignment="Top" Width="236" FontSize="20" FontWeight="Bold"/>
+        <RadioButton DataContext="{StaticResource ResourceKey=launcherModel}" Command="{Binding _create_Mock_Command}" x:Name="Mock_Launcher" Content="Mock" HorizontalAlignment="Left" Height="21" Margin="75,167,0,0" VerticalAlignment="Top" Width="157" FontSize="18" FlowDirection="RightToLeft" />
+        <RadioButton DataContext="{StaticResource ResourceKey=launcherModel}" Command="{Binding _create_DC_Command}" x:Name="Dream_Cheeky" Content="DreamCheeky" HorizontalAlignment="Left" Height="28" Margin="76,212,0,0" VerticalAlignment="Top" Width="156" FontSize="18" FlowDirection="RightToLeft" />
+        <Label Content="Select a launcher type:" HorizontalAlignment="Center" Height="39" Margin="28,123,28,0" VerticalAlignment="Top" Width="236" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Enter a Team Name:" HorizontalAlignment="Center" Height="39" Margin="28,20,28,0" VerticalAlignment="Top" Width="236" FontSize="20" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" DataContext="{StaticResource ResourceKey=launcherModel}" 
+                 Height="23" Margin="28,74,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="145" VerticalContentAlignment="Center"/>
+        <Button Content="Okay" Background="#FF00C1D4" DataContext="{StaticResource ResourceKey=launcherModel}" Command="{Binding _change_Team_Name}" HorizontalAlignment="Left" Margin="188,74,0,0" VerticalAlignment="Top" Width="44" Height="23"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,102,0,0" TextWrapping="Wrap" DataContext="{StaticResource ResourceKey=launcherModel}" Text="{Binding settingMessage}" VerticalAlignment="Top" Width="145"/>
 
     </Grid>
 </Window>

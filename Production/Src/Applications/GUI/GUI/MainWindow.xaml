@@ -9,6 +9,7 @@
     <Window.Resources>
         <gui:mainViewModel x:Key="MainModel" />
         <gui:launcherViewModel x:Key="launcherModel" />
+
         <VisualBrush x:Key="myBrush">
             <VisualBrush.Visual>
                 <Grid>
@@ -25,7 +26,7 @@
         <TextBox x:Name="Timer" HorizontalAlignment="Left" Height="20" Margin="189,2,0,0" TextWrapping="Wrap" Text="Timer" VerticalAlignment="Top" Width="124" Grid.Column="1"/>
         <TextBox x:Name="Position"
                  HorizontalAlignment="Left" Height="21" Margin="363,4,0,0" TextWrapping="Wrap" 
-                 Text="Position (          ,          )" VerticalAlignment="Top" 
+                 Text="Position (          ,          )" VerticalAlignment="Top" IsReadOnly="True"
                  Width="135" Grid.Column="1" Grid.Row="2"/>
         <TextBox x:Name="Score" HorizontalAlignment="Left" Height="21" Margin="2,4,0,0" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="117" Grid.Row="2" Grid.Column="1"/>
 
@@ -92,6 +93,14 @@
                  Height="18" Margin="454,6,0,0" Grid.Row="2" TextWrapping="Wrap" 
                  Text="{Binding l_theta}"  
                  VerticalAlignment="Top" Width="31" FontSize="11" RenderTransformOrigin="-1.15,2.167"/>
+        <TextBox HorizontalAlignment="Left"
+                 Height="23" Margin="24,14,0,0" TextWrapping="Wrap" IsReadOnly="True"
+                 Background="#FFB8B8B8"
+                 BorderBrush="Black"
+                 Text="{Binding Name}"
+                 
+                 DataContext="{StaticResource ResourceKey=launcherModel}"
+                 VerticalAlignment="Top" Width="96" FontSize="14" FontFamily="Segoe UI Semilight"/>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>

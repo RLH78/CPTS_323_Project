@@ -18,11 +18,39 @@ namespace GUI
             l_phi = 0;
             l_theta = 0;
             position_incrementer = 5;
+            Name = teamName;
+                   
         }
 
         public int l_phi {get; set;}
         public int l_theta { get; set; }
         public int position_incrementer { get; set; }
+        internal static IMissileLauncher launcher_view_Launcher { get; private set; }
+        public int missileCount { get; set; }
+        
+        private string m_name{get; set;}
+        private string m_modifiedName { get; set; }
+        internal static string teamName { get; set; }
+
+        public string settingMessage { get; set; }
+    
+        public string Name
+        {
+            get { return m_name; }
+            set { m_name = value; }
+        }
+
+        public string ModifiedName
+        {
+            get { return m_modifiedName; }
+            set
+            {
+                m_modifiedName = value;
+                teamName = m_modifiedName;
+                OnPropertyChanged("m_modifiedName");
+                OnPropertyChanged("finalName");
+            }
+        }
 
         myCommand createDC;
         myCommand createMock;
@@ -32,11 +60,7 @@ namespace GUI
         myCommand moveDown; 
         myCommand moveLeft; 
         myCommand moveRight;
-
-
-        internal static IMissileLauncher launcher_view_Launcher { get; private set; }
-
-        public int missileCount { get; set; }
+        myCommand okay;      
 
         /// <summary>
         /// ICommands
@@ -85,7 +109,6 @@ namespace GUI
                 return reload;
             }
         }
-
         public ICommand _Move_Up
         {
             get
@@ -130,10 +153,30 @@ namespace GUI
                 return moveRight;
             }
         }
-        
+
+        public ICommand _change_Team_Name
+        {
+            get
+            {
+                if (okay == null)
+                {
+                    okay = new myCommand(param => setTeamName());
+                }
+                return okay;
+            }
+        }
        /// <summary>
         /// Implementation Functions
         /// </summary>
+        /// 
+        public void setTeamName()
+        {
+            ModifiedName = Name;
+            teamName = "Team " + ModifiedName;
+            OnPropertyChanged("teamName");
+            settingMessage = "Name set to " + teamName;
+            OnPropertyChanged("settingMessage");
+        }
         public void fireZeMissile()
         {
             if (missileCount > 0)
@@ -153,11 +196,14 @@ namespace GUI
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
             launcher_view_Launcher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC);
-            OnPropertyChanged("launcher_view_Launcher");
+     //       OnPropertyChanged("launcher_view_Launcher");
+            OnPropertyChanged("finalName");
             MessageBox.Show("DreamCheeky created");
-            MainWindow win2 = new MainWindow();            
+            MainWindow win2 = new MainWindow();
+            
             Window win = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.Name == "LauncherSelectName");
             win.Close();  
+            
             win2.Show(); 
         }  
         public void MockCreate()
@@ -165,6 +211,7 @@ namespace GUI
             MissileLauncherFactory factory = new MissileLauncherFactory();
             launcher_view_Launcher = factory.createMissileLauncher(SAD.core.Factories.launcherType.mock);
             OnPropertyChanged("launcher_view_Launcher");
+            
             MessageBox.Show("Mock Launcher created");
             MainWindow win2 = new MainWindow();
             Window win = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.Name == "LauncherSelectName");
