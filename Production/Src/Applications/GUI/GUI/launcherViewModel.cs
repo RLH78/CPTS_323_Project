@@ -27,7 +27,7 @@ namespace GUI
         myCommand moveRight;
 
 
-        public IMissileLauncher launcher_view_Launcher { get; private set; }
+        internal static IMissileLauncher launcher_view_Launcher { get; private set; }
 
         public int missileCount { get; set; }
 
@@ -146,6 +146,7 @@ namespace GUI
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
             launcher_view_Launcher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC);
+            OnPropertyChanged("launcher_view_Launcher");
             MessageBox.Show("DreamCheeky created");
             MainWindow win2 = new MainWindow();            
             Window win = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.Name == "LauncherSelectName");
@@ -156,6 +157,7 @@ namespace GUI
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
             launcher_view_Launcher = factory.createMissileLauncher(SAD.core.Factories.launcherType.mock);
+            OnPropertyChanged("launcher_view_Launcher");
             MessageBox.Show("Mock Launcher created");
             MainWindow win2 = new MainWindow();
             Window win = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.Name == "LauncherSelectName");

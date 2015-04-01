@@ -23,7 +23,7 @@ namespace GUI
            // LauncherSelect launcher = new LauncherSelect();
            // myLauncher = launcher.aLauncher;
         }
-        private IMissileLauncher myLauncher;
+        
         Target[] targets;
         string LoadServerMessage = "This option is unavailable at this time";
 
