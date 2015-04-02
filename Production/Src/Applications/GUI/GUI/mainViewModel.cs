@@ -13,6 +13,8 @@ using SAD.core.Factories;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
+using Emgu.CV.UI;
+using Emgu.Util;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using SAD.Core.Data;
@@ -119,8 +121,7 @@ namespace GUI
                 OnPropertyChanged("Targets");
                 MessageBox.Show("Successfully loaded: " + openFileDialog.FileName);
             }
-        }
-
+        }       
         private void TakePicture()
         {
             if (m_capture == null)
@@ -134,7 +135,7 @@ namespace GUI
             var wpfImage = ConvertImageToBitmap(image);
             CameraImage = wpfImage;
         }
-
+       
         [DllImport("gdi32")]
         private static extern int DeleteObject(IntPtr ptr);
         private static BitmapSource ConvertImageToBitmap(IImage image)
