@@ -16,16 +16,18 @@ using Emgu.CV.Structure;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using SAD.Core.Data;
+using SAD.core.Data;
 using System.Runtime.InteropServices;
+using System.Collections.ObjectModel;
 
 namespace GUI
-{  
+{
 
     public class mainViewModel : ViewModelBase
     {
         public mainViewModel()
         {
-            
+            Targets = new ObservableCollection<targetViewModel>();
         }
 
         public Target[] targets { get; set; }
@@ -76,27 +78,50 @@ namespace GUI
         {
             get { return LoadServerMessage; }
         }
+        public ObservableCollection<targetViewModel> Targets { get; private set; }
 
-
+        private targetViewModel m_selectedTarget;
+        public targetViewModel SelectedTarget
+        {
+            get
+            {
+                return m_selectedTarget;
+            }
+            set
+            {
+                m_selectedTarget = value;
+                OnPropertyChanged();
+            }
+        }
         public void loadINIFile()
         {
             var openFileDialog = new Ookii.Dialogs.Wpf.VistaOpenFileDialog();
             var worked = openFileDialog.ShowDialog();
 
+
             FileReaderFactory readerFactory = new FileReaderFactory();
-            FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);            
+            FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);
             try
-            {                
-                targets = myReader.readFile(openFileDialog.FileName);                
+            {
+                targets = myReader.readFile(openFileDialog.FileName);
+                OnPropertyChanged("targets");
             }
             catch { MessageBox.Show("Error Loading File"); }
             if (worked == true)
             {
+                int i = 0;
+                while (i < TargetManager.TotalTargets)
+                {
+                    var newtargetViewModel = new targetViewModel(targets[i]);
+                    Targets.Add(newtargetViewModel);
+                    i++;
+                }
+                OnPropertyChanged("Targets");
                 MessageBox.Show("Successfully loaded: " + openFileDialog.FileName);
             }
         }
 
-        public void TakePicture()
+        private void TakePicture()
         {
             if (m_capture == null)
                 m_capture = new Capture(0);
@@ -104,7 +129,7 @@ namespace GUI
             // take a picture
 
             var image = m_capture.QueryFrame();
-            image.Save(@"C:\Users\test.png");
+            //image.Save(@"c:\data\test.png");
 
             var wpfImage = ConvertImageToBitmap(image);
             CameraImage = wpfImage;

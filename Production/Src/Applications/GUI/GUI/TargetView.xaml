@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="GUI.TargetView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid  >
+        <Border BorderThickness="2" BorderBrush="CadetBlue" Margin="2">
+            <StackPanel>
+                <TextBlock FontSize="14" Width="110">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}Name: {0}">
+                            <Binding Path="Target.name" />
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock FontSize="14" Width="110">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}Friend: {0}">
+                            <Binding Path="Target.friend" />
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock FontSize="14" Width="110">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}Alive: {0}">
+                            <Binding Path="Target.alive" />
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <Button Content="     Kill!      " Command="{Binding _kill_target}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

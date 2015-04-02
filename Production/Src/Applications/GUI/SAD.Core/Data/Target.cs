@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SAD.Core.Annotation;
+using System.Runtime.CompilerServices;
 // stores information about target
 namespace SAD.Core.Data
 {
-    public class Target 
+    public class Target : INotifyPropertyChanged
     {
         public Target()
         {
@@ -23,7 +25,7 @@ namespace SAD.Core.Data
             this.alive = true;
         }
         // public int targetCount { get; set; }
-        public bool alive { get; set; }
+
         public string name { get; set; }
         public double xCoord { get; set; }
         public double yCoord { get; set; }
@@ -33,5 +35,28 @@ namespace SAD.Core.Data
         public int flashRate { get; set; }
         public int spawnRate { get; set; }
         public bool swapSides { get; set; }
+        public bool alive
+        {
+            get { return m_isAlive; }
+            set
+            {
+                m_isAlive = value;
+                OnPropertyChanged("alive");
+            }
+        }
+
+        private bool m_isAlive;
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
 }

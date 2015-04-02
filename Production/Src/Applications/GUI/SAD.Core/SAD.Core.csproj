@@ -125,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\CommandLine.cs" />
+    <Compile Include="Properties\Annotation.cs" />
     <Compile Include="Data\Target.cs" />
     <Compile Include="Data\TargetManager.cs" />
     <Compile Include="Devices\IMissileLauncher.cs" />

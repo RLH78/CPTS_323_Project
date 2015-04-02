@@ -19,21 +19,26 @@ namespace GUI
             l_theta = 0;
             position_incrementer = 5;
             Name = teamName;
-                   
+
         }
 
-        public int l_phi {get; set;}
+        public int l_phi { get; set; }
         public int l_theta { get; set; }
         public int position_incrementer { get; set; }
-        internal static IMissileLauncher launcher_view_Launcher { get; private set; }
+        internal static IMissileLauncher launcher_view_Launcher { get; set; }
+
+        public IMissileLauncher returnLauncher()
+        {
+            return launcher_view_Launcher;
+        }
         public int missileCount { get; set; }
-        
-        private string m_name{get; set;}
+
+        private string m_name { get; set; }
         private string m_modifiedName { get; set; }
         internal static string teamName { get; set; }
 
         public string settingMessage { get; set; }
-    
+
         public string Name
         {
             get { return m_name; }
@@ -57,8 +62,8 @@ namespace GUI
         myCommand fire;
         myCommand reload;
         myCommand moveUp;
-        myCommand moveDown; 
-        myCommand moveLeft; 
+        myCommand moveDown;
+        myCommand moveLeft;
         myCommand moveRight;
         myCommand okay;
         myCommand reset;
@@ -177,7 +182,7 @@ namespace GUI
                 return okay;
             }
         }
-       /// <summary>
+        /// <summary>
         /// Implementation Functions
         /// </summary>
         /// 
@@ -193,8 +198,8 @@ namespace GUI
         {
             if (missileCount > 0)
             {
-              launcher_view_Launcher.Fire();
-                
+                launcher_view_Launcher.Fire();
+
                 missileCount = missileCount - 1;
                 OnPropertyChanged("missileCount");
             }
@@ -202,28 +207,28 @@ namespace GUI
             {
                 MessageBox.Show("I just can't do it captain! I don't have the fire power!");
             }
-            
+
         }
         public void DreamCheekyCreate()
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
             launcher_view_Launcher = factory.createMissileLauncher(SAD.core.Factories.launcherType.dreamC);
-     //       OnPropertyChanged("launcher_view_Launcher");
+            //       OnPropertyChanged("launcher_view_Launcher");
             OnPropertyChanged("finalName");
             MessageBox.Show("DreamCheeky created");
             MainWindow win2 = new MainWindow();
-            
+
             Window win = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.Name == "LauncherSelectName");
-            win.Close();  
-            
-            win2.Show(); 
-        }  
+            win.Close();
+
+            win2.Show();
+        }
         public void MockCreate()
         {
             MissileLauncherFactory factory = new MissileLauncherFactory();
             launcher_view_Launcher = factory.createMissileLauncher(SAD.core.Factories.launcherType.mock);
             OnPropertyChanged("launcher_view_Launcher");
-            
+
             MessageBox.Show("Mock Launcher created");
             MainWindow win2 = new MainWindow();
             Window win = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.Name == "LauncherSelectName");
@@ -233,7 +238,7 @@ namespace GUI
         public void reloadLauncher()
         {
             missileCount = 4;
-          //  launcher_view_Launcher.Reload();
+            launcher_view_Launcher.Reload();
             OnPropertyChanged("missileCount");
         }
         public void resetLauncher()
@@ -271,5 +276,5 @@ namespace GUI
     }
 
 
-   
+
 }
