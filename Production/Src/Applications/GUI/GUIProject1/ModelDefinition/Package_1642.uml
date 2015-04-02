@@ -1,0 +1,1658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c2e20116-b04f-4f21-b7ce-a6c4f8b0e050"
+  name="Factories"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="77460a6e-3459-4648-9c71-31b3b16a84a9"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSAD.core.Factories"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b59f3ceb-ffc5-4381-a9cd-0f3cde296dc1"
+        name="FileReader"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="31b4872b-0c4a-43b3-8954-46adb6a11dbd"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6ae051a9-a3c3-4881-94eb-2264a2e12403"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d01d60eb-b99c-467c-84a8-a5a4187442c4">
+                <propertyInstance
+                  Id="3c1c28cd-e709-4776-8f6a-ba0fd33c1c18"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="062a742c-2398-45fa-a6a1-a494581e68f4">
+                <propertyInstance
+                  Id="37d96d1b-3a93-4f12-82df-80aa9ff46d43"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0a1b516d-5abd-4e3e-a18e-3bc1fe9796b4">
+                <propertyInstance
+                  Id="fb2eba0b-cea8-428f-85c4-03554409864e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b776b67-bb96-42df-890b-5a73a66cd9f9">
+                <propertyInstance
+                  Id="40656b06-b6aa-4431-a9ec-ddf3a55357e6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4170e17a-19ce-4142-933a-f22e0b4364fc">
+                <propertyInstance
+                  Id="9f0d3f66-baef-4cd1-8105-6987429615fc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="cc25aabf-7c48-419d-a156-2bf64bbd4079"
+            name="readerName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7d94e680-011e-4510-b1b8-76ac20a4ca88"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReader Member%3DreaderName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="57b31508-4dbc-4525-b1bd-edca3f5bada1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3273184c-ff15-41e3-824c-e48b2591c426">
+                    <propertyInstance
+                      Id="31a87391-e5dd-4691-bf83-f5a954de9838"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7089c280-acc1-44e4-ae4c-e7ea277e1109">
+                    <propertyInstance
+                      Id="5aab589e-2c2d-4e7e-b693-f067151dca92"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd1b6582-0aa2-4a51-8228-a927ff8fbf85">
+                    <propertyInstance
+                      Id="b3821fec-f906-4847-820d-786040501c5c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c31b1716-690c-4f17-9673-198383ba6dac">
+                    <propertyInstance
+                      Id="17ab9196-5064-490f-8143-8bab4952c9e7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91c4109f-e0df-40d7-9b56-913d33f9a70c">
+                    <propertyInstance
+                      Id="45dc807a-d5da-4d5f-af1c-ca2303efe116"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a10802a-0bef-496c-b9b2-d70d930caebb">
+                    <propertyInstance
+                      Id="271de623-b370-4378-9179-cef938ded242"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a7fe69b-8b64-4afc-8906-c69d77d70181">
+                    <propertyInstance
+                      Id="706fff57-ec5e-4ccc-9ca0-04c8c8009a79"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1cbd2a61-0b0b-4377-ac48-6920bf2212f4"
+            name="readFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a9d864f0-a734-4be0-aceb-1c7516d9f74f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReader Member%3D(Name%3DreadFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6db2531e-8a3f-4434-bfa2-672783522e8f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="152f9f7d-9308-4d9f-9a27-3bc049e52e32">
+                    <propertyInstance
+                      Id="a602b307-e62c-463d-b3ed-38f736d75929"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0938e7ec-6ffa-4d09-9f58-5d2dbabea5e7">
+                    <propertyInstance
+                      Id="8756b559-704c-4156-b44a-cfb7cff79d6e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d074863-1ddf-4a6d-a689-77c905b35062">
+                    <propertyInstance
+                      Id="9be11278-a536-4e3c-b746-b9e6e83d8cdf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8978e739-f456-404f-9dad-b4544617030c">
+                    <propertyInstance
+                      Id="bea0c848-52b8-453d-9e3e-ef396ba07172"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6dbc4a7e-7c2e-4042-98a3-7e0bfbcb572f">
+                    <propertyInstance
+                      Id="6180e6df-9eb8-4816-ac52-c0a1323c852a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9d3fe24-8c58-4c97-b088-207075ae260c">
+                    <propertyInstance
+                      Id="515743a7-1d6f-4833-838d-3538f0c2ad1c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="96ce80b4-b4bb-43d7-9aa2-dd67c56426ef"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e4081b05-31f6-43a5-b0e3-fb1383aaaa5c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f0e14b73-55c4-4295-b3f0-68dcf20c6d3c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="51e0441d-042a-4b51-8352-e88c994249ea"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package5_1625.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6d94648-52f0-4d97-9680-ff0a9b03fe29"
+                  name="pathName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2a04e36b-bef3-4b66-8dd9-422ac1b45e41"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReader Member%3D(Name%3DreadFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DpathName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="GUIProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d8af944c-d61d-4042-8148-aebf785f9703"
+            name="FileReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9cb3a74c-7df9-493f-93aa-214e529ffacb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReader Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="afb5886a-177c-4b77-ae95-81c2fc8a24f9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="713a9b47-06e3-447d-a9f7-5e826c5b989b">
+                    <propertyInstance
+                      Id="5a169195-3fa0-4240-8687-cbc270c39d2c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d8f2974-dfb7-4007-bdb1-218bfb168ede">
+                    <propertyInstance
+                      Id="e988451f-43a3-489e-bb45-cf757262b73e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93075075-dca3-46e5-90f2-268693606d71">
+                    <propertyInstance
+                      Id="3f290958-6530-4326-9a6a-5a0368844265"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ad65e37-0cf3-4c1f-b7eb-20537308b08d">
+                    <propertyInstance
+                      Id="4af41eda-d25a-41be-acdb-eae4e6eeb30d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48771cfa-ed8e-4820-87db-52c390848c42">
+                    <propertyInstance
+                      Id="0f261957-2927-4286-a47b-1805d7b7b734"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9a10a97-64d9-4c17-b6b8-01b98428e118">
+                    <propertyInstance
+                      Id="19fbee60-e74e-4a78-9cd4-e78e4bc97087"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="668474af-287d-4928-826a-5dad9af49b27"
+        name="FileReaderFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5a30d5ac-6eb2-48f8-bded-cee83e8dcaec"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReaderFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="97d18fd3-9516-4073-871e-a07a90ea8d9e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9f86146-d595-4245-8595-22ec13f34e4d">
+                <propertyInstance
+                  Id="2d4c9b15-7589-4e91-a1b4-6583a0dd4d5b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4215520c-0135-4095-b2c2-df0110f8456d">
+                <propertyInstance
+                  Id="52232658-2910-4b33-910e-008d873d33d2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e5511ae9-6ff9-48d4-a38a-5f492af633f1">
+                <propertyInstance
+                  Id="55298ec7-6947-4346-93f6-9b8432c7312e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="deb30a6d-951d-4456-a550-412ff8308e21">
+                <propertyInstance
+                  Id="e60b869b-d691-477a-b4e1-6324fcdd0b26"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="08557905-d269-4b86-84c3-8f36196bd5a5">
+                <propertyInstance
+                  Id="d14a097d-2137-4c90-bdd2-82108e102801"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b880ba3d-9645-4715-82ec-c532a5fa6619"
+            name="createFileReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1f902d06-d54a-4cca-bef5-638ae124f8b9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReaderFactory Member%3D(Name%3DcreateFileReader OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DfileReaderType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ef417415-f3ed-42e3-8aa5-f8f97a581058"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3344aabc-b9e5-4377-8661-24e6c695cf12">
+                    <propertyInstance
+                      Id="2bcc5171-5d02-4cf7-81c9-b096871be862"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18cad49d-23e7-413a-b069-7ccf06726c18">
+                    <propertyInstance
+                      Id="e2d8fb9a-5655-44e8-af67-b415e4b3eb15"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c8312c7-0ded-4258-988c-4abac7672e08">
+                    <propertyInstance
+                      Id="468f5caf-8d91-4313-bec5-53a783a1d3ea"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2273811-ac0d-4752-8891-87c43eec11ff">
+                    <propertyInstance
+                      Id="dc74390b-7eae-4743-a3fa-0b87911ba4c3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38222c91-2740-407a-bbae-9119a87372da">
+                    <propertyInstance
+                      Id="4e503e5e-002b-4fbc-bd4d-50a249a9e956"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5534393-0e87-4e00-b7b8-1348906d6103">
+                    <propertyInstance
+                      Id="b241e955-5a71-4060-bdee-b79fcc1f7aa0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8789e58d-75f5-49ed-ae37-886e302a1360"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b59f3ceb-ffc5-4381-a9cd-0f3cde296dc1"
+                      LastKnownName="FileReader"
+                      LastKnownLocation="Package_1642.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e64a3ecc-8276-44f0-8d45-d961504b64a3"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1120d29a-ea46-45c5-ab08-2974cd8f4699"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReaderFactory Member%3D(Name%3DcreateFileReader OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DfileReaderType)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="9092f0c7-96e5-4d28-a7e5-79dde2565591"
+                      LastKnownName="fileReaderType"
+                      LastKnownLocation="Package_1642.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0b9199f4-5c6d-4939-ae95-8d01ad9064fd"
+            name="FileReaderFactory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f3791d5b-4abd-4cb2-8c58-a2d27173fefc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DFileReaderFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c5269687-44c3-4bc5-8fcf-cd9bcb360678"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cdd50fd-aaf8-43ee-8d77-da5c2ba3c340">
+                    <propertyInstance
+                      Id="bdcd0b1a-2445-4cf8-b57a-5842403bc108"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7de2a70a-a56e-4b4f-8f0c-2422dd5e9e9c">
+                    <propertyInstance
+                      Id="a196a3e3-d52d-4798-8f4b-d803efaca8b2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b983835-8499-474a-8ec3-bdadbb0435d1">
+                    <propertyInstance
+                      Id="8c37f674-3e9e-45f3-9679-fcd73c72604a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df90de40-7042-42f9-b92a-1b562e77f787">
+                    <propertyInstance
+                      Id="5884d629-c11b-4652-8f9d-82419c7af5d2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e744a11-3331-4254-a8e6-421ec3901c99">
+                    <propertyInstance
+                      Id="a5e9139e-fb6f-4538-b8ed-5c28b6076b61"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc50982f-13aa-4682-88bd-b018b375d68f">
+                    <propertyInstance
+                      Id="5e1699c4-3224-4509-b7fe-ebf95da57a49"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="9092f0c7-96e5-4d28-a7e5-79dde2565591"
+        name="fileReaderType"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="698ce933-1dc0-4363-89f0-2db67967b4fb"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DfileReaderType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d921f50d-23d8-46b4-b0c4-0d6f5ee2a875"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c8fa569-8414-4dd9-bc9f-f3975eae7f7e">
+                <propertyInstance
+                  Id="a9f39755-1177-488d-a9db-3949061a8f1f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53022cdb-2d6e-4a0e-890a-d8446b362e6f">
+                <propertyInstance
+                  Id="cd05d857-0b12-4433-bb24-4062ca567a63"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36a41876-9e1e-4b03-801d-7dd23fbe4846">
+                <propertyInstance
+                  Id="a39a90a5-821c-4008-b35d-03de0e88af65"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="0b22b68c-de34-4224-a246-a87316562a9b"
+            name="INI">
+            <referencesInternal>
+              <reference
+                Id="81752e07-d649-416f-8b98-75e745381087"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DfileReaderType Member%3DINI"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="1ee7260c-cc47-4bf2-b014-d00429df833e"
+            name="mock">
+            <referencesInternal>
+              <reference
+                Id="c0c8dc0a-4412-4c95-b249-29a9fb9879f4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DfileReaderType Member%3Dmock"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2cb72cff-c349-4313-9bf7-b9e0674707d1"
+        name="INIFileReader"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4c3025c2-3d87-477e-8a68-bcd9abbaa5a2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6b51e34b-bc1c-4e34-b017-4ea5abc12904"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb72a0e7-6c08-4815-8437-91d623049bb2">
+                <propertyInstance
+                  Id="825d92b5-751e-4670-8a60-3d2b208acd97"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="746fe1df-2df1-4036-90b8-fae64e4ed112">
+                <propertyInstance
+                  Id="b32651a2-353c-44ab-ba96-546fd1aed1e3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e10c61ee-fdab-4a9e-b87e-bc3e95d7aa7c">
+                <propertyInstance
+                  Id="fbae36f1-4c0f-4433-8568-5cfaf2237adb"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e8f9d2c-3f92-454e-82f0-cb18c458efb3">
+                <propertyInstance
+                  Id="f38479ab-e24f-4e8e-98a2-c6b229126131"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="19180d6d-d6d9-490b-9876-7af834eab3b9">
+                <propertyInstance
+                  Id="7246b3be-ef2b-4884-85fb-95fa531f8d80"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="601362ee-158e-46e2-8117-a977699d6fb7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b59f3ceb-ffc5-4381-a9cd-0f3cde296dc1"
+              LastKnownName="FileReader"
+              LastKnownLocation="Package_1642.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="260b23bb-c7d7-4672-92d9-0889fceb978d"
+            name="targets"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="59f146d7-4ec9-4da8-9e1b-98bb3d1c09ff"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader Member%3Dtargets"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bc0be031-5576-45ba-b39f-ec9a7da5ac6e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5de14c3a-86ff-467e-8e5b-8555f58530c0">
+                    <propertyInstance
+                      Id="79845e43-3bb9-431e-b161-4fc56bd6b0cc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3f1cff3-40db-4be9-b7d8-296c5b2e8cf2">
+                    <propertyInstance
+                      Id="46c9a717-9a48-42b3-9f7f-5097ecc7159e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d06166b-feb3-4fd8-bb34-531c7368e5b7">
+                    <propertyInstance
+                      Id="5a1cf8e1-0760-49d8-b479-6bbf40bd6058"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50019169-e1d7-479c-9a40-b4a56ad77cab">
+                    <propertyInstance
+                      Id="551861b5-fafb-4e5a-ad1d-3f98e4631be1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c35ae6bd-6ee7-46f7-b55f-5a01431d31c1">
+                    <propertyInstance
+                      Id="c6604732-f2aa-4a4c-84d2-da17941a0c4f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="085e5bcc-72d6-4a41-9710-289a9c1f655e"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="5e0ba47f-994a-4859-8e1f-e8d31c84ce2f"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="51e0441d-042a-4b51-8352-e88c994249ea"
+                LastKnownName="Target"
+                LastKnownLocation="Package5_1625.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9e80d067-0974-4509-972a-f92ad5b8a80c"
+            name="TargetClassSetUp"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4f9aa799-e092-4e96-a449-b03483716905"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader Member%3D(Name%3DTargetClassSetUp OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.Core.Data Type%3D(Name%3DTarget ArrayRank%3D1 ParentType%3DTarget))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2108fdf0-c39d-46d2-bcc5-15e3518d9ba6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9795f583-0468-4dcb-ac99-e6dd750a4e79">
+                    <propertyInstance
+                      Id="b6609b1e-42f8-4e43-b086-11f2d0cce4ae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21cf8481-bd99-4cc3-9fd3-110e06bc5354">
+                    <propertyInstance
+                      Id="b91a62be-ba24-4c48-8b11-c5feb5330cd2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="584a3e2c-4eca-4b9b-930f-0d8b9032fe06">
+                    <propertyInstance
+                      Id="c93dfe3d-c7d3-41d8-8f8a-164be9ee342e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91c7147f-32ba-43de-802d-98886a36a085">
+                    <propertyInstance
+                      Id="9ed0a1c2-c53c-48e6-94ce-4a4aaf0bf26c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca0ce31e-57a5-44c9-a850-e9c9748e3f2d">
+                    <propertyInstance
+                      Id="1af44c26-76f6-494c-92b8-49262cfc6e7d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbe43227-6f60-45f0-8db2-23b2fc8f02c4">
+                    <propertyInstance
+                      Id="7201ca5a-b2e2-4155-8087-6c907cff3178"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a98507bf-ef4f-4cbd-b59a-900c1112a943"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0fca6b3c-ce35-458e-999c-8b1f9f82696b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="efa9cbfd-f309-4fb7-a8c1-3af11b102441"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="51e0441d-042a-4b51-8352-e88c994249ea"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package5_1625.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b2f775e7-c543-461a-ba3a-24d2f22ed704"
+                  name="data"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="7443e8f8-a252-40c2-bee9-2232eab9dd7a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader Member%3D(Name%3DTargetClassSetUp OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.Core.Data Type%3D(Name%3DTarget ArrayRank%3D1 ParentType%3DTarget))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e102b435-ebcf-4725-aaa7-6ee8331192a3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="66a5c3b5-7e38-4f31-96a6-2a6b713d6d38"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="GUIProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de462377-8c1a-44c6-81f9-45ef0184446a"
+                  name="target"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="2ba26750-4cf1-4e09-bdf9-de29abc2c07b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader Member%3D(Name%3DTargetClassSetUp OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.Core.Data Type%3D(Name%3DTarget ArrayRank%3D1 ParentType%3DTarget))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2176d705-a7e7-4e42-975e-65de1cbd1862"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c0665af7-c230-49a1-a72c-107929875ebd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="51e0441d-042a-4b51-8352-e88c994249ea"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package5_1625.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4233467a-14be-4d76-a906-8f932c453569"
+                  name="counter"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b40cacf9-97e4-4c62-995f-41ce15672052"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader Member%3D(Name%3DTargetClassSetUp OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.Core.Data Type%3D(Name%3DTarget ArrayRank%3D1 ParentType%3DTarget))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dcounter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="GUIProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="78488303-21a1-4cbd-ad97-92e1eada4902"
+            name="readFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8d8d1b28-cd49-4aea-996f-caf90e8d0cb4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader Member%3D(Name%3DreadFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a6a5667a-eac7-4c92-aace-1f7d5b834ea8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39f2c06e-9cc0-46f5-8bcc-049152f10098">
+                    <propertyInstance
+                      Id="2e9329a8-2ee7-4a4f-9b41-58d46604660d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3467b24-7cf2-447b-91df-2d2a4d500e92">
+                    <propertyInstance
+                      Id="d694b3c9-a896-469d-8fbb-f3e871506ca3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd41ddba-3766-4a23-b87a-af0893d87c54">
+                    <propertyInstance
+                      Id="5a6352f3-f154-4525-8e54-d025510979ab"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="779b5278-b1e1-43ba-aea8-e79bc59eca67">
+                    <propertyInstance
+                      Id="164abde9-e6f7-4b73-bd22-ee2ecf23bcc1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92a592b2-7eab-4bae-8632-a47953f1d15e">
+                    <propertyInstance
+                      Id="9eebec76-5902-420f-a69a-a879852a5f08"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1289ec91-38c6-466b-a10b-48d6e0dc0184">
+                    <propertyInstance
+                      Id="97b4def9-dd96-4e79-80de-60bb6ddaefdc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f15d984e-c649-49b0-aabb-7410b61734c7"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="96158c64-a924-446f-9c91-b48d0ac0a975"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6cb5d1ef-e0ca-4274-a5f0-0ff65c6e3cc6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="51e0441d-042a-4b51-8352-e88c994249ea"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package5_1625.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bb35d3eb-5241-4967-8ee9-dce9f870c714"
+                  name="pathName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="82efe27e-256f-4979-aacd-a1f05838123b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader Member%3D(Name%3DreadFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DpathName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="GUIProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d9da02ad-a82a-4f57-90a7-826abb21359d"
+            name="INIFileReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bbf9bbf3-4f2b-4e25-ae16-b3fbb096013b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DINIFileReader Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3c1e0ff9-e93d-498a-ac34-d12d417d3ebb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db076c84-cdbe-4262-aeb1-51f7cfdf09ae">
+                    <propertyInstance
+                      Id="e42048b6-39b7-4212-9d3a-3a60112b3fdb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4b35bbc-385e-4c7e-8af1-c2f5e10bc4ac">
+                    <propertyInstance
+                      Id="f1e02f12-9d0b-4c86-8b76-cfdad5413035"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc9aed12-4e41-4b17-b834-a79bc886b335">
+                    <propertyInstance
+                      Id="7562d398-8b17-44a7-90ef-ac20486ca305"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abf32f99-02e9-48dd-ace6-1a6e3da41b5c">
+                    <propertyInstance
+                      Id="b7b6ccd4-8cde-48f3-afb0-33c2c0327697"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69ffa822-29e8-46df-bdf8-3df973fe3775">
+                    <propertyInstance
+                      Id="01816ced-1dc5-4897-9501-b61224424abb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5847332a-f014-442a-94fc-88da8a5a2e3c">
+                    <propertyInstance
+                      Id="4e44d451-9066-46e5-aa79-f713d301818d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="3ad964ff-8002-4ff8-a7e6-0da1638e809b"
+        name="launcherType"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="d9b3a498-b8e5-49c5-b499-2dcebd5a8b6e"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DlauncherType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7e13c55c-1349-4a03-920a-24ae0c54bbef"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0fb8261a-13f1-4fc5-b67c-50b4cd1a60a9">
+                <propertyInstance
+                  Id="047c26e3-a545-4671-9f1c-8f9025b2727f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eadf8291-4d2d-489a-9673-6409bf25ee8a">
+                <propertyInstance
+                  Id="38720912-1ea6-4936-b305-ea0319377b66"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60818fac-690d-413d-8e8f-d1a0b38fa0f4">
+                <propertyInstance
+                  Id="5fbd4981-0b86-459c-999c-4445d5d2a538"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="4ac260f7-179e-4d6d-b5e1-875f47ef0f00"
+            name="dreamC">
+            <referencesInternal>
+              <reference
+                Id="0b98621a-9a75-4ba5-a70c-de0e50b97644"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DlauncherType Member%3DdreamC"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="31aa2d49-f935-4b93-a231-87b430615803"
+            name="mock">
+            <referencesInternal>
+              <reference
+                Id="c851f8f2-aa36-4aa4-a459-f4e11ac3529e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DlauncherType Member%3Dmock"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d0502028-f0ce-410b-9d6d-ba2dc07f548b"
+        name="MissileLauncherFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6ab45385-d348-47db-9a0b-6eded34d4442"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DMissileLauncherFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bd263c76-da19-4d11-b5d5-07e24e7e15ef"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="abde0e68-a780-4b91-826d-c3cdf091f8f7">
+                <propertyInstance
+                  Id="fc0bd23b-bb17-421a-bb9b-7c3eac4a6725"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="adbae78a-442e-469d-b041-716ec217fe75">
+                <propertyInstance
+                  Id="2b14db88-5af9-44fd-a2bf-86eb38f24c39"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9f8ca56c-d17b-4134-844c-f2a86f07ffa6">
+                <propertyInstance
+                  Id="f3a972e6-f572-4330-bb0f-439173092d8a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc22a1a6-a9d2-4f00-82b0-6b7ac372f03b">
+                <propertyInstance
+                  Id="42485f3f-59c0-4795-8ef5-00607cd0d60d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="86f0bcc8-d968-41a8-b2be-d4dbbaaa125f">
+                <propertyInstance
+                  Id="3d0e2d39-1381-4883-9df1-5ae19f610bc5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dc959310-101b-462e-ba6e-559c6b4cbda3"
+            name="createMissileLauncher"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="de9724ae-f569-4eff-805a-90c7d5f82dae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DMissileLauncherFactory Member%3D(Name%3DcreateMissileLauncher OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DlauncherType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d39f478b-5fd6-48fe-b0db-8f251e9e419c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f0242fc-160f-4b12-89fe-96d1d616b1db">
+                    <propertyInstance
+                      Id="5b615fb0-241a-4873-b51d-9f5d30b3a3d0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dac82aa5-4cec-4983-98b1-9eae67780075">
+                    <propertyInstance
+                      Id="13a0e063-7333-4653-b78f-257ea005658e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47dfe2df-66bc-4206-ac60-56ffcf26cc46">
+                    <propertyInstance
+                      Id="7594c158-d747-4403-92d7-142f2f02e822"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acc91603-a0ec-40a8-b7cc-df7057c820bb">
+                    <propertyInstance
+                      Id="edb3733c-dad7-405b-9587-38222467d280"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49989b8e-69f1-420a-9092-e51476b88740">
+                    <propertyInstance
+                      Id="cab55af8-44fc-4548-91f2-d4ce00d0dcc2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87c06f55-197c-4b15-97a6-1a5673090da7">
+                    <propertyInstance
+                      Id="f3320eaa-7684-49ed-b952-7dd03b585475"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bbf3bfe3-3396-4810-aea1-3b56a9b761b2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="e6ce4bb2-1194-4be6-8fb8-bbeb74bb3ec5"
+                      LastKnownName="IMissileLauncher"
+                      LastKnownLocation="Package4_1624.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5fc9c665-d615-487a-8ab3-3891bf4ae300"
+                  name="myLauncherType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="faf2e8d1-f18a-4b72-9b8c-8e1a99222069"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DMissileLauncherFactory Member%3D(Name%3DcreateMissileLauncher OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DlauncherType)]) ParameterIdentifier%3DmyLauncherType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="3ad964ff-8002-4ff8-a7e6-0da1638e809b"
+                      LastKnownName="launcherType"
+                      LastKnownLocation="Package_1642.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="980070b7-2844-4417-aeca-054c675c067c"
+            name="MissileLauncherFactory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7239cd90-b82b-4bc1-bd27-624dd8d9b3db"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DMissileLauncherFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="620ffb3c-d93f-4ea8-af9d-22e0fa444602"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f99a98a1-5bfe-48ba-b600-3c072e25ffbc">
+                    <propertyInstance
+                      Id="3b5ef53b-ff05-4e10-9efa-ea6c1209f074"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44734b4b-16a2-4b6e-a85d-6b56e1ae4f73">
+                    <propertyInstance
+                      Id="6d78f5e1-5c4f-47e3-b053-697759b8879e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d05e5ec-f742-4f94-8aab-0315be20764a">
+                    <propertyInstance
+                      Id="f63fc169-03b0-4924-8d52-acd367b4a5b5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e4f41ab-bb65-47fa-b08e-59d0bf33abbc">
+                    <propertyInstance
+                      Id="82ef3191-8f2e-4b85-b133-7ff43125591a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5596b670-9d1c-4d87-9af6-492ebbfbc3f6">
+                    <propertyInstance
+                      Id="320f7668-3af5-4274-8cf9-c9c7b76f4ae0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fee6ba7a-36c5-4630-a07c-2ca5f789cdfe">
+                    <propertyInstance
+                      Id="0baa8025-983c-446e-ad75-9e4f640638bb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9d934e05-0313-4f76-a689-94c534bdee1f"
+        name="MockFileReader"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f3400a74-e9f2-4d81-a46c-31d11d25cd30"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DMockFileReader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d6b83fff-a712-4b79-b276-be2be8feeecc"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a03d7463-d03b-42ab-b557-17df7e7c64d4">
+                <propertyInstance
+                  Id="d495e0a1-10be-4b94-a3d9-e198fbfd6909"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e31885e-65c5-45b5-9a64-9c2e8f39044b">
+                <propertyInstance
+                  Id="d6448571-6fa8-4656-aa35-1948b7dcbde7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5c933a3e-924d-4746-aa3c-bed2defd0dfb">
+                <propertyInstance
+                  Id="b8bf506c-70ed-4ca1-bf6f-63dd2606f9fe"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8c3057c5-4ba6-44a3-a190-38dfe1daab27">
+                <propertyInstance
+                  Id="b88cc2fc-8158-42ef-903f-579778c3b333"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="565160ab-30f4-42d8-af7c-ee319f1e67ca">
+                <propertyInstance
+                  Id="dc5d0c28-482c-426c-af0e-bbb5710efd10"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="3e34eade-5a23-4b16-980d-f42785a8bc23"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b59f3ceb-ffc5-4381-a9cd-0f3cde296dc1"
+              LastKnownName="FileReader"
+              LastKnownLocation="Package_1642.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8eb74ddd-9b7f-4e83-8bb8-07649508d57f"
+            name="MockFileReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="aa1e01a6-5f60-4f9b-a028-506f3ee3d274"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DMockFileReader Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="86b44ec5-b3f2-4a79-9cbb-99b7170d33fe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d69c2256-d8b7-484b-95f9-6901ad630891">
+                    <propertyInstance
+                      Id="6cb07197-2f0c-442b-b7b7-663a48e7cf90"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b09447f1-eeb0-4612-aa3c-ee1c960db827">
+                    <propertyInstance
+                      Id="b6164166-05f8-47ef-9047-e418b5b248ec"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbcdfb07-04ea-4cfd-a60a-e127fcd8cbdc">
+                    <propertyInstance
+                      Id="98c5081a-ea87-4fd7-be3d-fa1399f961df"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a7e4334-0ac8-4d9c-bd7f-e1336dc3320e">
+                    <propertyInstance
+                      Id="e714817e-0ecf-4f2a-bab0-8e2912a90e70"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="faccefd2-f430-45d9-ae74-a5c9982ac9a2">
+                    <propertyInstance
+                      Id="776d2d02-1292-43c6-ad0e-57109e188957"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4090e492-af08-4d50-9022-7225ebc7cd6e">
+                    <propertyInstance
+                      Id="455343ad-58ee-4344-a157-c08b1be24d13"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="33c3ac95-ae68-4c4a-a43d-1864f61fffb2"
+            name="readFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="89159ed1-6c77-4c37-8658-01d2fdfdde20"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DMockFileReader Member%3D(Name%3DreadFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="25ad6255-d74b-49ef-b78f-4e19d725e9ef"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc8c2b7c-8a13-4c8d-a6b3-9bbd929cd12a">
+                    <propertyInstance
+                      Id="1f5759c5-b89e-447e-a342-d188d8231381"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90bf79a4-3f56-4870-a637-979549e44cc8">
+                    <propertyInstance
+                      Id="daaafd89-920c-47f4-8580-ede98dc4c8cd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a67fd99-650c-4f14-80c6-b5d3c45f22e3">
+                    <propertyInstance
+                      Id="f77d7b6a-0a15-49a6-8247-e3e70b3cd474"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c0df80d-aacc-4a4e-89c4-2849865dae1e">
+                    <propertyInstance
+                      Id="041fec83-f2b9-4c82-b0f7-583efea87962"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8565636-190e-4fdf-8f6c-7d42ec27afad">
+                    <propertyInstance
+                      Id="d77f11e7-2945-4ff6-bb72-e742142eef66"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e5f5720-ef31-4786-a780-a03b49f3871a">
+                    <propertyInstance
+                      Id="cba3a3dc-1fd8-4039-b03c-507ffc965e7f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="212129cf-f935-4168-8a80-73240fb9e322"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ea5fd73c-a513-4b9c-8f24-ef5ac8002fd2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="15815ffc-2548-43e0-8f9b-634dcf360a80"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="51e0441d-042a-4b51-8352-e88c994249ea"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package5_1625.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="75e79441-c076-460b-952f-4eacceaaab0b"
+                  name="pathName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="85a16445-0666-4c44-9cb5-f385bddb6ee4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Factories Type%3DMockFileReader Member%3D(Name%3DreadFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DpathName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="GUIProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

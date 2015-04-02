@@ -40,6 +40,7 @@ namespace GUI
 
         myCommand showServerMessage;
         myCommand fileLoader;
+        myCommand clear;
         myCommand TakePictureCommand;
 
         public ICommand _Show_Server_Message
@@ -51,6 +52,18 @@ namespace GUI
                     showServerMessage = new myCommand(param => MessageBox.Show(_Load_Server_Message));
                 }
                 return showServerMessage;
+            }
+        }
+
+        public ICommand clear_targets
+        {
+            get
+            {
+                if (clear == null)
+                {
+                    clear = new myCommand(param => clearTargets());
+                }
+                return clear;
             }
         }
 
@@ -94,6 +107,14 @@ namespace GUI
                 m_selectedTarget = value;
                 OnPropertyChanged();
             }
+        }
+
+        public void clearTargets()
+        {
+            Targets.Clear();
+            targets = null;
+            OnPropertyChanged("targets");
+            OnPropertyChanged("Targets");
         }
         public void loadINIFile()
         {

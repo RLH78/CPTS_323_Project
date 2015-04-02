@@ -1,0 +1,3303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="64aa1434-8e66-44e8-b5a3-7270fded7847"
+  name="Devices"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d56b7897-04b9-494d-804c-14577a50b34c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSAD.core.Devices"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="e6ce4bb2-1194-4be6-8fb8-bbeb74bb3ec5"
+        name="IMissileLauncher"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="dddb3af3-0002-4b9b-bbbd-90b12445c71f"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="544bae09-bdfe-4b12-a9df-c541f20dacf4"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e20461cc-7073-44c0-a57b-b4ba405d100f">
+                <propertyInstance
+                  Id="f9edb9e5-f0db-4d70-8a27-dbf018070408"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="59f3ac8e-4068-4238-bfbe-10ed690bb681">
+                <propertyInstance
+                  Id="4ff637ea-ba4e-4cf0-8b65-04f7c0ef9901"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1fa61ac5-53ca-4a68-bbb7-faca3d9335bd">
+                <propertyInstance
+                  Id="bc98bd6a-4c11-4802-b424-8cf5c2e3f4d3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2073920b-fea6-41fb-9e7a-d6e53137b066">
+                <propertyInstance
+                  Id="2c325c52-4df7-4234-8dfc-7b269fbb30bf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="77b0e8d3-ea97-4de0-9868-ce4c0e1fc5b2"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f5f5875f-4716-49bc-bb0c-09f7a318707d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DFire"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8636940c-df75-4c32-a53d-26aa34a711cc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de55ff5f-c052-4007-b356-337e6417bb2a">
+                    <propertyInstance
+                      Id="55048800-5777-4f01-a505-1856c7bc0049"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1770c18f-80c6-4b25-867d-1aed0be93096">
+                    <propertyInstance
+                      Id="2ebdb42f-03e3-4ec5-944d-9caff581fd53"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e468d67-5de6-4f4e-9649-88b118324a78">
+                    <propertyInstance
+                      Id="252c0008-84b7-4250-b7ed-50f52d6f9e52"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db67fb39-b3a3-4e6b-853b-b526207afd7e">
+                    <propertyInstance
+                      Id="2d81594a-b554-47fa-8b6d-934ab868c654"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eae30674-03a8-4bc7-b15b-038361a1f568">
+                    <propertyInstance
+                      Id="d4554a60-7b53-4c4a-875d-b495d290e29c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="155ec5ae-d949-4013-a025-ee0cbab845c9">
+                    <propertyInstance
+                      Id="59e4c673-2ca1-461e-a4f7-2f3cfa19a1b6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6a2617ec-f9c5-4ea0-b877-96ceaf854b54"
+            name="Move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="079248d8-df42-4060-ab53-329173b2930e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f473cb8b-5a5f-4c6e-9a85-9ddc4d5ad359"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ed4668a-8643-4abb-8882-b1df4e84156c">
+                    <propertyInstance
+                      Id="96445fb7-eed4-4008-8fb1-45fa81cc450c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0afa40f-31ae-4ea5-8a35-0dc9c52fe915">
+                    <propertyInstance
+                      Id="fd88c942-54bc-4c77-a8fe-cbb592f399a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09f4ffbb-468d-4d8c-b1ff-3cc1c9023945">
+                    <propertyInstance
+                      Id="be9c49a5-a35a-46e4-9ba2-65fc0329270a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e101f41-0a09-4413-a38d-d0898aeaac91">
+                    <propertyInstance
+                      Id="4aae1f3a-e732-4004-b35e-dc4008381217"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="433601cb-4671-4e47-95ef-bbd30af6cae6">
+                    <propertyInstance
+                      Id="24d048f1-0c83-4691-8022-1af2bafee467"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a30e775b-4073-4375-9bcc-dbd0822dc5fe">
+                    <propertyInstance
+                      Id="2b397176-2e55-4074-b6e4-54a6e68e9462"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="88c0e97b-af9e-43af-b9c3-e23fcc7c6f82"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="68284c4a-1a35-43b3-9edd-4012f6e83aad"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="541053b2-110f-43c3-a38d-b55426117a3a"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9cf3888f-b979-4f76-b15a-8714bd82ad02"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a8170457-0c5d-4ca5-8895-365a9d9924e5"
+            name="MoveBy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9c004431-464d-416b-b42a-d3c40aef7aa5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f271fdfa-3820-4a56-8066-4029d18d5bc3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb5ebbfc-263f-46ec-b1c2-88e5fe9450b2">
+                    <propertyInstance
+                      Id="e55b7ab9-5819-4e57-929b-e62cc4275940"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38226c50-11f1-4d3d-ba8f-5e3db4c284f5">
+                    <propertyInstance
+                      Id="a063e1ca-b9c2-4327-9d71-c6d309a039ca"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf07930d-0834-4fa0-98e1-a9db20accd24">
+                    <propertyInstance
+                      Id="c38199b5-8852-415b-8a33-158e17c941d0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b12c7f50-3ece-4ec7-801e-7e11aaec72a1">
+                    <propertyInstance
+                      Id="28887cb7-7176-434c-b9bb-d2b28443b369"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b236cae-49ca-4ce5-a4a2-0366ddeea06f">
+                    <propertyInstance
+                      Id="af368d64-1336-4d93-805f-785a74ab7752"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c42a7d2b-7877-4a28-a222-03c026d49325">
+                    <propertyInstance
+                      Id="31e112a0-8735-4788-8ac8-11c6844b5629"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="38c13d06-13f7-4a1f-b0dd-157c8e77268f"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="41fa01c5-9297-4d95-b330-491fcea8d712"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="26c689d0-adc1-478f-949f-a4d80ecb0675"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f944a3e8-c2aa-4368-8c57-2d443169dcf1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fa6a4bd7-8ffb-4943-a317-6b40f700359d"
+            name="Reload"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="23623fa4-7cb9-46c8-9053-67135e49ab26"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DReload"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f447342f-d987-41f0-ae05-edb588527da5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="022fea22-b64f-48d2-b122-8f4a62a35b5a">
+                    <propertyInstance
+                      Id="449628a4-bb14-493d-98e8-81318d1efebd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5173d49-22d5-42fe-9c49-ed04406da858">
+                    <propertyInstance
+                      Id="6690fd6e-d228-4b82-b760-0c6979436f4b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01f9b527-58bc-4e2d-9690-f2bd8a45c37c">
+                    <propertyInstance
+                      Id="2a461b2c-88e2-4a9d-b5cf-3bdf39cf25ad"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5e9fa76-74e5-4052-914e-8b65e2f49471">
+                    <propertyInstance
+                      Id="9f7d865a-0add-4448-bb2c-c419f4c16648"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e51c7b4-5a00-4745-944d-0e3396965b2b">
+                    <propertyInstance
+                      Id="b68529d8-05e1-47d1-9d74-3bfe2f28414f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81799689-ff8f-45ca-b8e2-948327ceedff">
+                    <propertyInstance
+                      Id="567fa0ff-01df-4762-9356-da092a89ad9c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="11508714-d1e0-430c-ba98-dbca36d505ce"
+            name="Kill"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d6336340-9238-4e10-a6c1-20689a0e8136"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1a6faaa6-086b-4aad-8aa9-0deb3a201e8d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="719bf588-5319-425f-bc24-40b1cca88e7b">
+                    <propertyInstance
+                      Id="f17c0f88-f24b-4638-a92e-8edead01de98"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a484eb4-9538-45c1-b0d9-4e31549ece26">
+                    <propertyInstance
+                      Id="11c95670-84fa-4bbc-9a5c-3f137b49e9a7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4033e580-6367-4c1d-b016-533b2b397b6f">
+                    <propertyInstance
+                      Id="fbda7b3e-c998-47eb-b0cf-1fafde430670"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e7586e9-c809-436a-a523-2e3352b1e352">
+                    <propertyInstance
+                      Id="29864180-b58a-410e-a1f9-8620b2ea6cfb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d41596c8-dae5-4056-ac8c-d927410efab5">
+                    <propertyInstance
+                      Id="30a2050d-d2d2-4a4c-979b-16117f0e4a68"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a24d20a-9bfa-4fd2-8820-15ee3d3561b7">
+                    <propertyInstance
+                      Id="2c5ec994-ec55-4b42-b48c-96b9cf0d1de0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fb174e08-ef7a-43f4-a2af-c0c748027921"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="33f4ede0-e4ba-4323-acf0-b2415c56652d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f277d9af-ac38-44cd-902d-e662fe2b1d74"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e1f51e05-d10b-415c-b005-3845bc6032c4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="791aebb9-704b-43ed-8ef5-bddf87c555c1"
+            name="Reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d6954a52-0551-49f3-b10f-3a1b54fe6982"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DReset"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="53fd53ee-3bed-4216-8d70-fe8324d068bc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91ef87dc-d4cb-4441-90da-ae4d69bd4eb7">
+                    <propertyInstance
+                      Id="afc0c9e7-cb89-4a5a-bf0f-6f847d04d617"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bfd7c6e-1be4-465c-abe5-295d2a4e8b03">
+                    <propertyInstance
+                      Id="4d3bd004-fe80-4963-858c-01da54a29b7f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68966b57-2155-4217-9be2-b3c2b88ddf49">
+                    <propertyInstance
+                      Id="8d48d715-a385-4c06-b2be-658ec67167e2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d06d81c-7896-4b2f-8ffd-0c4e5c1087d4">
+                    <propertyInstance
+                      Id="c5212c7c-7c93-4497-b7b3-09fec2bc2c0e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7481325d-d0f1-4280-861a-32452556ae99">
+                    <propertyInstance
+                      Id="28d34536-a8c0-44de-8e29-7e52c2c6275c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c06155da-5a82-4696-9cd4-00cc87cddee3">
+                    <propertyInstance
+                      Id="497b7961-e50a-4713-8456-0e21c334263e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="5c44e4cc-241d-47d3-9f3f-8153710ae975"
+            name="Status"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e4a575a8-0038-4dee-8525-d65e23695bc7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2054a1ec-d7cd-4de8-8fe2-c689062993d1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfc7d690-8ef8-4cca-96c9-dbad5176014d">
+                    <propertyInstance
+                      Id="95c7086e-8a58-4b63-9c68-eb9a2ead3932"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a46b9b1-7255-4acd-9384-7ac35c65c055">
+                    <propertyInstance
+                      Id="5d8d701f-e6ed-4b2b-9dd4-35c9f4d9c616"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac6a9de0-9ad3-48a3-9342-da5ac6f0e5c2">
+                    <propertyInstance
+                      Id="b098aa30-dc35-4ad1-aa76-d91559f801bf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87fc413d-bef4-42f1-834b-f8ff869612aa">
+                    <propertyInstance
+                      Id="7979db3f-9b40-4a31-8a2c-e3f9b8ecbcdb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e35b2b1d-cb35-40b8-baac-bfade66965b0">
+                    <propertyInstance
+                      Id="9a5b0fad-de86-48eb-b58e-dfb8089475ae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c46b121-e508-48b9-bec5-2ae29ae574ea">
+                    <propertyInstance
+                      Id="7801c0fc-f5d4-40df-a6a3-b198dfceaa93"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="95502b3e-94ca-4319-bf66-cdbd1448dd32"
+            name="getName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1f750ca0-e705-4cd1-a8a4-e994bc90640d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DgetName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5cb4e863-1189-40c2-b506-0e68be8308d3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a503d74d-dde5-443a-ad83-66eff85dee12">
+                    <propertyInstance
+                      Id="c3081e6b-ae22-4cb4-a9ed-952c0f0add73"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="690a4acf-b9ff-41ac-a6b2-96ff82adc203">
+                    <propertyInstance
+                      Id="d3fa3931-1407-4153-8fff-8c1b5c0a2d6e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74351dfc-2975-4f4c-9416-65190739400c">
+                    <propertyInstance
+                      Id="3e7ae6b3-1052-497d-84fb-7f67e4f09eba"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a28c5b23-becb-4043-ab2e-92c250eefb55">
+                    <propertyInstance
+                      Id="3dd93ea7-528f-4b1f-a6e0-63347dd46c74"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b18f45dc-0808-4b05-a768-43e7af295d5f">
+                    <propertyInstance
+                      Id="5595d55b-99c9-46c1-a63e-55f1063eda81"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92aa7e14-8d89-421e-9962-268e31d1ec95">
+                    <propertyInstance
+                      Id="e03de6b5-68a7-483c-933c-9a3a36eca648"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="572eb66a-0b0e-427d-ba34-f450ed9cf232"
+            name="MoveUp"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="926ad283-00f3-404a-be02-8c4579d1c405"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DMoveUp"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d44cde80-2606-4a40-976f-fffbadbc3f65"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac79eb1d-bd8b-48c1-84a7-3b0b32fc0ff3">
+                    <propertyInstance
+                      Id="347ac3e1-ab8b-47e2-a589-9072bf7c2c00"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ebb0baf-208f-4b43-8dc5-1d185e95e8a0">
+                    <propertyInstance
+                      Id="071cd308-3c8a-4ae4-bdeb-b8ec898f8fc6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d086307-4bb2-4317-941f-b1d3d6420e9a">
+                    <propertyInstance
+                      Id="99e4cbca-04bf-46f6-a77b-46e7b0e0ba63"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab89db4c-45ee-41d4-b420-87543c9230b7">
+                    <propertyInstance
+                      Id="faa35b53-c0b3-4c43-9aa5-faeecfb3c31d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c3668cd-806f-4e58-97ab-95e2701bd94c">
+                    <propertyInstance
+                      Id="fbdeae55-e6bf-4484-92bf-222ad61b482b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a4fe590-7baf-4963-8070-38a3ce0dbd13">
+                    <propertyInstance
+                      Id="21fd80b4-2b0a-44f0-aa2b-7f0a39160165"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="1c31f617-37a8-48bd-84fb-6dd235602ef2"
+            name="MoveDown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ea07c20f-f3de-40b1-b49a-e475dde89064"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DMoveDown"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1418b6a9-7e78-46df-a435-0f1bca4e9ddb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee24545d-a9a4-47d2-916c-8b811fd8aaba">
+                    <propertyInstance
+                      Id="435b594b-f0cd-49fb-8152-b907403bbccd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4281d5c7-9733-408b-ad42-adbe6e3ef75f">
+                    <propertyInstance
+                      Id="419f8ca0-dc91-4731-ba32-1baf9f7d5cff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7987f175-79a9-4fe9-a7d0-4e00a693a1cf">
+                    <propertyInstance
+                      Id="bd1281a9-fa06-4ed9-86c1-36ec8b22f866"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cd4a338-2201-47e0-a5e2-2d9a84cc8ae3">
+                    <propertyInstance
+                      Id="5616bc8c-7719-4aef-a478-fcc78bb86ddb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a30b5f8a-3b54-45b6-bfc0-5acd16816a37">
+                    <propertyInstance
+                      Id="5aa50d63-4e59-482c-ae48-e92c0bcb5810"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cc94973-405a-4ea2-bbb4-9284f0facfa6">
+                    <propertyInstance
+                      Id="c4ad122a-8c6a-4972-9c21-a90c5fb6fb3d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="79acb846-60dd-4b68-8257-7494f95a5a10"
+            name="MoveLeft"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ca7b39cf-5cf0-41d9-88f0-e97938c3d2bc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DMoveLeft"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aeac41ec-750a-482f-a18a-3ff92fab7962"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6c2cb98-e5d2-471e-ab5b-1b2b7cd331cc">
+                    <propertyInstance
+                      Id="18e1854e-194e-4891-87d5-c0f5e1dd7583"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fdd12c7-bdd8-4643-8286-fdde4c06b8e6">
+                    <propertyInstance
+                      Id="d365b7ff-5c2d-4c3f-b0bd-176656198ce5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1219be01-52e6-4e76-9125-decab7e14b7d">
+                    <propertyInstance
+                      Id="bc6f84e5-fb45-437b-b85c-d53ba624ce7e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cac1c8a-3ccd-4276-90d5-9a9ec148c755">
+                    <propertyInstance
+                      Id="3456bb47-7e7e-49a4-992b-f2e210e8dc8a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a17577a3-d0d9-4122-8564-c99c535e0bc4">
+                    <propertyInstance
+                      Id="9519b6f6-6600-4d33-80a5-e3a063651075"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="695ae7b7-745d-4dd3-8794-b7ffc002d138">
+                    <propertyInstance
+                      Id="f20ea87b-d508-4bbf-b2b2-b831d14ac023"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="388f2df3-3fb1-4a6c-9d4c-adbdb0fa85d7"
+            name="MoveRight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fb1b5efe-f464-4f5b-bbab-a8d301e0f5f0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher Member%3DMoveRight"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="23dd3c23-e43e-437c-a13c-0506b42a7696"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a9d2364-f263-4953-ba47-c75737c6384b">
+                    <propertyInstance
+                      Id="1bbe7c50-319e-4f91-b433-27bbc4170caa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="272f0311-a614-4b65-9dcd-b8a6ee93c5b3">
+                    <propertyInstance
+                      Id="3089ef8c-ac3f-4bac-8789-3f0e9e1b1be2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa1d5b3b-4378-4980-9eca-11bee4dec986">
+                    <propertyInstance
+                      Id="6d15adeb-b51a-4b54-8524-3111fa8f8399"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f357745b-9813-4215-9634-05addd40f097">
+                    <propertyInstance
+                      Id="f90d2991-c7e2-4431-9917-91ce4baec2b7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7fd89a6-314a-4af4-b5e7-7fa5c58237ed">
+                    <propertyInstance
+                      Id="58752813-323b-466b-ad88-0419a40a38b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="950118e5-e05b-48ba-8ec1-72e825a00f30">
+                    <propertyInstance
+                      Id="9dca9f43-5c15-4189-a20a-c45011cd9cf6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1e3424a4-1e9e-4c0b-af8c-c313daf29eba"
+        name="DreamCheeky"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3022ad94-7ed6-4632-9e3e-e591690d4a6f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ab628a57-ca00-44f1-8c21-6182d6587632"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6dd55ec9-cc10-4339-8642-4daaafa6e195">
+                <propertyInstance
+                  Id="5c49f0e7-cbb2-4a2b-97b5-af05be7788c4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="684e31c1-768e-4a41-b9f0-336d6d78fec9">
+                <propertyInstance
+                  Id="5477df40-48e2-4a98-bf15-d986525fda92"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61230b5f-7120-4587-a2e6-5952c1aa7251">
+                <propertyInstance
+                  Id="a6fdfd4c-ef53-4db0-9b3f-2ac4d157a233"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31d162a2-55fd-4f0b-883a-70dc3815e8d2">
+                <propertyInstance
+                  Id="07aae9d2-e398-4b2f-94b5-d08df54e846f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0d11a4a-b3f1-4b6c-bb07-893ae8d56cbd">
+                <propertyInstance
+                  Id="178518ef-a2e5-4b5c-9be9-52e992c30aad"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="df02a8bf-58d6-4460-9dd5-4602e14a87e6">
+            <interfaceMoniker
+              Id="e6ce4bb2-1194-4be6-8fb8-bbeb74bb3ec5"
+              LastKnownName="IMissileLauncher"
+              LastKnownLocation="Package4_1624.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="60b3a530-b82f-4a56-bfcc-fe5030ca1b2e"
+            name="launcherName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3907b4d1-055a-4189-b62b-41ce4703c3c2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DlauncherName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2b4ac503-cb79-4cf0-a0a0-726585f58680"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="549bd665-2e34-4768-ac08-73a2e9411455">
+                    <propertyInstance
+                      Id="ff41a160-b6ed-4a35-a4dc-2d541d919e4b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="001202a9-21b0-49af-bc37-526accf0d552">
+                    <propertyInstance
+                      Id="22463fa0-72ef-4daa-9bbc-f0ceae01c078"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b98d5be-3edf-4724-8c59-06455881cf73">
+                    <propertyInstance
+                      Id="3d5c8e2b-46de-4c20-abc7-be92734efc17"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b70e1f1-c5c2-4737-a5c0-4c2deb5e6fa7">
+                    <propertyInstance
+                      Id="446e8b2f-eac6-4ae5-92b2-12aaac6b20f2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9aed8e75-b45e-4412-8679-de8213089d6c">
+                    <propertyInstance
+                      Id="e02355b3-b377-43ec-8b36-7d1b91f1701d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4618883b-43a7-4bfa-a365-ef6d70ae23c2"
+            name="statusPhi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1f749a10-c778-4d4c-b90d-3df4003145dc"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DstatusPhi"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d89f75c4-2e07-4015-ba6c-ed1ad5b82da8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee26dae0-1083-435e-a9eb-bb0154ff9458">
+                    <propertyInstance
+                      Id="dd7797e1-0ef8-421f-a9e5-4b9f998acd45"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="650a510c-b2ac-4d71-9f7c-2ddd8b585f12">
+                    <propertyInstance
+                      Id="8bbc1102-2efc-4ce0-abaa-3c34beee8cc4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f07bc7f2-a253-48b0-9182-6630ae92d9c0">
+                    <propertyInstance
+                      Id="468a1cf4-8b8e-4d38-9ca6-f11dcfca7c59"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e561ce69-29b2-412b-b356-313276872311">
+                    <propertyInstance
+                      Id="5544f303-039f-4b2f-9529-4ee27b8e413f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a0262ea-dd16-4b12-ae86-1f37163b7d0a">
+                    <propertyInstance
+                      Id="c721ba8d-9817-4c93-a4af-0c9454ab1eb4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a1f3ae0a-a911-48d8-a171-aec11aed77b6"
+            name="statusTheta"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1c3dd8ad-7ea6-4121-8208-03dfbeafde62"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DstatusTheta"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2133fc4a-362d-49ae-8ed5-6bcc48a2bf08"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c3063e1-9606-491a-8f71-0f183c31f52f">
+                    <propertyInstance
+                      Id="1d10c5b9-c484-4737-954f-0efbd17ad7d9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7a64137-5da7-48d9-8d63-f48ae1f0cb49">
+                    <propertyInstance
+                      Id="08f74590-2ac4-4e6c-84b1-23f97280e906"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f41ec05a-2ba8-4ef5-ab78-aa8a20c64ad0">
+                    <propertyInstance
+                      Id="25163d6e-64ca-467f-9eb4-b33e74012f78"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6eda1bf8-7c18-4257-bd29-44f0fa8c57b3">
+                    <propertyInstance
+                      Id="0f3766a4-01d3-460d-b7d5-bedacacaac45"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dbaf2fe4-fa55-4734-acfd-e46ce16ecb11">
+                    <propertyInstance
+                      Id="8a010e85-d491-40de-8bc1-0e8945dd7d89"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e4504d05-fbc9-4619-b0e9-a0c8cce0a4fc"
+            name="DreamCheeky"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="32833abd-3ea1-4043-8efb-c4d5f2a7f6d7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4c60ca3a-645f-46e8-ac49-cf7281d8943c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6d75fe3-da65-4357-866e-8df571171971">
+                    <propertyInstance
+                      Id="270852cc-f110-492c-978a-86935d746efd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea6e1578-1f69-453e-84a3-d4bfc5389fcf">
+                    <propertyInstance
+                      Id="462e6d9c-5c0c-49be-a788-cc82c310a377"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5d95dab-7cfe-4550-85b5-6d46099465af">
+                    <propertyInstance
+                      Id="8e5c4f60-9de7-4298-996b-a6070f8461ec"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3c41638-3002-4f96-a336-196fc95c2d58">
+                    <propertyInstance
+                      Id="b606ac4a-7fe9-47ca-b03b-db162da64485"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="486aca8a-3338-4b8b-a1e8-b926019b4da7">
+                    <propertyInstance
+                      Id="af70dddc-ea73-47fa-93ef-54776f0d6e5e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3a91602-d719-4be1-b899-fbb8ba2475d6">
+                    <propertyInstance
+                      Id="21151aad-257a-4c13-b796-e4d5f9411fed"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="3bb41c0c-94b7-4fbd-ad00-f037a43e4db0"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4666c67f-2c60-403d-818d-fb2de1d840f1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DFire"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="746de9f3-7108-40b0-9026-11928149f250"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3e6f7c1-dc40-4cb8-9337-c8a44bbb93ea">
+                    <propertyInstance
+                      Id="cfa3689a-5a43-4128-9f20-46f64b78a27e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0611016-1711-4225-9a35-fd78ed91e0cc">
+                    <propertyInstance
+                      Id="1f997cb2-0f44-4b03-bd86-cc9e231df369"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a04b8ba5-023d-4e50-89f2-0dc219f765fe">
+                    <propertyInstance
+                      Id="be9345f1-216f-422a-b42f-567c419ca746"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54c79c71-48de-46d0-ada6-97b0b784103e">
+                    <propertyInstance
+                      Id="0fa1d286-0c2f-4598-9821-87fe81844807"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba3ee9b8-e9e5-45d8-8025-d96144986f18">
+                    <propertyInstance
+                      Id="ccfee4e2-9bbd-4c16-8809-045c792e33a8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed949830-856f-49df-aedc-8ad7513e881d">
+                    <propertyInstance
+                      Id="8ec1b598-fe57-41c3-b74a-77b190bedc6b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f5a42a0e-5e7f-47a9-9fa3-09bc2fb6d482"
+            name="MoveUp"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b5971d93-fabd-4e56-b88c-d9cfbbf7d6d7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DMoveUp"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="13e97576-de30-4d13-b592-bd612d55fec5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87491f4e-2040-423d-9484-c41fadcfa11e">
+                    <propertyInstance
+                      Id="039d73ca-f547-4f8a-b6a8-77df6fa4a4fe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46a97503-fe7f-4ca2-9091-707e3461a208">
+                    <propertyInstance
+                      Id="2c44ea0a-0445-4981-bf48-5436defa93d6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b752968-7417-4715-b7c6-181046262613">
+                    <propertyInstance
+                      Id="e79b0aa8-5669-409d-9456-4a86c7fa1d1a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a942cea2-2aca-4c57-b228-73d85272a6a5">
+                    <propertyInstance
+                      Id="f516a031-547f-4cf2-a7d0-90a2560c9a77"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c026f98b-e368-42d1-aff0-239a8669db09">
+                    <propertyInstance
+                      Id="e048e946-e467-49e5-8895-b52cfd6b63b9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7ef625a-660a-4ddb-a7f4-5b4f66bad281">
+                    <propertyInstance
+                      Id="f23cec64-c459-4767-ae31-56ad8418fa59"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="03ef7be6-7d4b-4c1c-85a7-5c56d9093d99"
+            name="MoveDown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b0ed81a4-7931-4e1f-8f49-b94a08479a42"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DMoveDown"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8c547709-b4fe-49b9-8c99-3810044fb948"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12a339a3-2b52-4031-aefa-82a65acd82e2">
+                    <propertyInstance
+                      Id="461f21a5-8f8b-46d4-be19-d3ae0afc1eb5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85d8b8b6-1f53-4e50-89d0-2b6eb27f4541">
+                    <propertyInstance
+                      Id="b5ba823e-a5b4-4604-b93e-4e929c1b59d6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31a818e3-6f32-4d88-8b3a-72993d1dd6dc">
+                    <propertyInstance
+                      Id="278a18bd-d9d9-462c-a5f6-3c35c233788f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b238066-6b55-4598-a655-30ebae81cc92">
+                    <propertyInstance
+                      Id="7e2e065d-f823-4a58-9262-5680e73fc5ac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a71b0d01-7afe-4f47-94fa-c7c7c6be4386">
+                    <propertyInstance
+                      Id="7667272d-c9fd-4a03-9b4a-43d34501eca0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0f05ea9-d9d5-4706-b29b-e277b2c02a7a">
+                    <propertyInstance
+                      Id="f57595a7-9022-4eb1-99ef-19979c9be7db"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f437364c-669b-45db-95e3-a8b95f8ccb38"
+            name="MoveLeft"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5632bf80-9a71-44c0-9c69-857176b424c0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DMoveLeft"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="77f3a9e3-3b00-4a12-b5e0-69c1fdfa9179"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="615d9c8f-43c7-4fe9-aedb-5573636e28aa">
+                    <propertyInstance
+                      Id="51e3de99-e3c8-4eda-b0d2-0673dbf17ee6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fc9266e-622a-4ad0-a513-1267e248afc4">
+                    <propertyInstance
+                      Id="6f101c25-cf9d-47f4-b27a-fe4b624a1f9e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04c00300-0301-4d22-8f0b-fb8609dff2ca">
+                    <propertyInstance
+                      Id="8391bec1-efc9-4886-8b5b-7bc75b28490d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08f6631f-b91a-49e3-8770-2768266d6fd4">
+                    <propertyInstance
+                      Id="9b9ca9b8-a842-421a-9a50-27eddd9b9782"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5edcc94-5b8d-412e-9f0c-60d103caef03">
+                    <propertyInstance
+                      Id="07d6df94-e5b2-44f7-baee-e73e04d3ef5c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90db70e5-f354-4bac-83d8-a49093f0f7ef">
+                    <propertyInstance
+                      Id="1da7d656-8160-40f1-806a-854ec1347ee2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="44be126e-1523-4de1-99a5-1246cae5648e"
+            name="MoveRight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d9989bc1-6c86-4044-926c-2aa44093988d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DMoveRight"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="39c6434a-fb46-4633-b5b1-0c78504a88ef"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58443eb3-17f9-41bd-a5ce-3eb235ff1238">
+                    <propertyInstance
+                      Id="0ed1d06c-49bd-4cd5-af0a-0031291dd32c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49563a1b-92ab-47a2-8111-34d5cbb64fdf">
+                    <propertyInstance
+                      Id="e79a9084-01af-4377-8f11-c460f5a1489a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9db0852-4990-4bac-8c9e-509fad4b59c0">
+                    <propertyInstance
+                      Id="f6dbb785-863e-48a7-bb8b-37b383b6bedd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45cd8cb9-1cf5-4570-8061-517a86b2a9d6">
+                    <propertyInstance
+                      Id="384a18d0-82a3-4696-a2a8-3fb9eb5e4641"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d943bd4-9d4a-4959-888a-6ec8ab0995a1">
+                    <propertyInstance
+                      Id="8a89a100-e7bc-4cff-8b9d-9c14179ae99e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12c3c717-ffb6-4800-92db-9d28db1c1043">
+                    <propertyInstance
+                      Id="60dd466a-c78b-4deb-901a-4cfcc8d3ee9f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f8333d0d-2804-4831-adc5-8479797ef16c"
+            name="Move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a1ea0f60-499a-4992-83b6-4ed5e36bf1b9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="548b9c15-a13d-4ffd-9be8-98a17a9df0a9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b30f852f-43eb-449f-a37f-4b52583cbed1">
+                    <propertyInstance
+                      Id="3d588c01-968a-4a94-a26b-7cc443ad3c6f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b5a4557-c88c-45b0-85b2-e68e8fea88c8">
+                    <propertyInstance
+                      Id="957fd1ab-a36b-4306-b12b-a0e68923a7f5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="feb5866e-d49a-4cda-9385-0c8a782bcbd0">
+                    <propertyInstance
+                      Id="d46f5dd3-1ff2-4a39-aa07-cff8de2003ca"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82beffec-d440-4dcc-b690-06ab0fd72c93">
+                    <propertyInstance
+                      Id="4efd4010-88fa-447e-a383-cbe7558bed93"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a6e1de2-a5fa-4184-86ec-a202ca7951ec">
+                    <propertyInstance
+                      Id="9c0baa32-d687-4ca1-b5e4-48cafac79d7b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f53c6d5b-53d0-4718-9707-8207dfbf6f24">
+                    <propertyInstance
+                      Id="59f54189-4913-46ca-927f-40f997bf1f72"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="85127db6-6826-4663-805d-184a0ba74123"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d4a5223a-d79d-43b4-8d9b-db724a0852ea"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c1b7979-191c-4e1b-afc9-a809cd79813e"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="995305ae-712e-47b2-b5f7-4f4c6af2069b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0d10df6e-5492-40c1-a737-6e9f18095d86"
+            name="MoveBy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="60c2e43b-19b2-4bb5-95da-29fa4ce8313e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1938e705-5771-43d3-a7a6-99f6a3f6699f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d6e7eeb-83d3-4ce6-9333-7aee6014d0f5">
+                    <propertyInstance
+                      Id="b67e0037-1a97-4d93-921e-bf401a7e1a85"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9f54a49-3662-4fdf-aa94-a1ddbccfa021">
+                    <propertyInstance
+                      Id="87e0e8ea-9cbb-400e-8d68-449521da4608"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d58fbfbf-2470-4372-ba28-805cdc8fd8b2">
+                    <propertyInstance
+                      Id="d2385e34-5d38-42d9-b63e-0a3598538de2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdf1a944-325b-438d-95ad-1d8b5bd8958e">
+                    <propertyInstance
+                      Id="b829c6aa-a76f-47b5-802b-dbfc05811f12"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="793ccef1-d76b-4fa0-bf9c-cca985ae8c0c">
+                    <propertyInstance
+                      Id="f0a26800-cef1-4c0b-9b57-ef31ea57170c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2db5e639-61c9-4439-82c2-3bb178f50a21">
+                    <propertyInstance
+                      Id="2d73d304-acf7-4a03-a9e2-bc7ba4c54f14"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7191dd6a-cf61-467e-ab73-93fb23999e1d"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1266b422-e498-4e3f-84b9-eb5fe48057db"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a18ad47c-3d06-47af-a39a-068e624da4cf"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a511326a-bbae-4493-8a9d-fb5077f51b1e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4a53d2f1-97cc-4d29-b830-da9e969369c1"
+            name="Reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="51ded7a7-34e5-43c7-9ef7-0445e799ecc4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DReset"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9338c0ed-e097-4633-91ae-a999459edda7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f7ecf1e-e938-4d60-ba91-f3e05eeeb469">
+                    <propertyInstance
+                      Id="6ab5a3a3-2a13-4728-9ad1-fce6195a603b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dbd01cf8-4177-4847-bb60-51bb56ace838">
+                    <propertyInstance
+                      Id="2db4089f-c218-48be-bc92-47f33c78a02f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4391cfbe-5ccd-4365-94bb-0c6ed4728617">
+                    <propertyInstance
+                      Id="f67a9da0-b530-452a-ae3a-5a1ff744ac41"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6e26377-ab11-4d61-a43b-48d698db6502">
+                    <propertyInstance
+                      Id="a52642aa-3e75-4377-939c-85b8ef4da9a4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ac9c40e-701e-4d50-a85b-56fd5222bf68">
+                    <propertyInstance
+                      Id="99cf2a5e-1d93-4718-beac-80edab4a336a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a755d098-2c21-4be0-b510-55352e38ba1c">
+                    <propertyInstance
+                      Id="e3fed98a-a25f-4f7d-ab7a-29ebef70b273"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="5e0598bf-7562-47bb-ac7a-b533a3596ec9"
+            name="Reload"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1839848e-1da9-49fd-ac0c-036106b7673a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DReload"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5971587e-21af-46d8-89ec-0a4775d74a1c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76070a3b-914d-4d5d-9ff5-5253d5307d8f">
+                    <propertyInstance
+                      Id="eca67c97-c701-4c47-a537-c82bb950fb06"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83d2ce88-8f8d-453b-a31d-2d448a3d08a0">
+                    <propertyInstance
+                      Id="f028abd0-aea6-4d85-ae39-f89f063070f5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78ded8e5-ccc9-46ec-92a8-50b8ec7d42b5">
+                    <propertyInstance
+                      Id="9f086152-591d-4e66-9deb-51a979c3707e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f97731d-591f-4c02-86e7-5f03371da33a">
+                    <propertyInstance
+                      Id="a12d1d1e-fa3c-429e-9c9a-0ff52a6f6bba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1483d16-bfda-4528-84be-5c71e824c047">
+                    <propertyInstance
+                      Id="f3a67a1f-5178-4853-8d93-3dbb438aa488"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70303d91-1e6c-40eb-b62b-6c58eeb3dc2f">
+                    <propertyInstance
+                      Id="d18acaff-a1fe-477a-8c39-437f7d79bf4c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="d40cc882-479b-403e-a0dc-e3db94a21b12"
+            name="Kill"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="83191c6a-939b-4898-942a-7e674c3f94e7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="13f37f92-936b-491b-80c1-47f35f517b31"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce6ceda5-4efd-4631-abca-d453d5d46cae">
+                    <propertyInstance
+                      Id="79974060-8a2a-49c3-beb4-a2e1f881195d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f08442af-2371-40f6-85b4-fdc45909caa0">
+                    <propertyInstance
+                      Id="3fdcfee5-4a5d-4525-b15e-35c855a7eb00"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf954e56-0ae4-4270-92a4-ed38b3dea33b">
+                    <propertyInstance
+                      Id="18f717f9-21f3-4888-8b84-9784804a118a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ed86a36-1f66-4188-b9de-758d60264899">
+                    <propertyInstance
+                      Id="50fca920-6ce9-4b61-84a7-d13851028eff"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e15f097a-8f80-4aa6-bdcf-cf14dce928ed">
+                    <propertyInstance
+                      Id="89330092-5e9e-4704-9ab5-f306c942d27d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20ed7f7f-3d3a-4111-85e9-32120b7f7548">
+                    <propertyInstance
+                      Id="a9b8f7cc-f012-489f-9a61-2e40d4cf6541"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f59fa12a-588b-4769-b3c3-7dba26860655"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="54531b74-c894-4731-a63e-507f13085569"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3f0151ef-ebf8-45cb-a952-6cab17a6e866"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="81f00f88-afa7-47b7-bf26-2098377aa3d0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c6bbc1e8-e296-4483-93c2-a9772808e6ed"
+            name="Status"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="30ba6436-cef3-44a8-8926-1d3d522c7b54"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e2009d03-80c9-4be9-bb4b-69526b2db2f2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87ee3aa5-055a-49fc-bd57-794da9ea3242">
+                    <propertyInstance
+                      Id="e2b318a1-d2a5-4bf2-b83c-bb4a19650669"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c913bee-dbc0-4ee0-8bdd-a2bd0bdf3ccc">
+                    <propertyInstance
+                      Id="698f1d85-5bcd-4fd8-a069-077b72168506"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62332229-8b9b-47a2-bcc7-19bc01533f84">
+                    <propertyInstance
+                      Id="a1f3c006-bffd-4d42-9286-6a84ff94df7f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2967cb3e-9618-4487-be39-453a1453cfa1">
+                    <propertyInstance
+                      Id="4801e482-95f8-47ca-8024-c614c97aa6fc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08bd4ba0-a566-45c1-a62a-018088d63a1d">
+                    <propertyInstance
+                      Id="f817fc69-d959-41a3-a792-caad7fa1d44d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdb0b8e8-bebd-4368-a504-e654447e7c78">
+                    <propertyInstance
+                      Id="2d88764c-7f9f-43c2-83a3-f40f00ebbe83"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="0cbf633e-ca58-49ae-b101-2be2d495b586"
+            name="getName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="090666c3-d674-43ff-b2cf-7f5f472b8ae0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DDreamCheeky Member%3DgetName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="56f3b446-e56e-4be6-a715-56d430bb5dcc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac6024cb-8e78-47d6-a862-1ad54a152638">
+                    <propertyInstance
+                      Id="749e531a-f645-404c-9a34-0097bed6a975"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a80015a7-1c76-4ff6-adee-ecc5892839b2">
+                    <propertyInstance
+                      Id="07fcd89b-9afe-42ce-ac29-dabb2c73434c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20ee1c05-1351-4154-b896-f598fbafa7b6">
+                    <propertyInstance
+                      Id="3741d625-4f0d-44d7-b559-4ec4437dfe65"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="769029fd-2b85-49bb-925e-e1e922e00094">
+                    <propertyInstance
+                      Id="2313dd2e-916b-4c18-9b38-bf8f45cda5a3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2baa72d-8c45-45f5-90e8-b42a0e1e39f6">
+                    <propertyInstance
+                      Id="1cec5697-2340-44db-9950-758f0afd59d0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15c7a0fd-b25c-4bff-b544-d7b9bc35d0e3">
+                    <propertyInstance
+                      Id="c5cf8a24-cbcf-43af-a51f-b4a78686a36b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d4430fdb-2df1-4ced-8d37-37df140c16c8"
+        name="Mock"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6e6e518a-d280-4796-89b8-66ca8f9a9208"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="68c0603b-2ea7-4049-894b-176349a608c9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45999c84-5d0c-4455-829b-61ad53ec73e2">
+                <propertyInstance
+                  Id="47bd6ce4-81a5-4b02-9df8-c1ee83aa2cf9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4319667-0136-4cb3-bacd-618342ef0177">
+                <propertyInstance
+                  Id="af58041f-f9d0-4851-8b0d-dddc52d1af2d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f2e966d8-0175-470b-b3b3-15d81d2ba755">
+                <propertyInstance
+                  Id="90d8c8b1-71c7-4ea8-b29c-592302160de1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0611aa9-de5e-42a9-bd95-68fd8e6e3c15">
+                <propertyInstance
+                  Id="2bba4936-2459-495f-9ec5-a7c03df15f91"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ccc88e89-fb20-4ba2-862a-4918e6c353ba">
+                <propertyInstance
+                  Id="6b2c2c71-58c7-4549-96a0-0517a9a8ba5f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="6f2a0956-df44-49dc-95b4-e8ec2ed8a87a">
+            <interfaceMoniker
+              Id="e6ce4bb2-1194-4be6-8fb8-bbeb74bb3ec5"
+              LastKnownName="IMissileLauncher"
+              LastKnownLocation="Package4_1624.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8984ae09-2614-4021-aed4-6378edcbf3bc"
+            name="launcherName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="19435ec7-1e1d-4282-8a20-8d20b0f0b74f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DlauncherName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a9fb14b4-c462-4014-8ee4-b7c60cca6a3e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="160be232-f40c-4658-b3ca-86af0debbdd7">
+                    <propertyInstance
+                      Id="bce01672-eff7-478a-b2cc-abef48329fd5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa497528-27f5-43fb-b36a-2e89047aec73">
+                    <propertyInstance
+                      Id="75aa7288-7f74-4bde-bfb3-18ef0f0c7943"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20e795d5-a243-4d8f-915c-101f65ce0029">
+                    <propertyInstance
+                      Id="8dd47dd5-76dd-465c-94c3-f65dda753434"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24b66320-9d5c-4282-861a-96d948fd8cd7">
+                    <propertyInstance
+                      Id="73e45658-d30e-4a23-a5c8-0a92e9377770"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3afe715-59f6-46cd-a8be-9b385e4a8af0">
+                    <propertyInstance
+                      Id="0ab736ee-236b-4513-a2a7-0439737b886a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ec42fe47-13b7-4608-b3e0-7f5b02172756"
+            name="Mock"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7bb40ecb-29ab-4fc1-8403-7b8e72aa0957"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bb918c99-9342-4184-8b06-8a80a89fbcc4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b25ea8d2-c761-4429-aac9-d5b42e676502">
+                    <propertyInstance
+                      Id="e217364c-3f94-4606-b1a0-5afe27314306"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6892d97-e7b0-429f-9edd-bddfd58d7943">
+                    <propertyInstance
+                      Id="a8ff7fe9-2c1a-4392-9f64-599ec8337cc4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b672def0-ad79-42ad-8591-e86b99bef9bf">
+                    <propertyInstance
+                      Id="54fb11a4-1cf7-4e76-a64c-c3405aacc259"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b0b86d5-4f60-4aec-9d04-81f37b73cf71">
+                    <propertyInstance
+                      Id="c0061e7e-5647-4448-a419-ba5368da6958"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="958e46b1-6db6-4077-a63f-1b99719b51ef">
+                    <propertyInstance
+                      Id="7e98c3aa-89e1-4b3a-9bd4-311b2126bbfe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a31944bf-a6a0-4a5c-b16e-7f1fb52800d1">
+                    <propertyInstance
+                      Id="24a84001-14f5-4336-abb7-c7d68cc494ab"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="acef31da-5969-405b-8e8e-686d88e2ce08"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="84ed8a07-030d-4d22-af37-31f1e31e2deb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DFire"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e988a55e-0e10-46f9-a683-0a9a86013ced"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5922bb6-301c-4b08-8cbc-4226fd7d2e57">
+                    <propertyInstance
+                      Id="282be661-81cc-4279-a646-b1dc3cf7a9b4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acb78a3e-7561-408a-987a-a421dc1f3d71">
+                    <propertyInstance
+                      Id="42eaae7f-2953-4e37-a560-ea8ab251ac9f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9ecfec4-f6e3-4922-9006-d116dc582409">
+                    <propertyInstance
+                      Id="11adada9-3d47-4d56-83df-6bd8f10cfa16"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0f15b8a-d178-44ee-81b1-b0b6ae14adf7">
+                    <propertyInstance
+                      Id="72fd5ec9-7c3a-4b02-bf40-6059dccdd9df"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="450bcb62-bc2b-4ac8-817c-f6a472d1ae8c">
+                    <propertyInstance
+                      Id="f016f675-46f2-4681-ae56-e9c831fcf83d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e61383e-c231-4d4a-8bb2-0306ab71e8ba">
+                    <propertyInstance
+                      Id="b11459a6-8edc-459f-9bb6-48666a7e12b2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="da18dd1d-6aa4-4134-b0b3-b13e14ad4954"
+            name="Move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="613655fc-705d-47fe-847f-81cf51527e9f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e57d306b-2040-4eed-b409-70a6a98d532c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18256256-b494-4c4d-8059-b9498c78e0da">
+                    <propertyInstance
+                      Id="43a6aa30-7494-453e-a948-d53681d1f533"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8547317f-7579-4eb8-b314-ecadb42ff014">
+                    <propertyInstance
+                      Id="ca9431f7-c499-4127-939a-acc41d38f854"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c7ccb5a-e7a6-437c-8231-477b3a33a54c">
+                    <propertyInstance
+                      Id="17bfcd4c-e702-4ec7-915a-8a24ee96406d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dd3cabf-5fb0-4bbc-8fc4-cfd0181313d3">
+                    <propertyInstance
+                      Id="87d91663-d060-43e3-a323-b8bf34d18958"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a56cd308-98f4-4222-aecd-cfd7d67c3a2b">
+                    <propertyInstance
+                      Id="9b62d300-42fc-468d-ad27-a33e46cf3984"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33e1b0f9-08dc-4308-800d-b2118a3e71f2">
+                    <propertyInstance
+                      Id="03abeb21-6db9-40cd-a3b8-5ef3fd92c749"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a3819196-2294-41ad-affe-8250efcf9df1"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ccc5eb11-71d6-4cb4-8b26-a4cfabaacdc2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a6275aed-598c-4bc6-b791-9fa0b2e50bab"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5c8be04f-5d3f-4842-b1cf-51e86046c4f1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c9e64450-e345-4e82-9d2e-af9264611692"
+            name="MoveBy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d38d5f91-3d1b-48de-bfc7-e7c996643a32"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b8dab187-fa39-4b36-b9dd-e3dbecbcc3ba"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91710487-37aa-481e-ba7a-f94acda4c98e">
+                    <propertyInstance
+                      Id="4f8a3e3c-20f4-4fd6-bb00-f48891c6725c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b28ba7b-7576-4360-bfc4-2045e555b49a">
+                    <propertyInstance
+                      Id="8447d7ea-c440-439f-9a44-7e09107ae0dc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71a9ea99-a2c1-4a71-b411-de49cce8c429">
+                    <propertyInstance
+                      Id="9f64694b-8ecb-4470-9d78-dd75b2984f28"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9be4bc4-3ebd-400c-bea5-c83307e0afde">
+                    <propertyInstance
+                      Id="5b5579f8-282f-4ddc-9963-5888654370d6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3b4f5c8-dffb-4548-9635-82dc69241b89">
+                    <propertyInstance
+                      Id="278aa61b-8157-43a6-8e08-71dc86b18b83"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7beb605a-2c6e-4088-8a08-f00c741a7937">
+                    <propertyInstance
+                      Id="77250fb8-8d80-4bd3-b7fb-9bf06996e762"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bdbfa911-5fc4-4e21-b3e4-26abd27ff6f7"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d6837cfa-4aec-4902-9009-f5aa95a11e20"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="da1fe355-6e5c-492a-b930-1b105cee50f1"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f596021f-9de7-4773-8b97-8d0c7540968e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DMoveBy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7cb78ada-194c-4ec4-bae0-40c4fa865342"
+            name="Reload"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="14c73dea-e121-408b-8411-984a654a9d89"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DReload"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="88cea593-939f-4724-beb0-b4150be20c85"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38ec5114-bc7f-43cb-9baf-a82b7972460d">
+                    <propertyInstance
+                      Id="e7ee58a4-3a0e-49e3-84e8-1f02b3390b73"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98d25220-2887-4922-b5eb-c44fc424f079">
+                    <propertyInstance
+                      Id="a7a710f0-c691-45b4-b7e8-54ea4db7f9a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d061b5c-98bc-49e1-9059-a6d73a73bba9">
+                    <propertyInstance
+                      Id="78ee5209-41e6-483f-9585-1ae7b3224d67"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2e749a3-4536-483d-a3d5-fad9400f868d">
+                    <propertyInstance
+                      Id="0c0628c6-d048-4532-adcf-44e87bc51965"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f9a1fb0-3ec3-41f1-8394-408cd229eee7">
+                    <propertyInstance
+                      Id="8180ec61-54b3-4e83-a4ed-0a5e78fe721d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a650675-fff1-4b2a-8cca-6b7c4d0a60e8">
+                    <propertyInstance
+                      Id="691da26f-edff-481c-84c5-3bd4ae6c3fa3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="fdc2f3a8-1e5b-47be-ae51-6cb569175b30"
+            name="Kill"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="25654e4b-e2ef-4f30-b301-7518d9cc1ea7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c0d6c70d-03bd-4021-9348-b52229a513cb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be4136e7-b360-47f7-af80-11319fca15b4">
+                    <propertyInstance
+                      Id="d6fb7dc3-e135-4413-ba2e-9874313f0cbb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a96d20e-14f0-4490-8af7-eed4c940380e">
+                    <propertyInstance
+                      Id="72533aa6-a316-43dd-a60b-6ae92dffa398"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82dd0414-1152-47e1-8ba1-353f377f2dda">
+                    <propertyInstance
+                      Id="b787e7c5-535f-42e0-8ee1-4da3d4e56018"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1de5011e-c126-4463-a90c-6c3bbfaca194">
+                    <propertyInstance
+                      Id="ba1800d8-a5ef-4418-8942-5f20328cd07b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab8d688f-b3a9-4813-a740-7ca7915e863d">
+                    <propertyInstance
+                      Id="ae3cfc05-f796-4b82-afe3-d859952879ea"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1957f94d-5156-43c8-a048-2a90a13db128">
+                    <propertyInstance
+                      Id="0838be21-4f5d-499e-9f61-ac38d89d10d3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fc35b9c2-9b92-4f33-9500-c61252df3d63"
+                  name="phi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="74b195ae-5874-4c92-9ae3-c5d21a205548"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dphi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b01dfcf9-5834-41a6-b6bc-4c4e94bc0841"
+                  name="theta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a4b8fb08-aeb9-4976-98d1-034299f64dde"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dtheta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7834770e-3525-4f40-8d30-ff9b4a5e1c5e"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="64223983-6075-45c5-8fb9-d5b38d29907b"
+            name="Status"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0ecf92c4-99a1-4266-ad0c-06dce346e7da"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a64d023a-b82c-44fd-b6f1-9a6e22e5d9fc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78790433-ae42-4048-bb65-a631b5ecef77">
+                    <propertyInstance
+                      Id="48328363-6aba-456a-a80c-fbace37e4d7b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef8b33af-1038-4170-976a-b9740880b95a">
+                    <propertyInstance
+                      Id="0f450735-02fe-4ee4-b430-c7f60ce236b2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d568b7d6-623b-40a2-9a9c-7d6b4065ba66">
+                    <propertyInstance
+                      Id="596515b7-9b66-464b-a437-5c112147705e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76067650-c812-42f3-a14b-33704f45a3f0">
+                    <propertyInstance
+                      Id="4e211c3f-2bd2-4a0e-8b23-243ee7dec941"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68f133b2-5ecf-4394-87d9-38a8822d1d80">
+                    <propertyInstance
+                      Id="d9102650-bbad-4dc8-a431-c2e218761d73"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87e8c8c2-1dc3-4418-aec1-607e1b27b571">
+                    <propertyInstance
+                      Id="2d382454-dc25-4304-9dfe-41b4a138db13"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="2e99c8ae-04fe-4e35-a817-905ceb2878ab"
+            name="Reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ee99553a-c03c-4874-8c7d-ff8aa59eafee"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DReset"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="29254e97-96b8-4cca-bac8-083099fad52d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01df399f-4e40-423e-916d-33502dd3fd2c">
+                    <propertyInstance
+                      Id="90bc5143-70ac-4e7e-bdbb-8e73ea688519"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c010f346-b017-4974-beb3-c8522f672bbd">
+                    <propertyInstance
+                      Id="876d559d-92e1-4ccc-9883-5ba96c94a763"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63efc5fd-71fa-483b-8e50-d53075ee3c20">
+                    <propertyInstance
+                      Id="d0d72755-5fc2-42d6-8628-051d4f98d4da"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ea74cf1-ee1a-47d9-aba1-884bc8104772">
+                    <propertyInstance
+                      Id="018a8c23-17b9-480d-ae7e-c14119275d1e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dff54ce-fd40-4d37-9c74-c7dabb007faa">
+                    <propertyInstance
+                      Id="104a287d-493d-404d-92cd-79b1d3484c8c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9318a837-8166-40d5-aec5-944a82722692">
+                    <propertyInstance
+                      Id="baec4681-7e5d-4154-b3d5-38ff9ef71cd1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="97c5f3f6-d9d3-4e22-b753-98d6ca1e2ee3"
+            name="MoveUp"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="82c2596e-4f0d-4539-b780-c3d5212453e2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DMoveUp"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1da36b59-ed2c-4ce9-8b5d-941be55fe37b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f128fde5-dd1d-476f-95a3-9cc956cc6039">
+                    <propertyInstance
+                      Id="90b96e08-152f-473f-8fbd-389ec20d0cc4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7486e1c-a1ec-46e4-a8d7-f73cef942fba">
+                    <propertyInstance
+                      Id="0c05e171-a68b-4e5b-835e-81a8ceae40a1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69d13f1c-a01f-4974-9d6b-1460f0f4dc71">
+                    <propertyInstance
+                      Id="3ccb87fa-f364-44ae-8994-d78f8c098ad4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05e2eec9-cae6-4069-9c8b-eff251b9bf1b">
+                    <propertyInstance
+                      Id="94613227-eff7-46fd-972c-41511d5e7087"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0720c7c7-0f38-47d6-87fd-32815a497906">
+                    <propertyInstance
+                      Id="73c6eff9-5aa4-4f62-8629-da3667cd8596"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2771bd84-b151-4e0a-8d12-91256d99e540">
+                    <propertyInstance
+                      Id="920de3d3-8a4a-43e8-8938-584f6eeba579"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="eeba46a7-4b36-4319-83ae-42a12559ada1"
+            name="MoveDown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9ae0a24c-a96d-467f-b612-6121536e221a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DMoveDown"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ce1ccbb0-9dd9-4ac1-8d36-9debc19904d5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b58a28f-4eee-4829-a2c4-bcd9e139aebf">
+                    <propertyInstance
+                      Id="f32ff19a-11b3-481a-adf4-cbdafcd50606"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26cd1c2e-cb04-4f80-bffc-6dbe82b9b528">
+                    <propertyInstance
+                      Id="3740b141-770e-4b56-9520-bdc09c29224f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1046d77c-469b-4209-8c03-8ba218a9f4ae">
+                    <propertyInstance
+                      Id="0a8a7715-588f-4aaf-9c9a-f06d1467205e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06bd06d6-bf5e-4d04-8401-eee404135571">
+                    <propertyInstance
+                      Id="9b06cb4a-4946-4b58-8339-e09e50e94f7e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a779276-e46c-4bd1-b2db-60a85fcb579e">
+                    <propertyInstance
+                      Id="60df22a8-ff66-4435-91c5-68847405d30d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bae404b-6789-4c80-8aa7-dca1cea647fe">
+                    <propertyInstance
+                      Id="59354cb8-c638-49bb-b526-156dfe33fbc4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="379a1bd1-56cf-4835-a318-0f9f44a1b9ca"
+            name="MoveLeft"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ac13d4a2-0d67-49de-942c-21f646f4d5b6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DMoveLeft"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3b61ae2c-2905-41b4-9b7f-10250271036c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e74d934-4df0-4d66-87de-0f2215a7db17">
+                    <propertyInstance
+                      Id="6b7530b1-eb48-4aa7-9962-739665b228dd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a556944-6a71-4adf-b5e6-8993e8d490e1">
+                    <propertyInstance
+                      Id="48fa6612-7efb-4d2e-b9f2-929285b9ccc0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfd2feb8-d284-41e8-b46d-f1e646737096">
+                    <propertyInstance
+                      Id="03587aff-14fd-4e76-98fe-079500d1d130"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b77551a-fd75-48be-9d96-fc824a1c86e4">
+                    <propertyInstance
+                      Id="d443f043-7e4b-42e4-9b24-d037afb09e49"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4fdb188-cb10-4641-8580-eb037c1aa0f8">
+                    <propertyInstance
+                      Id="094b897d-ec81-4e08-b2e1-5b55ca3c55a2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28c582e5-b2df-494e-abff-9d838601626d">
+                    <propertyInstance
+                      Id="8e2d2916-9542-4dfb-aac9-3561f7e9f241"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="7fbefa8c-874b-4567-b558-9d3c3546d3ab"
+            name="MoveRight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fa1d19f3-5a05-4173-8e8f-9af66650ab75"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DMoveRight"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bbd6c472-e0e4-433c-93be-0d1d94be01cf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b895fa7-35e4-49a4-83a0-454df3d64d96">
+                    <propertyInstance
+                      Id="909ed6b0-ec2a-42a5-92f2-dd7a16eecd7d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e2995be-62f9-496d-bbf3-4fdce97810cc">
+                    <propertyInstance
+                      Id="bc235529-7244-41a8-9d98-e7b52fb7b45b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0c6c2a8-0bf1-427d-aa82-6c54b03fa4a4">
+                    <propertyInstance
+                      Id="a3e3961d-d80d-44a7-8ad8-f2272576e768"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64dca526-73c6-43b6-8a1e-a0daeca7db5b">
+                    <propertyInstance
+                      Id="c9bc17d6-10ce-4850-8710-505a0c1e5cd1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2357cc8d-8a70-401b-b7b2-47860a12649f">
+                    <propertyInstance
+                      Id="2cd9f8cc-e027-4273-9076-ba073f93932b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1bdb1fa-5aff-4c66-9a81-2d1018c3a5ed">
+                    <propertyInstance
+                      Id="b779aeec-5de2-4186-af63-8d150898f383"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="61a7083d-475a-4eba-acc8-7fcdf483d4d1"
+            name="getName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d771605f-89d2-4002-a024-c5fdcf7ef685"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DMock Member%3DgetName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e78023ca-0d98-4940-9751-32c2bbcf6b9c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="402a4e50-5944-4125-ad17-92b22901af6e">
+                    <propertyInstance
+                      Id="e2608062-8569-496c-9440-716b25bc9e64"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15a593f1-7a13-4dea-9879-d8201d090b3f">
+                    <propertyInstance
+                      Id="877c68de-3e14-4401-9d3d-8d4e0fd33201"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b307ea07-e5b5-4602-916c-cf1f4c27e038">
+                    <propertyInstance
+                      Id="acbfe92c-9bd7-4b1b-a163-a68bacf57068"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0968fcc3-5d3b-4508-abcf-3501aeefe5ab">
+                    <propertyInstance
+                      Id="538a075b-03f8-421a-9c2e-1804e34ec9c1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f90a8234-cce8-4fcf-80f5-8b95c1b80dc3">
+                    <propertyInstance
+                      Id="1ccfb654-0046-413f-b88a-9866cf65f3b2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2308e8ca-1dbc-4b65-aa6f-df3f00ff75e4">
+                    <propertyInstance
+                      Id="4488d060-a4c6-43a4-a8bc-9224b3b04f73"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

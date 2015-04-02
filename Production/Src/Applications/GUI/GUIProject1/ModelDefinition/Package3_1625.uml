@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3c6626fb-5a9f-44e1-b0f7-9a3ca7778db4"
+  name="CV"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="27ce8413-0f83-4a9f-97a2-a3148b36acbe"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DEmgu.CV"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="6ebfbfa9-660c-4909-9773-17ff45953a84"
+        name="IImage"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="b6049612-61e5-418a-a118-75ed049f8090"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x64.1.5%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3DIImage"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bfef84a7-6113-49d5-8460-bea1c529060c"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2a1a4ce7-25e4-445c-beb3-01b7c5709bd6">
+                <propertyInstance
+                  Id="61f11ac0-4b2e-4dc5-b760-79660af0ebd8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d150a077-1eea-4c9b-9444-35ff50579a92">
+                <propertyInstance
+                  Id="d94297a1-6565-4eb4-87fd-da083cf91bc6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="876388cc-eba0-4f8b-940a-740332ee099e">
+                <propertyInstance
+                  Id="aff51853-389c-4a76-ad91-8ab5453899fb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5ab1110d-1d7f-43c7-9f15-3936c6e74be3">
+                <propertyInstance
+                  Id="0eda351a-cb27-47a2-aa22-e69bbd45ced5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a28b46df-16a3-4e19-b0f9-3dc160c28f0c"
+        name="Capture"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="bbf0ecb0-b9c8-4dec-a007-2ed13bd0dabf"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x64.1.5%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3DCapture"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4563b7c9-587d-4ae3-a393-5bf723e260ab"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3221c09f-ac32-4c7a-9989-078630eec4eb">
+                <propertyInstance
+                  Id="214165c3-75dc-447e-bdd1-ffdab6b4939a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="99e796c1-320f-4c05-b315-613e8ffe163a">
+                <propertyInstance
+                  Id="17f24bce-1447-4a91-a335-c494389f92aa"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1d0d2770-52d0-4512-b6c8-75e2f193f1e6">
+                <propertyInstance
+                  Id="b2786bfa-4e04-426a-8d75-286d4ab98690"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="74e92ad0-91f9-4951-a6b3-1b1562301bbc">
+                <propertyInstance
+                  Id="59b02814-f672-4006-a0db-47d9606296f1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc1b46ee-0c49-47ad-91ca-a0a94478059c">
+                <propertyInstance
+                  Id="2e29bac0-d09c-4082-814c-390d9475e0da"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

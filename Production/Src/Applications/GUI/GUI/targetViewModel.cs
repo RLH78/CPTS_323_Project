@@ -12,7 +12,7 @@ using SAD.core.Devices;
 namespace GUI
 {
     /// <summary>
-    /// Clear, Friend, Foe
+    /// View of a single target
     /// </summary>
     public class targetViewModel : ViewModelBase
     {

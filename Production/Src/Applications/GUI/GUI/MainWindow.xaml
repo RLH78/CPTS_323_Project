@@ -24,15 +24,9 @@
     </Window.Resources>
     <Grid Background="{StaticResource myBrush}">
 
-        <TextBox HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="Foe" TextAlignment="Center" VerticalAlignment="Top" Width="140" Grid.Column="2" Grid.Row="1"/>
-        <ListBox
-            ItemsSource="{Binding targets}"            
-            SelectedItem=""
-            Grid.Row="1"
-            Grid.Column="2" Margin="0,23,0,0"
-            >
-        </ListBox>
-        <TextBox HorizontalAlignment="Right" Height="18" TextWrapping="Wrap" Text="Friend" TextAlignment="Center" VerticalAlignment="Top" Width="150" Grid.Row="1" />
+
+
+        <TextBox HorizontalAlignment="Right" Height="18" TextWrapping="Wrap" Text="Targets" TextAlignment="Center" VerticalAlignment="Top" Width="150" Grid.Row="1" />
         <ListBox
             Name="ListofTargets"
             DataContext="{StaticResource ResourceKey=MainModel}"             
@@ -93,9 +87,9 @@
         </Grid>
 
 
-        <!--Button Content="Clear Targets" DataContext="{StaticResource ResourceKey=TargetModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="27,13,0,0" VerticalAlignment="Top" Width="98"/-->
-        <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load from Server" Command="{Binding _Show_Server_Message}" Grid.Column="2" HorizontalAlignment="Left" Margin="33,13,0,0" VerticalAlignment="Top" Width="99"/>
-        <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load INI FIle" Command="{Binding _load_INI_File}" Grid.Column="1" HorizontalAlignment="Left" Margin="430,14,0,0" VerticalAlignment="Top" Width="98" Grid.ColumnSpan="2"/>
+        <Button Content="Clear Targets" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="20,6,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
+        <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load from Server" Command="{Binding _Show_Server_Message}" HorizontalAlignment="Left" Margin="126,13,0,0" VerticalAlignment="Top" Width="99" Grid.ColumnSpan="2"/>
+        <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load INI FIle" Command="{Binding _load_INI_File}" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="98"/>
         <Button Content="Reset" 
         	Grid.Column="1"
         	HorizontalAlignment="Left"
@@ -129,12 +123,12 @@
                  Text="{Binding l_theta}"  
                  VerticalAlignment="Top" Width="31" FontSize="11" RenderTransformOrigin="-1.15,2.167"/>
         <TextBox HorizontalAlignment="Left"
-                 Height="23" Margin="24,14,0,0" TextWrapping="Wrap" IsReadOnly="True"
+                 Height="23" Margin="21,13,0,0" TextWrapping="Wrap" IsReadOnly="True"
                  Background="#FFB8B8B8"
                  BorderBrush="Black"
                  Text="{Binding Name}"                 
                  DataContext="{StaticResource ResourceKey=launcherModel}"
-                 VerticalAlignment="Top" Width="96" FontSize="14" FontFamily="Segoe UI Semilight"/>
+                 VerticalAlignment="Top" Width="96" FontSize="14" FontFamily="Segoe UI Semilight" Grid.Column="2"/>
         <Button Content="Take Image"   DataContext="{StaticResource ResourceKey=MainModel}"    
                     Command="{Binding Take_Picture}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
 

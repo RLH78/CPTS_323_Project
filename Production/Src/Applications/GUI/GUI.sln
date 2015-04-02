@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAD.Core", "SAD.Core\SAD.Core.csproj", "{41F54182-230F-4B86-A6E3-B0525287A809}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "GUIProject1", "GUIProject1\GUIProject1.modelproj", "{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,14 @@ Global
 		{41F54182-230F-4B86-A6E3-B0525287A809}.Release|x64.Build.0 = Release|x64
 		{41F54182-230F-4B86-A6E3-B0525287A809}.Release|x86.ActiveCfg = Release|x86
 		{41F54182-230F-4B86-A6E3-B0525287A809}.Release|x86.Build.0 = Release|x86
+		{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}.Release|x64.ActiveCfg = Release|Any CPU
+		{E490B643-9FD3-4BFB-A4F6-5658FA4876E9}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
