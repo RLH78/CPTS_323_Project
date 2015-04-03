@@ -187,8 +187,10 @@ namespace SAD.core.Devices
         }
         public void realKill(double x, double y, double z)
         {
-            int realPhi = 0;
-            int realTheta = 0;
+            double realPhi = 0;
+            double realTheta = 0;         
+            int degrees = 0;
+            int degrees2 = 0;
             double x_In = 0;
             double y_In = 0;
             double z_In = 0;
@@ -200,13 +202,16 @@ namespace SAD.core.Devices
             y_In = y;
             z_In = z;
 
-            place_hold = (Math.Abs(x / y));
-            place_hold2 = (Math.Sqrt(x*x+y*y));
+            place_hold = x_In / y_In;
+            place_hold2 = Math.Sqrt((x_In * x_In) + (y_In * y_In));      
 
-            realPhi = Convert.ToInt32(Math.Tan(place_hold));
-            realTheta = Convert.ToInt32(Math.Tan(place_hold2));
-            test.command_Right(realPhi);
-            test.command_Up(realTheta);
+            realPhi = Math.Atan(place_hold);
+            realTheta = Math.Atan(z / place_hold2);
+            degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+            degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+            //test.command_reset();
+            test.command_Right(degrees * 22);
+            test.command_Up(degrees2 * 22);
             test.command_Fire();
         }
         public void Kill(double phi, double theta)
