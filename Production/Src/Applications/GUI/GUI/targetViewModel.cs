@@ -56,10 +56,27 @@ namespace GUI
             {
                 if (m_target.alive == true)
                 {
-                    target_view_Launcher.realKill(m_target.xCoord, m_target.yCoord, m_target.zCoord);
+                    double place_hold = 0;
+                    double place_hold2 = 0;
+                    double realPhi = 0;
+                    double realTheta = 0;
+                    int degrees = 0;
+                    int degrees2 = 0;
+
+                    place_hold = m_target.xCoord / m_target.yCoord;
+                    place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
+                    realPhi = Math.Atan(place_hold);
+                    realTheta = Math.Atan(m_target.zCoord / place_hold2);
+                    degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+                    degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+
+                    target_view_Launcher.realKill(degrees, degrees2);
+
                     m_target.alive = false;                    
                     launcherVars missilez = launcherVars.Instance;
-                    missilez.missileCount = missilez.missileCount - 1;                   
+                    missilez.missileCount = missilez.missileCount - 1;
+                    missilez.phi = degrees;
+                    missilez.theta = degrees2;
                     OnPropertyChanged("m_target");                    
                 }
                 else

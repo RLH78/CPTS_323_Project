@@ -19,7 +19,7 @@ namespace SAD.core.Devices
         void MoveBy(double phi, double theta);
         void Reload();
         void Kill(double phi, double theta);
-        void realKill(double x, double y, double z);
+        void realKill(int phi, int theta);
         void Reset();
         void Status();
         void getName();
@@ -185,31 +185,31 @@ namespace SAD.core.Devices
             // MissileLauncher test = new MissileLauncher();
             // missileCount = missileAmt;
         }
-        public void realKill(double x, double y, double z)
+        public void realKill(int phi, int theta)
         {
-            double realPhi = 0;
-            double realTheta = 0;         
-            int degrees = 0;
-            int degrees2 = 0;
-            double x_In = 0;
-            double y_In = 0;
-            double z_In = 0;
-            double place_hold = 0;
-            double place_hold2 = 0;
+            //double realPhi = 0;
+            //double realTheta = 0;         
+            int degrees = phi;
+            int degrees2 = theta;
+            //double x_In = 0;
+            //double y_In = 0;
+            //double z_In = 0;
+            //double place_hold = 0;
+            //double place_hold2 = 0;
             MissileLauncher test = new MissileLauncher();
 
-            x_In = x;
-            y_In = y;
-            z_In = z;
+            //x_In = x;
+            //y_In = y;
+            //z_In = z;
 
-            place_hold = x_In / y_In;
-            place_hold2 = Math.Sqrt((x_In * x_In) + (y_In * y_In));      
+            //place_hold = x_In / y_In;
+            //place_hold2 = Math.Sqrt((x_In * x_In) + (y_In * y_In));      
 
-            realPhi = Math.Atan(place_hold);
-            realTheta = Math.Atan(z / place_hold2);
-            degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
-            degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
-            //test.command_reset();
+            //realPhi = Math.Atan(place_hold);
+            //realTheta = Math.Atan(z / place_hold2);
+            //degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+            //degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+          
             test.command_Right(degrees * 22);
             test.command_Up(degrees2 * 22);
             test.command_Fire();
@@ -297,7 +297,7 @@ namespace SAD.core.Devices
         public void MoveBy(double phi, double theta) { ;}
         public void Reload() { ;}
         public void Kill(double phi, double theta) { ;}
-        public void realKill(double x, double y, double z) { ;}
+        public void realKill(int phi, int theta) { ;}
         public void Status() { ;}
         public void Reset() { ;}
         public void MoveUp() { ;}

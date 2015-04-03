@@ -66,4 +66,3 @@ C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\S
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\x86\Debug\AForge.Imaging.xml
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\x86\Debug\AForge.Math.xml
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\x86\Debug\AForge.Video.xml
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\x86\Debug\SAD.Core.csprojResolveAssemblyReference.cache

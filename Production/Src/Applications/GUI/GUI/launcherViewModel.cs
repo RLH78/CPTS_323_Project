@@ -308,9 +308,9 @@ namespace GUI
             }
         }
 
-        private double l_phi;
+        private int l_phi;
 
-        public double phi
+        public int phi
         {
             get { return l_phi; }
             set
@@ -320,9 +320,9 @@ namespace GUI
             }
         }
 
-        private double l_theta;
+        private int l_theta;
 
-        public double theta
+        public int theta
         {
             get { return l_theta; }
             set
