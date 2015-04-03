@@ -186,33 +186,37 @@ namespace SAD.core.Devices
             // missileCount = missileAmt;
         }
         public void realKill(int phi, int theta)
-        {
-            //double realPhi = 0;
-            //double realTheta = 0;         
+        {                    
             int degrees = phi;
-            int degrees2 = theta;
-            //double x_In = 0;
-            //double y_In = 0;
-            //double z_In = 0;
-            //double place_hold = 0;
-            //double place_hold2 = 0;
+            int degrees2 = theta;           
             MissileLauncher test = new MissileLauncher();
 
-            //x_In = x;
-            //y_In = y;
-            //z_In = z;
+            if (phi <= 0 && theta <= 0)
+            {            
+                test.command_Left(degrees * 22);
+                test.command_Down(degrees2 * 22);
+                test.command_Fire();
+            }
+            else if (phi <= 0 && theta >= 0)
+            {
+                test.command_Left(degrees * 22);
+                test.command_Up(degrees2 * 22);
+                test.command_Fire();
+            }
+            else if (phi >= 0 && theta <= 0)
+            {               
+                test.command_Right(degrees * 22);
+                test.command_Down(degrees2 * 22);
+                test.command_Fire();
+            }
 
-            //place_hold = x_In / y_In;
-            //place_hold2 = Math.Sqrt((x_In * x_In) + (y_In * y_In));      
-
-            //realPhi = Math.Atan(place_hold);
-            //realTheta = Math.Atan(z / place_hold2);
-            //degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
-            //degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
-          
-            test.command_Right(degrees * 22);
-            test.command_Up(degrees2 * 22);
-            test.command_Fire();
+            else if (phi >= 0 && theta >= 0)
+            {
+                test.command_Right(degrees * 22);
+                test.command_Up(degrees2 * 22);
+                test.command_Fire();
+            }
+            
         }
         public void Kill(double phi, double theta)
         {
