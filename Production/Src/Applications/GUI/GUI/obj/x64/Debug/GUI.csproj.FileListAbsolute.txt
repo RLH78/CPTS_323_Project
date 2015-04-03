@@ -51,3 +51,4 @@ C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\x64\Debug\GUI.csproj.GenerateResource.Cache
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\x64\Debug\GUI.exe
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\x64\Debug\GUI.pdb
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\x64\Debug\ZedGraph.dll
