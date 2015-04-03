@@ -87,7 +87,7 @@
         </Grid>
 
 
-        <Button Content="Clear Targets" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="20,6,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
+        <Button Content="Clear Targets" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="27,5,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load from Server" Command="{Binding _Show_Server_Message}" HorizontalAlignment="Left" Margin="126,13,0,0" VerticalAlignment="Top" Width="99" Grid.ColumnSpan="2"/>
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load INI FIle" Command="{Binding _load_INI_File}" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="98"/>
         <Button Content="Reset" 

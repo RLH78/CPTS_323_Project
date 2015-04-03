@@ -51,9 +51,16 @@ namespace GUI
         {
             if (m_target.friend == false)
             {
-                target_view_Launcher.Kill(m_target.xCoord, m_target.zCoord);
-                m_target.alive = false;
-                OnPropertyChanged("m_target");
+                if (m_target.alive == true)
+                {
+                    target_view_Launcher.Kill(m_target.xCoord, m_target.zCoord);
+                    m_target.alive = false;
+                    OnPropertyChanged("m_target");
+                }
+                else
+                {
+                    MessageBox.Show("It's already dead, Captain! Don't waste our missiles!");
+                }
             }
             else
             {

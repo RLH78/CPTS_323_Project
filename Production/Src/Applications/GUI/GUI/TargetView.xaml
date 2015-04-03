@@ -8,27 +8,70 @@
     <Grid  >
         <Border BorderThickness="2" BorderBrush="CadetBlue" Margin="2">
             <StackPanel>
-                <TextBlock FontSize="14" Width="110">
+                <TextBlock FontSize="13" Width="110">
                     <TextBlock.Text>
                         <MultiBinding StringFormat="{}Name: {0}">
                             <Binding Path="Target.name" />
                         </MultiBinding>
                     </TextBlock.Text>
                 </TextBlock>
-                <TextBlock FontSize="14" Width="110">
+                <TextBlock FontSize="13" Width="110">
                     <TextBlock.Text>
                         <MultiBinding StringFormat="{}Friend: {0}">
                             <Binding Path="Target.friend" />
                         </MultiBinding>
                     </TextBlock.Text>
                 </TextBlock>
-                <TextBlock FontSize="14" Width="110">
+                <TextBlock FontSize="13" Width="110">
                     <TextBlock.Text>
                         <MultiBinding StringFormat="{}Alive: {0}">
                             <Binding Path="Target.alive" />
                         </MultiBinding>
                     </TextBlock.Text>
                 </TextBlock>
+                <TextBlock FontSize="13" Width="110" Text="Coordinates:">                    
+                </TextBlock>
+                <TextBlock FontSize="11" Width="110">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}X: {0}  Y: {1}  Z: {2}">
+                            <Binding Path="Target.xCoord" />
+                            <Binding Path="Target.yCoord" />
+                            <Binding Path="Target.zCoord" />
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock FontSize="13" Width="110">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}Points: {0}">
+                            <Binding Path="Target.points" />
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock FontSize="13" Width="110">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}Spawn Rate: {0}">
+                            <Binding Path="Target.spawnRate" />
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock FontSize="13" Width="110">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}Swap Sides: {0}">
+                            <Binding Path="Target.swapSides" />
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock FontSize="14" Width="110">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}Flash Rate: {0}">
+                            <Binding Path="Target.flashRate" />
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+
+
+
+
                 <Button Content="     Kill!      " Command="{Binding _kill_target}"/>
             </StackPanel>
         </Border>
