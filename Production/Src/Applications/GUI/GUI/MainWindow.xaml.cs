@@ -26,6 +26,11 @@ namespace GUI
             InitializeComponent();
         }
 
+        private void btnEx_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
 
 
     }

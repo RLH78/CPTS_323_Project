@@ -125,17 +125,16 @@
             RenderTransformOrigin="2.784,-1.619"/>
 
         <TextBox x:Name="Game" HorizontalAlignment="Left" Height="20" Margin="189,25,0,0" TextWrapping="Wrap" Text="Game: " VerticalAlignment="Top" Width="124" Grid.Column="1"/>
-        <Button Content="Fire" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Fire_Missile}" HorizontalAlignment="Left" Height="20" Margin="232,60,0,0" VerticalAlignment="Top" Width="46" Grid.Column="1" Grid.Row="2" FontWeight="Bold" Background="#FFE81A1A"/>
         <Button Name="btnEx" DataContext="{StaticResource ResourceKey=launcherModel}"
                 Command="{Binding _Fire_Missile}"
-                Content="Fire" FontSize="20" Width="70" Height="70" HorizontalAlignment="Left"
-                VerticalAlignment="Top" Margin="468,482,-388,-502" Foreground="White"
-                Style="{StaticResource myBtnStyle}">
+                Content="Fire" FontSize="16" Width="34" Height="34" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="236,54,0,0" Foreground="White"
+                Style="{StaticResource myBtnStyle}" Grid.Column="1" Grid.Row="2" Click="btnEx_Click">
         </Button>
-        <Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="283,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/>
-        <Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="207,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
-        <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="244,35,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
-        <Button Content="D" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,84,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
+        <Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="280,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/>
+        <Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="208,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
+        <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="241,30,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
+        <Button Content="D" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,92,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <Grid HorizontalAlignment="Left" DataContext="{StaticResource ResourceKey=MainModel}" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1">
             <Border BorderThickness="1" BorderBrush="Gray" Margin="10">
                 <Image Source="{Binding CameraImage}"/>

@@ -187,7 +187,27 @@ namespace SAD.core.Devices
         }
         public void realKill(double x, double y, double z)
         {
+            int realPhi = 0;
+            int realTheta = 0;
+            double x_In = 0;
+            double y_In = 0;
+            double z_In = 0;
+            double place_hold = 0;
+            double place_hold2 = 0;
+            MissileLauncher test = new MissileLauncher();
 
+            x_In = x;
+            y_In = y;
+            z_In = z;
+
+            place_hold = (Math.Abs(x / y));
+            place_hold2 = (Math.Sqrt(x*x+y*y));
+
+            realPhi = Convert.ToInt32(Math.Tan(place_hold));
+            realTheta = Convert.ToInt32(Math.Tan(place_hold2));
+            test.command_Right(realPhi);
+            test.command_Up(realTheta);
+            test.command_Fire();
         }
         public void Kill(double phi, double theta)
         {
