@@ -6,22 +6,30 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2015-04-02T16:44:15" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD' -  (Package)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::core' -  (Package)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::Core' -  (Package)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::Core::Data' -  (Package)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::Core::Data::Target' -  (Class)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::core::Factories' -  (Package)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::core::Factories::FileReader' -  (Class)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Medium" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::core::Factories::MockFileReader' -  (Class)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::core::Factories::MockFileReader::MockFileReader' -  (Operation)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::core::Factories::MockFileReader::readFile' -  (Operation)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::SAD::core::Factories::MockFileReader::readFile::pathName' -  (Parameter)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::SAD::core::Factories::MockFileReader to GUIProject1::SAD::core::Factories::FileReader (Generalization)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::SAD::core::Factories::INIFileReader to GUIProject1::SAD::core::Factories::FileReader (Generalization)" />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="High" Text="(1) type(s) fully reverse engineered." />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="High" Text="(2) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
-  <Message Timestamp="2015-04-02T16:44:18" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2015-04-03T02:31:26" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI' -  (Package)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars' -  (Class)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::Instance' -  (Property)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::l_missiles' -  (Property)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::l_phi' -  (Property)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::l_theta' -  (Property)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::launcherVars' -  (Operation)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::missileCount' -  (Property)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::phi' -  (Property)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::theta' -  (Property)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::thisInstance' -  (Property)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::ViewModelBase' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System' -  (Package)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherVars to GUIProject1::GUI::launcherVars (Association)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherVars to GUIProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherVars to GUIProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherVars to GUIProject1::GUI::ViewModelBase (Generalization)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::targetViewModel to GUIProject1::GUI::ViewModelBase (Generalization)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::mainViewModel to GUIProject1::GUI::ViewModelBase (Generalization)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherViewModel to GUIProject1::GUI::ViewModelBase (Generalization)" />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="High" Text="(2) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-04-03T02:31:28" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>

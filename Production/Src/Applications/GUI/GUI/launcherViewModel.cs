@@ -14,16 +14,10 @@ namespace GUI
     {
         public launcherViewModel()
         {
-            missileCount = 4;
-            l_phi = 0;
-            l_theta = 0;
             position_incrementer = 5;
-            Name = teamName;
+            Name = teamName;          
+        }       
 
-        }
-
-        public int l_phi { get; set; }
-        public int l_theta { get; set; }
         public int position_incrementer { get; set; }
         internal static IMissileLauncher launcher_view_Launcher { get; set; }
 
@@ -31,7 +25,17 @@ namespace GUI
         {
             return launcher_view_Launcher;
         }
-        public int missileCount { get; set; }
+
+        private static launcherViewModel launcherInstance;
+
+        public static launcherViewModel getInstance()
+        {
+            if (launcherInstance == null)
+                launcherInstance = new launcherViewModel();
+
+            return launcherInstance;
+        }      
+
 
         private string m_name { get; set; }
         private string m_modifiedName { get; set; }
@@ -196,14 +200,14 @@ namespace GUI
         }
         public void fireZeMissile()
         {
-            if (missileCount > 0)
+            launcherVars launchv = launcherVars.Instance;            
+
+            if (launchv.missileCount > 0)
             {
                 launcher_view_Launcher.Fire();
-
-                missileCount = missileCount - 1;
-                OnPropertyChanged("missileCount");
+                launchv.missileCount = launchv.missileCount - 1;               
             }
-            else if (missileCount < 1)
+            else if (launchv.missileCount < 1)
             {
                 MessageBox.Show("I just can't do it captain! I don't have the fire power!");
             }
@@ -237,42 +241,97 @@ namespace GUI
         }
         public void reloadLauncher()
         {
-            missileCount = 4;
-            launcher_view_Launcher.Reload();
-            OnPropertyChanged("missileCount");
+            launcherVars missilez = launcherVars.Instance;            
+            missilez.missileCount = 4;
+            launcher_view_Launcher.Reload();            
         }
         public void resetLauncher()
         {
+            launcherVars l_vars = launcherVars.Instance; 
             launcher_view_Launcher.Reset();
-            l_theta = 0;
-            OnPropertyChanged("l_theta");
-            l_phi = 0;
-            OnPropertyChanged("l_phi");
+            l_vars.theta = 0;
+            l_vars.phi = 0;
         }
         public void moveLauncherUp()
         {
             launcher_view_Launcher.MoveUp();
-            l_theta = l_theta + position_incrementer;
-            OnPropertyChanged("l_theta");
+            launcherVars l_vars = launcherVars.Instance; 
+            l_vars.theta = l_vars.theta + position_incrementer;            
         }
         public void moveLauncherDown()
         {
             launcher_view_Launcher.MoveDown();
-            l_theta = l_theta - position_incrementer;
-            OnPropertyChanged("l_theta");
+            launcherVars l_vars = launcherVars.Instance; 
+            l_vars.theta = l_vars.theta - position_incrementer;            
         }
         public void moveLauncherLeft()
         {
+            launcherVars l_vars = launcherVars.Instance; 
             launcher_view_Launcher.MoveLeft();
-            l_phi = l_phi - position_incrementer;
-            OnPropertyChanged("l_phi");
+            l_vars.phi = l_vars.phi - position_incrementer;            
         }
         public void moveLauncherRight()
         {
             launcher_view_Launcher.MoveRight();
-            l_phi = l_phi + position_incrementer;
+            launcherVars l_vars = launcherVars.Instance; 
+            l_vars.phi = l_vars.phi + position_incrementer;
             OnPropertyChanged("l_phi");
         }
+     }
+
+   
+    public sealed class launcherVars: ViewModelBase
+    {
+        public launcherVars()
+        {
+            l_missiles = 4;
+            l_phi = 0;
+            l_theta = 0;
+        }
+
+        public static launcherVars Instance
+        {
+            get { return thisInstance; }
+        }
+
+        private static launcherVars thisInstance = new launcherVars();
+
+        private int l_missiles;
+
+        public int missileCount
+        {
+            get { return l_missiles; }
+            set 
+            {
+                l_missiles = value;
+                OnPropertyChanged("missileCount");
+            }
+        }
+
+        private double l_phi;
+
+        public double phi
+        {
+            get { return l_phi; }
+            set
+            {
+                l_phi = value;
+                OnPropertyChanged("phi");
+            }
+        }
+
+        private double l_theta;
+
+        public double theta
+        {
+            get { return l_theta; }
+            set
+            {
+                l_theta = value;
+                OnPropertyChanged("theta");
+            }
+        }
+
     }
 
 

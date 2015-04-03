@@ -20,7 +20,7 @@
         <referencesInternal>
           <reference
             Id="dddb3af3-0002-4b9b-bbbd-90b12445c71f"
-            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2Fx86%2FDebug%2FSAD.Core.dll Namespace%3DSAD.core.Devices Type%3DIMissileLauncher"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>

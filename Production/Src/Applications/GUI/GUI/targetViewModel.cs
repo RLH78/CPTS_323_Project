@@ -21,13 +21,16 @@ namespace GUI
         {
             m_target = aSingleTarget;
             OnPropertyChanged("m_target");
-            launcherViewModel model = new launcherViewModel();
-            target_view_Launcher = model.returnLauncher();
+            this.model = launcherViewModel.getInstance();
+            target_view_Launcher = model.returnLauncher();            
         }
+        
 
         private Target m_target;
 
         public IMissileLauncher target_view_Launcher;
+
+        public launcherViewModel model;
 
         myCommand kill;
 
@@ -54,8 +57,10 @@ namespace GUI
                 if (m_target.alive == true)
                 {
                     target_view_Launcher.realKill(m_target.xCoord, m_target.yCoord, m_target.zCoord);
-                    m_target.alive = false;
-                    OnPropertyChanged("m_target");
+                    m_target.alive = false;                    
+                    launcherVars missilez = launcherVars.Instance;
+                    missilez.missileCount = missilez.missileCount - 1;                   
+                    OnPropertyChanged("m_target");                    
                 }
                 else
                 {

@@ -15,14 +15,13 @@
       <class
         Id="51e0441d-042a-4b51-8352-e88c994249ea"
         name="Target"
-        visibility="Private"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <referencesInternal>
           <reference
             Id="2855923b-47d1-4a02-bdb7-9cc7166ff060"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2FDebug%2FSAD.Core.dll Namespace%3DSAD.Core.Data Type%3D(Name%3DTarget ArrayRank%3D1 ParentType%3DTarget)"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FSAD.Core%2Fbin%2Fx86%2FDebug%2FSAD.Core.dll Namespace%3DSAD.Core.Data Type%3DTarget"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
