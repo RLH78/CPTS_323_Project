@@ -53,7 +53,7 @@ namespace GUI
             {
                 if (m_target.alive == true)
                 {
-                    target_view_Launcher.Kill(m_target.xCoord, m_target.zCoord);
+                    target_view_Launcher.realKill(m_target.xCoord, m_target.yCoord, m_target.zCoord);
                     m_target.alive = false;
                     OnPropertyChanged("m_target");
                 }

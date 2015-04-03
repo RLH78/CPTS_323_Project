@@ -19,6 +19,7 @@ namespace SAD.core.Devices
         void MoveBy(double phi, double theta);
         void Reload();
         void Kill(double phi, double theta);
+        void realKill(double x, double y, double z);
         void Reset();
         void Status();
         void getName();
@@ -184,6 +185,10 @@ namespace SAD.core.Devices
             // MissileLauncher test = new MissileLauncher();
             // missileCount = missileAmt;
         }
+        public void realKill(double x, double y, double z)
+        {
+
+        }
         public void Kill(double phi, double theta)
         {
             int degrees = 0;
@@ -267,6 +272,7 @@ namespace SAD.core.Devices
         public void MoveBy(double phi, double theta) { ;}
         public void Reload() { ;}
         public void Kill(double phi, double theta) { ;}
+        public void realKill(double x, double y, double z) { ;}
         public void Status() { ;}
         public void Reset() { ;}
         public void MoveUp() { ;}
