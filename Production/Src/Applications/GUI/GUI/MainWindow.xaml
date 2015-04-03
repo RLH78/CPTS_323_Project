@@ -10,9 +10,7 @@
     <Window.Resources>
         <gui:mainViewModel x:Key="MainModel" />
         <gui:launcherViewModel x:Key="launcherModel" />
-
         <data:Target x:Key='targetClass' />
-
         <VisualBrush x:Key="myBrush">
             <VisualBrush.Visual>
                 <Grid>
@@ -21,11 +19,64 @@
                 </Grid>
             </VisualBrush.Visual>
         </VisualBrush>
+        <Style x:Key="myBtnStyle" TargetType="Button">
+            <Setter Property="Width" Value="{Binding Width}"></Setter>
+            <Setter Property="Height" Value="{Binding Height}"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="10"></DropShadowEffect>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Name="myele">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                        <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                        </GradientStop>
+                                        <GradientStop Color="Red" Offset="0.8"></GradientStop>
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Fill" TargetName="myele">
+                                    <Setter.Value>
+                                        <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                            <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                            </GradientStop>
+                                            <GradientStop Color="Orange" Offset="0.8"></GradientStop>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Fill" TargetName="myele">
+                                    <Setter.Value>
+                                        <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                            <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                            </GradientStop>
+                                            <GradientStop Color="Blue" Offset="0.8"></GradientStop>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+
+                </Setter.Value>
+            </Setter>
+        </Style>
+
     </Window.Resources>
     <Grid Background="{StaticResource myBrush}">
-
-
-
         <TextBox HorizontalAlignment="Right" Height="18" TextWrapping="Wrap" Text="Targets" TextAlignment="Center" VerticalAlignment="Top" Width="150" Grid.Row="1" />
         <ListBox
             Name="ListofTargets"
@@ -75,6 +126,12 @@
 
         <TextBox x:Name="Game" HorizontalAlignment="Left" Height="20" Margin="189,25,0,0" TextWrapping="Wrap" Text="Game: " VerticalAlignment="Top" Width="124" Grid.Column="1"/>
         <Button Content="Fire" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Fire_Missile}" HorizontalAlignment="Left" Height="20" Margin="232,60,0,0" VerticalAlignment="Top" Width="46" Grid.Column="1" Grid.Row="2" FontWeight="Bold" Background="#FFE81A1A"/>
+        <Button Name="btnEx" DataContext="{StaticResource ResourceKey=launcherModel}"
+                Command="{Binding _Fire_Missile}"
+                Content="Fire" FontSize="20" Width="70" Height="70" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="468,482,-388,-502" Foreground="White"
+                Style="{StaticResource myBtnStyle}">
+        </Button>
         <Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="283,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/>
         <Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="207,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="244,35,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
