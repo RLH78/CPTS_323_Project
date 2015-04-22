@@ -85,8 +85,15 @@ namespace GUI
             while (!bc.IsCompleted)
             {
                 var imageToDisplay = bc.Take();
-                App.Current.Dispatcher.Invoke(() => this.BitmapImage = ConvertBitmap.ToBitmapSource(image: imageToDisplay));
-            }
+                try
+                {
+                    App.Current.Dispatcher.Invoke(() => this.BitmapImage = ConvertBitmap.ToBitmapSource(image: imageToDisplay));
+                }
+                catch
+                {
+
+                }
+             }
         }
 
         public bool IsRunning
