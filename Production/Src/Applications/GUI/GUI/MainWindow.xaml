@@ -236,7 +236,7 @@
                 Width="28" HorizontalAlignment="Right"
                 VerticalAlignment="Center" Margin="0,56,267,64" Foreground="Black"
                 Style="{StaticResource myOtherBtnStyle1}" Grid.Column="1" Grid.Row="2" Click="btnRight_Click"/>
-
+        
         <!--Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="280,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/-->
         <!--Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="208,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/-->
         <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="241,30,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
@@ -250,6 +250,9 @@
 
 
         <Button Content="Clear Targets" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="27,5,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
+        <Button Content="Kill All Targets" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_targets}" HorizontalAlignment="Left" Margin="27,30,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
+        <Button Content="Kill All Foes" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_foes}" HorizontalAlignment="Left" Margin="27,55,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
+        <Button Content="Kill All Friends" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_friends}" HorizontalAlignment="Left" Margin="27,81,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load from Server" Command="{Binding _Show_Server_Message}" HorizontalAlignment="Left" Margin="126,13,0,0" VerticalAlignment="Top" Width="99" Grid.ColumnSpan="2"/>
         <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load INI File" Command="{Binding _load_INI_File}" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="98"/>
         <Button Content="Reset" 
@@ -301,7 +304,7 @@
         <TextBlock Text="{Binding Source={x:Static gui:launcherVars.Instance }, Path=missileCount}" Grid.Column="1" HorizontalAlignment="Left" Margin="277,6,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="36"/>
         <TextBlock Text="{Binding Source={x:Static gui:launcherVars.Instance }, Path=phi}" Grid.Column="1" HorizontalAlignment="Left" Margin="420,6,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="36"/>
         <TextBlock Text="{Binding Source={x:Static gui:launcherVars.Instance }, Path=theta}" Grid.Column="1" HorizontalAlignment="Left" Margin="460,6,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="36" RenderTransformOrigin="0.75,0.815"/>
-        <MediaElement Name="media" Source="C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\Audio\Danger_Zone.mp3" LoadedBehavior="Play" HorizontalAlignment="Left" Height="32" Margin="27,56,0,0" Grid.Row="2" VerticalAlignment="Top" Width="81"/>
+        <MediaElement Name="media" Source="C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\Audio\Danger_Zone.mp3" LoadedBehavior="Play" HorizontalAlignment="Left" Height="32" Margin="59,77,0,0" Grid.Row="2" VerticalAlignment="Top" Width="81" Grid.Column="2"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="500"/>

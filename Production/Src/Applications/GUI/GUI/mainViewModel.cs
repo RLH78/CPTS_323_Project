@@ -50,6 +50,9 @@ namespace GUI
         myCommand showServerMessage;
         myCommand fileLoader;
         myCommand clear;
+        myCommand killAll;
+        myCommand killFoes;
+        myCommand killFriends;
         myCommand TakePictureCommand;
 
         public ICommand _Show_Server_Message
@@ -75,7 +78,41 @@ namespace GUI
                 return clear;
             }
         }
+        public ICommand kill_all_targets
+        {
+            get
+            {
+                if (killAll == null)
+                {
+                    killAll = new myCommand(param => killTargets());
+                }
+                return killAll;
+            }
+        }
+        public ICommand kill_all_foes
+        {
+            get
+            {
+                if (killFoes == null)
+                {
+                    killFoes = new myCommand(param => killAllFoes());
+                }
+                return killFoes;
+            }
+        }
+        public ICommand kill_all_friends
+        {
+            get
+            {
+                if (killFriends == null)
+                {
+                    killFriends = new myCommand(param => killAllFriends());
+                }
+                return killFriends;
+            }
+        }
 
+        
         public ICommand _load_INI_File
         {
             get
@@ -124,6 +161,38 @@ namespace GUI
             targets = null;
             OnPropertyChanged("targets");
             OnPropertyChanged("Targets");         
+        }
+
+        public void killTargets()
+        {
+            int i = 0;
+            while (i < TargetManager.TotalTargets)
+            {
+                Targets.ElementAt(i).KillTarget();
+                i++;
+            }
+            
+        }
+
+        public void killAllFoes()
+        {
+            int i = 0;
+            while (i < TargetManager.TotalTargets)
+            {
+                Targets.ElementAt(i).KillTarget();
+                i++;
+            }
+
+        }
+        public void killAllFriends()
+        {
+            int i = 0;
+            while (i < TargetManager.TotalTargets && Targets.ElementAt(i).getFriend() == true)
+            {
+                Targets.ElementAt(i).KillTarget();
+                i++;
+            }
+
         }
         public void loadINIFile()
         {

@@ -43,6 +43,10 @@ namespace GUI
         {
             get { return m_target; }
         }
+        public bool getFriend()
+        {
+            return m_target.friend;
+        }
 
         public ICommand _kill_target
         {
@@ -55,7 +59,7 @@ namespace GUI
                 return kill;
             }
         }
-        private void KillTarget()
+        public void KillTarget()
         {
             if (m_target.friend == false)
             {
