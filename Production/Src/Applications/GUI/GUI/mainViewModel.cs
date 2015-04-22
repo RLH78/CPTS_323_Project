@@ -166,7 +166,7 @@ namespace GUI
         public void killTargets()
         {
             int i = 0;
-            while (i < TargetManager.TotalTargets)
+            while (i < TargetManager.TotalTargets && (Targets.ElementAt(i).getFriend() == false || Targets.ElementAt(i).getFriend() == true))
             {
                 Targets.ElementAt(i).KillTarget();
                 i++;
@@ -177,7 +177,7 @@ namespace GUI
         public void killAllFoes()
         {
             int i = 0;
-            while (i < TargetManager.TotalTargets)
+            while (i < TargetManager.TotalTargets && Targets.ElementAt(i).getFriend() == false)
             {
                 Targets.ElementAt(i).KillTarget();
                 i++;
