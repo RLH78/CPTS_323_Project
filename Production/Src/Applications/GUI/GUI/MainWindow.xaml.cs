@@ -31,6 +31,11 @@ namespace GUI
 
         }
 
+        private void btnRight_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
 
 
     }

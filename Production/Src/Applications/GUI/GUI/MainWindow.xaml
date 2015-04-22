@@ -11,7 +11,6 @@
     <Window.Resources>
         <gui:mainViewModel x:Key="MainModel" />
         <gui:launcherViewModel x:Key="launcherModel" />
-
         <data:Target x:Key='targetClass' />
         <VisualBrush x:Key="myBrush">
             <VisualBrush.Visual>
@@ -21,6 +20,114 @@
                 </Grid>
             </VisualBrush.Visual>
         </VisualBrush>
+        <Style x:Key="myOtherBtnStyle" TargetType="Button">
+            <Setter Property="Width" Value="{Binding Width}"></Setter>
+            <Setter Property="Height" Value="{Binding Height}"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="10"></DropShadowEffect>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Polygon Points="0,0 25,15, 0,30" Name="myOne">
+                                <Polygon.Fill>
+                                    <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.4, 0.3">
+                                        <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                        </GradientStop>
+                                        <GradientStop Color="Orange" Offset="0.8"></GradientStop>
+                                    </RadialGradientBrush>
+                                </Polygon.Fill>
+                            </Polygon>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Fill" TargetName="myOne">
+                                    <Setter.Value>
+                                        <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                            <GradientStop Color="WhiteSmoke" Offset="0.2">
+                                            </GradientStop>
+                                            <GradientStop Color="Blue" Offset="0.8"></GradientStop>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Fill" TargetName="myOne">
+                                    <Setter.Value>
+                                        <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                            <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                            </GradientStop>
+                                            <GradientStop Color="Red" Offset="0.8"></GradientStop>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="myOtherBtnStyle1" TargetType="Button">
+            <Setter Property="Width" Value="{Binding Width}"></Setter>
+            <Setter Property="Height" Value="{Binding Height}"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="10"></DropShadowEffect>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Polygon Points="25,0 0,15, 25,30" Name="myOne">
+                                <Polygon.Fill>
+                                    <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.4, 0.3">
+                                        <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                        </GradientStop>
+                                        <GradientStop Color="Orange" Offset="0.8"></GradientStop>
+                                    </RadialGradientBrush>
+                                </Polygon.Fill>
+                            </Polygon>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Fill" TargetName="myOne">
+                                    <Setter.Value>
+                                        <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                            <GradientStop Color="WhiteSmoke" Offset="0.2">
+                                            </GradientStop>
+                                            <GradientStop Color="Blue" Offset="0.8"></GradientStop>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Fill" TargetName="myOne">
+                                    <Setter.Value>
+                                        <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                            <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                            </GradientStop>
+                                            <GradientStop Color="Red" Offset="0.8"></GradientStop>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <Style x:Key="myBtnStyle" TargetType="Button">
             <Setter Property="Width" Value="{Binding Width}"></Setter>
             <Setter Property="Height" Value="{Binding Height}"></Setter>
@@ -72,11 +179,9 @@
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
-
                 </Setter.Value>
             </Setter>
         </Style>
-
     </Window.Resources>
     <Grid Background="{StaticResource myBrush}">
         <TextBox HorizontalAlignment="Right" Height="18" TextWrapping="Wrap" Text="Targets" TextAlignment="Center" VerticalAlignment="Top" Width="150" Grid.Row="1" />
@@ -97,7 +202,6 @@
                  Text="Position (          ,           )" VerticalAlignment="Top" IsReadOnly="True"
                  Width="135" Grid.Column="1" Grid.Row="2"/>
         <TextBox x:Name="Score" HorizontalAlignment="Left" Height="21" Margin="2,4,0,0" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="117" Grid.Row="2" Grid.Column="1"/>
-
         <TextBox 
             x:Name="Missiles" 
             HorizontalAlignment="Left" 
@@ -118,8 +222,21 @@
                 VerticalAlignment="Top" Margin="236,54,0,0" Foreground="White"
                 Style="{StaticResource myBtnStyle}" Grid.Column="1" Grid.Row="2" Click="btnEx_Click">
         </Button>
-        <Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="280,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/>
-        <Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="208,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
+        <Button Name="btnRight" DataContext="{StaticResource ResourceKey=launcherModel}"
+                Command="{Binding _Move_Right}"
+                Content=" R    " FontSize="16" FontFamily="Segoe WP Black"
+                Width="28" HorizontalAlignment="Right"
+                VerticalAlignment="Center" Margin="0,56,195,64" Foreground="Black"
+                Style="{StaticResource myOtherBtnStyle}" Grid.Column="1" Grid.Row="2" Click="btnRight_Click"/>
+        <Button Name="btnLeft" DataContext="{StaticResource ResourceKey=launcherModel}"
+                Command="{Binding _Move_Left}"
+                Content=" L" FontSize="16" FontFamily="Segoe WP Black"
+                Width="28" HorizontalAlignment="Right"
+                VerticalAlignment="Center" Margin="0,56,267,64" Foreground="Black"
+                Style="{StaticResource myOtherBtnStyle1}" Grid.Column="1" Grid.Row="2" Click="btnRight_Click"/>
+        
+        <!--Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="280,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/-->
+        <!--Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="208,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/-->
         <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="241,30,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <Button Content="D" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,92,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <Grid HorizontalAlignment="Left" DataContext="{StaticResource ResourceKey=MainModel}" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1">
@@ -179,7 +296,7 @@
         <TextBlock Text="{Binding Source={x:Static gui:launcherVars.Instance }, Path=missileCount}" Grid.Column="1" HorizontalAlignment="Left" Margin="277,6,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="36"/>
         <TextBlock Text="{Binding Source={x:Static gui:launcherVars.Instance }, Path=phi}" Grid.Column="1" HorizontalAlignment="Left" Margin="420,6,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="36"/>
         <TextBlock Text="{Binding Source={x:Static gui:launcherVars.Instance }, Path=theta}" Grid.Column="1" HorizontalAlignment="Left" Margin="460,6,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="36" RenderTransformOrigin="0.75,0.815"/>
-
+        <MediaElement Name="media" Source="C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\Audio\Danger_Zone.mp3" LoadedBehavior="Play" HorizontalAlignment="Left" Height="32" Margin="27,56,0,0" Grid.Row="2" VerticalAlignment="Top" Width="81"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="500"/>
