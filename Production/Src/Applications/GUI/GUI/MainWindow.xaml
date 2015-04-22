@@ -4,6 +4,7 @@
         xmlns:gui="clr-namespace:GUI"
         xmlns:data="clr-namespace:SAD.Core.Data;assembly=SAD.Core" 
         xmlns:hi="clr-namespace:GUI.ViewModel"
+        
         Title="MainWindow" 
         Height="600" 
         Width="800">
@@ -11,6 +12,7 @@
     <Window.Resources>
         <gui:mainViewModel x:Key="MainModel" />
         <gui:launcherViewModel x:Key="launcherModel" />
+        <gui:videoViewModel x:Key="videoModel"/>
         <data:Target x:Key='targetClass' />
         <VisualBrush x:Key="myBrush">
             <VisualBrush.Visual>
@@ -234,14 +236,14 @@
                 Width="28" HorizontalAlignment="Right"
                 VerticalAlignment="Center" Margin="0,56,267,64" Foreground="Black"
                 Style="{StaticResource myOtherBtnStyle1}" Grid.Column="1" Grid.Row="2" Click="btnRight_Click"/>
-        
+
         <!--Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="280,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/-->
         <!--Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="208,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/-->
         <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="241,30,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <Button Content="D" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,92,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
         <Grid HorizontalAlignment="Left" DataContext="{StaticResource ResourceKey=MainModel}" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1">
             <Border BorderThickness="1" BorderBrush="Gray" Margin="10">
-                <Image Source="{Binding CameraImage}"/>
+                <Image DataContext="{StaticResource ResourceKey=videoModel}" Source="{Binding BitmapImage}"/>
             </Border>
 
         </Grid>
@@ -289,6 +291,9 @@
                  Text="{Binding Name}"                 
                  DataContext="{StaticResource ResourceKey=launcherModel}"
                  VerticalAlignment="Top" Width="96" FontSize="14" FontFamily="Segoe UI Semilight" Grid.Column="2"/>
+
+        <Button Grid.Column="1" DataContext="{StaticResource ResourceKey=videoModel}" Content="Start" Command="{Binding Path=Start}" Margin="303,370,122,10" Width="75" Grid.Row="1"></Button>
+        <Button Grid.Column="1" Content="Stop" Command="{Binding Path=Stop}" DataContext="{StaticResource ResourceKey=videoModel}" Margin="392,370,33,10" Grid.Row="1" Width="75" RenderTransformOrigin="0.947,0.1"/>
         <Button Content="Take Image"   DataContext="{StaticResource ResourceKey=MainModel}"    
                     Command="{Binding Take_Picture}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
 

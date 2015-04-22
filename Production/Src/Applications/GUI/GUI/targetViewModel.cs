@@ -24,6 +24,11 @@ namespace GUI
             this.model = launcherViewModel.getInstance();
             target_view_Launcher = model.returnLauncher();            
         }
+
+        public bool getFriend()
+        {
+            return m_target.friend;
+        }
         
 
         private Target m_target;

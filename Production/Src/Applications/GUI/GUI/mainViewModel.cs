@@ -21,6 +21,11 @@ using SAD.Core.Data;
 using SAD.core.Data;
 using System.Runtime.InteropServices;
 using System.Collections.ObjectModel;
+using ReactiveUI;
+using System.Reactive.Linq;
+using System.Threading;
+using System.Collections.Concurrent;
+
 
 namespace GUI
 {
@@ -30,6 +35,7 @@ namespace GUI
         public mainViewModel()
         {
             Targets = new ObservableCollection<targetViewModel>();
+           
         }
 
         public Target[] targets { get; set; }
@@ -37,6 +43,9 @@ namespace GUI
 
         private BitmapSource m_cameraImage;
         private Capture m_capture;
+
+
+     
 
         myCommand showServerMessage;
         myCommand fileLoader;
@@ -114,7 +123,7 @@ namespace GUI
             Targets.Clear();
             targets = null;
             OnPropertyChanged("targets");
-            OnPropertyChanged("Targets");
+            OnPropertyChanged("Targets");         
         }
         public void loadINIFile()
         {
@@ -201,6 +210,12 @@ namespace GUI
                 OnPropertyChanged("CameraImage");
             }
         }
+
+
+
+
+        
+    }
     }
 
     public abstract class ViewModelBase : INotifyPropertyChanged
@@ -218,5 +233,7 @@ namespace GUI
 
     }
 
+    
 
-}
+
+

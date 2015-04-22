@@ -5,7 +5,7 @@ Startup="App_Startup" xmlns:d="http://schemas.microsoft.com/expression/blend/200
 d1p1:Ignorable="d" 
 xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006">  
   <Application.Resources>
-    <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:GUI.ViewModel" />
+    
   </Application.Resources>
 </Application>
 
