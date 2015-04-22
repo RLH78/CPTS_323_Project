@@ -41,6 +41,7 @@ namespace GUI
         myCommand showServerMessage;
         myCommand fileLoader;
         myCommand clear;
+        myCommand killAll;
         myCommand TakePictureCommand;
 
         public ICommand _Show_Server_Message
@@ -66,7 +67,18 @@ namespace GUI
                 return clear;
             }
         }
-
+        public ICommand kill_all_targets
+        {
+            get
+            {
+                if (killAll == null)
+                {
+                    killAll = new myCommand(param => killTargets());
+                }
+                return killAll;
+            }
+        }
+        
         public ICommand _load_INI_File
         {
             get
@@ -115,6 +127,17 @@ namespace GUI
             targets = null;
             OnPropertyChanged("targets");
             OnPropertyChanged("Targets");
+        }
+
+        public void killTargets()
+        {
+            int i = 0;
+            while (i < TargetManager.TotalTargets)
+            {
+                Targets.ElementAt(i).KillTarget();
+                i++;
+            }
+            
         }
         public void loadINIFile()
         {

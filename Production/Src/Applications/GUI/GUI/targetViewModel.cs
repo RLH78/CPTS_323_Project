@@ -50,7 +50,7 @@ namespace GUI
                 return kill;
             }
         }
-        private void KillTarget()
+        public void KillTarget()
         {
             if (m_target.friend == false)
             {
