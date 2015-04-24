@@ -34,7 +34,9 @@ namespace GUI
     {
         public mainViewModel()
         {
-            Targets = new ObservableCollection<targetViewModel>();        
+            Targets = new ObservableCollection<targetViewModel>();
+            
+            
         }
 
         public Target[] targets { get; set; }
@@ -42,9 +44,6 @@ namespace GUI
 
         private BitmapSource m_cameraImage;
         private Capture m_capture;
-
-
-     
 
         myCommand showServerMessage;
         myCommand fileLoader;
