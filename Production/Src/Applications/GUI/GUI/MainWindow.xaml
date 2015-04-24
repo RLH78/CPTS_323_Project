@@ -247,7 +247,7 @@
             </Border>
 
             <Border BorderThickness="1" BorderBrush="Gray" Margin="10">
-                <Image DataContext="{StaticResource ResourceKey=MainModel}" Source="{Binding CameraImage}" Height="100" Width="100" Margin="0,0,0,0"/>
+                <Image DataContext="{StaticResource ResourceKey=MainModel}" Source="{Binding CameraImage}" Height="59.5" Width="100" Margin="379,9,-19,309" RenderTransformOrigin="1.776,-1.725"/>
             </Border>
 
 
