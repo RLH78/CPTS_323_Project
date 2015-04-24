@@ -25,6 +25,8 @@ namespace GUI
             target_view_Launcher = model.returnLauncher();            
         }
 
+        ~targetViewModel() { }
+
 
         
 
@@ -94,132 +96,152 @@ namespace GUI
         }
         public void KillTarget()
         {
-            if (m_target.friend == false)
+            try
             {
-                if (m_target.alive == true)
+                if (m_target.friend == false)
                 {
-                    double place_hold = 0;
-                    double place_hold2 = 0;
-                    double realPhi = 0;
-                    double realTheta = 0;
-                    int degrees = 0;
-                    int degrees2 = 0;
+                    if (m_target.alive == true)
+                    {
+                        double place_hold = 0;
+                        double place_hold2 = 0;
+                        double realPhi = 0;
+                        double realTheta = 0;
+                        int degrees = 0;
+                        int degrees2 = 0;
 
-                    place_hold = m_target.xCoord / m_target.yCoord;
-                    place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
-                    realPhi = Math.Atan(place_hold);
-                    realTheta = Math.Atan(m_target.zCoord / place_hold2);
-                    degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
-                    degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+                        place_hold = m_target.xCoord / m_target.yCoord;
+                        place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
+                        realPhi = Math.Atan(place_hold);
+                        realTheta = Math.Atan(m_target.zCoord / place_hold2);
+                        degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+                        degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
 
-                    target_view_Launcher.realKill(degrees, degrees2);
+                        target_view_Launcher.realKill(degrees, degrees2);
 
-                    m_target.alive = false;                    
-                    launcherVars missilez = launcherVars.Instance;
-                    missilez.missileCount = missilez.missileCount - 1;
-                    missilez.phi = degrees;
-                    missilez.theta = degrees2;
-                    OnPropertyChanged("m_target");                    
+                        m_target.alive = false;
+                        launcherVars missilez = launcherVars.Instance;
+                        missilez.missileCount = missilez.missileCount - 1;
+                        missilez.phi = degrees;
+                        missilez.theta = degrees2;
+                        OnPropertyChanged("m_target");
+                    }
+
+
+                    else
+                    {
+                        MessageBox.Show("It's already dead, Captain! Don't waste our missiles!");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("It's already dead, Captain! Don't waste our missiles!");
+                    MessageBox.Show("Don't shoot our friends!!");
                 }
             }
-            else
-            {
-                MessageBox.Show("Don't shoot our friends!!");
-            }
+            catch { }
         }
         public void KillAllTargets()
         {
-            if (m_target.alive == true)
+            try
             {
-                double place_hold = 0;
-                double place_hold2 = 0;
-                double realPhi = 0;
-                double realTheta = 0;
-                int degrees = 0;
-                int degrees2 = 0;
+                if (m_target.alive == true)
+                {
+                    double place_hold = 0;
+                    double place_hold2 = 0;
+                    double realPhi = 0;
+                    double realTheta = 0;
+                    int degrees = 0;
+                    int degrees2 = 0;
 
-                place_hold = m_target.xCoord / m_target.yCoord;
-                place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
-                realPhi = Math.Atan(place_hold);
-                realTheta = Math.Atan(m_target.zCoord / place_hold2);
-                degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
-                degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+                    place_hold = m_target.xCoord / m_target.yCoord;
+                    place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
+                    realPhi = Math.Atan(place_hold);
+                    realTheta = Math.Atan(m_target.zCoord / place_hold2);
+                    degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+                    degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
 
-                target_view_Launcher.realKill(degrees, degrees2);
+                    target_view_Launcher.realKill(degrees, degrees2);
 
-                m_target.alive = false;
-                launcherVars missilez = launcherVars.Instance;
-                missilez.missileCount = missilez.missileCount - 1;
-                missilez.phi = degrees;
-                missilez.theta = degrees2;
-                OnPropertyChanged("m_target");
+                    m_target.alive = false;
+                    launcherVars missilez = launcherVars.Instance;
+                    missilez.missileCount = missilez.missileCount - 1;
+                    missilez.phi = degrees;
+                    missilez.theta = degrees2;
+                    OnPropertyChanged("m_target");
+                }
             }
+            catch { }
         }
         public void KillFoes()
         {
-            if (m_target.friend == false)
+            try
             {
-                if (m_target.alive == true)
+                if (m_target.friend == false)
                 {
-                    double place_hold = 0;
-                    double place_hold2 = 0;
-                    double realPhi = 0;
-                    double realTheta = 0;
-                    int degrees = 0;
-                    int degrees2 = 0;
+                    if (m_target.alive == true)
+                    {
+                        double place_hold = 0;
+                        double place_hold2 = 0;
+                        double realPhi = 0;
+                        double realTheta = 0;
+                        int degrees = 0;
+                        int degrees2 = 0;
 
-                    place_hold = m_target.xCoord / m_target.yCoord;
-                    place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
-                    realPhi = Math.Atan(place_hold);
-                    realTheta = Math.Atan(m_target.zCoord / place_hold2);
-                    degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
-                    degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+                        place_hold = m_target.xCoord / m_target.yCoord;
+                        place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
+                        realPhi = Math.Atan(place_hold);
+                        realTheta = Math.Atan(m_target.zCoord / place_hold2);
+                        degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+                        degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
 
-                    target_view_Launcher.realKill(degrees, degrees2);
+                        target_view_Launcher.realKill(degrees, degrees2);
 
-                    m_target.alive = false;
-                    launcherVars missilez = launcherVars.Instance;
-                    missilez.missileCount = missilez.missileCount - 1;
-                    missilez.phi = degrees;
-                    missilez.theta = degrees2;
-                    OnPropertyChanged("m_target");
+                        m_target.alive = false;
+                        launcherVars missilez = launcherVars.Instance;
+                        missilez.missileCount = missilez.missileCount - 1;
+                        missilez.phi = degrees;
+                        missilez.theta = degrees2;
+                        OnPropertyChanged("m_target");
+                    }
                 }
             }
+            catch { }
         }
         public void KillFriends()
         {
-            if (m_target.friend == true)
+            try
             {
-                if (m_target.alive == true)
+                if (m_target.friend == true)
                 {
-                    double place_hold = 0;
-                    double place_hold2 = 0;
-                    double realPhi = 0;
-                    double realTheta = 0;
-                    int degrees = 0;
-                    int degrees2 = 0;
+                    if (m_target.alive == true)
+                    {
+                        double place_hold = 0;
+                        double place_hold2 = 0;
+                        double realPhi = 0;
+                        double realTheta = 0;
+                        int degrees = 0;
+                        int degrees2 = 0;
 
-                    place_hold = m_target.xCoord / m_target.yCoord;
-                    place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
-                    realPhi = Math.Atan(place_hold);
-                    realTheta = Math.Atan(m_target.zCoord / place_hold2);
-                    degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
-                    degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+                        place_hold = m_target.xCoord / m_target.yCoord;
+                        place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
+                        realPhi = Math.Atan(place_hold);
+                        realTheta = Math.Atan(m_target.zCoord / place_hold2);
+                        degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+                        degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
 
-                    target_view_Launcher.realKill(degrees, degrees2);
+                        target_view_Launcher.realKill(degrees, degrees2);
 
-                    m_target.alive = false;
-                    launcherVars missilez = launcherVars.Instance;
-                    missilez.missileCount = missilez.missileCount - 1;
-                    missilez.phi = degrees;
-                    missilez.theta = degrees2;
-                    OnPropertyChanged("m_target");
+                        m_target.alive = false;
+                        launcherVars missilez = launcherVars.Instance;
+                        missilez.missileCount = missilez.missileCount - 1;
+                        missilez.phi = degrees;
+                        missilez.theta = degrees2;
+                        OnPropertyChanged("m_target");
+                    }
+
+
                 }
             }
+            catch { }
         }
         
     }

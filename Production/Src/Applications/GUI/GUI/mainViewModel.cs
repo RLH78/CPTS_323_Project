@@ -34,8 +34,7 @@ namespace GUI
     {
         public mainViewModel()
         {
-            Targets = new ObservableCollection<targetViewModel>();
-           
+            Targets = new ObservableCollection<targetViewModel>();        
         }
 
         public Target[] targets { get; set; }
@@ -119,7 +118,9 @@ namespace GUI
             {
                 if (fileLoader == null)
                 {
+
                     fileLoader = new myCommand(param => loadINIFile());
+                      
                 }
                 return fileLoader;
             }
@@ -157,10 +158,10 @@ namespace GUI
 
         public void clearTargets()
         {
-            Targets.Clear();
-            targets = null;
-            OnPropertyChanged("targets");
-            OnPropertyChanged("Targets");         
+           Targets.Clear();
+           targets = null;
+           OnPropertyChanged("targets");
+           OnPropertyChanged("Targets");         
         }
 
         public void killTargets()
@@ -170,8 +171,7 @@ namespace GUI
             {
                 Targets.ElementAt(i).KillAllTargets();
                 i++;
-            }
-            
+            }            
         }
 
         public void killAllFoes()
@@ -214,7 +214,7 @@ namespace GUI
                 while (i < TargetManager.TotalTargets)
                 {
                     var newtargetViewModel = new targetViewModel(targets[i]);
-                    Targets.Add(newtargetViewModel);
+                    Targets.Add(newtargetViewModel);                    
                     i++;
                 }
                 OnPropertyChanged("Targets");
