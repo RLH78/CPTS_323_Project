@@ -166,9 +166,9 @@ namespace GUI
         public void killTargets()
         {
             int i = 0;
-            while (i < TargetManager.TotalTargets && (Targets.ElementAt(i).getFriend() == false || Targets.ElementAt(i).getFriend() == true))
+            while (i < TargetManager.TotalTargets)
             {
-                Targets.ElementAt(i).KillTarget();
+                Targets.ElementAt(i).KillAllTargets();
                 i++;
             }
             
@@ -177,9 +177,9 @@ namespace GUI
         public void killAllFoes()
         {
             int i = 0;
-            while (i < TargetManager.TotalTargets && Targets.ElementAt(i).getFriend() == false)
+            while (i < TargetManager.TotalTargets)
             {
-                Targets.ElementAt(i).KillTarget();
+                Targets.ElementAt(i).KillFoes();
                 i++;
             }
 
@@ -187,13 +187,13 @@ namespace GUI
         public void killAllFriends()
         {
             int i = 0;
-            while (i < TargetManager.TotalTargets && Targets.ElementAt(i).getFriend() == true)
+            while (i < TargetManager.TotalTargets)
             {
-                Targets.ElementAt(i).KillTarget();
+                Targets.ElementAt(i).KillFriends();
                 i++;
             }
-
         }
+
         public void loadINIFile()
         {
             var openFileDialog = new Ookii.Dialogs.Wpf.VistaOpenFileDialog();
