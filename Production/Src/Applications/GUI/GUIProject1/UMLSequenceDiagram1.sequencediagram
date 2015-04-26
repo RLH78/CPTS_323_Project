@@ -1,1 +1,33 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="6e87039c-b10c-4ed1-b6a7-ed250deffe0d" name="Sequence1" linkedPackageId="64671602-690a-4a1c-a3d5-11db15d5bafe" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7032071d-fdb9-4a81-86e9-9e12327ad7b9">
+      <profileInstance Id="25248b72-e9c0-4b5a-aa70-52fc7bcacb2d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="74d397ea-24c7-4a8e-8c64-f4ccee88ffcc">
+      <profileInstance Id="b6823392-0463-424d-97e1-086d9fa3236a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="67766623-2724-4d1a-8aec-e426f69b74d1">
+      <profileInstance Id="19dd63d1-1dba-4115-b5ee-34aa14d69e44" name="CSharpProfile">
+        <elementDefinition Id="24bb862b-886b-4845-966e-45c8b7ef397f" />
+      </profileInstance>
+      <elementDefinition Id="74d6d172-8dcb-408c-9042-42174e312fb1" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="0c1138e9-1ddd-4cd9-9519-112c00cff1d2" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="3108eec4-dcc5-46c7-b9e7-0606e11e0ac3" />
+      </interaction>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="64671602-690a-4a1c-a3d5-11db15d5bafe" name="GUIProject1">
+    <elementDefinition Id="bbdcfb7b-3009-4ff1-860e-445357b15df3" />
+  </package>
+</SequenceDesignerModel>

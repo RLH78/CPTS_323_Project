@@ -1,8 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="bbdcfb7b-3009-4ff1-860e-445357b15df3"
   name="GUIProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="abb22132-4ef5-4ca7-9f79-f6e50bda907b">
+      <body>Activity Diagram for Starting and Acquiring Video</body>
+    </comment>
+    <comment
+      Id="b3e1c4b8-70fe-4eb4-8353-8f16d3e43d10">
+      <body>Activity Diagram for Game Execution</body>
+    </comment>
+  </ownedCommentsInternal>
+  <referencesInternal>
+    <reference
+      Id="078e9eec-4eaf-41d4-a697-40c8ae322c18"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3D::"
+      tag="ViewCode" />
+  </referencesInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -59,6 +75,1383 @@
         Id="a6c514de-254f-4049-82b1-33d8f07b09d0"
         LastKnownName="Emgu"
         LastKnownLocation="Package2_1625.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8f86c990-072b-411d-80f1-3564317b6aa3"
+        name="ViewModelBase"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a2603da6-2e95-4f49-b253-14af10a8333b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FGUI%2Fbin%2Fx86%2FDebug%2FGUI.exe Type%3DViewModelBase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d5e7af3d-d4d3-4719-a02d-7585720d7604"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ac9e380-802c-4dcf-a6b8-0563d9d313dc">
+                <propertyInstance
+                  Id="dfd630b0-578b-4a8b-8b42-cebc265a615a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04ded4c4-a823-46f4-9d54-cdd515544124">
+                <propertyInstance
+                  Id="8fbf9b96-9c63-4a8f-a597-1c4f14ceee82"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="707c20f9-d381-45f8-8cb5-8adb69819698">
+                <propertyInstance
+                  Id="ba2932cf-0044-4100-93f1-bb3da5560620"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bf5d2450-7105-4e48-9b8d-46fdb687c569">
+                <propertyInstance
+                  Id="a466bf94-6edf-4890-9c2e-e6b24d3d8f57"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="85c5851a-dd00-42de-958d-61fa81712ff2">
+                <propertyInstance
+                  Id="0cee553c-bf6c-46cc-abf9-71e8a1c62ea0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3691cb68-fba9-4bd3-b0b5-caf9aea821c7"
+        LastKnownName="ReactiveUI"
+        LastKnownLocation="Package3_1232.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="3108eec4-dcc5-46c7-b9e7-0606e11e0ac3"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="fae6ad0e-0c6a-4e0b-b520-6a519ed31e79"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="e77c8e84-9686-4676-ad91-cf728b823841"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="105f3136-c5dc-4e2a-9a6e-e85ee991524e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="be9fed2c-27e2-4061-b2ce-2e3fe071f4d7"
+                  LastKnownName="Click Start"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="be9fed2c-27e2-4061-b2ce-2e3fe071f4d7"
+            name="Click Start"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c37e609e-038d-432d-8d76-4a946224947a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c75bf49c-4962-48ef-b0f8-6d5ef35fded5"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b69ed6d5-da11-4375-803c-cc82a47c4628"
+            name="Click Stop"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4ccc529f-7502-4e8d-91d1-a40cb367422f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="d697c380-70f9-427f-8930-ed9f9382e1e3"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b0c9b973-fa19-4cd1-9d8f-b934817d1fe2"
+            name="Click Take Image"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ad420a93-bfcb-487d-9f4d-51a6b5efaa99"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="567533db-0dae-4e64-8ca9-51c42bdba0f9"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="57593e1e-40e5-4803-9cc2-9a0cecb6e4b0"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ac8ce135-1eea-404b-92b2-93691a9a2eea"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b0c9b973-fa19-4cd1-9d8f-b934817d1fe2"
+                  LastKnownName="Click Take Image"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode
+            Id="567533db-0dae-4e64-8ca9-51c42bdba0f9"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5bd658bc-9675-46e6-9856-4e03c97a9538"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="57593e1e-40e5-4803-9cc2-9a0cecb6e4b0"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e3bda036-4d51-4f55-ad66-b82b403ff3b0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b69ed6d5-da11-4375-803c-cc82a47c4628"
+                  LastKnownName="Click Stop"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="c75bf49c-4962-48ef-b0f8-6d5ef35fded5"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e69bea92-7e07-4389-884e-49e335fcd5ad"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="57593e1e-40e5-4803-9cc2-9a0cecb6e4b0"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="eb152672-077b-48dd-a7c6-b689b44b23fe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b69ed6d5-da11-4375-803c-cc82a47c4628"
+                  LastKnownName="Click Stop"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="f764f4a9-c177-43ec-a2ef-9158246b9c6e"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="d697c380-70f9-427f-8930-ed9f9382e1e3"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="79f6a1c3-643c-4bbe-b581-64808f006a72"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f764f4a9-c177-43ec-a2ef-9158246b9c6e"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a5ae8d51-e4f2-4b58-bd74-f180fa5247b4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="be9fed2c-27e2-4061-b2ce-2e3fe071f4d7"
+                  LastKnownName="Click Start"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="2b964757-bf19-41e3-9c88-24cec7c3d540"
+        name="GameExecution"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="4dc1a392-20ed-4199-9840-bd4180542f39"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3906b26f-fbe5-42a3-b427-cd5c1c7bb84f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f0afbeb5-0a39-4f09-905a-ce1cf5ce533f"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="ff791767-a703-4113-becc-236e934d8539"
+            name="Enter Team Name"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="067ccce4-bb73-4580-83de-ab34f2e63c31"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="37f1bf60-2ce6-4188-a907-5a4d1a8c2713"
+                  LastKnownName="Click Okay"
+                  LastKnownLocation="GUIProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="f0afbeb5-0a39-4f09-905a-ce1cf5ce533f"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8747afe1-5af5-4c9b-a4ed-ffe988e640b7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ff791767-a703-4113-becc-236e934d8539"
+                  LastKnownName="Enter Team Name"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="d1c001ce-403d-4f33-845f-3184e3805a8a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="cb53e972-8b4c-4f22-ada2-b7203a491a78"
+                  LastKnownName="Select Launcher"
+                  LastKnownLocation="GUIProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <objectNode
+            Id="37f1bf60-2ce6-4188-a907-5a4d1a8c2713"
+            name="Click Okay"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="7e2328d4-0b03-4202-bc9d-b71a8c682aaa"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="cb53e972-8b4c-4f22-ada2-b7203a491a78"
+                  LastKnownName="Select Launcher"
+                  LastKnownLocation="GUIProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="cf015c79-ed37-49f3-bd82-e302cd9d95f9"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="cb53e972-8b4c-4f22-ada2-b7203a491a78"
+            name="Select Launcher"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="bf45e237-220a-410f-aacb-01373fadc8f2"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <forkNodeMoniker
+                  Id="842c4477-acb4-4e75-bbc8-94ca19067331"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="009f28bc-ba0e-4442-a0ab-18449493729c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <forkNode
+            Id="842c4477-acb4-4e75-bbc8-94ca19067331"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f9faecde-7eb4-424c-a20b-5f225cb2adb2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="40141cbb-33e6-484b-9d50-68463e93016f"
+                  LastKnownName="Click Start Video"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="97842067-7234-4641-84ac-5ca5538a2f41"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="2d74d201-ab2c-4f30-923c-de9c06c1c64d"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <decisionNode
+            Id="988a7a77-3e57-422c-b566-fac8e9c63951"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ca19b6cd-1a3e-463a-92f9-163131ec724a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b5bc0af6-c8ac-414b-a6a8-73a7c34b7b15"
+                  LastKnownName="Load File from Server"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="291d81d9-0385-4661-b2c9-86150caaca49"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c9f29f54-0ef9-427a-a3c5-84f2452106c0"
+                  LastKnownName="Load INI File"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="c9f29f54-0ef9-427a-a3c5-84f2452106c0"
+            name="Load INI File"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="86165117-533a-45ba-896b-f7deaece715f"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="13a918f7-a929-41ac-a024-8885070eab8d"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b5bc0af6-c8ac-414b-a6a8-73a7c34b7b15"
+            name="Load File from Server"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="43a405ba-8f5b-4a08-8c6a-3742093ea8bd"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="13a918f7-a929-41ac-a024-8885070eab8d"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="13a918f7-a929-41ac-a024-8885070eab8d"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3df4a539-9318-43f7-9d9f-316bb8470090"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="bc2c1988-80ae-44d4-8a9d-5d3a89edd1cb"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode
+            Id="4bdc1efb-b67d-4fc5-ae8b-501f7b49ab6c"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bb1fcf54-0cca-4c9d-978f-17174737e39b"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="2d74d201-ab2c-4f30-923c-de9c06c1c64d"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c8367c12-8d6b-4183-9031-a9ad07e6d047"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="30adc893-a442-4d3c-aabd-069b1530e76f"
+                  LastKnownName="Join1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="706c0a99-d2aa-4606-b8be-1537ce65758c"
+            name="Kill Targets"
+            isLeaf="false" />
+          <opaqueAction
+            Id="1ec1e7b2-dfb6-4cf2-8268-e63b0a8ea362"
+            name="Move/Fire/Reload Launcher"
+            isLeaf="false" />
+          <opaqueAction
+            Id="40141cbb-33e6-484b-9d50-68463e93016f"
+            name="Click Start Video"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="27dd37f3-4bc5-443f-a5e6-f4c739a4c7de"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2b331158-7f31-4d2c-9dcc-bff3d579ba9b"
+                  LastKnownName="Decision21"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f53a4222-c98c-40fc-a21d-c6b42949d475"
+            name="Click Stop"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4d85bc31-e2c9-422f-9895-04ae6494f3b6"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="35770fc9-04ba-4a13-81e1-0560a95bdc91"
+                  LastKnownName="Decision31"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="006a42cb-2785-46c2-8ebc-36e8a1199dc9"
+            name="Click Take Image"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bed9b82b-3b21-4c7d-9f8b-743f2a76d40a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a5934104-2ca8-44a5-935b-63b761667730"
+                  LastKnownName="Decision11"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="c7067e83-e005-4139-90d7-5a625c7fbed4"
+            name="Merge11"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2fa1a302-4c00-428d-9edd-7ab48b6aec95"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="006a42cb-2785-46c2-8ebc-36e8a1199dc9"
+                  LastKnownName="Click Take Image"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode
+            Id="a5934104-2ca8-44a5-935b-63b761667730"
+            name="Decision11"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a17a0b75-e666-42c2-8eb8-7b88815716c9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f53a4222-c98c-40fc-a21d-c6b42949d475"
+                  LastKnownName="Click Stop"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="24431d6a-942d-4164-ad26-cf7bec290bcd"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="c7067e83-e005-4139-90d7-5a625c7fbed4"
+                  LastKnownName="Merge11"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="2b331158-7f31-4d2c-9dcc-bff3d579ba9b"
+            name="Decision21"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="baddae7a-e935-4e13-b5de-8b1a1219b564"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="c7067e83-e005-4139-90d7-5a625c7fbed4"
+                  LastKnownName="Merge11"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="171fb363-f6aa-4c45-960a-8c0d3256f4a1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f53a4222-c98c-40fc-a21d-c6b42949d475"
+                  LastKnownName="Click Stop"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="35770fc9-04ba-4a13-81e1-0560a95bdc91"
+            name="Decision31"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce230350-f8af-4db6-89ac-494f5ed484ef"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="40141cbb-33e6-484b-9d50-68463e93016f"
+                  LastKnownName="Click Start Video"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7600cf7a-8316-4c9f-a82f-ceeb60448262"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="30adc893-a442-4d3c-aabd-069b1530e76f"
+                  LastKnownName="Join1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode
+            Id="2d74d201-ab2c-4f30-923c-de9c06c1c64d"
+            name="Merge2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a24be7e1-592f-4c10-9df5-83840891ebcf"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="988a7a77-3e57-422c-b566-fac8e9c63951"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <joinNode
+            Id="30adc893-a442-4d3c-aabd-069b1530e76f"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f95d43b1-ed23-4fba-8fdc-4cfaedfe1c38"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="abbb6f88-0111-4ec5-a55f-9373a071d6f4"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <decisionNode
+            Id="bc2c1988-80ae-44d4-8a9d-5d3a89edd1cb"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6a4eca24-79d4-4f45-8fa4-d97c42aac5ff"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="4bdc1efb-b67d-4fc5-ae8b-501f7b49ab6c"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="336230e0-8ded-4d3d-af40-53ad94ae2340"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1ec1e7b2-dfb6-4cf2-8268-e63b0a8ea362"
+                  LastKnownName="Move/Fire/Reload Launcher"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e1ffdb10-0b5a-4825-bec9-5f893727a4d0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="706c0a99-d2aa-4606-b8be-1537ce65758c"
+                  LastKnownName="Kill Targets"
+                  LastKnownLocation="GUIProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="abbb6f88-0111-4ec5-a55f-9373a071d6f4"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c847d8bc-cad7-404f-88e0-96db463c4d97"
+        name="MainViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="f8c7eaea-9f81-4d9e-ae1e-a5f4b5bf25ae"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="907c59c9-481c-4c7a-b4d0-b3ddbf4c5771"
+                LastKnownName="ViewModelBase"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="be3ee95d-ccf4-400f-acb1-08420f7e4eeb"
+        name="LauncherViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="f5f61fe9-c01a-4120-baa8-27400579d60b"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="8f87943c-292f-44bc-b219-4a363aa30ee1"
+                LastKnownName="ViewModelBase"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="e4f29ce2-9ac2-462c-838c-eeb5b9fbb360"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="a36b6526-96e4-40e1-bb37-aea2df048aec">
+                <providedInterfaceMoniker
+                  Id="ffa18246-97f2-4eec-956f-6103d1e365dc"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+              <dependency
+                Id="0cd7c4e4-8e19-4cd1-adbd-e2a753591d8a">
+                <providedInterfaceMoniker
+                  Id="bc717fde-de8d-4e84-a64f-319eab27700b"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="1619c6eb-5209-4046-b680-43a2635cf49d"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="183efda7-06e6-4c20-af19-33d7791d56b7"
+        name="TargetViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="203c1477-ed2a-4498-8432-a7f8467ecdbd"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="6638bdb8-afc0-4fb6-8f70-bb6fad9dade6"
+                LastKnownName="ViewModelBase"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d15c0b08-9891-46b8-90b5-564c1a9358ee"
+        name="VideoViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="647a4e82-25b6-497f-9369-f6fc1b130d78"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="22539e51-fa7e-4ef1-a2a7-689b41350198"
+                LastKnownName="VideoStream"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f142c71a-884b-4072-9f7f-7c8803f25734"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="c51cbc9b-fa4e-483d-8c35-594a17f7d79a"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="b08bcf90-bb19-4433-845d-62a111712e0b">
+                <providedInterfaceMoniker
+                  Id="f8c7eaea-9f81-4d9e-ae1e-a5f4b5bf25ae"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+              <dependency
+                Id="39199f17-a5ed-4d7b-825f-4cefa9299636">
+                <providedInterfaceMoniker
+                  Id="f5f61fe9-c01a-4120-baa8-27400579d60b"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+              <dependency
+                Id="d12b42bc-43df-4315-b031-31f2b57c3cfc">
+                <providedInterfaceMoniker
+                  Id="203c1477-ed2a-4498-8432-a7f8467ecdbd"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="66b86160-b970-460d-868b-94fd3e1153f6"
+                LastKnownName="ViewModelBase"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="66b86160-b970-460d-868b-94fd3e1153f6"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6638bdb8-afc0-4fb6-8f70-bb6fad9dade6"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="907c59c9-481c-4c7a-b4d0-b3ddbf4c5771"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="8f87943c-292f-44bc-b219-4a363aa30ee1"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c14ee1b6-fb0d-45a7-9c8a-92daeb0ee506"
+        name="MissileLauncher"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="13696cff-e515-49b5-99fa-516404fac866"
+        name="DreamCheeky"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d892f79d-9ec6-4670-bfb3-b51319dd8f88">
+            <componentMoniker
+              Id="c14ee1b6-fb0d-45a7-9c8a-92daeb0ee506"
+              LastKnownName="MissileLauncher"
+              LastKnownLocation="GUIProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="bc717fde-de8d-4e84-a64f-319eab27700b"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="b9867a1e-831c-4d91-a172-8d6ee13d645c"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="218f2088-9642-4864-bccc-299725358205"
+        name="Mock"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="959b29fb-79d4-4f45-abe5-3ca5ec6855ba">
+            <componentMoniker
+              Id="c14ee1b6-fb0d-45a7-9c8a-92daeb0ee506"
+              LastKnownName="MissileLauncher"
+              LastKnownLocation="GUIProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="ffa18246-97f2-4eec-956f-6103d1e365dc"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ac1cc11e-66d0-479a-a164-003b9dc268c6"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="de4f30f3-156d-487c-83d1-44d7c56233a7"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="1619c6eb-5209-4046-b680-43a2635cf49d"
+        name="IMissileLauncher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b9867a1e-831c-4d91-a172-8d6ee13d645c"
+        name="IMissileLauncher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ac1cc11e-66d0-479a-a164-003b9dc268c6"
+        name="IMissileLauncher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="536e35cb-6acc-4c2e-bfa4-5bbe2a449cbe"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ebdb1f41-e3b0-452a-be16-12d1debf706f"
+        name="Interface3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5d330ba0-f3f6-42e9-9fe9-f65aabb8ee3d"
+        name="MainWindow (GUI)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="c006936b-89a0-470d-82e9-1287a09c768e"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="7c9f8902-d96c-4e0f-8e9d-985eb438fa38">
+                <providedInterfaceMoniker
+                  Id="647a4e82-25b6-497f-9369-f6fc1b130d78"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+              <dependency
+                Id="196a38fc-8f26-4d3f-974a-a1ab453503a3">
+                <providedInterfaceMoniker
+                  Id="203c1477-ed2a-4498-8432-a7f8467ecdbd"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+              <dependency
+                Id="16a2aa32-d882-4b54-86de-3fe2faef8256">
+                <providedInterfaceMoniker
+                  Id="f8c7eaea-9f81-4d9e-ae1e-a5f4b5bf25ae"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+              <dependency
+                Id="74940cfc-500a-4a5e-a767-56548b9334e9">
+                <providedInterfaceMoniker
+                  Id="f5f61fe9-c01a-4120-baa8-27400579d60b"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="cc48a738-80fb-4d8e-b4cb-47cf0ba1cafc"
+                LastKnownName="MainWindow"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="cc48a738-80fb-4d8e-b4cb-47cf0ba1cafc"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="22539e51-fa7e-4ef1-a2a7-689b41350198"
+        name="VideoStream"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="156ec694-bfee-4542-a73c-6ec7d71d1740"
+        name="LoadFileFromServer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1ce4574a-9cc2-43b5-bec4-5d93a63980a0">
+            <providedInterfaceMoniker
+              Id="f8c7eaea-9f81-4d9e-ae1e-a5f4b5bf25ae"
+              LastKnownName="Port1"
+              LastKnownLocation="GUIProject1.uml" />
+          </dependency>
+          <dependency
+            Id="11992e7b-2ea8-4267-9abb-ceb0f4cd6b11">
+            <componentMoniker
+              Id="391326a3-7fe0-4fdd-99ca-d1ab2e3e1403"
+              LastKnownName="FileReaderFactory"
+              LastKnownLocation="GUIProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="7b7060fd-6fbe-410d-9173-0ddf13e79536"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="1d8f1e88-13d4-4aa2-b051-6946edc70420">
+                <providedInterfaceMoniker
+                  Id="c5d8593f-4195-4679-b0f3-9bc32ff012c2"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="4944893d-6e44-45f0-91cd-f60fd730baf0"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ad3e814c-ef00-4747-838f-f09d500fb9cd"
+        name="LoadINIFile"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="743bf7cb-2715-48ba-b82a-aaef0472792c">
+            <providedInterfaceMoniker
+              Id="f8c7eaea-9f81-4d9e-ae1e-a5f4b5bf25ae"
+              LastKnownName="Port1"
+              LastKnownLocation="GUIProject1.uml" />
+          </dependency>
+          <dependency
+            Id="fcb8b6c9-44f6-4fe8-ada3-3bf090dec535">
+            <componentMoniker
+              Id="391326a3-7fe0-4fdd-99ca-d1ab2e3e1403"
+              LastKnownName="FileReaderFactory"
+              LastKnownLocation="GUIProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="391326a3-7fe0-4fdd-99ca-d1ab2e3e1403"
+        name="FileReaderFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1d8faaa2-2ad9-4ee8-b32b-105bd42c44e1">
+            <componentMoniker
+              Id="c144244b-4c3e-4125-a0aa-ad31356fa0f5"
+              LastKnownName="FileReader"
+              LastKnownLocation="GUIProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c144244b-4c3e-4125-a0aa-ad31356fa0f5"
+        name="FileReader"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="b048a64e-e579-4616-9acc-408a875c35bf"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0a7a5c63-0707-4f90-8ca5-08f213589a24"
+                LastKnownName="FileReader"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0a7a5c63-0707-4f90-8ca5-08f213589a24"
+        name="FileReader"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ef224e70-c918-466c-acd3-a103b90e53be"
+        name="MockReader"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="45b91d7f-2b9c-4582-99f3-c6a1313471da"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="a761766f-0857-4ab9-8545-03789be1cf2a">
+                <providedInterfaceMoniker
+                  Id="b048a64e-e579-4616-9acc-408a875c35bf"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e1f3b2a4-1af1-44b1-836f-3d50238704bb"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2b0e8601-a0fe-47e4-a8e6-44dc115cca77"
+        name="INIFileReader"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="21502074-4af9-4fa3-b2c3-20a9c7dd4b08"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="0d11c85f-dc8a-4fe7-b08b-487e836edc96">
+                <providedInterfaceMoniker
+                  Id="b048a64e-e579-4616-9acc-408a875c35bf"
+                  LastKnownName="Port1"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="4910bbdc-45a0-42ee-a2b9-f9d00055fa51"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e1f3b2a4-1af1-44b1-836f-3d50238704bb"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4910bbdc-45a0-42ee-a2b9-f9d00055fa51"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2038cee7-3181-462f-8da0-84c0399e0599"
+        name="GameServer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="c5d8593f-4195-4679-b0f3-9bc32ff012c2"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="24cbcef9-138d-4d46-a457-985e9cdc39b2"
+                LastKnownName="GameServer"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="24cbcef9-138d-4d46-a457-985e9cdc39b2"
+        name="GameServer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4944893d-6e44-45f0-91cd-f60fd730baf0"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
