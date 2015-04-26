@@ -25,7 +25,7 @@ namespace SAD.Core.Data
             this.alive = true;
         }
         // public int targetCount { get; set; }
-        ~Target() { }
+        
 
         public string name { get; set; }
         public double xCoord { get; set; }

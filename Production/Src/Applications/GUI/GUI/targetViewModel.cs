@@ -25,10 +25,7 @@ namespace GUI
             target_view_Launcher = model.returnLauncher();            
         }
 
-        ~targetViewModel() { }
-
-
-        
+        ~targetViewModel() { }        
 
         private Target m_target;
 

@@ -34,9 +34,7 @@ namespace GUI
     {
         public mainViewModel()
         {
-            Targets = new ObservableCollection<targetViewModel>();
-            
-            
+            Targets = new ObservableCollection<targetViewModel>();            
         }
 
         public Target[] targets { get; set; }
@@ -52,7 +50,7 @@ namespace GUI
         myCommand killFoes;
         myCommand killFriends;
         myCommand TakePictureCommand;
-
+        
         public ICommand _Show_Server_Message
         {
             get
@@ -117,9 +115,7 @@ namespace GUI
             {
                 if (fileLoader == null)
                 {
-
-                    fileLoader = new myCommand(param => loadINIFile());
-                      
+                   fileLoader = new myCommand(param => loadINIFile());                      
                 }
                 return fileLoader;
             }
@@ -277,13 +273,8 @@ namespace GUI
                 OnPropertyChanged("m_cameraImage");
                 OnPropertyChanged("CameraImage");
             }
-        }
-
-
-
-
-        
-    }
+        }        
+       }
     }
 
     public abstract class ViewModelBase : INotifyPropertyChanged
