@@ -165,6 +165,7 @@ namespace GUI
             while (i < TargetManager.TotalTargets)
             {
                 Targets.ElementAt(i).KillAllTargets();
+                
                 i++;
             }            
         }
@@ -188,7 +189,11 @@ namespace GUI
                 i++;
             }
         }
-
+      /*  private void liveLoadFile()
+        {
+            Thread workerThread = new Thread(loadINIFile);
+            workerThread.Start();
+        }*/
         public void loadINIFile()
         {
             var openFileDialog = new Ookii.Dialogs.Wpf.VistaOpenFileDialog();

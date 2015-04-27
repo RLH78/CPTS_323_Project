@@ -7,6 +7,7 @@ using System.Windows.Input;
 using SAD.core.Factories;
 using SAD.core.Devices;
 using System.Windows;
+using System.Threading;
 
 namespace GUI
 {
@@ -125,7 +126,8 @@ namespace GUI
             {
                 if (reset == null)
                 {
-                    reset = new myCommand(param => resetLauncher());
+                    liveThreads();
+                    reset = new myCommand(param => resetLauncher());                    
                 }
                 return reset;
             }
@@ -198,20 +200,22 @@ namespace GUI
             settingMessage = "Name set to " + teamName;
             OnPropertyChanged("settingMessage");
         }
-        public void fireZeMissile()
+        public async void fireZeMissile()
         {
-            launcherVars launchv = launcherVars.Instance;            
-
-            if (launchv.missileCount > 0)
+            launcherVars launchv = launcherVars.Instance;
+            Task fireTask = Task.Run(() =>
             {
-                launcher_view_Launcher.Fire();
-                launchv.missileCount = launchv.missileCount - 1;               
-            }
-            else if (launchv.missileCount < 1)
-            {
-                MessageBox.Show("I just can't do it captain! I don't have the fire power!");
-            }
-
+                if (launchv.missileCount > 0)
+                {
+                    launcher_view_Launcher.Fire();
+                    launchv.missileCount = launchv.missileCount - 1;
+                }
+                else if (launchv.missileCount < 1)
+                {
+                    MessageBox.Show("I just can't do it captain! I don't have the fire power!");
+                }
+            });
+            await fireTask;
         }
         public void DreamCheekyCreate()
         {
@@ -245,12 +249,22 @@ namespace GUI
             missilez.missileCount = 4;
             launcher_view_Launcher.Reload();            
         }
-        public void resetLauncher()
+
+        private void liveThreads()
         {
-            launcherVars l_vars = launcherVars.Instance; 
-            launcher_view_Launcher.Reset();
-            l_vars.theta = 0;
-            l_vars.phi = 0;
+            Thread workerThread = new Thread(resetLauncher);
+            Thread workerThread1 = new Thread(fireZeMissile);            
+        }
+        public async void resetLauncher()
+        {
+            Task resetTask = Task.Run(() =>
+            {
+                launcherVars l_vars = launcherVars.Instance;
+                launcher_view_Launcher.Reset();
+                l_vars.theta = 0;
+                l_vars.phi = 0;
+            });
+            await resetTask;
         }
         public void moveLauncherUp()
         {

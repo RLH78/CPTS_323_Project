@@ -65,4 +65,3 @@ C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\S
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Imaging.xml
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Math.xml
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\AForge.Video.xml
-C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\Debug\ZedGraph.dll
