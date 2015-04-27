@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="a00cf430-e719-4363-982e-e7f2f0a67ff0" name="Activity1" linkedPackageId="956a2b9a-a392-4ce8-8fa6-614cb42a5e08" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b80e6c45-1d29-42ce-b8c0-3d5b14023d65">
+      <elementDefinition Id="abb22132-4ef5-4ca7-9f79-f6e50bda907b" />
+      <body>Activity Diagram for Starting and Acquiring Video</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="3f4c2cd6-c23d-412f-b92a-c99eb9c188a5">
+      <profileInstance Id="691a6715-cacc-4427-9584-35f30d76ec9d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="594d1078-0f7d-4fc2-80f5-39cc711a3b5d">
+      <profileInstance Id="aa936fd7-cc10-4538-b87b-5a11f1ba73d2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2b6720cf-2c6a-4d84-9802-090bdb8b7e14">
+      <profileInstance Id="5c51303f-2bba-4540-87e7-29c4b3555eb1" name="CSharpProfile">
+        <elementDefinition Id="24bb862b-886b-4845-966e-45c8b7ef397f" />
+      </profileInstance>
+      <elementDefinition Id="74d6d172-8dcb-408c-9042-42174e312fb1" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b04640eb-d083-4e53-8224-2d27c069a5e6" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="fae6ad0e-0c6a-4e0b-b520-6a519ed31e79" />
+        <nodes>
+          <initialNode Id="c379e89f-146e-4de9-b069-7484a576c7ab" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e77c8e84-9686-4676-ad91-cf728b823841" />
+            <flowNodeTargets>
+              <controlFlow Id="944c3263-22bd-41a2-982c-386dd1f11f96" isLeaf="false">
+                <opaqueActionMoniker Id="ef17ffab-f28f-4c95-a9c4-0e7e534fa40c" LastKnownName="Click Start" />
+                <elementDefinition Id="105f3136-c5dc-4e2a-9a6e-e85ee991524e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="ef17ffab-f28f-4c95-a9c4-0e7e534fa40c" name="Click Start" isLeaf="false">
+            <elementDefinition Id="be9fed2c-27e2-4061-b2ce-2e3fe071f4d7" />
+            <flowNodeTargets>
+              <controlFlow Id="44ce44a0-3018-4f97-a64d-9c4f1d5439d4" isLeaf="false">
+                <decisionNodeMoniker Id="7caf9d16-fa72-4129-b06a-ba8ffc155447" LastKnownName="Decision2" />
+                <elementDefinition Id="c37e609e-038d-432d-8d76-4a946224947a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f895dcc6-8e3a-4824-b2c8-94dc10120bd0" name="Click Stop" isLeaf="false">
+            <elementDefinition Id="b69ed6d5-da11-4375-803c-cc82a47c4628" />
+            <flowNodeTargets>
+              <controlFlow Id="903e9e65-b265-4f5c-861e-c820cb22c387" isLeaf="false">
+                <decisionNodeMoniker Id="6eebf990-6033-4bd7-a7d3-0921a4c202cf" LastKnownName="Decision3" />
+                <elementDefinition Id="4ccc529f-7502-4e8d-91d1-a40cb367422f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1985ad6c-af16-44b8-93b0-8e48f1ecd557" name="Click Take Image" isLeaf="false">
+            <elementDefinition Id="b0c9b973-fa19-4cd1-9d8f-b934817d1fe2" />
+            <flowNodeTargets>
+              <controlFlow Id="938e6fc6-b765-48d3-83a7-8dedc80e789d" isLeaf="false">
+                <decisionNodeMoniker Id="528c5bd4-9229-4f6e-b00c-d31960908169" LastKnownName="Decision1" />
+                <elementDefinition Id="ad420a93-bfcb-487d-9f4d-51a6b5efaa99" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="7cd16ea5-1ff9-4219-a3aa-8efc30be7854" name="Merge1" isLeaf="false">
+            <elementDefinition Id="57593e1e-40e5-4803-9cc2-9a0cecb6e4b0" />
+            <flowNodeTargets>
+              <controlFlow Id="aad510a0-fa8c-47d5-9b60-1506c4ce921e" isLeaf="false">
+                <opaqueActionMoniker Id="1985ad6c-af16-44b8-93b0-8e48f1ecd557" LastKnownName="Click Take Image" />
+                <elementDefinition Id="ac8ce135-1eea-404b-92b2-93691a9a2eea" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode Id="528c5bd4-9229-4f6e-b00c-d31960908169" name="Decision1" isLeaf="false">
+            <elementDefinition Id="567533db-0dae-4e64-8ca9-51c42bdba0f9" />
+            <flowNodeTargets>
+              <controlFlow Id="ca3d40f8-0890-47c0-8a8b-637c4251ebc5" isLeaf="false">
+                <mergeNodeMoniker Id="7cd16ea5-1ff9-4219-a3aa-8efc30be7854" LastKnownName="Merge1" />
+                <elementDefinition Id="5bd658bc-9675-46e6-9856-4e03c97a9538" />
+              </controlFlow>
+              <controlFlow Id="9ce48370-0201-47bc-98a8-938c0194c028" isLeaf="false">
+                <opaqueActionMoniker Id="f895dcc6-8e3a-4824-b2c8-94dc10120bd0" LastKnownName="Click Stop" />
+                <elementDefinition Id="e3bda036-4d51-4f55-ad66-b82b403ff3b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="7caf9d16-fa72-4129-b06a-ba8ffc155447" name="Decision2" isLeaf="false">
+            <elementDefinition Id="c75bf49c-4962-48ef-b0f8-6d5ef35fded5" />
+            <flowNodeTargets>
+              <controlFlow Id="504bff46-55ca-4d40-8036-57e972de5a1d" isLeaf="false">
+                <mergeNodeMoniker Id="7cd16ea5-1ff9-4219-a3aa-8efc30be7854" LastKnownName="Merge1" />
+                <elementDefinition Id="e69bea92-7e07-4389-884e-49e335fcd5ad" />
+              </controlFlow>
+              <controlFlow Id="04a5fe61-fea7-4f73-9870-f74987fdc4cb" isLeaf="false">
+                <opaqueActionMoniker Id="f895dcc6-8e3a-4824-b2c8-94dc10120bd0" LastKnownName="Click Stop" />
+                <elementDefinition Id="eb152672-077b-48dd-a7c6-b689b44b23fe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="f16a7666-d363-4906-a281-421f492d36a2" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="f764f4a9-c177-43ec-a2ef-9158246b9c6e" />
+          </activityFinalNode>
+          <decisionNode Id="6eebf990-6033-4bd7-a7d3-0921a4c202cf" name="Decision3" isLeaf="false">
+            <elementDefinition Id="d697c380-70f9-427f-8930-ed9f9382e1e3" />
+            <flowNodeTargets>
+              <controlFlow Id="bb0e9ae8-0097-46ee-af96-70b4f8e6201c" isLeaf="false">
+                <activityFinalNodeMoniker Id="f16a7666-d363-4906-a281-421f492d36a2" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="79f6a1c3-643c-4bbe-b581-64808f006a72" />
+              </controlFlow>
+              <controlFlow Id="5f08810e-b519-4382-a9c1-ab7c49043110" isLeaf="false">
+                <opaqueActionMoniker Id="ef17ffab-f28f-4c95-a9c4-0e7e534fa40c" LastKnownName="Click Start" />
+                <elementDefinition Id="a5ae8d51-e4f2-4b58-bd74-f180fa5247b4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="956a2b9a-a392-4ce8-8fa6-614cb42a5e08" name="GUIProject1">
+    <elementDefinition Id="bbdcfb7b-3009-4ff1-860e-445357b15df3" />
+  </package>
+</activityRootModel>

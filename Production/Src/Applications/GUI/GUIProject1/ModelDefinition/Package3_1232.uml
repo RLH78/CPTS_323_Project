@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="3691cb68-fba9-4bd3-b0b5-caf9aea821c7"
+  name="ReactiveUI"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="83a9b7b3-d477-4029-b985-a0f544fee209"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DReactiveUI"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="84b23958-1189-4106-b8b2-d72e404dca4a"
+        name="ReactiveCommand&lt;Object‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="037aeeee-0733-42a7-93f7-4375a236e937"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f7f5620-e69e-4ec1-bed7-a28696379a49">
+                <propertyInstance
+                  Id="017f39dc-dddb-4733-8601-1247543f902a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f219e160-9b3e-4dc2-9e63-7c501fa4eade">
+                <propertyInstance
+                  Id="bee0f396-26bb-4fb7-bf64-8b95bfde147b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89897678-d9ed-4f1b-bb58-29551e9313cf">
+                <propertyInstance
+                  Id="90422f85-6034-4378-ab0c-b6899b9b680a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8a300c9-a5ec-4185-8b26-c08132015f8e">
+                <propertyInstance
+                  Id="3bde33b6-2321-4acb-a222-0c9e4bcab5d5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e996d006-b972-4b74-9436-255d41778d76">
+                <propertyInstance
+                  Id="e2c68ecc-6f51-4639-9cd5-31e8659257a7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="97e1c5f7-df1c-4a62-a59a-f36951d8f052">
+            <redefinableTemplateSignatureMoniker
+              Id="9f647d62-aa29-4ce6-84b1-e9fe42184ebb"
+              LastKnownLocation="Package3_1232.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="cc379779-fb85-4325-a9a0-8fb2e97a8ee5">
+                  <actuals>
+                    <classMoniker
+                      Id="9702def3-18cb-4074-ad92-1074310f1bdc"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="716c4860-6da0-430f-8ea9-2c2117df2d89"
+                      LastKnownLocation="Package3_1232.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a60c8233-768b-43dd-ae28-88e05f9a7b0c"
+        name="ReactiveCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2ddfa313-8eb7-419e-bbb7-01f0d093cc23"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2Freactiveui-core.6.4.0.1%2Flib%2FNet45%2FReactiveUI.dll Namespace%3DReactiveUI Type%3D(Name%3DReactiveCommand GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7e69246b-9bcb-40cd-9d96-0abe1af22f0a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="18e6341f-1ca5-451b-9916-6c974a240212">
+                <propertyInstance
+                  Id="e517c204-afcb-4868-8b7e-d798e7fe76ca"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c308688f-c804-4929-bfd3-66cd0f9a5f0c">
+                <propertyInstance
+                  Id="c0934211-3622-4f3e-bf7d-9aa3c4420696"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fabaa715-e60c-43af-a434-6de07ca90773">
+                <propertyInstance
+                  Id="2269a0c5-2814-4353-9121-1191b5e2aeb2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bf4d7427-9917-478e-b828-1eebb6617875">
+                <propertyInstance
+                  Id="85295a57-7ece-4bd1-8aee-230f5760cc38"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="75f732fc-4534-412e-98d4-626e4d4d9b54">
+                <propertyInstance
+                  Id="7a9aa116-e325-40c8-bf49-cd754362150b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="9f647d62-aa29-4ce6-84b1-e9fe42184ebb"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="716c4860-6da0-430f-8ea9-2c2117df2d89">
+                <referencesInternal>
+                  <reference
+                    Id="5a8a4b83-2961-475c-a54d-8acfbf1da82c"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2Freactiveui-core.6.4.0.1%2Flib%2FNet45%2FReactiveUI.dll Namespace%3DReactiveUI Type%3D(Name%3DReactiveCommand GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="bfdb4fd0-acd2-4edf-b39f-c59b86eb47fe"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5647e54c-649f-4048-8799-e211a1d9a563"
+        name="ReactiveObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3bb4e139-faaf-40be-a74f-6ba9cc9cd9e8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2Freactiveui-core.6.4.0.1%2Flib%2FNet45%2FReactiveUI.dll Namespace%3DReactiveUI Type%3DReactiveObject"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="725f65ac-cee7-414f-a8d8-aecab21d928a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb7c3654-149f-4e79-a84f-5437d63d1919">
+                <propertyInstance
+                  Id="aed329dd-ed3b-4225-b986-2ad945e2ae5c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d97cf962-409a-4b98-8ab3-37bfccb54ba4">
+                <propertyInstance
+                  Id="a2fd2036-aaff-4df5-9f1e-f219f97a12c6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="08d801ae-98fd-47ae-a2e3-eb5f3b87b229">
+                <propertyInstance
+                  Id="84184d67-dae6-41b3-8b46-77367b7c4f74"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7026f73b-9a85-440f-927d-b1119db7e454">
+                <propertyInstance
+                  Id="27e6a815-07f4-4ec5-b30f-e40280c3ed42"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c3013668-2a71-46b0-9b31-78e88fa83935">
+                <propertyInstance
+                  Id="a8b1cfd2-0870-425b-b2c2-5611538ed66a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

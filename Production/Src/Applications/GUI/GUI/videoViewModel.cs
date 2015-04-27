@@ -133,6 +133,6 @@ namespace GUI
         public ReactiveCommand<object> Start { get; private set; }
         public ReactiveCommand<object> Stop { get; private set; }
 
-
+        
     }
 }

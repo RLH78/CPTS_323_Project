@@ -34,8 +34,7 @@ namespace GUI
     {
         public mainViewModel()
         {
-            Targets = new ObservableCollection<targetViewModel>();
-           
+            Targets = new ObservableCollection<targetViewModel>();            
         }
 
         public Target[] targets { get; set; }
@@ -44,9 +43,6 @@ namespace GUI
         private BitmapSource m_cameraImage;
         private Capture m_capture;
 
-
-     
-
         myCommand showServerMessage;
         myCommand fileLoader;
         myCommand clear;
@@ -54,7 +50,7 @@ namespace GUI
         myCommand killFoes;
         myCommand killFriends;
         myCommand TakePictureCommand;
-
+        
         public ICommand _Show_Server_Message
         {
             get
@@ -119,7 +115,7 @@ namespace GUI
             {
                 if (fileLoader == null)
                 {
-                    fileLoader = new myCommand(param => loadINIFile());
+                   fileLoader = new myCommand(param => loadINIFile());                      
                 }
                 return fileLoader;
             }
@@ -157,10 +153,10 @@ namespace GUI
 
         public void clearTargets()
         {
-            Targets.Clear();
-            targets = null;
-            OnPropertyChanged("targets");
-            OnPropertyChanged("Targets");         
+           Targets.Clear();
+           targets = null;
+           OnPropertyChanged("targets");
+           OnPropertyChanged("Targets");         
         }
 
         public void killTargets()
@@ -171,8 +167,7 @@ namespace GUI
                 Targets.ElementAt(i).KillAllTargets();
                 
                 i++;
-            }
-            
+            }            
         }
 
         public void killAllFoes()
@@ -219,7 +214,7 @@ namespace GUI
                 while (i < TargetManager.TotalTargets)
                 {
                     var newtargetViewModel = new targetViewModel(targets[i]);
-                    Targets.Add(newtargetViewModel);
+                    Targets.Add(newtargetViewModel);                    
                     i++;
                 }
                 OnPropertyChanged("Targets");
@@ -283,13 +278,8 @@ namespace GUI
                 OnPropertyChanged("m_cameraImage");
                 OnPropertyChanged("CameraImage");
             }
-        }
-
-
-
-
-        
-    }
+        }        
+       }
     }
 
     public abstract class ViewModelBase : INotifyPropertyChanged

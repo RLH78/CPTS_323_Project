@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="3c6626fb-5a9f-44e1-b0f7-9a3ca7778db4"
   name="CV"
@@ -20,7 +20,7 @@
         <referencesInternal>
           <reference
             Id="b6049612-61e5-418a-a118-75ed049f8090"
-            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x64.1.5%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3DIImage"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x86.1.0%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3DIImage"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -71,7 +71,7 @@
         <referencesInternal>
           <reference
             Id="bbf0ecb0-b9c8-4dec-a007-2ed13bd0dabf"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x64.1.5%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3DCapture"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x86.1.0%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3DCapture"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -118,6 +118,226 @@
           </stereotypeInstance>
         </appliedStereotypesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="36e50b42-79fd-48c2-8b19-87a05aa3ae0e"
+        name="Image&lt;Bgr‎, Byte‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dcf45a84-4c95-4c91-acb8-435cbb361428"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0554b1d3-5db5-4cd9-938d-846334eacf11">
+                <propertyInstance
+                  Id="955412b0-9326-4cfe-9999-495772b76741"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f1da253c-7094-4e42-b1d1-5b1d5e912db1">
+                <propertyInstance
+                  Id="c88357b6-16c0-4947-824f-260d63b52f02"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41996214-98c6-43a2-96f3-b775f8617008">
+                <propertyInstance
+                  Id="2e44ad37-20d3-4284-bbdf-c307f8a02769"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="81b5d6d5-5dd5-449e-bfd8-4259a744b5dd">
+                <propertyInstance
+                  Id="ac65595c-988e-46a4-98d6-1d07980d8d7d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="35c1f672-e56c-4d06-bd8f-9694bf88a455">
+                <propertyInstance
+                  Id="1acaa926-a01c-4015-9fe3-6a84dd0781b9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4d16a4ee-fcf6-49ce-a373-479183221f85">
+            <interfaceMoniker
+              Id="6ebfbfa9-660c-4909-9773-17ff45953a84"
+              LastKnownName="IImage"
+              LastKnownLocation="Package3_1625.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <signatures>
+          <templateBinding
+            Id="233ee35a-dce6-40b2-a304-c8dffcfd0e10">
+            <redefinableTemplateSignatureMoniker
+              Id="7ae95f51-08b4-4862-b282-ab78b242a0a8"
+              LastKnownLocation="Package3_1625.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="2b65a41a-48cc-4969-afee-a7a9cc4edb1e">
+                  <actuals>
+                    <classMoniker
+                      Id="06400387-1ecd-4ea9-8116-5a50bd03b4ab"
+                      LastKnownName="Bgr"
+                      LastKnownLocation="Package1_1232.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="bfaed660-c6f5-4f94-91e1-fa3d64b43776"
+                      LastKnownLocation="Package3_1625.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="db82f2bc-543f-47c7-87c8-cffb2a600a69">
+                  <actuals>
+                    <classMoniker
+                      Id="5f24c226-50fd-458a-b89d-caef12426adb"
+                      LastKnownName="Byte"
+                      LastKnownLocation="Package1_1622.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="1eaed0eb-672b-4c23-bcb4-da9802f8d91b"
+                      LastKnownLocation="Package3_1625.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3d9b3190-367d-43f9-b25a-44a6b2e31cb6"
+        name="Image"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="74e6ed6f-535f-40d8-89e0-ecf22a5741a5"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x86.1.0%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3D(Name%3DImage GenericParameterCount%3D2)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4022cf5b-4620-4e32-9b00-28be2ab737a5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c1b9bf6-33e1-4d4f-b7b9-c24c09277c25">
+                <propertyInstance
+                  Id="305e93c2-b5e2-4299-9972-28804e924592"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8873075-b7d7-4055-8c6b-d8966f86eb2e">
+                <propertyInstance
+                  Id="938eb261-e70d-4ac6-8f60-5ac3b87e041c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="79ebeb07-6b4c-49f2-8081-82512a10c873">
+                <propertyInstance
+                  Id="43c86206-bb39-4db6-ab49-ebc67573777e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17168f53-0cc1-4030-9572-bb7707eccb8e">
+                <propertyInstance
+                  Id="209f60d7-a71f-4d17-9b3d-2e14b6a71b32"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3644712-5c15-4358-9b57-5cd840da0652">
+                <propertyInstance
+                  Id="786c3218-20ff-4c8c-ad65-360ff15bc15e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="63eed375-a5ab-4ca4-8b5d-296a3e38cf91">
+            <interfaceMoniker
+              Id="6ebfbfa9-660c-4909-9773-17ff45953a84"
+              LastKnownName="IImage"
+              LastKnownLocation="Package3_1625.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="7ae95f51-08b4-4862-b282-ab78b242a0a8"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="bfaed660-c6f5-4f94-91e1-fa3d64b43776">
+                <referencesInternal>
+                  <reference
+                    Id="3f91d69e-60f3-4b48-bdcf-5fd807256448"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x86.1.0%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3D(Name%3DImage GenericParameterCount%3D2) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="2961f9af-1745-45e9-b115-395be563a512"
+                    name="TColor"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="1eaed0eb-672b-4c23-bcb4-da9802f8d91b">
+                <referencesInternal>
+                  <reference
+                    Id="d62b9f18-be87-4d84-80c9-f48951c03816"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2Fpackages%2FEmguCV.221.x86.1.0%2Flib%2FEmgu.CV.dll Namespace%3DEmgu.CV Type%3D(Name%3DImage GenericParameterCount%3D2) ParameterIdentifier%3D1"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="6e1db976-4f54-4efa-af10-12930f774f9c"
+                    name="TDepth"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2fb33724-ed55-4be3-b990-65217405ef79"
+        LastKnownName="Structure"
+        LastKnownLocation="Package1_1232.uml" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

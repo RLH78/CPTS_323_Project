@@ -6,30 +6,64 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2015-04-03T02:31:26" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI' -  (Package)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars' -  (Class)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::Instance' -  (Property)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::l_missiles' -  (Property)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::l_phi' -  (Property)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::l_theta' -  (Property)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::launcherVars' -  (Operation)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::missileCount' -  (Property)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::phi' -  (Property)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::theta' -  (Property)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::launcherVars::thisInstance' -  (Property)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::ViewModelBase' -  (Class)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System' -  (Package)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherVars to GUIProject1::GUI::launcherVars (Association)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherVars to GUIProject1::System::Double (Association)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherVars to GUIProject1::System::Double (Association)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherVars to GUIProject1::GUI::ViewModelBase (Generalization)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::targetViewModel to GUIProject1::GUI::ViewModelBase (Generalization)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::mainViewModel to GUIProject1::GUI::ViewModelBase (Generalization)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::launcherViewModel to GUIProject1::GUI::ViewModelBase (Generalization)" />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="High" Text="(1) type(s) fully reverse engineered." />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="High" Text="(2) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
-  <Message Timestamp="2015-04-03T02:31:28" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2015-04-26T12:32:07" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '1eaed0eb-672b-4c23-bcb4-da9802f8d91b' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '716c4860-6da0-430f-8ea9-2c2117df2d89' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'bfaed660-c6f5-4f94-91e1-fa3d64b43776' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'f740ed02-a021-4e27-ab56-5960a11d5c1e' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::Emgu' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::Emgu::CV' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::Emgu::CV::Capture' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::Emgu::CV::Image' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::Emgu::CV::Image&lt;Bgr‎, Byte‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::Emgu::CV::Structure' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::Emgu::CV::Structure::Bgr' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Medium" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel' -  (Class)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::bitmapImage' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::BitmapImage' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::capture' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::ConsumeFrame' -  (Operation)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::ConsumeFrame::bc' -  (Parameter)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::ConsumeFrame::ct' -  (Parameter)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::cts' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::imageBlockingCollection' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::isRunning' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::IsRunning' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::ProduceFrame' -  (Operation)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::ProduceFrame::bc' -  (Parameter)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::ProduceFrame::ct' -  (Parameter)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::Start' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::StartAcquisition' -  (Operation)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::Stop' -  (Property)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::StopAcquisition' -  (Operation)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::GUI::videoViewModel::videoViewModel' -  (Operation)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::ReactiveUI' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::ReactiveUI::ReactiveCommand' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::ReactiveUI::ReactiveCommand&lt;Object‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::ReactiveUI::ReactiveObject' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Byte' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Collections' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Collections::Concurrent' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Collections::Concurrent::BlockingCollection' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Collections::Concurrent::BlockingCollection&lt;Image‎&lt;Bgr‎, Byte‎&gt;‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Threading' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Threading::CancellationToken' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Threading::CancellationTokenSource' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Windows' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Windows::Media' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Windows::Media::Imaging' -  (Package)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GUIProject1::System::Windows::Media::Imaging::BitmapSource' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::videoViewModel to GUIProject1::System::Windows::Media::Imaging::BitmapSource (Association)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::videoViewModel to GUIProject1::ReactiveUI::ReactiveCommand&lt;Object‎&gt; (Association)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::videoViewModel to GUIProject1::ReactiveUI::ReactiveCommand&lt;Object‎&gt; (Association)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::GUI::videoViewModel to GUIProject1::ReactiveUI::ReactiveObject (Generalization)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::Emgu::CV::Image&lt;Bgr‎, Byte‎&gt; to GUIProject1::Emgu::CV::IImage (InterfaceRealization)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GUIProject1::Emgu::CV::Image to GUIProject1::Emgu::CV::IImage (InterfaceRealization)" />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="High" Text="(14) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-04-26T12:32:21" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>
