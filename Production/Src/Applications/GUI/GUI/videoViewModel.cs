@@ -8,7 +8,6 @@ using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using Emgu.CV.UI;
 using Emgu.Util;
-using Emgu.CV;
 using ReactiveUI;
 using System.Reactive.Linq;
 using System.Threading;
@@ -23,15 +22,6 @@ namespace GUI
     {
         public videoViewModel()
         {
-            try
-            {
-                this.capture = new Capture();
-            }
-            catch (Exception)
-            {
-
-            }
-
             cts = new CancellationTokenSource(); // necessary to indicate cancellation of tasks.
             imageBlockingCollection = new BlockingCollection<Image<Bgr, byte>>(); // Acts as a FIFO. Part of the .NET framework as of .NET 4.0. No bounded capacity.
 
@@ -42,7 +32,20 @@ namespace GUI
             this.Stop.Subscribe(x => this.StopAcquisition());
 
             this.IsRunning = false;
+
         }
+
+        private void StartVideo()
+        {
+            try
+            {
+                this.capture = new Capture();
+            }
+            catch (Exception)
+            {
+
+            }
+       }
 
         //Live Stream Video
         private BitmapSource bitmapImage;
@@ -57,14 +60,28 @@ namespace GUI
             workerThread.Start();
         }*/
         //Live Video
+       /* private void StartAcquisition()
+        {
+            
+                this.IsRunning = true;
+
+            var producerTask = Task.Run(() => this.ProduceFrame(imageBlockingCollection, cts.Token));
+            var consumerTask = Task.Run(() => this.ConsumeFrame(imageBlockingCollection, cts.Token));
+        }*/
+        
+
+        //Live Stream Video
+    
+        //Live Video
         private void StartAcquisition()
         {
             this.IsRunning = true;
 
-            var producerTask = Task.Run(() => this.ProduceFrame(imageBlockingCollection, cts.Token));
-            var consumerTask = Task.Run(() => this.ConsumeFrame(imageBlockingCollection, cts.Token));
+            if (this.capture == null)
+            {
+                StartVideo();
+            }
         }
-
         private void StopAcquisition()
         {
             this.IsRunning = false;
@@ -74,7 +91,7 @@ namespace GUI
         /// <summary>
         /// Producer
         /// </summary>
-        private void ProduceFrame(BlockingCollection<Image<Bgr, byte>> bc, CancellationToken ct)
+        /*private void ProduceFrame(BlockingCollection<Image<Bgr, byte>> bc, CancellationToken ct)
         {
             if (this.capture != null)
             {
@@ -86,8 +103,8 @@ namespace GUI
 
                 bc.CompleteAdding();
             }
-        }
-
+        }*/
+        /*
         private void ConsumeFrame(BlockingCollection<Image<Bgr, byte>> bc, CancellationToken ct)
         {
             while (!bc.IsCompleted)
@@ -103,7 +120,7 @@ namespace GUI
                 }
              }
         }
-
+        */
         public bool IsRunning
         {
             get

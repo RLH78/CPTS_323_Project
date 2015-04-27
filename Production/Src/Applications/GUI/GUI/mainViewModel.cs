@@ -194,6 +194,7 @@ namespace GUI
             Thread workerThread = new Thread(loadINIFile);
             workerThread.Start();
         }*/
+
         public void loadINIFile()
         {
             var openFileDialog = new Ookii.Dialogs.Wpf.VistaOpenFileDialog();
