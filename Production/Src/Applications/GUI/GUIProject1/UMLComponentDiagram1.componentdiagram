@@ -19,6 +19,12 @@
       </profileInstance>
       <elementDefinition Id="74d6d172-8dcb-408c-9042-42174e312fb1" />
     </packageHasProfileInstances>
+    <packageHasProfileInstances Id="966e4685-3f41-4423-b08b-6ba5dfeba3c9">
+      <profileInstance Id="7c257d60-2d1d-4e44-aa43-731940212b9d" name="TextTemplateBindings">
+        <elementDefinition Id="1b208e5c-c38c-4e73-864f-f3ed566953a1" />
+      </profileInstance>
+      <elementDefinition Id="d806da16-9359-4ea0-81e8-c0db98a9c814" />
+    </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
     <componentModelHasComponents>
