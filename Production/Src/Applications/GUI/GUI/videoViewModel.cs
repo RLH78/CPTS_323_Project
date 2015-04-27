@@ -8,11 +8,14 @@ using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using Emgu.CV.UI;
 using Emgu.Util;
+using Emgu.CV;
 using ReactiveUI;
 using System.Reactive.Linq;
 using System.Threading;
 using System.Collections.Concurrent;
 using System.Windows.Media.Imaging;
+
+
 
 namespace GUI
 {
@@ -48,6 +51,11 @@ namespace GUI
         private CancellationTokenSource cts;
         private BlockingCollection<Image<Bgr, byte>> imageBlockingCollection;
 
+       /* private void liveVideoFeed()
+        {
+            Thread workerThread = new Thread(StartAcquisition);
+            workerThread.Start();
+        }*/
         //Live Video
         private void StartAcquisition()
         {
