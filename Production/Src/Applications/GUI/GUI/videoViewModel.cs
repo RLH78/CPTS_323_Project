@@ -23,15 +23,25 @@ namespace GUI
     {
         public videoViewModel()
         {
-            try
-            {
-                this.capture = new Capture();
-            }
-            catch (Exception)
-            {
+            //try
+            //{
+            //    this.capture = new Capture();
+            //}
+            //catch (Exception)
+            //{
 
-            }
+            //}
 
+            //cts = new CancellationTokenSource(); // necessary to indicate cancellation of tasks.
+            //imageBlockingCollection = new BlockingCollection<Image<Bgr, byte>>(); // Acts as a FIFO. Part of the .NET framework as of .NET 4.0. No bounded capacity.
+
+            //this.Start = ReactiveCommand.Create(this.WhenAnyValue(x => x.IsRunning).Select(x => x == false));
+            //this.Start.Subscribe(x => this.StartAcquisition());
+
+            //this.Stop = ReactiveCommand.Create(this.WhenAnyValue(x => x.IsRunning).Select(x => x == true));
+            //this.Stop.Subscribe(x => this.StopAcquisition());
+
+            //this.IsRunning = false;
             cts = new CancellationTokenSource(); // necessary to indicate cancellation of tasks.
             imageBlockingCollection = new BlockingCollection<Image<Bgr, byte>>(); // Acts as a FIFO. Part of the .NET framework as of .NET 4.0. No bounded capacity.
 
@@ -43,10 +53,25 @@ namespace GUI
 
             this.IsRunning = false;
         }
+        private void StartVideo()
+        {
+            try
+            {
+                this.capture = new Capture();
+            }
+            catch (Exception)
+            {
 
+            }
+        }
         //Live Stream Video
+        //private BitmapSource bitmapImage;
+        //private readonly Capture capture;
+        //private bool isRunning;
+        //private CancellationTokenSource cts;
+        //private BlockingCollection<Image<Bgr, byte>> imageBlockingCollection;
         private BitmapSource bitmapImage;
-        private readonly Capture capture;
+        private Capture capture;
         private bool isRunning;
         private CancellationTokenSource cts;
         private BlockingCollection<Image<Bgr, byte>> imageBlockingCollection;
@@ -59,10 +84,16 @@ namespace GUI
         //Live Video
         private void StartAcquisition()
         {
+            //this.IsRunning = true;
+
+            //var producerTask = Task.Run(() => this.ProduceFrame(imageBlockingCollection, cts.Token));
+            //var consumerTask = Task.Run(() => this.ConsumeFrame(imageBlockingCollection, cts.Token));
             this.IsRunning = true;
 
-            var producerTask = Task.Run(() => this.ProduceFrame(imageBlockingCollection, cts.Token));
-            var consumerTask = Task.Run(() => this.ConsumeFrame(imageBlockingCollection, cts.Token));
+            if (this.capture == null)
+            {
+                StartVideo();
+            }
         }
 
         private void StopAcquisition()
