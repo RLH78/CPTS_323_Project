@@ -22,14 +22,14 @@ namespace GUI
     {
         public videoViewModel()
         {
-            //try
-            //{
-            //    this.capture = new Capture();
-            //}
-            //catch (Exception)
-            //{
+            /*try
+            {
+                this.capture = new Capture();
+            }
+            catch (Exception)
+            {
 
-            //}
+            }*/
 
             //cts = new CancellationTokenSource(); // necessary to indicate cancellation of tasks.
             //imageBlockingCollection = new BlockingCollection<Image<Bgr, byte>>(); // Acts as a FIFO. Part of the .NET framework as of .NET 4.0. No bounded capacity.
@@ -52,7 +52,7 @@ namespace GUI
 
             this.IsRunning = false;
         }
-        private void StartVideo()
+        public void StartVideo()
         {
             try
             {
@@ -83,16 +83,15 @@ namespace GUI
         //Live Video
         private void StartAcquisition()
         {
-            //this.IsRunning = true;
-
-            //var producerTask = Task.Run(() => this.ProduceFrame(imageBlockingCollection, cts.Token));
-            //var consumerTask = Task.Run(() => this.ConsumeFrame(imageBlockingCollection, cts.Token));
-            this.IsRunning = true;
-
             if (this.capture == null)
             {
                 StartVideo();
             }
+            cts = new CancellationTokenSource();
+            imageBlockingCollection = new BlockingCollection<Image<Bgr, byte>>(); // Acts as a FIFO. Part of the .NET framework as of .NET 4.0. No bounded capacity.
+            var producerTask = Task.Run(() => this.ProduceFrame(imageBlockingCollection, cts.Token));
+            var consumerTask = Task.Run(() => this.ConsumeFrame(imageBlockingCollection, cts.Token));
+            this.IsRunning = true;            
         }
 
         private void StopAcquisition()
@@ -108,6 +107,7 @@ namespace GUI
         {
             if (this.capture != null)
             {
+                
                 while (!ct.IsCancellationRequested)
                 {
                     var image = this.capture.QueryFrame();

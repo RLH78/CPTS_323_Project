@@ -150,6 +150,12 @@ namespace GUI
                 OnPropertyChanged();
             }
         }
+        private void killButtons()
+        {
+            Thread workerThread2 = new Thread(killTargets);
+            //Thread workerThread3 = new Thread(killFoes);
+            //Thread workerThread4 = new Thread(killFriends);
+        }
 
         public void clearTargets()
         {
@@ -159,29 +165,37 @@ namespace GUI
            OnPropertyChanged("Targets");         
         }
 
-        public void killTargets()
+        public async void killTargets()
         {
             int i = 0;
             while (i < TargetManager.TotalTargets)
             {
-                Targets.ElementAt(i).KillAllTargets();
-                launcherViewModel NewOne = launcherViewModel.getInstance();
-                mainViewMissile = NewOne.returnLauncher();
-                mainViewMissile.Reset();
-                i++;
+                Task killEmAll = Task.Run(() =>
+                    {
+                        Targets.ElementAt(i).KillAllTargets();
+                        launcherViewModel NewOne = launcherViewModel.getInstance();
+                        mainViewMissile = NewOne.returnLauncher();
+                        mainViewMissile.Reset();
+                        i++;
+                    });
+                await killEmAll;
             }            
         }
 
-        public void killAllFoes()
+        public async void killAllFoes()
         {
             int i = 0;
             while (i < TargetManager.TotalTargets)
             {
-                Targets.ElementAt(i).KillFoes();
-                launcherViewModel NewOne = launcherViewModel.getInstance();
-                mainViewMissile = NewOne.returnLauncher();
-                mainViewMissile.Reset();
-                i++;
+                Task killAllBadGuys = Task.Run(() =>
+                   {
+                       Targets.ElementAt(i).KillFoes();
+                       launcherViewModel NewOne = launcherViewModel.getInstance();
+                       mainViewMissile = NewOne.returnLauncher();
+                       mainViewMissile.Reset();
+                       i++;
+                   });
+                await killAllBadGuys;
             }
 
         }
