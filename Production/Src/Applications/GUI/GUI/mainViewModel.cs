@@ -42,7 +42,7 @@ namespace GUI
 
         private BitmapSource m_cameraImage;
         private Capture m_capture;
-
+        public IMissileLauncher mainViewMissile;
         myCommand showServerMessage;
         myCommand fileLoader;
         myCommand clear;
@@ -165,7 +165,9 @@ namespace GUI
             while (i < TargetManager.TotalTargets)
             {
                 Targets.ElementAt(i).KillAllTargets();
-                
+                launcherViewModel NewOne = launcherViewModel.getInstance();
+                mainViewMissile = NewOne.returnLauncher();
+                mainViewMissile.Reset();
                 i++;
             }            
         }
@@ -176,6 +178,9 @@ namespace GUI
             while (i < TargetManager.TotalTargets)
             {
                 Targets.ElementAt(i).KillFoes();
+                launcherViewModel NewOne = launcherViewModel.getInstance();
+                mainViewMissile = NewOne.returnLauncher();
+                mainViewMissile.Reset();
                 i++;
             }
 
@@ -186,6 +191,9 @@ namespace GUI
             while (i < TargetManager.TotalTargets)
             {
                 Targets.ElementAt(i).KillFriends();
+                launcherViewModel NewOne = launcherViewModel.getInstance();
+                mainViewMissile = NewOne.returnLauncher();
+                mainViewMissile.Reset();
                 i++;
             }
         }
