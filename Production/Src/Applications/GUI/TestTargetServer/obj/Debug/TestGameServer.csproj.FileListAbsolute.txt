@@ -1,0 +1,13 @@
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TestTargetServer.exe.config
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TestTargetServer.exe
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TestTargetServer.pdb
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TargetServerCommunicator.dll
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TargetServerCommunicator.pdb
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\obj\Debug\TestGameServer.csprojResolveAssemblyReference.cache
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\obj\Debug\TestTargetServer.exe
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\obj\Debug\TestTargetServer.pdb
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rebecca\Source\Repos\SADClient\TestTargetServer\bin\Debug\TestTargetServer.exe.config
+C:\Users\Rebecca\Source\Repos\SADClient\TestTargetServer\obj\Debug\TestTargetServer.exe
+C:\Users\Rebecca\Source\Repos\SADClient\TestTargetServer\obj\Debug\TestTargetServer.pdb
