@@ -1,0 +1,9 @@
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\obj\Debug\TestTargetServer.csprojResolveAssemblyReference.cache
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\jsonTargets.txt
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TestTargetServer.exe.config
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TestTargetServer.exe
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TestTargetServer.pdb
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TargetServerCommunicator.dll
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\TargetServerCommunicator.pdb
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\obj\Debug\TestTargetServer.exe
+C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\obj\Debug\TestTargetServer.pdb

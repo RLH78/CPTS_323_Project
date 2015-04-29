@@ -1,0 +1,7 @@
+C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\bin\Debug\TargetServerCommunicator.dll
+C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\bin\Debug\TargetServerCommunicator.pdb
+C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\obj\Debug\TargetServerCommunicator.dll
+C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\obj\Debug\TargetServerCommunicator.pdb
+C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\obj\Debug\GameServerCommunicator.csprojResolveAssemblyReference.cache
+C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.xml
