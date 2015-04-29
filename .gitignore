@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Production/Src/Applications/GUI/GUI/bin/x86/Debug/GUI.vshost.exe.manifest
