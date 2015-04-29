@@ -168,14 +168,17 @@ namespace GUI
         public async void killTargets()
         {
             int i = 0;
-            while (i < TargetManager.TotalTargets)
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+
+            while (i < TargetManager.TotalTargets && newVars.missileCount > 0)
             {
                 Task killEmAll = Task.Run(() =>
                     {
                         Targets.ElementAt(i).KillAllTargets();
-                        launcherViewModel NewOne = launcherViewModel.getInstance();
+                        
                         mainViewMissile = NewOne.returnLauncher();
-                        mainViewMissile.Reset();
+                        //mainViewMissile.Reset();
                         i++;
                     });
                 await killEmAll;
