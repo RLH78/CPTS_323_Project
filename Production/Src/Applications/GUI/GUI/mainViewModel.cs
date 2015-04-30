@@ -67,7 +67,45 @@ namespace GUI
         myCommand killFoes;
         myCommand killFriends;
         myCommand TakePictureCommand;
+        myCommand serverStart;
+        myCommand serverStop;
+        myCommand loadfromserver;
+
+         public ICommand load_from_server
+        {
+            get
+            {
+                if (loadfromserver == null)
+                {
+                    loadfromserver = new myCommand(param => loadFromServer());
+                }
+                return loadfromserver;
+            }
+        }
         
+        public ICommand start_server
+        {
+            get
+            {
+                if (serverStart == null)
+                {
+                    serverStart = new myCommand(param => startServerGame());
+                }
+                return serverStart;
+            }
+        }
+
+        public ICommand stop_server
+        {
+            get
+            {
+                if (serverStop == null)
+                {
+                    serverStop = new myCommand(param => stopServerGame());
+                }
+                return serverStop;
+            }
+        }
         public ICommand _Show_Server_Message
         {
             get
