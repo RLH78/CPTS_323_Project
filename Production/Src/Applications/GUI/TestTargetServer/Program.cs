@@ -6,7 +6,7 @@ namespace TestTargetServer
 {
     class Program
     {      
-        static void PrintTarget(Target target)
+        static void PrintTarget(target target)
         {
             Console.WriteLine();
             Console.WriteLine("\tName: " + target.name);

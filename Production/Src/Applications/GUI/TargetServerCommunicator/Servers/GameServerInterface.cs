@@ -91,10 +91,10 @@ namespace TargetServerCommunicator
         /// </summary>
         /// <param name="game"></param>
         /// <returns></returns>
-        public  IEnumerable<Target> RetrieveTargetList(string game)
+        public  IEnumerable<target> RetrieveTargetList(string game)
         {
             var jsonData = DownloadString(ROUTE_TARGETS, game);
-            var data     = JsonConvert.DeserializeObject<List<Target>>(jsonData);
+            var data     = JsonConvert.DeserializeObject<List<target>>(jsonData);
             return data;
         }
         /// <summary>

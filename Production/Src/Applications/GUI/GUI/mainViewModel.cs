@@ -25,7 +25,9 @@ using ReactiveUI;
 using System.Reactive.Linq;
 using System.Threading;
 using System.Collections.Concurrent;
-
+using TargetServerCommunicator.Data;
+using TargetServerCommunicator.Servers;
+using TargetServerCommunicator;
 
 namespace GUI
 {
@@ -43,6 +45,21 @@ namespace GUI
         private BitmapSource m_cameraImage;
         private Capture m_capture;
         public IMissileLauncher mainViewMissile;
+
+        private string ipa { get; set; }
+
+        private int prt { get; set; }
+        public string IPAddress
+        {
+            get { return ipa; }
+            set { ipa = value; }
+        }
+        public int Port
+        {
+            get { return prt; }
+            set { prt = value; }
+        }
+
         myCommand showServerMessage;
         myCommand fileLoader;
         myCommand clear;
@@ -220,12 +237,53 @@ namespace GUI
             workerThread.Start();
         }*/
 
+        public static IGameServer gameServer;
+
+        public static IList<string> gameList;
+
+        public int selectedGame { get; set; }
+        //IEnumerable<string> gameList;
+        public void loadFromServer()
+        {
+            launcherViewModel aLauncher = launcherViewModel.getInstance();
+            string teamName = aLauncher.getName();
+            var serverType = GameServerType.Mock;
+         //   serverType = GameServerType.WebClient;
+            gameServer = GameServerFactory.Create(serverType, teamName, IPAddress, Port);
+            gameList = (IList<string>)gameServer.RetrieveGameList();
+
+        }
+
+        public void loadGameFromServer()
+        {            
+            IEnumerable<target> targets = gameServer.RetrieveTargetList(gameList[selectedGame]);
+
+            Target target = new Target();
+
+
+        
+            //target.name =
+                       
+            
+           
+
+
+        }
+
+        public void startServerGame()
+        {
+           gameServer.StartGame(gameList[selectedGame]);
+        }
+
+        public void stopServerGame()
+        {
+            gameServer.StopRunningGame();
+        }
         public void loadINIFile()
         {
             var openFileDialog = new Ookii.Dialogs.Wpf.VistaOpenFileDialog();
             var worked = openFileDialog.ShowDialog();
-
-
+            
             FileReaderFactory readerFactory = new FileReaderFactory();
             FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);
             try

@@ -241,6 +241,10 @@
       <Project>{41f54182-230f-4b86-a6e3-b0525287a809}</Project>
       <Name>SAD.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TargetServerCommunicator\GameServerCommunicator.csproj">
+      <Project>{7a445aa6-73a5-4f33-be56-55b9ba9d8857}</Project>
+      <Name>GameServerCommunicator</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\camo.png" />

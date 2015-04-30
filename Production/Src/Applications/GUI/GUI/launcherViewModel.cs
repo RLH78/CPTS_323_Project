@@ -50,6 +50,11 @@ namespace GUI
             set { m_name = value; }
         }
 
+        public string getName()
+        {
+            return Name;
+        }
+
         public string ModifiedName
         {
             get { return m_modifiedName; }

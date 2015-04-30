@@ -4,7 +4,7 @@ namespace TargetServerCommunicator.Data
 	/// <summary>
 	/// Holds information about a target sent from the game server.
 	/// </summary>
-    public class Target
+    public class target
     {
 		 /// <summary>
 		 /// gets or sets the unique id of the target.

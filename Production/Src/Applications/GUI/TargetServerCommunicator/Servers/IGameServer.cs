@@ -21,7 +21,7 @@ namespace TargetServerCommunicator
         /// Stops the current running game.
         /// </summary>
         void StopRunningGame();
-        IEnumerable<Target> RetrieveTargetList(string game);
+        IEnumerable<target> RetrieveTargetList(string game);
         /// <summary>
         /// Retrieves a list of game names
         /// </summary>
