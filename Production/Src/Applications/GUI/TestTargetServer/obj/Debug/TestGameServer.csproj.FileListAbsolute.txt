@@ -11,3 +11,13 @@ C:\Users\Hank\Documents\GitHub\SADClient\TestTargetServer\bin\Debug\Newtonsoft.J
 C:\Users\Rebecca\Source\Repos\SADClient\TestTargetServer\bin\Debug\TestTargetServer.exe.config
 C:\Users\Rebecca\Source\Repos\SADClient\TestTargetServer\obj\Debug\TestTargetServer.exe
 C:\Users\Rebecca\Source\Repos\SADClient\TestTargetServer\obj\Debug\TestTargetServer.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\bin\Debug\TestTargetServer.exe.config
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\bin\Debug\TestTargetServer.exe
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\bin\Debug\TestTargetServer.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\bin\Debug\TargetServerCommunicator.dll
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\bin\Debug\TargetServerCommunicator.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\obj\Debug\TestGameServer.csprojResolveAssemblyReference.cache
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\obj\Debug\TestTargetServer.exe
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TestTargetServer\obj\Debug\TestTargetServer.pdb
