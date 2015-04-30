@@ -314,7 +314,7 @@ namespace GUI
 
         public void loadGameFromServer()
         {            
-            IEnumerable<target> targets = gameServer.RetrieveTargetList(gameList.ElementAt(0));//selectedGame);
+            IEnumerable<target> targets = gameServer.RetrieveTargetList(selectedGame);
 
             foreach (var target in targets)
             {

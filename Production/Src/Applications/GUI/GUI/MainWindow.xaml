@@ -325,9 +325,8 @@
         <Button Command="{Binding load_from_server}" DataContext="{StaticResource ResourceKey=MainModel}" Content="Enter" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,65,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124"/>
         <Button Content="Start Game" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding start_server}" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,181,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124"/>
         <Button Content="End Game" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding stop_server}" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,214,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124"/>
-        <ComboBox  SelectedItem="{Binding selectedGame}" 
-                   
-                 DataContext="{StaticResource MainModel}"
+        <ComboBox  DataContext="{StaticResource MainModel}" SelectedItem="{Binding selectedGame}"                 
+                 
                    ItemsSource="{Binding gameList}" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,147,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124">
 
 
