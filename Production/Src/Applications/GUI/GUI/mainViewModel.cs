@@ -258,16 +258,33 @@ namespace GUI
         {            
             IEnumerable<target> targets = gameServer.RetrieveTargetList(gameList[selectedGame]);
 
-            Target target = new Target();
+            foreach (var target in targets)
+            {
+                Target aTarget = new Target();
+                aTarget.name = target.name;
+                aTarget.xCoord = target.x;
+                aTarget.yCoord = target.y;
+                aTarget.zCoord = target.z;
 
+                if(target.status == 1)
+                {
+                    aTarget.friend = true;
+                }
+                else
+                {
+                    aTarget.friend = false;
+                }
 
-        
-            //target.name =
-                       
-            
-           
+                aTarget.points = (int)target.points;
+                aTarget.flashRate = (int)target.dutyCycle; //??
+                aTarget.spawnRate = (int)target.spawnRate;
+                aTarget.swapSides = target.canChangeSides;
+                aTarget.alive = true; //??
 
-
+                var newtargetViewModel = new targetViewModel(aTarget);
+                Targets.Add(newtargetViewModel);           
+            }
+            OnPropertyChanged("Targets");
         }
 
         public void startServerGame()
