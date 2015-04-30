@@ -52,12 +52,18 @@ namespace GUI
         public string IPAddress
         {
             get { return ipa; }
-            set { ipa = value; }
+            set { ipa = value;
+            OnPropertyChanged();
+            }
         }
         public int Port
         {
             get { return prt; }
-            set { prt = value; }
+            set
+            {
+                prt = value;
+                OnPropertyChanged();
+            }
         }
 
         myCommand showServerMessage;
@@ -70,6 +76,19 @@ namespace GUI
         myCommand serverStart;
         myCommand serverStop;
         myCommand loadfromserver;
+        myCommand loadgame;
+
+        public ICommand load_game_from_server
+        {
+            get
+            {
+                if (loadgame == null)
+                {
+                    loadgame = new myCommand(param => loadGameFromServer());
+                }
+                return loadgame;
+            }
+        }
 
          public ICommand load_from_server
         {
@@ -277,24 +296,25 @@ namespace GUI
 
         public static IGameServer gameServer;
 
-        public static IList<string> gameList;
-
-        public int selectedGame { get; set; }
+        public IList<string> gameList { get; set; }
+        
+        public string selectedGame { get; set; }
         //IEnumerable<string> gameList;
         public void loadFromServer()
         {
             launcherViewModel aLauncher = launcherViewModel.getInstance();
             string teamName = aLauncher.getName();
             var serverType = GameServerType.Mock;
-         //   serverType = GameServerType.WebClient;
+            serverType = GameServerType.WebClient;
             gameServer = GameServerFactory.Create(serverType, teamName, IPAddress, Port);
             gameList = (IList<string>)gameServer.RetrieveGameList();
+            OnPropertyChanged("gameList");
 
         }
 
         public void loadGameFromServer()
         {            
-            IEnumerable<target> targets = gameServer.RetrieveTargetList(gameList[selectedGame]);
+            IEnumerable<target> targets = gameServer.RetrieveTargetList(gameList.ElementAt(0));//selectedGame);
 
             foreach (var target in targets)
             {
@@ -327,7 +347,7 @@ namespace GUI
 
         public void startServerGame()
         {
-           gameServer.StartGame(gameList[selectedGame]);
+           gameServer.StartGame(selectedGame);
         }
 
         public void stopServerGame()

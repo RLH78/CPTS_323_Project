@@ -64,3 +64,4 @@ C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\S
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\bin\x86\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\x86\Debug\SAD.Core.dll
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\x86\Debug\SAD.Core.pdb
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\SAD.Core\obj\x86\Debug\SAD.Core.csprojResolveAssemblyReference.cache
