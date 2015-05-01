@@ -235,7 +235,8 @@ namespace GUI
         {
            Targets.Clear();
            Targets = new ObservableCollection<targetViewModel>();
-           targets = null;
+           TargetManager.TotalTargets = 0;
+            targets = null;
            OnPropertyChanged("targets");
            OnPropertyChanged("Targets");         
         }
@@ -362,8 +363,8 @@ namespace GUI
         {
             var openFileDialog = new Ookii.Dialogs.Wpf.VistaOpenFileDialog();
             var worked = openFileDialog.ShowDialog();
-            Targets = new ObservableCollection<targetViewModel>();
-            TargetManager.TotalTargets = 0;
+            //Targets = new ObservableCollection<targetViewModel>();
+            //TargetManager.TotalTargets = 0;
 
             FileReaderFactory readerFactory = new FileReaderFactory();
             FileReader myReader = readerFactory.createFileReader(SAD.core.Factories.fileReaderType.INI);
