@@ -256,7 +256,8 @@ namespace GUI
                         i++;
                     });
                 await killEmAll;
-            }            
+            }
+            
         }
 
         public async void killAllFoes()
@@ -340,7 +341,8 @@ namespace GUI
                 aTarget.alive = true; //??
 
                 var newtargetViewModel = new targetViewModel(aTarget);
-                Targets.Add(newtargetViewModel);           
+                Targets.Add(newtargetViewModel);
+                TargetManager.TotalTargets++;
             }
             OnPropertyChanged("Targets");
         }
@@ -348,6 +350,7 @@ namespace GUI
         public void startServerGame()
         {
            gameServer.StartGame(selectedGame);
+           killTargets();                      
         }
 
         public void stopServerGame()

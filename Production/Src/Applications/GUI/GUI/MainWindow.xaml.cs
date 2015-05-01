@@ -36,6 +36,11 @@ namespace GUI
 
         }
 
+        private void ListofTargets_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
 
 
     }
