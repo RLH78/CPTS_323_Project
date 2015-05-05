@@ -5,13 +5,6 @@ C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\obj\Debug\Targ
 C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\obj\Debug\GameServerCommunicator.csprojResolveAssemblyReference.cache
 C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Hank\Documents\GitHub\SADClient\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\TargetServerCommunicator.dll
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\TargetServerCommunicator.pdb
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\GameServerCommunicator.csprojResolveAssemblyReference.cache
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\TargetServerCommunicator.dll
-C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\TargetServerCommunicator.pdb
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\TargetServerCommunicator.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\TargetServerCommunicator.pdb
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.dll
@@ -19,3 +12,10 @@ C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\Targ
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\GameServerCommunicator.csprojResolveAssemblyReference.cache
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\TargetServerCommunicator.dll
 C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\TargetServerCommunicator.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\TargetServerCommunicator.dll
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\TargetServerCommunicator.pdb
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\GameServerCommunicator.csprojResolveAssemblyReference.cache
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\TargetServerCommunicator.dll
+C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\TargetServerCommunicator\obj\Debug\TargetServerCommunicator.pdb

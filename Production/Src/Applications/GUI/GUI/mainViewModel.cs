@@ -36,11 +36,15 @@ namespace GUI
     {
         public mainViewModel()
         {
-            Targets = new ObservableCollection<targetViewModel>();            
+            Targets = new ObservableCollection<targetViewModel>();
+            PriorityTargets = new ObservableCollection<targetViewModel>();
+            list = new List<Target>();
         }
 
         public Target[] targets { get; set; }
         string LoadServerMessage = "This option is unavailable at this time";
+
+        PriorityQueue<Target> targetPriorityQueue = new PriorityQueue<Target>();
 
         private BitmapSource m_cameraImage;
         private Capture m_capture;
@@ -72,6 +76,7 @@ namespace GUI
         myCommand killAll;
         myCommand killFoes;
         myCommand killFriends;
+        myCommand killLtoR;
         myCommand TakePictureCommand;
         myCommand serverStart;
         myCommand serverStop;
@@ -181,6 +186,17 @@ namespace GUI
                 return killFriends;
             }
         }
+        public ICommand kill_left_to_right
+        {
+            get
+            {
+                if (killLtoR == null)
+                {
+                    killLtoR = new myCommand(param => killTargetsLeftToRight());
+                }
+                return killLtoR;
+            }
+        }
 
         
         public ICommand _load_INI_File
@@ -210,6 +226,9 @@ namespace GUI
             get { return LoadServerMessage; }
         }
         public ObservableCollection<targetViewModel> Targets { get; private set; }
+        public ObservableCollection<targetViewModel> PriorityTargets { get; private set; }
+
+        List<Target> list { get; set; }
 
         private targetViewModel m_selectedTarget;
         public targetViewModel SelectedTarget
@@ -234,11 +253,17 @@ namespace GUI
         public void clearTargets()
         {
            Targets.Clear();
+           PriorityTargets.Clear();
            Targets = new ObservableCollection<targetViewModel>();
+           PriorityTargets = new ObservableCollection<targetViewModel>();
+           list = new List<Target>();
            TargetManager.TotalTargets = 0;
-            targets = null;
+           //targetPriorityQueue = null;
+           targetPriorityQueue = new PriorityQueue<Target>();
+           targets = null;
            OnPropertyChanged("targets");
-           OnPropertyChanged("Targets");         
+           OnPropertyChanged("Targets");
+           OnPropertyChanged("PriorityTargets");
         }
 
         public async void killTargets()
@@ -287,9 +312,39 @@ namespace GUI
                 Targets.ElementAt(i).KillFriends();
                 launcherViewModel NewOne = launcherViewModel.getInstance();
                 mainViewMissile = NewOne.returnLauncher();
-                mainViewMissile.Reset();
+              //  mainViewMissile.Reset();
                 i++;
             }
+        }
+
+        public async void killTargetsLeftToRight()
+        {
+            int i = 0;
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+            mainViewMissile = NewOne.returnLauncher();
+
+            while (i < TargetManager.TotalTargets && newVars.missileCount > 0)
+            {
+                Task killEmAll = Task.Run(() => {
+                    
+                    PriorityTargets.ElementAt(i).KillAllTargets();
+                    
+                    i++;
+
+                    if (newVars.missileCount == 0)//i == TargetManager.TotalTargets - 1)
+                    {
+                        
+                     //  mainViewMissile.Reset();
+                       mainViewMissile.Move(-15, 0);
+                        //mainViewMissile.Reset();
+                        // newVars.missileCount = 4;
+                    }
+            }    
+                );
+                await killEmAll;
+            }
+
         }
       /*  private void liveLoadFile()
         {
@@ -380,10 +435,26 @@ namespace GUI
                 while (i < TargetManager.TotalTargets)
                 {
                     var newtargetViewModel = new targetViewModel(targets[i]);
-                    Targets.Add(newtargetViewModel);                    
+                    Targets.Add(newtargetViewModel);   
+                 
+                    //test of PriorityQueue
+                    targetPriorityQueue.AddItem(targets[i]);
+
                     i++;
                 }
+
+                List<Target> list = targetPriorityQueue.getPriorityList();
+
+                i = 0;
+                while (i < TargetManager.TotalTargets)
+                {
+                    var newtargetViewModel2 = new targetViewModel(list[i]);
+                    PriorityTargets.Add(newtargetViewModel2);
+                    i++;
+                }
+
                 OnPropertyChanged("Targets");
+                OnPropertyChanged("PriorityTargets");
                 MessageBox.Show("Successfully loaded: " + openFileDialog.FileName);
             }
         }       
