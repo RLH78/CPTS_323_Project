@@ -201,28 +201,36 @@ namespace SAD.core.Devices
             
             if (phi <= 0 && theta <= 0)
             {            
-                test.command_Left(degrees * 22);
-                test.command_Down(degrees2 * 22);
+                test.command_Left(Math.Abs(degrees) * 22);
+                test.command_Down(Math.Abs(degrees2) * 22);
                 test.command_Fire();
+                test.command_Right(Math.Abs(degrees) * 22);
+                test.command_Up(Math.Abs(degrees2) * 22);
             }
             else if (phi <= 0 && theta >= 0)
             {
-                test.command_Left(degrees * 22);
-                test.command_Up(degrees2 * 22);
+                test.command_Left(Math.Abs(degrees) * 22);
+                test.command_Up(Math.Abs(degrees2) * 22);
                 test.command_Fire();
+                test.command_Right(Math.Abs(degrees) * 22);
+                test.command_Down(Math.Abs(degrees2) * 22);
             }
             else if (phi >= 0 && theta <= 0)
-            {               
-                test.command_Right(degrees * 22);
-                test.command_Down(degrees2 * 22);
+            {
+                test.command_Right(Math.Abs(degrees) * 22);
+                test.command_Down(Math.Abs(degrees2) * 22);
                 test.command_Fire();
+                test.command_Left(Math.Abs(degrees) * 22);
+                test.command_Up(Math.Abs(degrees2) * 22);
             }
 
             else if (phi >= 0 && theta >= 0)
             {
-                test.command_Right(degrees * 22);
-                test.command_Up(degrees2 * 22);
+                test.command_Right(Math.Abs(degrees) * 22);
+                test.command_Up(Math.Abs(degrees2) * 22);
                 test.command_Fire();
+                test.command_Left(Math.Abs(degrees) * 22);
+                test.command_Down(Math.Abs(degrees2) * 22);
             }
             
         }
