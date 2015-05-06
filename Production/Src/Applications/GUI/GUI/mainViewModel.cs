@@ -256,6 +256,7 @@ namespace GUI
            PriorityTargets.Clear();
            Targets = new ObservableCollection<targetViewModel>();
            PriorityTargets = new ObservableCollection<targetViewModel>();
+           list.Clear();
            list = new List<Target>();
            TargetManager.TotalTargets = 0;
            //targetPriorityQueue = null;
@@ -271,16 +272,20 @@ namespace GUI
             int i = 0;
             launcherViewModel NewOne = launcherViewModel.getInstance();
             launcherVars newVars = launcherVars.Instance;
-
-            while (i < TargetManager.TotalTargets && newVars.missileCount > 0)
+            
+            while (i < /*10)*/TargetManager.TotalTargets && newVars.missileCount > 0)
             {
                 Task killEmAll = Task.Run(() =>
                     {
-                        Targets.ElementAt(i).KillAllTargets();
-                        
-                        mainViewMissile = NewOne.returnLauncher();
-                        //mainViewMissile.Reset();
-                        i++;
+                        try
+                        {   
+                            Targets.ElementAt(i).KillAllTargets();
+
+                            mainViewMissile = NewOne.returnLauncher();
+                            //mainViewMissile.Reset();
+                            i++;
+                        }
+                        catch { }
                     });
                 await killEmAll;
             }
@@ -324,6 +329,10 @@ namespace GUI
             launcherVars newVars = launcherVars.Instance;
             mainViewMissile = NewOne.returnLauncher();
 
+            PriorityQueue<Target> priorityqueue = new PriorityQueue<Target>();
+
+            priorityqueue = targetPriorityQueue;
+
             while (i < TargetManager.TotalTargets && newVars.missileCount > 0)
             {
                 Task killEmAll = Task.Run(() => {
@@ -336,7 +345,7 @@ namespace GUI
                     {
                         
                      //  mainViewMissile.Reset();
-                       mainViewMissile.Move(-15, 0);
+                       mainViewMissile.Move(-15, 0); //other code needs a +15
                         //mainViewMissile.Reset();
                         // newVars.missileCount = 4;
                     }
@@ -399,7 +408,19 @@ namespace GUI
 
                 var newtargetViewModel = new targetViewModel(aTarget);
                 Targets.Add(newtargetViewModel);
+
+                targetPriorityQueue.AddItem(aTarget);
                 TargetManager.TotalTargets++;
+            }
+
+            List<Target> list = targetPriorityQueue.getPriorityList();
+
+           int i = 0;
+            while (i < TargetManager.TotalTargets)
+            {
+                var newtargetViewModel2 = new targetViewModel(list[i]);
+                PriorityTargets.Add(newtargetViewModel2);
+                i++;
             }
             OnPropertyChanged("Targets");
         }
@@ -407,7 +428,9 @@ namespace GUI
         public void startServerGame()
         {
            gameServer.StartGame(selectedGame);
-           killTargets();                      
+           killTargets();
+           //killTargetsLeftToRight();
+                      
         }
 
         public void stopServerGame()

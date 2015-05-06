@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BuildDefender;
 
+
 namespace SAD.core.Devices
 {
 
@@ -19,7 +20,7 @@ namespace SAD.core.Devices
         void MoveBy(double phi, double theta);
         void Reload();
         void Kill(double phi, double theta);
-        void realKill(int phi, int theta);
+        void realKill(int phi, int theta, int currentPhi, int currentTheta);
         void Reset();
         void Status();
         void getName();
@@ -185,12 +186,19 @@ namespace SAD.core.Devices
             // MissileLauncher test = new MissileLauncher();
             // missileCount = missileAmt;
         }
-        public void realKill(int phi, int theta)
+        public void realKill(int phi, int theta, int currentPhi, int currentTheta)
         {                    
             int degrees = phi;
-            int degrees2 = theta;           
-            MissileLauncher test = new MissileLauncher();
+            int degrees2 = theta;
 
+        //    degrees = degrees - currentPhi;
+         //+   degrees2 = degrees2 - currentTheta;
+
+            currentPhi = degrees;
+            currentTheta = degrees2;
+
+            MissileLauncher test = new MissileLauncher();
+            
             if (phi <= 0 && theta <= 0)
             {            
                 test.command_Left(degrees * 22);
@@ -301,7 +309,7 @@ namespace SAD.core.Devices
         public void MoveBy(double phi, double theta) { ;}
         public void Reload() { ;}
         public void Kill(double phi, double theta) { ;}
-        public void realKill(int phi, int theta) { ;}
+        public void realKill(int phi, int theta, int currentPhi, int currentTheta) { ;}
         public void Status() { ;}
         public void Reset() { ;}
         public void MoveUp() { ;}

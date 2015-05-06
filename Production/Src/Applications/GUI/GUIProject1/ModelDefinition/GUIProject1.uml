@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="bbdcfb7b-3009-4ff1-860e-445357b15df3"
   name="GUIProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -334,20 +334,20 @@
             interactionOperator="Loop">
             <coveredLifelines>
               <lifelineMoniker
-                Id="1169c271-b89d-43c0-b45e-8620cfe926b8"
-                LastKnownName="GUI"
-                LastKnownLocation="GUIProject1.uml" />
-              <lifelineMoniker
                 Id="9bd41659-ad85-4c4e-80b1-67408edf026b"
                 LastKnownName="Operator"
                 LastKnownLocation="GUIProject1.uml" />
               <lifelineMoniker
-                Id="721e667c-be27-4d69-9c6d-379680d209e4"
-                LastKnownName="Live Video"
+                Id="1169c271-b89d-43c0-b45e-8620cfe926b8"
+                LastKnownName="GUI"
                 LastKnownLocation="GUIProject1.uml" />
               <lifelineMoniker
                 Id="211462a7-5e89-4e79-b7b3-f2bc42a89946"
                 LastKnownName="View Models"
+                LastKnownLocation="GUIProject1.uml" />
+              <lifelineMoniker
+                Id="721e667c-be27-4d69-9c6d-379680d209e4"
+                LastKnownName="Live Video"
                 LastKnownLocation="GUIProject1.uml" />
             </coveredLifelines>
             <operands>
@@ -356,20 +356,20 @@
                 name="InteractionOperand1">
                 <coveredLifelines>
                   <lifelineMoniker
-                    Id="1169c271-b89d-43c0-b45e-8620cfe926b8"
-                    LastKnownName="GUI"
-                    LastKnownLocation="GUIProject1.uml" />
-                  <lifelineMoniker
                     Id="9bd41659-ad85-4c4e-80b1-67408edf026b"
                     LastKnownName="Operator"
                     LastKnownLocation="GUIProject1.uml" />
                   <lifelineMoniker
-                    Id="721e667c-be27-4d69-9c6d-379680d209e4"
-                    LastKnownName="Live Video"
+                    Id="1169c271-b89d-43c0-b45e-8620cfe926b8"
+                    LastKnownName="GUI"
                     LastKnownLocation="GUIProject1.uml" />
                   <lifelineMoniker
                     Id="211462a7-5e89-4e79-b7b3-f2bc42a89946"
                     LastKnownName="View Models"
+                    LastKnownLocation="GUIProject1.uml" />
+                  <lifelineMoniker
+                    Id="721e667c-be27-4d69-9c6d-379680d209e4"
+                    LastKnownName="Live Video"
                     LastKnownLocation="GUIProject1.uml" />
                 </coveredLifelines>
                 <guard>
@@ -1033,22 +1033,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="2ac013ca-e90d-4500-a8ad-45b8586ff244"
-            name="MessageOccurrenceSpecification55">
-            <covered>
-              <lifelineMoniker
-                Id="1169c271-b89d-43c0-b45e-8620cfe926b8"
-                LastKnownName="GUI"
-                LastKnownLocation="GUIProject1.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="227265a9-5f00-4493-a859-2234188e460e"
             name="MessageOccurrenceSpecification56">
             <covered>
               <lifelineMoniker
                 Id="211462a7-5e89-4e79-b7b3-f2bc42a89946"
                 LastKnownName="View Models"
+                LastKnownLocation="GUIProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2ac013ca-e90d-4500-a8ad-45b8586ff244"
+            name="MessageOccurrenceSpecification55">
+            <covered>
+              <lifelineMoniker
+                Id="1169c271-b89d-43c0-b45e-8620cfe926b8"
+                LastKnownName="GUI"
                 LastKnownLocation="GUIProject1.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -3111,8 +3111,35 @@
         isLeaf="false"
         isActiveClass="false">
         <ownedAttributesInternal>
-          <providedInterface
-            Id="36693b00-ac5e-458f-8c62-734608dac01a"
+          <requiredInterface
+            Id="bd4fb223-7546-400a-a439-226270ea9d78"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="c64047a9-396b-4aac-8c0b-a262a3cf7d5c">
+                <providedInterfaceMoniker
+                  Id="d5ed211f-a80f-4b5f-a33e-9f9272e9e889"
+                  LastKnownName="Port3"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="9783e3b0-d9f6-424b-a9f5-9f666b54da72"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="9f3d8feb-fa17-4f00-a086-6f78f8542dfd"
             name="Port1"
             isLeaf="false"
             isStatic="false"
@@ -3123,14 +3150,34 @@
             isComposite="false"
             isService="false"
             isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="707cece9-50fc-469e-8f37-75e1ac522e3a">
+                <providedInterfaceMoniker
+                  Id="93797021-9f5a-4faf-928a-1e5cab75439f"
+                  LastKnownName="Port2"
+                  LastKnownLocation="GUIProject1.uml" />
+              </dependency>
+            </suppliersInternal>
             <type_NamedElement>
               <interfaceMoniker
-                Id="a053abdd-4639-406b-a8d6-1871ae52db99"
+                Id="9ffb2011-0dd1-4502-8254-2d482ac60d20"
                 LastKnownLocation="GUIProject1.uml" />
             </type_NamedElement>
-          </providedInterface>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c1cef872-32f5-4da1-a61c-0a65078390b1"
+        name="MissileLauncher"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
           <providedInterface
-            Id="5130f188-8e3d-4a61-bdfe-0eb40bb73a3b"
+            Id="93797021-9f5a-4faf-928a-1e5cab75439f"
             name="Port2"
             isLeaf="false"
             isStatic="false"
@@ -3143,49 +3190,11 @@
             isBehavior="false">
             <type_NamedElement>
               <interfaceMoniker
-                Id="3c8b9439-2116-4141-8889-eb85b4901445"
-                LastKnownLocation="GUIProject1.uml" />
-            </type_NamedElement>
-          </providedInterface>
-        </ownedAttributesInternal>
-      </component>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <component
-        Id="c1cef872-32f5-4da1-a61c-0a65078390b1"
-        name="MissileLauncher"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <requiredInterface
-            Id="e1b99157-8b04-4573-a13e-682dd2b74167"
-            name="Port1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <suppliersInternal>
-              <dependency
-                Id="43880d74-2c82-4f96-a553-3e73e79049a0">
-                <providedInterfaceMoniker
-                  Id="5130f188-8e3d-4a61-bdfe-0eb40bb73a3b"
-                  LastKnownName="Port2"
-                  LastKnownLocation="GUIProject1.uml" />
-              </dependency>
-            </suppliersInternal>
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="3ac55380-2de8-44b5-baa6-244eb90d5f71"
+                Id="5918873e-914b-4f51-b492-efc21bb4dec3"
                 LastKnownName="IMissileLauncher"
                 LastKnownLocation="GUIProject1.uml" />
             </type_NamedElement>
-          </requiredInterface>
+          </providedInterface>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -3197,34 +3206,6 @@
         isLeaf="false"
         isActiveClass="false">
         <ownedAttributesInternal>
-          <requiredInterface
-            Id="aad81ed3-cfa2-42dc-96f7-7d6e0d986408"
-            name="Port1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false"
-            isService="false"
-            isBehavior="false">
-            <suppliersInternal>
-              <dependency
-                Id="6472b81d-60d9-4f82-b4f8-e8fe98b79582">
-                <providedInterfaceMoniker
-                  Id="36693b00-ac5e-458f-8c62-734608dac01a"
-                  LastKnownName="Port1"
-                  LastKnownLocation="GUIProject1.uml" />
-              </dependency>
-            </suppliersInternal>
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="66b23baa-10e3-45dc-85a0-8806c9ef9970"
-                LastKnownName="IGameServer"
-                LastKnownLocation="GUIProject1.uml" />
-            </type_NamedElement>
-          </requiredInterface>
           <requiredInterface
             Id="1fedb294-3828-46fc-994c-f2a383975204"
             name="Port2"
@@ -3253,6 +3234,25 @@
                 LastKnownLocation="GUIProject1.uml" />
             </type_NamedElement>
           </requiredInterface>
+          <providedInterface
+            Id="d5ed211f-a80f-4b5f-a33e-9f9272e9e889"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="8b4a4021-f88d-43af-a807-0c7131b5a7b3"
+                LastKnownName="IGameServer"
+                LastKnownLocation="GUIProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -3328,6 +3328,32 @@
       <Interface
         Id="0d08b809-9701-4ea8-998e-212e16d50eb1"
         name="IFileReader"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9783e3b0-d9f6-424b-a9f5-9f666b54da72"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="8b4a4021-f88d-43af-a807-0c7131b5a7b3"
+        name="IGameServer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9ffb2011-0dd1-4502-8254-2d482ac60d20"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="5918873e-914b-4f51-b492-efc21bb4dec3"
+        name="IMissileLauncher"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>

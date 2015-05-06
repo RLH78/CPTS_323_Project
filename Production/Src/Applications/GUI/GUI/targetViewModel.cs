@@ -105,6 +105,7 @@ namespace GUI
                         double realTheta = 0;
                         int degrees = 0;
                         int degrees2 = 0;
+                        launcherVars newVars = launcherVars.Instance;
 
                         place_hold = m_target.xCoord / m_target.yCoord;
                         place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
@@ -113,7 +114,7 @@ namespace GUI
                         degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
                         degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
 
-                        target_view_Launcher.realKill(degrees, degrees2);
+                        target_view_Launcher.realKill(degrees, degrees2, newVars.phi, newVars.theta);
 
                         m_target.alive = false;
                         launcherVars missilez = launcherVars.Instance;
@@ -138,6 +139,7 @@ namespace GUI
         }
         public void KillAllTargets()
         {
+            launcherVars newVars = launcherVars.Instance;
             try
             {
                 if (m_target.alive == true)
@@ -156,7 +158,7 @@ namespace GUI
                     degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
                     degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
 
-                    target_view_Launcher.realKill(degrees, degrees2);
+                    target_view_Launcher.realKill(degrees, degrees2, newVars.phi, newVars.theta);
 
                     m_target.alive = false;
                     launcherVars missilez = launcherVars.Instance;
@@ -183,6 +185,8 @@ namespace GUI
                         int degrees = 0;
                         int degrees2 = 0;
 
+                        launcherVars newVars = launcherVars.Instance;
+
                         place_hold = m_target.xCoord / m_target.yCoord;
                         place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
                         realPhi = Math.Atan(place_hold);
@@ -190,7 +194,7 @@ namespace GUI
                         degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
                         degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
 
-                        target_view_Launcher.realKill(degrees, degrees2);
+                        target_view_Launcher.realKill(degrees, degrees2, newVars.phi, newVars.theta);
 
                         m_target.alive = false;
                         launcherVars missilez = launcherVars.Instance;
@@ -218,6 +222,8 @@ namespace GUI
                         int degrees = 0;
                         int degrees2 = 0;
 
+                        launcherVars newVars = launcherVars.Instance;
+
                         place_hold = m_target.xCoord / m_target.yCoord;
                         place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
                         realPhi = Math.Atan(place_hold);
@@ -225,7 +231,7 @@ namespace GUI
                         degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
                         degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
 
-                        target_view_Launcher.realKill(degrees, degrees2);
+                        target_view_Launcher.realKill(degrees, degrees2, newVars.phi, newVars.theta);
 
                         m_target.alive = false;
                         launcherVars missilez = launcherVars.Instance;
