@@ -115,11 +115,15 @@ namespace GUI
             return reverseList;
         }
 
-        public List<T> reverseCurrentTheQueue()
+        public List<T> reverseCurrentQueue()
         {
             //make iterator
             //have it reverse
             myCollection collection = new myCollection();
+
+        //     Target ataadsfasf = new Target();
+
+          //   collection[0] = ataadsfasf;
 
             int i =0;
           //  collection[i] = target_List[i];

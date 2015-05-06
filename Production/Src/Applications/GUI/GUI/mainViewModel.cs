@@ -357,6 +357,49 @@ namespace GUI
 
         }
 
+        public async void killTargetsRightToLeft()
+        {
+            int i = 0;
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+            mainViewMissile = NewOne.returnLauncher();
+
+            //List<Target> reverseList = new List<Target>();
+
+            myCollection collection = new myCollection();
+
+            for (int j = 0; j < TargetManager.TotalTargets; j++)
+            {
+                collection[j] = PriorityTargets.ElementAt(j);
+            }
+
+            Iterator myIterator = new Iterator(collection);
+            targetViewModel last;
+            last = (targetViewModel)myIterator.Last();
+
+            while (/*i < TargetManager.TotalTargets*/ last != null && newVars.missileCount > 0)
+            {
+                Task killEmAll = Task.Run(() =>
+                {                    
+                    
+                   last.KillAllTargets();
+                   last = (targetViewModel)myIterator.Previous();
+                   // i++;
+
+                    if (newVars.missileCount == 0)//i == TargetManager.TotalTargets - 1)
+                    {
+
+                        //  mainViewMissile.Reset();
+                        mainViewMissile.Move(-15, 0); //other code needs a +15
+                        //mainViewMissile.Reset();
+                        // newVars.missileCount = 4;
+                    }
+                }
+                );
+                await killEmAll;
+            }
+
+        }
         public async void killTargetsLeftToRightWithHitCount()
         {
             int i = 0;

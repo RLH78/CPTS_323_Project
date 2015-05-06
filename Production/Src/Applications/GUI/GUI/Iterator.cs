@@ -19,7 +19,7 @@ namespace GUI
         object Next();
         object Previous();
         bool IsDone();
-        int CurrentItem();
+        object CurrentItem();
     }
 
     public class Iterator: IIterator
@@ -74,7 +74,7 @@ namespace GUI
                 return false;
         }
 
-        public Target CurrentItem()
+        public object CurrentItem()
         {
             return collection[currentSpot];
         }
@@ -101,11 +101,11 @@ namespace GUI
             }
         }
 
-        public Target this[int i]
+        public targetViewModel this[int i]
         {
             get
             {
-                return (Target)items[i];
+                return (targetViewModel)items[i];
             }
             set
             {
