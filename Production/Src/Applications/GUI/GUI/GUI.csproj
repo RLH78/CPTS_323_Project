@@ -173,6 +173,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ConvertBitmap.cs" />
+    <Compile Include="Iterator.cs" />
     <Compile Include="myCommand.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="TargetView.xaml.cs">

@@ -225,10 +225,14 @@ namespace GUI
         {
             get { return LoadServerMessage; }
         }
+
+
         public ObservableCollection<targetViewModel> Targets { get; private set; }
         public ObservableCollection<targetViewModel> PriorityTargets { get; private set; }
-
         List<Target> list { get; set; }
+
+
+
 
         private targetViewModel m_selectedTarget;
         public targetViewModel SelectedTarget
@@ -322,16 +326,13 @@ namespace GUI
             }
         }
 
+     
         public async void killTargetsLeftToRight()
         {
             int i = 0;
             launcherViewModel NewOne = launcherViewModel.getInstance();
             launcherVars newVars = launcherVars.Instance;
             mainViewMissile = NewOne.returnLauncher();
-
-            PriorityQueue<Target> priorityqueue = new PriorityQueue<Target>();
-
-            priorityqueue = targetPriorityQueue;
 
             while (i < TargetManager.TotalTargets && newVars.missileCount > 0)
             {
@@ -355,6 +356,99 @@ namespace GUI
             }
 
         }
+
+        public async void killTargetsLeftToRightWithHitCount()
+        {
+            int i = 0;
+            int queueCount = 0;
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+            mainViewMissile = NewOne.returnLauncher();
+
+            PriorityQueue<Target> priorityqueue = new PriorityQueue<Target>();
+            priorityqueue = targetPriorityQueue;
+
+            List<Target> priorityList = new List<Target>();
+            priorityList = list;
+
+            ObservableCollection<targetViewModel> viewModels = new ObservableCollection<targetViewModel>();
+            viewModels = PriorityTargets;
+
+            int hitCount = 0;
+            while (i < priorityqueue.Count() && newVars.missileCount > 0)//TargetManager.TotalTargets && newVars.missileCount > 0)
+            {
+                
+                Task killEmAll = Task.Run(() =>
+                {
+                    hitCount = priorityList.ElementAt(i).hit;
+                    viewModels.ElementAt(i).KillAllTargets();
+
+                    if(priorityList.ElementAt(i).hit > hitCount) //hit it?
+                    {
+                        priorityqueue.RemoveItem();
+                        priorityList = priorityqueue.getPriorityList();
+
+                        queueCount = 0;
+                        while (queueCount < priorityqueue.Count())
+                        {
+                            var newtargetViewModel = new targetViewModel(priorityList[queueCount]);
+                            viewModels.Add(newtargetViewModel);
+                            queueCount++;
+                        }
+                    }
+
+
+                    i++;
+
+                    if (newVars.missileCount == 0)//i == TargetManager.TotalTargets - 1)
+                    {                     
+                        mainViewMissile.Move(-15, 0); //other code needs a +15    
+                    }                   
+                }
+                );
+                await killEmAll;
+            }
+        }
+
+        public async void killTargetsWithPriorityQueue()
+        {
+            int i = 0;
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+            mainViewMissile = NewOne.returnLauncher();
+
+            while (i < TargetManager.TotalTargets && newVars.missileCount > 0)
+            {
+                Task killEmAll = Task.Run(() =>
+                {
+
+                    PriorityTargets.ElementAt(i).KillAllTargets();
+                    i++;
+
+                    targetPriorityQueue.RemoveItem();
+                    list = targetPriorityQueue.getPriorityList();
+
+                    PriorityTargets.Clear();
+                    PriorityTargets = new ObservableCollection<targetViewModel>();
+
+                    int queueCount = 0;
+                    while (queueCount < targetPriorityQueue.Count())
+                    {
+                        var newtargetViewModel = new targetViewModel(list[queueCount]);
+                        PriorityTargets.Add(newtargetViewModel);
+                        queueCount++;
+                    }
+
+                    if (newVars.missileCount == 0)
+                    {
+                        mainViewMissile.Move(-15, 0); //other code needs a +15
+                    }
+                }
+                );
+                await killEmAll;
+            }
+
+        }
       /*  private void liveLoadFile()
         {
             Thread workerThread = new Thread(loadINIFile);
@@ -366,6 +460,8 @@ namespace GUI
         public IList<string> gameList { get; set; }
         
         public string selectedGame { get; set; }
+
+
         //IEnumerable<string> gameList;
         public void loadFromServer()
         {
@@ -405,6 +501,8 @@ namespace GUI
                 aTarget.spawnRate = (int)target.spawnRate;
                 aTarget.swapSides = target.canChangeSides;
                 aTarget.alive = true; //??
+                aTarget.score = target.score;
+                aTarget.hit = target.hit;
 
                 var newtargetViewModel = new targetViewModel(aTarget);
                 Targets.Add(newtargetViewModel);
@@ -466,7 +564,7 @@ namespace GUI
                     i++;
                 }
 
-                List<Target> list = targetPriorityQueue.getPriorityList();
+                /*List<Target>*/ list = targetPriorityQueue.getPriorityList();
 
                 i = 0;
                 while (i < TargetManager.TotalTargets)

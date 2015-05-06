@@ -23,10 +23,13 @@ namespace SAD.Core.Data
             this.spawnRate = -99;
             this.swapSides = true;
             this.alive = true;
+            this.score = 0.0;
+            this.hit = 0;
+           
         }
         // public int targetCount { get; set; }
         
-
+        
         public string name { get; set; }
         public double xCoord { get; set; }
         public double yCoord { get; set; }
@@ -46,8 +49,14 @@ namespace SAD.Core.Data
             }
         }
 
+        
         private bool m_isAlive;
 
+        public double score { get; set; }
+
+        public int hit { get; set; }
+
+       
 
         public event PropertyChangedEventHandler PropertyChanged;
         [NotifyPropertyChangedInvocator]

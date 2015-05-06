@@ -1,8 +1,13 @@
-﻿using System;
+﻿//Rebecca Hoerner
+//Personal Project
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using SAD.Core.Data;
 
 namespace GUI
 {
@@ -47,7 +52,7 @@ namespace GUI
             }
         }
 
-        public T RemoveFirstItem()
+        public T RemoveItem()
         {
             int parent_node_index = 0;
             int child_node_index = 0;
@@ -101,5 +106,25 @@ namespace GUI
         {
             return target_List;
         }
+
+
+        public List<T> getReversePriorityQueue()
+        {
+            List<T> reverseList = new List<T>();
+
+            return reverseList;
+        }
+
+        public List<T> reverseCurrentTheQueue()
+        {
+            //make iterator
+            //have it reverse
+            myCollection collection = new myCollection();
+
+            int i =0;
+          //  collection[i] = target_List[i];
+            return target_List;
+        }
+
     }
 }

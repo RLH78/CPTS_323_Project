@@ -93,13 +93,21 @@ namespace GUI {
         
         #line 225 "..\..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBlock GameName;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 226 "..\..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnEx;
         
         #line default
         #line hidden
         
         
-        #line 231 "..\..\..\MainWindow.xaml"
+        #line 232 "..\..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnRight;
         
@@ -107,7 +115,7 @@ namespace GUI {
         #line hidden
         
         
-        #line 237 "..\..\..\MainWindow.xaml"
+        #line 238 "..\..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnLeft;
         
@@ -115,7 +123,7 @@ namespace GUI {
         #line hidden
         
         
-        #line 316 "..\..\..\MainWindow.xaml"
+        #line 317 "..\..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.MediaElement media;
         
@@ -123,7 +131,7 @@ namespace GUI {
         #line hidden
         
         
-        #line 317 "..\..\..\MainWindow.xaml"
+        #line 318 "..\..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox IP;
         
@@ -131,7 +139,7 @@ namespace GUI {
         #line hidden
         
         
-        #line 321 "..\..\..\MainWindow.xaml"
+        #line 322 "..\..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox Port;
         
@@ -193,39 +201,42 @@ namespace GUI {
             this.Game = ((System.Windows.Controls.TextBox)(target));
             return;
             case 7:
+            this.GameName = ((System.Windows.Controls.TextBlock)(target));
+            return;
+            case 8:
             this.btnEx = ((System.Windows.Controls.Button)(target));
             
-            #line 229 "..\..\..\MainWindow.xaml"
+            #line 230 "..\..\..\MainWindow.xaml"
             this.btnEx.Click += new System.Windows.RoutedEventHandler(this.btnEx_Click);
             
             #line default
             #line hidden
             return;
-            case 8:
+            case 9:
             this.btnRight = ((System.Windows.Controls.Button)(target));
             
-            #line 236 "..\..\..\MainWindow.xaml"
+            #line 237 "..\..\..\MainWindow.xaml"
             this.btnRight.Click += new System.Windows.RoutedEventHandler(this.btnRight_Click);
             
             #line default
             #line hidden
             return;
-            case 9:
+            case 10:
             this.btnLeft = ((System.Windows.Controls.Button)(target));
             
-            #line 242 "..\..\..\MainWindow.xaml"
+            #line 243 "..\..\..\MainWindow.xaml"
             this.btnLeft.Click += new System.Windows.RoutedEventHandler(this.btnRight_Click);
             
             #line default
             #line hidden
             return;
-            case 10:
+            case 11:
             this.media = ((System.Windows.Controls.MediaElement)(target));
             return;
-            case 11:
+            case 12:
             this.IP = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 12:
+            case 13:
             this.Port = ((System.Windows.Controls.TextBox)(target));
             return;
             }
