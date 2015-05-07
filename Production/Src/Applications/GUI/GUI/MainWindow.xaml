@@ -131,6 +131,60 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="CoolButtons" TargetType="Button">
+            <Setter Property="Width" Value="{Binding Width}"></Setter>
+            <Setter Property="Height" Value="{Binding Height}"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="10"></DropShadowEffect>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Rectangle Name="Cool">
+                                <Rectangle.Fill>
+                                    <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.4, 0.3">
+                                        <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                        </GradientStop>
+                                        <GradientStop Color="Orange" Offset="0.8"></GradientStop>
+                                    </RadialGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Fill" TargetName="Cool">
+                                    <Setter.Value>
+                                        <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                            <GradientStop Color="WhiteSmoke" Offset="0.2">
+                                            </GradientStop>
+                                            <GradientStop Color="Blue" Offset="0.8"></GradientStop>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Fill" TargetName="Cool">
+                                    <Setter.Value>
+                                        <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.5" RadiusY="0.5"
+                                                         GradientOrigin="0.6, 0.3">
+                                            <GradientStop Color="WhiteSmoke" Offset="0.0">
+                                            </GradientStop>
+                                            <GradientStop Color="Red" Offset="0.8"></GradientStop>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <Style x:Key="myBtnStyle" TargetType="Button">
             <Setter Property="Width" Value="{Binding Width}"></Setter>
             <Setter Property="Height" Value="{Binding Height}"></Setter>
@@ -229,23 +283,23 @@
                 VerticalAlignment="Top" Margin="236,54,0,0" Foreground="White"
                 Style="{StaticResource myBtnStyle}" Grid.Column="1" Grid.Row="2" Click="btnEx_Click">
         </Button>
-        <Button Name="btnRight" DataContext="{StaticResource ResourceKey=launcherModel}"
+        <!--" Button Name="btnRight" DataContext="{StaticResource ResourceKey=launcherModel}"
                 Command="{Binding _Move_Right}"
                 Content=" R    " FontSize="16" FontFamily="Segoe WP Black"
                 Width="28" HorizontalAlignment="Right"
                 VerticalAlignment="Center" Margin="0,56,195,64" Foreground="Black"
-                Style="{StaticResource myOtherBtnStyle}" Grid.Column="1" Grid.Row="2" Click="btnRight_Click"/>
-        <Button Name="btnLeft" DataContext="{StaticResource ResourceKey=launcherModel}"
+                Style="{StaticResource myOtherBtnStyle}" Grid.Column="1" Grid.Row="2" Click="btnRight_Click"/-->
+        <!--Button Name="btnLeft" DataContext="{StaticResource ResourceKey=launcherModel}"
                 Command="{Binding _Move_Left}"
                 Content=" L" FontSize="16" FontFamily="Segoe WP Black"
                 Width="28" HorizontalAlignment="Right"
                 VerticalAlignment="Center" Margin="0,56,267,64" Foreground="Black"
-                Style="{StaticResource myOtherBtnStyle1}" Grid.Column="1" Grid.Row="2" Click="btnRight_Click"/>
+                Style="{StaticResource myOtherBtnStyle1}" Grid.Column="1" Grid.Row="2" Click="btnRight_Click"/-->
 
-        <!--Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="280,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left"/-->
-        <!--Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="208,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/-->
-        <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="241,30,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
-        <Button Content="D" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="244,92,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black"/>
+        <Button Content="R" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Right}"  Height="19" Margin="280,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" HorizontalAlignment="Left" Click="Button_Click" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="L" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Left}" HorizontalAlignment="Left" Height="20" Margin="208,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="U" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Up}" HorizontalAlignment="Left" Height="20" Margin="241,30,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="D" DataContext="{StaticResource ResourceKey=launcherModel}"  Command="{Binding _Move_Down}" HorizontalAlignment="Left" Height="20" Margin="243,92,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" FontFamily="Segoe WP Black" Style="{DynamicResource CoolButtons}"/>
         <Grid HorizontalAlignment="Left" DataContext="{StaticResource ResourceKey=MainModel}" Height="400" Margin="0,4,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1">
             <Border BorderThickness="1" BorderBrush="Gray" Margin="10">
                 <Image DataContext="{StaticResource ResourceKey=videoModel}" Source="{Binding BitmapImage}"/>
@@ -259,13 +313,14 @@
         </Grid>
 
 
-        <Button Content="Clear Targets" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="27,5,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
-        <Button Content="Kill All Targets" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_targets}" HorizontalAlignment="Left" Margin="27,30,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
-        <Button Content="Kill All Foes" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_foes}" HorizontalAlignment="Left" Margin="27,55,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
-        <Button Content="Kill All Friends" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_friends}" HorizontalAlignment="Left" Margin="27,81,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
-        <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load from Server" Command="{Binding load_game_from_server}" HorizontalAlignment="Left" Margin="126,13,0,0" VerticalAlignment="Top" Width="99" Grid.ColumnSpan="2"/>
-        <Button DataContext="{StaticResource ResourceKey=MainModel}" Content="Load INI File" Command="{Binding _load_INI_File}" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="98"/>
-        <Button Content="Reset" 
+        <Button Content="Clear Targets" FontWeight="Bold" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding clear_targets}" HorizontalAlignment="Left" Margin="27,5,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="Kill All Targets" FontWeight="Bold" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_targets}" HorizontalAlignment="Left" Margin="27,30,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="Kill All Foes" FontWeight="Bold" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_foes}" HorizontalAlignment="Left" Margin="27,55,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="Kill All Friends" FontWeight="Bold" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_all_friends}" HorizontalAlignment="Left" Margin="27,81,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2" Style="{DynamicResource CoolButtons}"/>
+        <Button DataContext="{StaticResource ResourceKey=MainModel}" FontWeight="Bold" Content="Load from Server" Command="{Binding load_game_from_server}" HorizontalAlignment="Left" Margin="126,13,0,0" VerticalAlignment="Top" Width="99" Grid.ColumnSpan="2" Style="{DynamicResource CoolButtons}"/>
+        <Button DataContext="{StaticResource ResourceKey=MainModel}" FontWeight="Bold" Content="Load INI File" Command="{Binding _load_INI_File}" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="98" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="Reset"
+            FontWeight="Bold"
         	Grid.Column="1"
         	HorizontalAlignment="Left"
         	DataContext="{StaticResource ResourceKey=launcherModel}"
@@ -273,8 +328,9 @@
         	Margin="23,79,0,0" 
         	Grid.Row="2"                 
         	VerticalAlignment="Top" 
-        	Width="75"/>
-        <Button Content="Reload" 
+        	Width="75" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="Reload"
+                FontWeight="Bold"
                 Grid.Column="1"
                 HorizontalAlignment="Left"
                 DataContext="{StaticResource ResourceKey=launcherModel}"
@@ -282,8 +338,9 @@
                 Margin="403,79,0,0" 
                 Grid.Row="2"                 
                 VerticalAlignment="Top" 
-                Width="75"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" 
+                Width="75" Style="{DynamicResource CoolButtons}"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left"
+                 FontWeight="Bold"
                  DataContext="{StaticResource ResourceKey=launcherModel}" 
                  BorderThickness=".01"
                  Text="{Binding l_phi}"  
@@ -305,10 +362,10 @@
                  DataContext="{StaticResource ResourceKey=launcherModel}"
                  VerticalAlignment="Top" Width="96" FontSize="14" FontFamily="Segoe UI Semilight" Grid.Column="2"/>
 
-        <Button Grid.Column="1" DataContext="{StaticResource ResourceKey=videoModel}" Content="Start" Command="{Binding Path=Start}" Margin="303,370,122,10" Width="75" Grid.Row="1"></Button>
-        <Button Grid.Column="1" Content="Stop" Command="{Binding Path=Stop}" DataContext="{StaticResource ResourceKey=videoModel}" Margin="392,370,33,10" Grid.Row="1" Width="75" RenderTransformOrigin="0.947,0.1"/>
-        <Button Content="Take Image"   DataContext="{StaticResource ResourceKey=MainModel}"    
-                    Command="{Binding Take_Picture}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button Grid.Column="1" DataContext="{StaticResource ResourceKey=videoModel}" FontWeight="Bold" Content="Start" Command="{Binding Path=Start}" Margin="303,370,122,10" Width="75" Grid.Row="1" Style="{DynamicResource CoolButtons}"></Button>
+        <Button Grid.Column="1" Content="Stop" Command="{Binding Path=Stop}" FontWeight="Bold" DataContext="{StaticResource ResourceKey=videoModel}" Margin="392,370,33,10" Grid.Row="1" Width="75" RenderTransformOrigin="0.947,0.1" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="Take Image"   FontWeight="Bold" DataContext="{StaticResource ResourceKey=MainModel}"    
+                    Command="{Binding Take_Picture}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Style="{DynamicResource CoolButtons}"/>
 
 
         <TextBlock Text="{Binding Source={x:Static gui:launcherVars.Instance }, Path=missileCount}" Grid.Column="1" HorizontalAlignment="Left" Margin="277,6,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="36"/>
@@ -323,9 +380,9 @@
                  
                  DataContext="{StaticResource MainModel}"
                  Height="20" Margin="36,37,0,0" TextWrapping="Wrap" Text="{Binding Port}" VerticalAlignment="Top" Width="96" Grid.Column="2" Grid.Row="1"  />
-        <Button Command="{Binding load_from_server}" DataContext="{StaticResource ResourceKey=MainModel}" Content="Enter" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,65,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124"/>
-        <Button Content="Start Game" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding start_server}" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,181,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124"/>
-        <Button Content="End Game" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding stop_server}" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,214,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124"/>
+        <Button Command="{Binding load_from_server}" FontWeight="Bold" DataContext="{StaticResource ResourceKey=MainModel}" Content="Enter" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,65,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="Start Game" FontWeight="Bold" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding start_server}" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,181,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124" Style="{DynamicResource CoolButtons}"/>
+        <Button Content="End Game" FontWeight="Bold" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding stop_server}" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,214,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124" Style="{DynamicResource CoolButtons}"/>
         <ComboBox  DataContext="{StaticResource MainModel}" SelectedItem="{Binding selectedGame}"                 
                  
                    ItemsSource="{Binding gameList}" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="8,147,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124">
@@ -334,7 +391,7 @@
         </ComboBox>
         <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="5,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="IP:" IsReadOnly="True" VerticalAlignment="Top" Width="31"/>
         <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="5,37,0,0" Grid.Row="1" IsReadOnly="True" TextWrapping="Wrap" Text="Port:" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.615,1.85"/>
-        <Button Content="Kill Left-to-Right" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_left_to_right}" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
+        <Button Content="Kill Left-to-Right" FontWeight="Bold" Style="{DynamicResource CoolButtons}" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_left_to_right}" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
         <TextBlock x:Name="Score_Copy" DataContext="{StaticResource MainModel}" HorizontalAlignment="Left" Height="21" Margin="47,4,0,0" TextWrapping="Wrap" Text="{Binding THE_SCORE}" VerticalAlignment="Top" Width="72" Grid.Row="2" Grid.Column="1"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
