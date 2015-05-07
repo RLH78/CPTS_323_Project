@@ -39,6 +39,7 @@ namespace GUI
             Targets = new ObservableCollection<targetViewModel>();
             PriorityTargets = new ObservableCollection<targetViewModel>();
             list = new List<Target>();
+            score = 0.0;
         }
 
         public Target[] targets { get; set; }
@@ -266,6 +267,7 @@ namespace GUI
            //targetPriorityQueue = null;
            targetPriorityQueue = new PriorityQueue<Target>();
            targets = null;
+           calculateScore();
            OnPropertyChanged("targets");
            OnPropertyChanged("Targets");
            OnPropertyChanged("PriorityTargets");
@@ -277,7 +279,7 @@ namespace GUI
             launcherViewModel NewOne = launcherViewModel.getInstance();
             launcherVars newVars = launcherVars.Instance;
             
-            while (i < /*10)*/TargetManager.TotalTargets && newVars.missileCount > 0)
+            while (newVars.missileCount > 0)
             {
                 Task killEmAll = Task.Run(() =>
                     {
@@ -288,6 +290,9 @@ namespace GUI
                             mainViewMissile = NewOne.returnLauncher();
                             //mainViewMissile.Reset();
                             i++;
+
+                            if (i > 4)
+                                i = 0;
                         }
                         catch { }
                     });
@@ -298,31 +303,56 @@ namespace GUI
 
         public async void killAllFoes()
         {
-            int i = 0;
-            while (i < TargetManager.TotalTargets)
+             int i = 0;
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+            
+            while (newVars.missileCount > 0)
             {
                 Task killAllBadGuys = Task.Run(() =>
-                   {
-                       Targets.ElementAt(i).KillFoes();
-                       launcherViewModel NewOne = launcherViewModel.getInstance();
-                       mainViewMissile = NewOne.returnLauncher();
-                       mainViewMissile.Reset();
-                       i++;
-                   });
-                await killAllBadGuys;
+                    {
+                        try
+                        {   
+                            Targets.ElementAt(i).KillFoes();
+
+                            mainViewMissile = NewOne.returnLauncher();
+                            //mainViewMissile.Reset();
+                            i++;
+
+                            if (i > 4)
+                                i = 0;
+                        }
+                        catch { }
+                    });
+                await killAllBadGuys;           
             }
 
         }
-        public void killAllFriends()
+        public async void killAllFriends()
         {
-            int i = 0;
-            while (i < TargetManager.TotalTargets)
+
+         int i = 0;
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+
+            while (newVars.missileCount > 0)
             {
-                Targets.ElementAt(i).KillFriends();
-                launcherViewModel NewOne = launcherViewModel.getInstance();
-                mainViewMissile = NewOne.returnLauncher();
-              //  mainViewMissile.Reset();
-                i++;
+                Task killAllFriends = Task.Run(() =>
+                    {
+                        try
+                        {
+                            Targets.ElementAt(i).KillFriends();
+
+                            mainViewMissile = NewOne.returnLauncher();
+                            //mainViewMissile.Reset();
+                            i++;
+                            
+                            if (i > 4)
+                                i = 0;
+                        }
+                        catch { }
+                    });
+                await killAllFriends;
             }
         }
 
@@ -346,7 +376,7 @@ namespace GUI
                     {
                         
                      //  mainViewMissile.Reset();
-                       mainViewMissile.Move(-15, 0); //other code needs a +15
+                      // mainViewMissile.Move(-15, 0); //other code needs a +15
                         //mainViewMissile.Reset();
                         // newVars.missileCount = 4;
                     }
@@ -357,9 +387,8 @@ namespace GUI
 
         }
 
-        public async void killTargetsRightToLeft()
+        public async void killTargetQueueListBackwards()
         {
-            int i = 0;
             launcherViewModel NewOne = launcherViewModel.getInstance();
             launcherVars newVars = launcherVars.Instance;
             mainViewMissile = NewOne.returnLauncher();
@@ -377,28 +406,46 @@ namespace GUI
             targetViewModel last;
             last = (targetViewModel)myIterator.Last();
 
-            while (/*i < TargetManager.TotalTargets*/ last != null && newVars.missileCount > 0)
+            while (last != null && newVars.missileCount > 0)
             {
                 Task killEmAll = Task.Run(() =>
                 {                    
                     
                    last.KillAllTargets();
                    last = (targetViewModel)myIterator.Previous();
-                   // i++;
-
+                  
                     if (newVars.missileCount == 0)//i == TargetManager.TotalTargets - 1)
                     {
 
-                        //  mainViewMissile.Reset();
-                        mainViewMissile.Move(-15, 0); //other code needs a +15
-                        //mainViewMissile.Reset();
-                        // newVars.missileCount = 4;
+                        mainViewMissile.Reset();
+                        mainViewMissile.Move(-15, 0); //other code needs a +15                     
                     }
                 }
                 );
                 await killEmAll;
             }
+        }
 
+
+        private double score { get; set; }
+        public double THE_SCORE
+        {
+            get { return score; }
+            set
+            {
+                score = value;
+                OnPropertyChanged();
+            }
+        }
+        public void calculateScore()
+        {
+            int i = 0;
+            while(i < TargetManager.TotalTargets)
+            {
+                score += Targets.ElementAt(i).getScore();
+            }
+            OnPropertyChanged("score");
+            OnPropertyChanged("THE_SCORE");
         }
         public async void killTargetsLeftToRightWithHitCount()
         {

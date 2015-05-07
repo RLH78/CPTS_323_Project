@@ -252,7 +252,11 @@ namespace GUI
         {
             launcherVars missilez = launcherVars.Instance;            
             missilez.missileCount = 4;
-            launcher_view_Launcher.Reload();            
+            launcher_view_Launcher.Reload();
+            
+            
+            missilez.theta = 0;
+            missilez.phi = 0;
         }
 
         private void liveThreads()

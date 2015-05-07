@@ -40,15 +40,19 @@ namespace GUI
             
             while(child_node_index > 0)
             {
-                parent_node_index = (child_node_index - 1) / 2;
-                if (target_List[child_node_index].CompareTo(target_List[parent_node_index]) >= 0)
-                    break; // Correct order for Binary Heap
+                try
+                {
+                    parent_node_index = (child_node_index - 1) / 2;
+                    if (target_List[child_node_index].CompareTo(target_List[parent_node_index]) >= 0)
+                        break; // Correct order for Binary Heap
 
-                temp = target_List[child_node_index]; // Getting Child node in correct position
-                target_List[child_node_index] = target_List[parent_node_index];
-                target_List[parent_node_index] = temp;
+                    temp = target_List[child_node_index]; // Getting Child node in correct position
+                    target_List[child_node_index] = target_List[parent_node_index];
+                    target_List[parent_node_index] = temp;
 
-                child_node_index = parent_node_index;
+                    child_node_index = parent_node_index;
+                }
+                catch { }
             }
         }
 
@@ -106,29 +110,5 @@ namespace GUI
         {
             return target_List;
         }
-
-
-        public List<T> getReversePriorityQueue()
-        {
-            List<T> reverseList = new List<T>();
-
-            return reverseList;
-        }
-
-        public List<T> reverseCurrentQueue()
-        {
-            //make iterator
-            //have it reverse
-            myCollection collection = new myCollection();
-
-        //     Target ataadsfasf = new Target();
-
-          //   collection[0] = ataadsfasf;
-
-            int i =0;
-          //  collection[i] = target_List[i];
-            return target_List;
-        }
-
     }
 }

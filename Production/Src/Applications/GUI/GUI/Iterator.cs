@@ -26,7 +26,7 @@ namespace GUI
     {
         private myCollection collection;
 
-        private int currentSpot;
+        private int currentSpot = 0;
         public Iterator(myCollection aCollection)
         {
             this.collection = aCollection;
@@ -39,6 +39,7 @@ namespace GUI
 
         public object Last()
         {
+            currentSpot = collection.ItemCount - 1;
             return collection[collection.ItemCount - 1];
         }
 

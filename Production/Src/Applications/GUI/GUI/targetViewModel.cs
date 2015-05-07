@@ -142,8 +142,7 @@ namespace GUI
             launcherVars newVars = launcherVars.Instance;
             try
             {
-                if (m_target.alive == true)
-                {
+                
                     double place_hold = 0;
                     double place_hold2 = 0;
                     double realPhi = 0;
@@ -166,7 +165,7 @@ namespace GUI
                     missilez.phi = degrees;
                     missilez.theta = degrees2;
                     OnPropertyChanged("m_target");
-                }
+                
             }
             catch { }
         }
@@ -176,8 +175,7 @@ namespace GUI
             {
                 if (m_target.friend == false)
                 {
-                    if (m_target.alive == true)
-                    {
+                   
                         double place_hold = 0;
                         double place_hold2 = 0;
                         double realPhi = 0;
@@ -202,7 +200,7 @@ namespace GUI
                         missilez.phi = degrees;
                         missilez.theta = degrees2;
                         OnPropertyChanged("m_target");
-                    }
+                   
                 }
             }
             catch { }
@@ -213,8 +211,7 @@ namespace GUI
             {
                 if (m_target.friend == true)
                 {
-                    if (m_target.alive == true)
-                    {
+                    
                         double place_hold = 0;
                         double place_hold2 = 0;
                         double realPhi = 0;
@@ -239,12 +236,16 @@ namespace GUI
                         missilez.phi = degrees;
                         missilez.theta = degrees2;
                         OnPropertyChanged("m_target");
-                    }
-
+                    
 
                 }
             }
             catch { }
+        }
+
+        public double getScore()
+        {
+            return m_target.score;
         }
         
     }

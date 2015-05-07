@@ -335,6 +335,7 @@
         <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="5,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="IP:" IsReadOnly="True" VerticalAlignment="Top" Width="31"/>
         <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="5,37,0,0" Grid.Row="1" IsReadOnly="True" TextWrapping="Wrap" Text="Port:" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.615,1.85"/>
         <Button Content="Kill Left-to-Right" DataContext="{StaticResource ResourceKey=MainModel}" Command="{Binding kill_left_to_right}" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
+        <TextBlock x:Name="Score_Copy" DataContext="{StaticResource MainModel}" HorizontalAlignment="Left" Height="21" Margin="47,4,0,0" TextWrapping="Wrap" Text="{Binding THE_SCORE}" VerticalAlignment="Top" Width="72" Grid.Row="2" Grid.Column="1"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="500"/>
