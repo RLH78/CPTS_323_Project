@@ -593,6 +593,9 @@ namespace GUI
                 aTarget.alive = true; //??
                 aTarget.score = target.score;
                 aTarget.hit = target.hit;
+                aTarget.isBlinking = target.movingState;
+
+
 
                 var newtargetViewModel = new targetViewModel(aTarget);
                 Targets.Add(newtargetViewModel);
