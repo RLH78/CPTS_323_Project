@@ -364,7 +364,7 @@ namespace GUI
             launcherVars newVars = launcherVars.Instance;
             mainViewMissile = NewOne.returnLauncher();
 
-            while (i < TargetManager.TotalTargets && newVars.missileCount > 0)
+            while (/*i < TargetManager.TotalTargets &&*/ newVars.missileCount > 0)
             {
                 Task killEmAll = Task.Run(() => {
                     

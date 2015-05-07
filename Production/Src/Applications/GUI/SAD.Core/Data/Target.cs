@@ -25,7 +25,7 @@ namespace SAD.Core.Data
             this.alive = true;
             this.score = 0.0;
             this.hit = 0;
-           
+            this.isBlinking = true;           
         }
         // public int targetCount { get; set; }
         
@@ -51,6 +51,8 @@ namespace SAD.Core.Data
 
         
         private bool m_isAlive;
+
+        public bool isBlinking { get; set; }
 
         public double score { get; set; }
 

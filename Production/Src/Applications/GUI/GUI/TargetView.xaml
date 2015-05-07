@@ -24,8 +24,9 @@
                 </TextBlock>
                 <TextBlock FontSize="13" Width="110">
                     <TextBlock.Text>
-                        <MultiBinding StringFormat="{}Alive: {0}">
-                            <Binding Path="Target.alive" />
+                        <MultiBinding StringFormat="{}Alive: {0}  Hit: {1}">
+                            <Binding Path="Target.alive"/>
+                            <Binding Path="Target.hit" />
                         </MultiBinding>
                     </TextBlock.Text>
                 </TextBlock>
