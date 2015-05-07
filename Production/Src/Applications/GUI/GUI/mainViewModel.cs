@@ -383,7 +383,7 @@ namespace GUI
                             i++;
 
                             if (i >= 4)
-                                i = 0;
+                               i = 0;
                         }
                         catch { }
                     });

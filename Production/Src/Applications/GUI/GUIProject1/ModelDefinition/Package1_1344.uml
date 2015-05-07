@@ -1,91 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
-  Id="870d711e-6afe-46c6-ad81-e9b025d2f86a"
-  name="Collections"
+  Id="48837a85-4509-4e2e-a6fb-46d3463e7cfe"
+  name="TargetServerCommunicator"
   visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <referencesInternal>
     <reference
-      Id="5248d8e6-57a1-4ecc-88fc-64ddd187b3a8"
-      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Collections"
+      Id="948a6d9c-7a55-470d-ac9e-c815e938731f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTargetServerCommunicator"
       tag="ViewCode" />
   </referencesInternal>
   <packagedElements>
     <packageHasNamedElement>
-      <packageMoniker
-        Id="6686c6fa-23ae-4a20-8dca-41c87eceee5f"
-        LastKnownName="ObjectModel"
-        LastKnownLocation="Package7_1625.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <packageMoniker
-        Id="c99e4979-0ca4-4639-a04a-2935dc027e5a"
-        LastKnownName="Concurrent"
-        LastKnownLocation="Package_1232.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <packageMoniker
-        Id="d7c24925-9708-43e5-957f-c4f0ad8eb2b3"
-        LastKnownName="Generic"
-        LastKnownLocation="Package_1344.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="7dd3ea5d-617c-4959-8176-f9b3971e8104"
-        name="ArrayList"
+      <Interface
+        Id="3fcf7e96-87bd-47b5-a300-c4e1f889febe"
+        name="IGameServer"
         isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
+        isLeaf="false">
         <referencesInternal>
           <reference
-            Id="2857b832-f700-41d6-a775-231ac7252895"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DArrayList"
+            Id="cb2b589f-b9d2-44d3-b61c-67cc83489512"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FRebecca%2FSource%2FRepos%2FCPTS_323_Project%2FProduction%2FSrc%2FApplications%2FGUI%2FTargetServerCommunicator%2Fbin%2FDebug%2FTargetServerCommunicator.dll Namespace%3DTargetServerCommunicator Type%3DIGameServer"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
           <stereotypeInstance
-            Id="a3882a5c-034f-4378-b7b9-327f9ebab276"
-            name="class"
+            Id="a1b30dca-c9a2-428f-829b-2d36a146ba26"
+            name="interface"
             profile="CSharpProfile">
             <propertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="9bdd9bdb-fd28-44a3-a657-c27e18e4d809">
+                Id="c1ea4e0b-0b53-460d-8c77-fef06014917e">
                 <propertyInstance
-                  Id="3e853165-4e29-4391-a694-3f0364b4cfea"
+                  Id="6537df53-da9f-4f13-8629-367362da59e1"
                   name="ClrAttributes" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="f62d7cf8-9606-494a-94a1-afb2e7f9e849">
+                Id="4c2e6546-e333-46f8-81d6-97a27093f704">
                 <propertyInstance
-                  Id="3e61f9ec-803f-46c3-8036-09449e67fcf3"
+                  Id="1d026b36-9317-42e8-b121-49cae4571cca"
                   name="IsPartial"
                   value="false" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="e02be92a-d221-4e85-87d0-9ce480022a1f">
+                Id="078698f0-7f7b-4c3c-8a85-d1c488290b22">
                 <propertyInstance
-                  Id="b97cd754-a615-4e12-a359-d096aaabd9d7"
-                  name="IsStatic"
-                  value="False" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="7e168d3c-7505-4f16-9caa-c6252e3eefb8">
-                <propertyInstance
-                  Id="81ee3b07-541e-4f74-9619-0d677fb9b6ae"
+                  Id="82082a71-e4fb-4968-b892-6811ab9c1fc7"
                   name="IsUnsafe"
                   value="false" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="91c091c3-de8b-474d-83e6-76300b4675cc">
+                Id="bc6940a2-3b26-48b6-9604-191ab16f580f">
                 <propertyInstance
-                  Id="a7a4bead-acd6-459f-aea2-8100483f9489"
+                  Id="549b1747-4b23-4e8c-9ee2-a66f515433be"
                   name="PackageVisibility"
                   value="internal" />
               </stereotypeInstanceHasPropertyInstances>
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
-      </class>
+      </Interface>
     </packageHasNamedElement>
   </packagedElements>
 </package>

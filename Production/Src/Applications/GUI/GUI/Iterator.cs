@@ -102,11 +102,11 @@ namespace GUI
             }
         }
 
-        public targetViewModel this[int i]
+        public object this[int i]
         {
             get
             {
-                return (targetViewModel)items[i];
+                return items[i];
             }
             set
             {

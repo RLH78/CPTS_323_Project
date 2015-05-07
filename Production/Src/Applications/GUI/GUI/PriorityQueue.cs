@@ -42,7 +42,7 @@ namespace GUI
             {
                 try
                 {
-                    parent_node_index = (child_node_index - 1) / 2;
+                    parent_node_index = (child_node_index - 1) / 2; // Binary heap makes a semi-sorted list.
                     if (target_List[child_node_index].CompareTo(target_List[parent_node_index]) >= 0)
                         break; // Correct order for Binary Heap
 
@@ -108,6 +108,7 @@ namespace GUI
 
         public List<T> getPriorityList()
         {
+            //Is a correct binary heap but may not be fully sorted
             return target_List;
         }
     }

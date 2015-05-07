@@ -32,6 +32,9 @@
     <Content Include="ModelDefinition\Package1_1232.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package1_1344.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package1_1622.uml">
       <SubType>Content</SubType>
     </Content>
@@ -86,6 +89,9 @@
     <Content Include="ModelDefinition\Package_1232.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_1344.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package_1622.uml">
       <SubType>Content</SubType>
     </Content>
@@ -106,6 +112,20 @@
     </Content>
     <Content Include="ModelDefinition\Package_1642.uml">
       <SubType>Content</SubType>
+    </Content>
+    <Content Include="Rebecca Personal Project Class Diagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Rebecca Personal Project Class Diagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Rebecca Personal Project Class Diagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="RebeccaPersonalProject.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RebeccaPersonalProject.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>RebeccaPersonalProject.activitydiagram</DependentUpon>
     </Content>
     <Content Include="UMLActivityDiagram1.activitydiagram">
       <SubType>Content</SubType>
