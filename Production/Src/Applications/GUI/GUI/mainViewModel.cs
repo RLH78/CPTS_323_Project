@@ -595,8 +595,6 @@ namespace GUI
                 aTarget.hit = target.hit;
                 aTarget.isBlinking = target.movingState;
 
-
-
                 var newtargetViewModel = new targetViewModel(aTarget);
                 Targets.Add(newtargetViewModel);
 
