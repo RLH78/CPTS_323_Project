@@ -43,8 +43,9 @@
                 </TextBlock>
                 <TextBlock FontSize="13" Width="110">
                     <TextBlock.Text>
-                        <MultiBinding StringFormat="{}Points: {0}">
+                        <MultiBinding StringFormat="{}Points: {0} Score: {1}">
                             <Binding Path="Target.points" />
+                            <Binding Path="Target.score"/>
                         </MultiBinding>
                     </TextBlock.Text>
                 </TextBlock>
