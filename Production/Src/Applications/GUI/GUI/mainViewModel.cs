@@ -354,7 +354,7 @@ namespace GUI
                             //mainViewMissile.Reset();
                             i++;
 
-                            if (i > 4)
+                            if (i >= 4)
                                 i = 0;
                         }
                         catch { }
@@ -382,7 +382,7 @@ namespace GUI
                             //mainViewMissile.Reset();
                             i++;
 
-                            if (i > 4)
+                            if (i >= 4)
                                 i = 0;
                         }
                         catch { }
@@ -410,7 +410,7 @@ namespace GUI
                             //mainViewMissile.Reset();
                             i++;
                             
-                            if (i > 4)
+                            if (i >= 4)
                                 i = 0;
                         }
                         catch { }
@@ -680,7 +680,20 @@ namespace GUI
         public void startServerGame()
         {
            gameServer.StartGame(selectedGame);
-           killTargets();
+
+           if (selectedGame == "one")
+               killTargets();
+           else if (selectedGame == "two")
+               killTargets();
+           else if (selectedGame == "three")
+               killTargets();
+           else if (selectedGame == "four")
+               killTargets();
+           else if (selectedGame == "five")
+               killTargets();
+           else
+               killTargets();
+           //killTargets();
            //killTargetsLeftToRight();
                       
         }
