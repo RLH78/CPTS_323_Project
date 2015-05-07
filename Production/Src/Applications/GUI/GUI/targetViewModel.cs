@@ -37,6 +37,8 @@ namespace GUI
         myCommand killAll;
         myCommand killFoes;
         myCommand killFriends;
+        myCommand killBlinkingFoes;
+        myCommand killBlinky;
 
         public Target Target
         {
@@ -89,6 +91,98 @@ namespace GUI
                     kill = new myCommand(param => KillTarget());
                 }
                 return kill;
+            }
+        }
+        public ICommand _kill_blinkers
+        {
+            get
+            {
+                if (killBlinkingFoes == null)
+                {
+                    killBlinkingFoes = new myCommand(param => KillBlinkingEnemies());
+                }
+                return killBlinkingFoes;
+            }
+        }
+        public ICommand _kill_mr_blinky
+        {
+            get
+            {
+                if (killBlinky == null)
+                {
+                    killBlinky = new myCommand(param => KillAllBlinking());
+                }
+                return killBlinky;
+            }
+        }
+        public void KillAllBlinking()
+        {
+            launcherVars newVars = launcherVars.Instance;
+            if (m_target.isBlinking == true)
+            {
+                try
+                {
+
+                    double place_hold = 0;
+                    double place_hold2 = 0;
+                    double realPhi = 0;
+                    double realTheta = 0;
+                    int degrees = 0;
+                    int degrees2 = 0;
+
+                    place_hold = m_target.xCoord / m_target.yCoord;
+                    place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
+                    realPhi = Math.Atan(place_hold);
+                    realTheta = Math.Atan(m_target.zCoord / place_hold2);
+                    degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+                    degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+
+                    target_view_Launcher.realKill(degrees, degrees2, newVars.phi, newVars.theta);
+
+                    m_target.alive = false;
+                    launcherVars missilez = launcherVars.Instance;
+                    missilez.missileCount = missilez.missileCount - 1;
+                    missilez.phi = degrees;
+                    missilez.theta = degrees2;
+                    OnPropertyChanged("m_target");
+
+                }
+                catch { }
+            }
+        }
+        public void KillBlinkingEnemies()
+        {
+            launcherVars newVars = launcherVars.Instance;
+            if (m_target.friend == false && m_target.isBlinking == true)
+            {
+                try
+                {
+
+                    double place_hold = 0;
+                    double place_hold2 = 0;
+                    double realPhi = 0;
+                    double realTheta = 0;
+                    int degrees = 0;
+                    int degrees2 = 0;
+
+                    place_hold = m_target.xCoord / m_target.yCoord;
+                    place_hold2 = Math.Sqrt((m_target.xCoord * m_target.xCoord) + (m_target.yCoord * m_target.yCoord));
+                    realPhi = Math.Atan(place_hold);
+                    realTheta = Math.Atan(m_target.zCoord / place_hold2);
+                    degrees = Convert.ToInt32(realPhi * (180 / Math.PI));
+                    degrees2 = Convert.ToInt32(realTheta * (180 / Math.PI));
+
+                    target_view_Launcher.realKill(degrees, degrees2, newVars.phi, newVars.theta);
+
+                    m_target.alive = false;
+                    launcherVars missilez = launcherVars.Instance;
+                    missilez.missileCount = missilez.missileCount - 1;
+                    missilez.phi = degrees;
+                    missilez.theta = degrees2;
+                    OnPropertyChanged("m_target");
+
+                }
+                catch { }
             }
         }
         public void KillTarget()

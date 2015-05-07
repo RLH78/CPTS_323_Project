@@ -78,6 +78,7 @@ namespace GUI
         myCommand killFoes;
         myCommand killFriends;
         myCommand killLtoR;
+        myCommand killBlink;
         myCommand TakePictureCommand;
         myCommand serverStart;
         myCommand serverStop;
@@ -163,6 +164,17 @@ namespace GUI
                     killAll = new myCommand(param => killTargets());
                 }
                 return killAll;
+            }
+        }
+        public ICommand kill_all_enemy_blinkers
+        {
+            get
+            {
+                if (killBlink == null)
+                {
+                    killBlink = new myCommand(param => killBlinkingAll());
+                }
+                return killBlink;
             }
         }
         public ICommand kill_all_foes
@@ -272,7 +284,58 @@ namespace GUI
            OnPropertyChanged("Targets");
            OnPropertyChanged("PriorityTargets");
         }
+        public async void killBlinkingAll()
+        {
+            int i = 0;
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+            
+            while (newVars.missileCount > 0)
+            {
+                Task killEmAll = Task.Run(() =>
+                    {
+                        try
+                        {   
+                            Targets.ElementAt(i).KillAllBlinking();
 
+                            mainViewMissile = NewOne.returnLauncher();
+                            //mainViewMissile.Reset();
+                            i++;
+
+                            if (i >= 4)
+                                i = 0;
+                        }
+                        catch { }
+                    });
+                await killEmAll;
+            }
+        }
+        public async void killAllBlinkingEnemies()
+        {
+            int i = 0;
+            launcherViewModel NewOne = launcherViewModel.getInstance();
+            launcherVars newVars = launcherVars.Instance;
+
+            while (newVars.missileCount > 0)
+            {
+                Task killEmAll = Task.Run(() =>
+                {
+                    try
+                    {
+                        Targets.ElementAt(i).KillBlinkingEnemies();
+
+                        mainViewMissile = NewOne.returnLauncher();
+                        //mainViewMissile.Reset();
+                        i++;
+
+                        if (i >= 4)
+                            i = 0;
+                    }
+                    catch { }
+                });
+                await killEmAll;
+            }
+        }
         public async void killTargets()
         {
             int i = 0;

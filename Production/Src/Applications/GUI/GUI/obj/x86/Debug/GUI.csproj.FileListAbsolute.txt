@@ -140,3 +140,4 @@ C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\G
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\x86\Debug\GUI.g.resources
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
 C:\Users\Rebecca\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Nick\Source\Repos\CPTS_323_Project\Production\Src\Applications\GUI\GUI\bin\x86\Debug\Audio\Danger_Zone.mp3
