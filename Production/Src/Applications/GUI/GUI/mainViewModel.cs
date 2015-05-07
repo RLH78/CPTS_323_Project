@@ -684,11 +684,11 @@ namespace GUI
            if (selectedGame == "one")
                killTargets();
            else if (selectedGame == "two")
-               killTargets();
+               killBlinkingAll();
            else if (selectedGame == "three")
-               killTargets();
+               killAllBlinkingEnemies();
            else if (selectedGame == "four")
-               killTargets();
+               killAllBlinkingEnemies();
            else if (selectedGame == "five")
                killTargets();
            else
